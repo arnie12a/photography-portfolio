@@ -1,7 +1,6 @@
 import Head from "next/head"
-import Image from "next/image"
 import Link from "next/link"
-import "@headlessui/react"
+import {Tab} from "@headlessui/react"
 
 export default function Home() {
   return (
@@ -22,7 +21,18 @@ export default function Home() {
       </header>
 
       <main className="">
-       <p>Placeholder for main</p>
+      <Tab.Group>
+        <Tab.List>
+          <Tab>Tab 1</Tab>
+          <Tab>Tab 2</Tab>
+          <Tab>Tab 3</Tab>
+        </Tab.List>
+        <Tab.Panels>
+          <Tab.Panel>Content 1</Tab.Panel>
+          <Tab.Panel>Content 2</Tab.Panel>
+          <Tab.Panel>Content 3</Tab.Panel>
+        </Tab.Panels>
+      </Tab.Group>
       </main>
 
       <footer>
