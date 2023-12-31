@@ -2,6 +2,21 @@ import Head from "next/head"
 import Link from "next/link"
 import {Tab} from "@headlessui/react"
 
+const tabs = [
+  {
+    key: 'all',
+    display: 'All'
+  },
+  {
+    key: 'landscapes',
+    display: 'Landscapes'
+  },
+  {
+    key: 'people',
+    display: 'People'
+  }
+]
+
 export default function Home() {
   return (
     <div className="flex flex-col h-full bg-stone-950">
@@ -12,7 +27,6 @@ export default function Home() {
       </Head>
 
       <header className="flex justify-between items-center h-[90px] px-6">
-        <div className="text-transparent">hm</div>
         <div>Arnav Karnik Photography Portfolio</div>
         <Link href="#" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
           Get in touch 
@@ -23,13 +37,22 @@ export default function Home() {
       <main className="grow">
         <div className="flex flex-col items-center">
           <Tab.Group>
-            <Tab.List className="flex items-center gap-4">
-              <Tab>All</Tab>
-              <Tab>Landscapes</Tab>
-              <Tab>People</Tab>
+            <Tab.List className="flex items-center gap-12">
+              {tabs.map((tab) => {
+                return <Tab key={tab.key} className="p-2">
+                {({selected}) => (
+                  <span className={selected ? 'text-white' : 'text-stone-600'}>
+                    {tab.display}
+                  </span>
+                  )}
+              </Tab>
+              })
+              }
+              
+              
             </Tab.List>
             <Tab.Panels>
-              <Tab.Panel>All Photos</Tab.Panel>
+              <Tab.Panel className="bg-blue-200 h-full max-w-[900px] w-full p-2 sm:p-4">All Photos</Tab.Panel>
               <Tab.Panel>Landscapes</Tab.Panel>
               <Tab.Panel>People</Tab.Panel>
             </Tab.Panels>
@@ -38,8 +61,8 @@ export default function Home() {
     
       </main>
 
-      <footer className="h-[60px]">
-        <p>Placeholder for footer</p>
+      <footer className="h-[60px] flex justify-center items-center">
+        <p>Arnav Karnik Photograhpy Portfolio</p>
       </footer>
     </div>
     
