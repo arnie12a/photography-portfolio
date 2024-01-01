@@ -2,6 +2,17 @@ import Head from "next/head"
 import Link from "next/link"
 import {Tab} from "@headlessui/react"
 import Masonry from 'react-masonry-css'
+import classNames from 'classnames'
+import Image from "next/image"
+
+import landscape1 from "../public/landscape1.jpg";
+import landscape2 from "../public/landscape2.jpg";
+import landscape3 from "../public/landscape3.jpg";
+import landscape4 from "../public/landscape4.jpg";
+import landscape5 from "../public/landscape5.jpg";
+
+
+
 
 const tabs = [
   {
@@ -18,6 +29,14 @@ const tabs = [
   }
 ]
 
+const images = [
+  landscape1,
+  landscape2,
+  landscape3, 
+  landscape4, 
+  landscape5
+]
+
 export default function Home() {
   return (
     <div className="h-full bg-stone-950 overflow-auto">
@@ -27,8 +46,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-6">
-        <div>Arnav Karnik Photography Portfolio</div>
+      <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10">
+        <span className="uppercase text-lg font-medium">
+          Arnav Karnik Photography Portfolio
+        </span>
         <Link href="#" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
           Get in touch 
           </Link>
@@ -42,7 +63,7 @@ export default function Home() {
               {tabs.map((tab) => {
                 return <Tab key={tab.key} className="p-2">
                 {({selected}) => (
-                  <span className={selected ? 'text-white' : 'text-stone-600'}>
+                  <span className={classNames("uppercase text-lg", selected ? 'text-white' : 'text-stone-600')}>
                     {tab.display}
                   </span>
                   )}
@@ -56,15 +77,19 @@ export default function Home() {
               <Tab.Panel className="overflow-auto">
                 <Masonry 
                   breakpointCols={2} 
-                  className="flex gap-2 " 
+                  className="flex gap-4" 
                   columnClassName=""
                 >
-                  <img src="landscape1.JPG" alt="landscape 1" className="my-2"/>  
-                  <img src="landscape2.jpg" alt="landscape 2" className="my-2"/>  
-                  <img src="landscape3.jpg" alt="landscape 3" className="my-2"/>  
-                  <img src="landscape4.JPG" alt="landscape 4" className="my-2"/>  
-                  <img src="landscape5.JPG" alt="landscape 5" className="my-2"/>  
-
+                  {images.map(image => {
+                    return <Image
+                      key={image.src}
+                      src={image}
+                      alt="placeholder"
+                      className="my-4"
+                      placeholder="blur"
+                      />
+                  })}
+                 
                 </Masonry>
               </Tab.Panel>
               <Tab.Panel>Landscapes</Tab.Panel>
@@ -75,7 +100,7 @@ export default function Home() {
     
       </main>
 
-      <footer className="h-[60px] flex justify-center items-center">
+      <footer className="h-[90px] flex justify-center items-center uppercase text-lg font-medium">
         <p>Arnav Karnik Photograhpy Portfolio</p>
       </footer>
     </div>
