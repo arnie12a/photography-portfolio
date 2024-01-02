@@ -28,8 +28,8 @@ import landscape7 from "../public/landscape/rioCelesteWaterfall.jpg"
 //import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
 import landscape9 from "../public/landscape/smokeyMountains.jpg"
 //import landscape10 from "../public/landscape/theNarrows.jpg"
-import landscape11 from "../public/landscape/waimeaCanyon.jpg"
-import landscape12 from "../public/landscape/zionSunset.jpg"
+//import landscape11 from "../public/landscape/waimeaCanyon.jpg"
+//import landscape12 from "../public/landscape/zionSunset.jpg"
 
 
 //import people1 from "../public/people/arnie.jpg"
@@ -65,8 +65,8 @@ const landscapeImages = [
   //landscape8,
   landscape9,
   //landscape10,
-  landscape11,
-  landscape12
+  //landscape11,
+  //landscape12
 ]
 
 const peopleImages = [
