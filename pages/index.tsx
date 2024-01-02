@@ -18,24 +18,24 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 // Images
-import landscape1 from "../public/landscape/chicagoSkyline.jpg"
+import landscape1 from "../public/landscape/chicagoSkyline.JPG"
 import landscape2 from "../public/landscape/grandCanyon.jpeg"
 import landscape3 from "../public/landscape/hanaleiBay.jpg"
-import landscape4 from "../public/landscape/kalalauLookout.jpg"
+import landscape4 from "../public/landscape/kalalauLookout.JPG"
 import landscape5 from "../public/landscape/kauaiOcean.jpg"
-import landscape6 from "../public/landscape/napaliCoast.jpg"
+import landscape6 from "../public/landscape/napaliCoast.JPG"
 import landscape7 from "../public/landscape/rioCelesteWaterfall.jpg"
 import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
-import landscape9 from "../public/landscape/smokeyMountains.jpg"
-import landscape10 from "../public/landscape/theNarrows.jpg"
-import landscape11 from "../public/landscape/waimeaCanyon.jpg"
-import landscape12 from "../public/landscape/zionSunset.jpg"
+import landscape9 from "../public/landscape/smokeyMountains.JPG"
+import landscape10 from "../public/landscape/theNarrows.JPG"
+import landscape11 from "../public/landscape/waimeaCanyon.JPG"
+import landscape12 from "../public/landscape/zionSunset.JPG"
 
 
-import people1 from "../public/people/arnie.jpg"
+import people1 from "../public/people/arnie.JPG"
 import people3 from "../public/people/lucas.jpg"
 import people4 from "../public/people/nathan.jpg"
-import people5 from "../public/people/alondraPoipu.jpg"
+import people5 from "../public/people/alondraPoipu.JPG"
 
 
 import { useRef } from "react"
