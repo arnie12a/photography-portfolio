@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.17",
     "@next/font": "^14.0.4",
     "classnames": "^2.5.1",
+    "lightgallery": "^2.7.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
