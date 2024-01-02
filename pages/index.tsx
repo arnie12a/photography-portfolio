@@ -18,24 +18,24 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 // Images
-import landscape1 from "../public/landscape/chicagoSkyline.jpg"
+//import landscape1 from "../public/landscape/chicagoSkyline.jpg"
 import landscape2 from "../public/landscape/grandCanyon.jpeg"
 import landscape3 from "../public/landscape/hanaleiBay.jpg"
-import landscape4 from "../public/landscape/kalalauLookout.jpg"
+//import landscape4 from "../public/landscape/kalalauLookout.jpg"
 import landscape5 from "../public/landscape/kauaiOcean.jpg"
-import landscape6 from "../public/landscape/napaliCoast.jpg"
+//import landscape6 from "../public/landscape/napaliCoast.jpg"
 import landscape7 from "../public/landscape/rioCelesteWaterfall.jpg"
-import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
+//import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
 import landscape9 from "../public/landscape/smokeyMountains.jpg"
-import landscape10 from "../public/landscape/theNarrows.jpg"
-import landscape11 from "../public/landscape/waimeaCanyon.jpg"
-import landscape12 from "../public/landscape/zionSunset.jpg"
+//import landscape10 from "../public/landscape/theNarrows.jpg"
+//import landscape11 from "../public/landscape/waimeaCanyon.jpg"
+//import landscape12 from "../public/landscape/zionSunset.jpg"
 
 
-import people1 from "../public/people/arnie.jpg"
+//import people1 from "../public/people/arnie.jpg"
 import people3 from "../public/people/lucas.jpg"
 import people4 from "../public/people/nathan.jpg"
-import people5 from "../public/people/alondraPoipu.jpg"
+//import people5 from "../public/people/alondraPoipu.jpg"
 
 
 import { useRef } from "react"
@@ -55,25 +55,25 @@ const tabs = [
   }
 ]
 const landscapeImages = [
-  landscape1,
+  //landscape1,
   landscape2,
   landscape3,
-  landscape4,
+  //landscape4,
   landscape5,
-  landscape6,
+  //landscape6,
   landscape7,
-  landscape8,
+  //landscape8,
   landscape9,
-  landscape10,
-  landscape11,
-  landscape12
+  //landscape10,
+  //landscape11,
+  //landscape12
 ]
 
 const peopleImages = [
-  people1,
+  //people1,
   people3,
   people4,
-  people5
+  //people5
 ]
 const images = landscapeImages.concat(peopleImages);
 
