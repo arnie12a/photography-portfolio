@@ -72,8 +72,8 @@ const landscapeImages = [
 const peopleImages = [
   people1,
   people3,
+  people5,
   people4,
-  people5
 ]
 const images = landscapeImages.concat(peopleImages);
 
