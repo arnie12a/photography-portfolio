@@ -17,8 +17,26 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-import landscape2 from "../public/landscape2.jpg"
-import landscape3 from "../public/landscape3.jpg"
+// Images
+import landscape1 from "../public/landscape/chicagoSkyline.jpg"
+import landscape2 from "../public/landscape/grandCanyon.jpeg"
+import landscape3 from "../public/landscape/hanaleiBay.jpg"
+import landscape4 from "../public/landscape/kalalauLookout.jpg"
+import landscape5 from "../public/landscape/kauaiOcean.jpg"
+import landscape6 from "../public/landscape/napaliCoast.jpg"
+import landscape7 from "../public/landscape/rioCelesteWaterfall.jpg"
+import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
+import landscape9 from "../public/landscape/smokeyMountains.jpg"
+import landscape10 from "../public/landscape/theNarrows.jpg"
+import landscape11 from "../public/landscape/waimeaCanyon.jpg"
+import landscape12 from "../public/landscape/zionSunset.jpg"
+
+
+import people1 from "../public/people/arnie.jpg"
+import people3 from "../public/people/lucas.jpg"
+import people4 from "../public/people/nathan.jpg"
+import people5 from "../public/people/alondraPoipu.jpg"
+
 
 import { useRef } from "react"
 
@@ -36,11 +54,39 @@ const tabs = [
     display: 'People'
   }
 ]
-
-const images = [
+const landscapeImages = [
+  landscape1,
   landscape2,
-  landscape3, 
+  landscape3,
+  landscape4,
+  landscape5,
+  landscape6,
+  landscape7,
+  landscape8,
+  landscape9,
+  landscape10,
+  landscape11,
+  landscape12
 ]
+
+const peopleImages = [
+  people1,
+  people3,
+  people4,
+  people5
+]
+const images = landscapeImages.concat(peopleImages);
+
+for (var i = images.length - 1; i > 0; i--) { 
+  
+  // Generate random number 
+  var j = Math.floor(Math.random() * (i + 1));
+             
+  var temp = images[i];
+  images[i] = images[j];
+  images[j] = temp;
+}
+
 
 export default function Home() {
 
@@ -88,17 +134,24 @@ export default function Home() {
                   className="flex gap-4" 
                   columnClassName=""
                 >
+
                   {images.map((image, index) => {
-                    return <Image
+                    return <div className="relative">
+                      <Image
                       key={image.src}
                       src={image}
                       alt="placeholder"
                       className="my-4 hover:opacity-70 cursor-pointer"
                       placeholder="blur"
-                      onClick={() => {
-                        lightboxRef.current?.openGallery(index);
-                      }}
+                      
                       />
+                      <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
+                        onClick={() => {
+                          lightboxRef.current?.openGallery(index);
+                        }}
+                      ></div>
+                    </div>
+                    
                   })}
                  
                 </Masonry>
@@ -120,8 +173,94 @@ export default function Home() {
                 />
 
               </Tab.Panel>
-              <Tab.Panel>Landscapes</Tab.Panel>
-              <Tab.Panel>People</Tab.Panel>
+              <Tab.Panel className="overflow-auto">
+              <Masonry 
+                  breakpointCols={2} 
+                  className="flex gap-4" 
+                  columnClassName=""
+                >
+
+                  {landscapeImages.map((image, index) => {
+                    return <div className="relative">
+                      <Image
+                      key={image.src}
+                      src={image}
+                      alt="placeholder"
+                      className="my-4 hover:opacity-70 cursor-pointer"
+                      placeholder="blur"
+                      
+                      />
+                      <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
+                        onClick={() => {
+                          lightboxRef.current?.openGallery(index);
+                        }}
+                      ></div>
+                    </div>
+                    
+                  })}
+                 
+                </Masonry>
+
+                <LightGalleryComponent
+                onInit={(ref) => {
+                  if (ref) {
+                    lightboxRef.current = ref.instance
+                  }
+                }}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+                dynamic
+                dynamicEl={landscapeImages.map(image => ({
+                  src: image.src, 
+                  thumb: image.src
+                }))}
+               
+                />
+              </Tab.Panel>
+              <Tab.Panel className="overflow-auto">
+              <Masonry 
+                  breakpointCols={2} 
+                  className="flex gap-4" 
+                  columnClassName=""
+                >
+
+                  {peopleImages.map((image, index) => {
+                    return <div className="relative">
+                      <Image
+                      key={image.src}
+                      src={image}
+                      alt="placeholder"
+                      className="my-4 hover:opacity-70 cursor-pointer"
+                      placeholder="blur"
+                      
+                      />
+                      <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
+                        onClick={() => {
+                          lightboxRef.current?.openGallery(index);
+                        }}
+                      ></div>
+                    </div>
+                    
+                  })}
+                 
+                </Masonry>
+
+                <LightGalleryComponent
+                onInit={(ref) => {
+                  if (ref) {
+                    lightboxRef.current = ref.instance
+                  }
+                }}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+                dynamic
+                dynamicEl={peopleImages.map(image => ({
+                  src: image.src, 
+                  thumb: image.src
+                }))}
+               
+                />
+              </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
         </div>
