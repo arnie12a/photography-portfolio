@@ -17,16 +17,10 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
+import landscape2 from "../public/landscape2.jpg"
+import landscape3 from "../public/landscape3.jpg"
 
-import landscape1 from "../public/landscape1.jpg";
-import landscape2 from "../public/landscape2.jpg";
-import landscape3 from "../public/landscape3.jpg";
-import landscape4 from "../public/landscape4.jpg";
-import landscape5 from "../public/landscape5.jpg";
 import { useRef } from "react"
-
-
-
 
 const tabs = [
   {
@@ -44,11 +38,8 @@ const tabs = [
 ]
 
 const images = [
-  landscape1,
   landscape2,
   landscape3, 
-  landscape4, 
-  landscape5
 ]
 
 export default function Home() {
