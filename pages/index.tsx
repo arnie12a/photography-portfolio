@@ -81,7 +81,8 @@ for (var i = images.length - 1; i > 0; i--) {
   
   // Generate random number 
   var j = Math.floor(Math.random() * (i + 1));
-             
+       
+  // Rearranges the images
   var temp = images[i];
   images[i] = images[j];
   images[j] = temp;
@@ -102,9 +103,9 @@ export default function Home() {
 
       <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10">
         <span className="uppercase text-lg font-medium">
-          Arnav Karnik Photography Portfolio
+          Arnav Karnik Photography
         </span>
-        <Link href="#" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
+        <Link href="/contact" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
           Get in touch 
           </Link>
 
@@ -268,7 +269,7 @@ export default function Home() {
       </main>
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-lg font-medium">
-        <p>Arnav Karnik Photograhpy Portfolio</p>
+        <p>Arnav Karnik Photography</p>
       </footer>
     </div>
     
