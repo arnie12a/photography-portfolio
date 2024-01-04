@@ -141,18 +141,6 @@ const peopleImages = [
 ]
 const images = landscapeImages.concat(peopleImages);
 
-for (var i = images.length - 1; i > 0; i--) { 
-  
-  // Generate random number 
-  var j = Math.floor(Math.random() * (i + 1));
-       
-  // Rearranges the images
-  var temp = images[i];
-  images[i] = images[j];
-  images[j] = temp;
-}
-
-
 export default function Home() {
 
   const lightboxRef = useRef<LightGallery | null>(null)
