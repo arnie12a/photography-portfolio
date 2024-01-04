@@ -55,25 +55,89 @@ const tabs = [
   }
 ]
 const landscapeImages = [
-  landscape1,
-  landscape2,
-  landscape3,
-  landscape4,
-  landscape5,
-  landscape6,
-  landscape7,
-  landscape8,
-  landscape9,
-  landscape10,
-  landscape11,
-  landscape12
+  {
+    image: landscape1, 
+    title: "Chicago Skyline",
+    description: "By: Arnav Karnik"
+  },
+  {
+    image: landscape2, 
+    title: "Grand Canyon",
+    description: "Hiked the South Kaibab Trail to Skeleton Point"
+  },
+  {
+    image: landscape3, 
+    title: "Hanelei Bay, Kauai",
+    description: "My favorite picture taken in Kauai"
+  },
+  {
+    image: landscape4, 
+    title: "Kalalau Lookout",
+    description: "Loved the contrast between the lush green nature and blue ocean"
+  },
+  {
+    image: landscape5, 
+    title: "Ocean Shore on Kauai",
+    description: "Most beautiful light blue water"
+  },
+  {
+    image: landscape6, 
+    title: "Napali Coast",
+    description: "What a stunning coastline showcasing natures sheer power"
+  },
+  {
+    image: landscape7, 
+    title: "Rio Celeste Waterfall",
+    description: "The sulfer allows the baby blue water"
+  },
+  {
+    image: landscape8, 
+    title: "Smokey Mountains Sunset",
+    description: "By: Arnav Karnik"
+  },
+  {
+    image: landscape9, 
+    title: "Smokey Mountains",
+    description: "Loved how extensive the valleys are"
+  },
+  {
+    image: landscape10, 
+    title: "The Narrows",
+    description: "By: Arnav Karnik"
+  },
+  {
+    image: landscape11, 
+    title: "Waimea Canyon",
+    description: "By: Arnav Karnik"
+  },
+  {
+    image: landscape12, 
+    title: "Zion National Park Sunset",
+    description: "By: Arnav Karnik"
+  }
 ]
 
 const peopleImages = [
-  people1,
-  people3,
-  people5,
-  people4,
+  {
+    image: people1, 
+    title: "Arnav Karnik",
+    description: "I aspire to become a photographer"
+  },
+  {
+    image: people3, 
+    title: "Lucas",
+    description: "Scavenging what recipes to cook"
+  },
+  {
+    image: people5, 
+    title: "Alondra",
+    description: "On a morning walk in Poipu"
+  },
+  {
+    image: people4, 
+    title: "Nathan",
+    description: "Trying to find the best apples to pick"
+  }
 ]
 const images = landscapeImages.concat(peopleImages);
 
@@ -128,7 +192,7 @@ export default function Home() {
               
               
             </Tab.List>
-            <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6">
+            <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6 rounded">
               <Tab.Panel className="overflow-auto">
                 <Masonry 
                   breakpointCols={2} 
@@ -139,10 +203,10 @@ export default function Home() {
                   {images.map((image, index) => {
                     return <div className="relative">
                       <Image
-                      key={image.src}
-                      src={image}
+                      key={image.image.src}
+                      src={image.image}
                       alt="placeholder"
-                      className="my-4 hover:opacity-70 cursor-pointer"
+                      className="my-4 hover:opacity-70 cursor-pointer rounded"
                       placeholder="blur"
                       
                       />
@@ -163,18 +227,20 @@ export default function Home() {
                     lightboxRef.current = ref.instance
                   }
                 }}
+                download={false}
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={images.map(image => ({
-                  src: image.src, 
-                  thumb: image.src
+                  src: image.image.src, 
+                  thumb: image.image.src,
+                  subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                
                 />
 
               </Tab.Panel>
-              <Tab.Panel className="overflow-auto">
+              <Tab.Panel className="overflow-auto rounded">
               <Masonry 
                   breakpointCols={2} 
                   className="flex gap-4" 
@@ -184,10 +250,10 @@ export default function Home() {
                   {landscapeImages.map((image, index) => {
                     return <div className="relative">
                       <Image
-                      key={image.src}
-                      src={image}
+                      key={image.image.src}
+                      src={image.image}
                       alt="placeholder"
-                      className="my-4 hover:opacity-70 cursor-pointer"
+                      className="my-4 hover:opacity-70 cursor-pointer rounded"
                       placeholder="blur"
                       
                       />
@@ -208,17 +274,19 @@ export default function Home() {
                     lightboxRef.current = ref.instance
                   }
                 }}
+                download={false}
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={landscapeImages.map(image => ({
-                  src: image.src, 
-                  thumb: image.src
+                  src: image.image.src, 
+                  thumb: image.image.src,
+                  subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                
                 />
               </Tab.Panel>
-              <Tab.Panel className="overflow-auto">
+              <Tab.Panel className="overflow-auto rounded">
               <Masonry 
                   breakpointCols={2} 
                   className="flex gap-4" 
@@ -228,10 +296,10 @@ export default function Home() {
                   {peopleImages.map((image, index) => {
                     return <div className="relative">
                       <Image
-                      key={image.src}
-                      src={image}
+                      key={image.image.src}
+                      src={image.image}
                       alt="placeholder"
-                      className="my-4 hover:opacity-70 cursor-pointer"
+                      className="my-4 hover:opacity-70 cursor-pointer rounded"
                       placeholder="blur"
                       
                       />
@@ -252,12 +320,14 @@ export default function Home() {
                     lightboxRef.current = ref.instance
                   }
                 }}
+                download={false}
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={peopleImages.map(image => ({
-                  src: image.src, 
-                  thumb: image.src
+                  src: image.image.src, 
+                  thumb: image.image.src,
+                  subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                
                 />
