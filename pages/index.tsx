@@ -157,9 +157,9 @@ export default function Home() {
         <span className="uppercase text-lg font-medium">
           Arnav Karnik Photography
         </span>
-        <Link href="/contact" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
-          Get in touch 
-          </Link>
+        <Link href="mailto:arnavkarnikphotos@gmail.com" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
+          Contact Me
+        </Link>
 
       </header>
 
