@@ -17,6 +17,8 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
+import { useEffect } from "react"
+
 // Images
 import landscape1 from "../public/landscape/chicagoSkyline.jpg"
 import landscape2 from "../public/landscape/grandCanyon.jpeg"
@@ -139,7 +141,99 @@ const peopleImages = [
     description: "Trying to find the best apples to pick"
   }
 ]
-const images = landscapeImages.concat(peopleImages);
+
+const images = [
+  {
+    image: people1, 
+    title: "Arnav Karnik",
+    description: "I aspire to become a photographer"
+  },
+  
+  {
+    image: landscape3, 
+    title: "Hanelei Bay, Kauai",
+    description: "My favorite picture taken in Kauai"
+  },
+  {
+    image: people5, 
+    title: "Alondra",
+    description: "On a morning walk in Poipu"
+  },
+  {
+    image: landscape4, 
+    title: "Kalalau Lookout",
+    description: "Loved the contrast between the lush green nature and blue ocean"
+  },
+  
+  
+  {
+    image: landscape2, 
+    title: "Grand Canyon",
+    description: "Hiked the South Kaibab Trail to Skeleton Point"
+  },
+  {
+    image: landscape5, 
+    title: "Ocean Shore on Kauai",
+    description: "Most beautiful light blue water"
+  },
+  {
+    image: landscape6, 
+    title: "Napali Coast",
+    description: "What a stunning coastline showcasing natures sheer power"
+  },
+  {
+    image: landscape8, 
+    title: "Smokey Mountains Sunset",
+    description: "By: Arnav Karnik"
+  },
+  
+  {
+    image: landscape11, 
+    title: "Waimea Canyon",
+    description: "By: Arnav Karnik"
+  },
+  {
+    image: people3, 
+    title: "Lucas",
+    description: "Scavenging what recipes to cook"
+  },
+  {
+    image: landscape10, 
+    title: "The Narrows",
+    description: "By: Arnav Karnik"
+  },
+  {
+    image: landscape7, 
+    title: "Rio Celeste Waterfall",
+    description: "The sulfer allows the baby blue water"
+  },
+  {
+    image: people4, 
+    title: "Nathan",
+    description: "Trying to find the best apples to pick"
+  },
+  {
+    image: landscape1, 
+    title: "Chicago Skyline",
+    description: "By: Arnav Karnik"
+  },
+  
+  
+  {
+    image: landscape9, 
+    title: "Smokey Mountains",
+    description: "Loved how extensive the valleys are"
+  },
+  
+  
+  
+  {
+    image: landscape12, 
+    title: "Zion National Park Sunset",
+    description: "By: Arnav Karnik"
+  },
+  
+]
 
 export default function Home() {
 
