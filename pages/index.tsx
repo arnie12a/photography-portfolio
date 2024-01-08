@@ -32,7 +32,7 @@ import landscape9 from "../public/landscape/smokeyMountains.jpg"
 import landscape10 from "../public/landscape/theNarrows.jpg"
 import landscape11 from "../public/landscape/waimeaCanyon.jpg"
 import landscape12 from "../public/landscape/zionSunset.jpg"
-
+import landscape13 from "../public/landscape/zionCarsBackdrop.jpg"
 
 import people1 from "../public/people/arnie.jpg"
 import people3 from "../public/people/lucas.jpg"
@@ -116,6 +116,11 @@ const landscapeImages = [
     image: landscape12, 
     title: "Zion National Park Sunset",
     description: "Love looking at the glowing vivid orange cliffs"
+  },
+  {
+    image: landscape13, 
+    title: "Zion National Park",
+    description: "Felt like I was in the movie Cars"
   },
   
 ]
@@ -225,6 +230,11 @@ const images = [
     image: landscape12, 
     title: "Zion National Park Sunset",
     description: "Love looking at the glowing vivid orange cliffs"
+  },
+  {
+    image: landscape13, 
+    title: "Zion National Park",
+    description: "Felt like I was in the movie Cars"
   },
   
 ]
