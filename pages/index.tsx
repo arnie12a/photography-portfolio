@@ -252,7 +252,7 @@ export default function Home() {
       </Head>
 
       <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10">
-        <span className="uppercase text-lg font-medium">
+        <span className="uppercase text-lg font-large">
           Arnav Karnik Photography
         </span>
         <Link href="mailto:arnavkarnikphotos@gmail.com" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
