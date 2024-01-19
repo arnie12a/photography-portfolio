@@ -39,13 +39,15 @@ const tabs = [
   {
     key: 'people',
     display: 'People'
+  }, 
+  {
+    key: 'Travel', 
+    display: 'Travel'
   }
 ]
 export default function Home() {
 
-
   const lightboxRef = useRef<LightGallery | null>(null)
-
 
   return (
     <div className="h-full bg-stone-950 overflow-auto">
