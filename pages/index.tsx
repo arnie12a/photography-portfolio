@@ -237,10 +237,6 @@ const tabs = [
   {
     key: 'people',
     display: 'People'
-  }, 
-  {
-    key: 'Travel', 
-    display: 'Travel'
   }
 ]
 export default function Home() {
