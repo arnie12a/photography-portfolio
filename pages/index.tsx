@@ -17,7 +17,10 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-import { landscapeImages, peopleImages, allImages } from "./imageData"
+import landscapeImages from "./landscapeData";
+import peopleImages from "./peopleData";
+import allImages from "./imageData";
+
 
 import { useRef } from "react"
 
@@ -84,6 +87,7 @@ export default function Home() {
                   breakpointCols={2} 
                   className="flex gap-4" 
                   columnClassName=""
+                  key={1}
                 >
 
                   {allImages.map((image, index) => {
@@ -131,6 +135,7 @@ export default function Home() {
                   breakpointCols={2} 
                   className="flex gap-4" 
                   columnClassName=""
+                  key={2}
                 >
 
                   {landscapeImages.map((image, index) => {
@@ -177,6 +182,7 @@ export default function Home() {
                   breakpointCols={2} 
                   className="flex gap-4" 
                   columnClassName=""
+                  key={3}
                 >
 
                   {peopleImages.map((image, index) => {
