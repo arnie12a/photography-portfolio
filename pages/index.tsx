@@ -5,21 +5,27 @@ import Masonry from 'react-masonry-css'
 import classNames from 'classnames'
 import Image from "next/image"
 
+
 import type {LightGallery} from 'lightgallery/lightgallery'
 import LightGalleryComponent from 'lightgallery/react';
+
 
 // import styles
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
+
 // import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
+
 import { landscapeImages, peopleImages, allImages } from "./imageData"
 
+
 import { useRef } from "react"
+
 
 const tabs = [
   {
@@ -37,7 +43,9 @@ const tabs = [
 ]
 export default function Home() {
 
+
   const lightboxRef = useRef<LightGallery | null>(null)
+
 
   return (
     <div className="h-full bg-stone-950 overflow-auto">
@@ -47,6 +55,7 @@ export default function Home() {
         <link rel="icon" href="/camera.png" />
       </Head>
 
+
       <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10">
         <span className="uppercase text-lg font-large">
           Arnav Karnik Photography
@@ -55,7 +64,9 @@ export default function Home() {
           Contact Me
         </Link>
 
+
       </header>
+
 
       <main className="pt-[110px]">
         <div className="flex flex-col items-center h-full">
@@ -71,16 +82,17 @@ export default function Home() {
               </Tab>
               })
               }
-              
-              
+             
+             
             </Tab.List>
             <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6 rounded">
               <Tab.Panel className="overflow-auto">
-                <Masonry 
-                  breakpointCols={2} 
-                  className="flex gap-4" 
+                <Masonry
+                  breakpointCols={2}
+                  className="flex gap-4"
                   columnClassName=""
                 >
+
 
                   {allImages.map((image, index) => {
                     return <div className="relative">
@@ -90,7 +102,7 @@ export default function Home() {
                       alt="placeholder"
                       className="my-4 hover:opacity-70 cursor-pointer rounded"
                       placeholder="blur"
-                      
+                     
                       />
                       <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
                         onClick={() => {
@@ -98,10 +110,11 @@ export default function Home() {
                         }}
                       ></div>
                     </div>
-                    
+                   
                   })}
                  
                 </Masonry>
+
 
                 <LightGalleryComponent
                 onInit={(ref) => {
@@ -114,20 +127,22 @@ export default function Home() {
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={allImages.map(image => ({
-                  src: image.image.src, 
+                  src: image.image.src,
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                
                 />
 
+
               </Tab.Panel>
               <Tab.Panel className="overflow-auto rounded">
-              <Masonry 
-                  breakpointCols={2} 
-                  className="flex gap-4" 
+              <Masonry
+                  breakpointCols={2}
+                  className="flex gap-4"
                   columnClassName=""
                 >
+
 
                   {landscapeImages.map((image, index) => {
                     return <div className="relative">
@@ -137,7 +152,7 @@ export default function Home() {
                       alt="placeholder"
                       className="my-4 hover:opacity-70 cursor-pointer rounded"
                       placeholder="blur"
-                      
+                     
                       />
                       <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
                         onClick={() => {
@@ -145,10 +160,11 @@ export default function Home() {
                         }}
                       ></div>
                     </div>
-                    
+                   
                   })}
                  
                 </Masonry>
+
 
                 <LightGalleryComponent
                 onInit={(ref) => {
@@ -161,7 +177,7 @@ export default function Home() {
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={landscapeImages.map(image => ({
-                  src: image.image.src, 
+                  src: image.image.src,
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
@@ -169,11 +185,12 @@ export default function Home() {
                 />
               </Tab.Panel>
               <Tab.Panel className="overflow-auto rounded">
-              <Masonry 
-                  breakpointCols={2} 
-                  className="flex gap-4" 
+              <Masonry
+                  breakpointCols={2}
+                  className="flex gap-4"
                   columnClassName=""
                 >
+
 
                   {peopleImages.map((image, index) => {
                     return <div className="relative">
@@ -183,7 +200,7 @@ export default function Home() {
                       alt="placeholder"
                       className="my-4 hover:opacity-70 cursor-pointer rounded"
                       placeholder="blur"
-                      
+                     
                       />
                       <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
                         onClick={() => {
@@ -191,10 +208,11 @@ export default function Home() {
                         }}
                       ></div>
                     </div>
-                    
+                   
                   })}
                  
                 </Masonry>
+
 
                 <LightGalleryComponent
                 onInit={(ref) => {
@@ -207,7 +225,7 @@ export default function Home() {
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={peopleImages.map(image => ({
-                  src: image.image.src, 
+                  src: image.image.src,
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
@@ -217,13 +235,15 @@ export default function Home() {
             </Tab.Panels>
           </Tab.Group>
         </div>
-    
+   
       </main>
+
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-lg font-medium">
         <p>Arnav Karnik Photography</p>
       </footer>
     </div>
-    
+   
   )
 }
+

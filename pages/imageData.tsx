@@ -23,7 +23,6 @@ const landscapeImages: Array<{
     image: StaticImageData;
     title: string;
     description: string;
-    // Add other properties as needed
   }> = [
     {
       image: landscape1, 
