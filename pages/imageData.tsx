@@ -23,71 +23,85 @@ const landscapeImages: Array<{
     image: StaticImageData;
     title: string;
     description: string;
+    key: number;
   }> = [
     {
       image: landscape1, 
       title: "Chicago Skyline",
-      description: "The beauty of human development"
+      description: "The beauty of human development",
+      key: 10
     },
     {
       image: landscape10, 
       title: "Zion National Park: <i>The Narrows</i>",
-      description: "Favorite hike"
+      description: "Favorite hike",
+      key: 100
     },
     {
       image: landscape2, 
       title: "Grand Canyon National Park",
-      description: "Hiked the South Kaibab Trail to Skeleton Point"
+      description: "Hiked the South Kaibab Trail to Skeleton Point",
+      key: 20
     },
     {
       image: landscape3, 
       title: "Hanelei Bay, Kauai",
-      description: "My favorite place in Kauai"
+      description: "My favorite place in Kauai",
+      key: 30
     },
     {
       image: landscape4, 
       title: "Location: Kalalau Lookout",
-      description: "Clear skies make for the best views here"
+      description: "Clear skies make for the best views here",
+      key: 40
     },
     {
       image: landscape5, 
       title: "Ocean Shore in Princeville, Kauai",
-      description: "Most beautiful turquoise water"
+      description: "Most beautiful turquoise water",
+      key: 50
     },
     {
       image: landscape6, 
       title: "The Napali Coast",
-      description: "What a stunning coastline showcasing natures sheer power"
+      description: "What a stunning coastline showcasing natures sheer power",
+      key: 60
     },
     {
       image: landscape7, 
       title: "Costa Rica: <i>Rio Celeste Waterfall</i>",
-      description: "A chemical reaction allows for the baby blue water"
+      description: "A chemical reaction allows for the baby blue water",
+      key: 70
     },
     {
       image: landscape8, 
       title: "Smokey Mountains National Park Sunset",
-      description: "Best sunset I have ever captured"
+      description: "Best sunset I have ever captured",
+      key: 80
     },
     {
       image: landscape9, 
       title: "Smokey Mountains National Park",
-      description: "Looks like the valleys extend forever"
+      description: "Looks like the valleys extend forever",
+      key: 90
     },
     {
       image: landscape11, 
       title: "Waimea Canyon State Park",
-      description: "Photo By: Arnav Karnik"
+      description: "Photo By: Arnav Karnik",
+      key: 110
     },
     {
       image: landscape12, 
       title: "Zion National Park Sunset",
-      description: "Love looking at the glowing vivid orange cliffs"
+      description: "Love looking at the glowing vivid orange cliffs",
+      key: 120
     },
     {
       image: landscape13, 
       title: "Zion National Park",
-      description: "Felt like I was in the movie Cars"
+      description: "Felt like I was in the movie Cars",
+      key: 130
     },
     
   ];
@@ -96,27 +110,31 @@ const landscapeImages: Array<{
     image: StaticImageData;
     title: string;
     description: string;
-    // Add other properties as needed
+    key: number;
   }> = [
     {
         image: people1, 
         title: "Arnav Karnik",
-        description: "Welcome to my Photography Portfolio."
+        description: "Welcome to my Photography Portfolio.",
+        key: 1110
       },
       {
         image: people3, 
         title: "Lucas",
-        description: "Scavenging for which recipe to cook next"
+        description: "Scavenging for which recipe to cook next",
+        key: 3330
       },
       {
         image: people5, 
         title: "Alondra",
-        description: "On a morning stroll in Poipu"
+        description: "On a morning stroll in Poipu",
+        key: 5550
       },
       {
         image: people4, 
         title: "Nathan",
-        description: "Searching for apples to make apple pie"
+        description: "Searching for apples to make apple pie",
+        key: 4440
       },
   ];
   
@@ -124,94 +142,111 @@ const landscapeImages: Array<{
     image: StaticImageData;
     title: string;
     description: string;
-    // Add other properties as needed
+    key: number;
   }> = [
     {
         image: people1, 
         title: "Arnav Karnik",
-        description: "Welcome to my Photography Portfolio."
+        description: "Welcome to my Photography Portfolio.",
+        key: 444
       },
       
       {
         image: landscape3, 
         title: "Hanelei Bay, Kauai",
-        description: "My favorite place in Kauai"
+        description: "My favorite place in Kauai",
+        key: 3
       },
       {
         image: people5, 
         title: "Alondra",
-        description: "On a morning stroll in Poipu"
+        description: "On a morning stroll in Poipu",
+        key: 555
       },
       {
         image: landscape4, 
         title: "Location: Kalalau Lookout",
-        description: "Clear skies make for the best views here"
+        description: "Clear skies make for the best views here",
+        key: 4
       },
       {
         image: landscape2, 
         title: "Grand Canyon National Park",
-        description: "Hiked the South Kaibab Trail to Skeleton Point"
+        description: "Hiked the South Kaibab Trail to Skeleton Point",
+        key: 2
       },
       {
         image: landscape5, 
         title: "Ocean Shore in Princeville, Kauai",
-        description: "Most beautiful turquoise water"
+        description: "Most beautiful turquoise water",
+        key: 5
       },
       {
         image: landscape6, 
         title: "The Napali Coast",
-        description: "What a stunning coastline showcasing natures sheer power"
+        description: "What a stunning coastline showcasing natures sheer power",
+        key: 6
       },
       {
         image: landscape8, 
         title: "Smokey Mountains National Park",
-        description: "Best sunset I have ever captured"
+        description: "Best sunset I have ever captured",
+        key: 8
       },
       
       {
         image: landscape11, 
         title: "Waimea Canyon State Park",
-        description: "Photo By: Arnav Karnik"
+        description: "Photo By: Arnav Karnik",
+        key: 11
       },
       {
         image: people3, 
         title: "Lucas",
-        description: "Scavenging for which recipe to cook next"
+        description: "Scavenging for which recipe to cook next",
+        key: 333
       },
       {
         image: landscape10, 
         title: "Zion National Park: <i>The Narrows</i>",
-        description: "Favorite hike"
+        description: "Favorite hike",
+        key: 110
       },
       {
         image: landscape7, 
         title: "Costa Rica: <i>Rio Celeste Waterfall</i>",
-        description: "A chemical reaction allows for the baby blue water"
+        description: "A chemical reaction allows for the baby blue water",
+        key: 7
       },
       {
         image: people4, 
         title: "Nathan",
-        description: "Searching for apples to make apple pie"
+        description: "Searching for apples to make apple pie",
+        key: 444
       },
       {
         image: landscape1, 
         title: "Chicago Skyline",
-        description: "The beauty of human development"
+        description: "The beauty of human development",
+        key: 1
       },
       {
         image: landscape9, 
         title: "Smokey Mountains National Park",
-        description: "Looks like the valleys extend forever"
+        description: "Looks like the valleys extend forever",
+        key: 9
       },
       {
         image: landscape12, 
         title: "Zion National Park Sunset",
-        description: "Love looking at the glowing vivid orange cliffs"
+        description: "Love looking at the glowing vivid orange cliffs",
+        key: 12
       },
       {
         image: landscape13, 
         title: "Zion National Park",
-        description: "Felt like I was in the movie Cars"
+        description: "Felt like I was in the movie Cars",
+        key: 13
       },
   ];
   export { landscapeImages, peopleImages, allImages };

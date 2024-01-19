@@ -90,6 +90,7 @@ export default function Home() {
             <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6 rounded">
               <Tab.Panel className="overflow-auto">
                 <Masonry
+                  key={0}
                   breakpointCols={2}
                   className="flex gap-4"
                   columnClassName=""
@@ -129,6 +130,7 @@ export default function Home() {
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={allImages.map(image => ({
+                  key: image.image.src,
                   src: image.image.src,
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
@@ -140,6 +142,7 @@ export default function Home() {
               </Tab.Panel>
               <Tab.Panel className="overflow-auto rounded">
               <Masonry
+                  key={1}
                   breakpointCols={2}
                   className="flex gap-4"
                   columnClassName=""
@@ -179,6 +182,7 @@ export default function Home() {
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={landscapeImages.map(image => ({
+                  key: image.image.src,
                   src: image.image.src,
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
@@ -188,6 +192,7 @@ export default function Home() {
               </Tab.Panel>
               <Tab.Panel className="overflow-auto rounded">
               <Masonry
+                  key={2}
                   breakpointCols={2}
                   className="flex gap-4"
                   columnClassName=""
@@ -227,6 +232,7 @@ export default function Home() {
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
                 dynamicEl={peopleImages.map(image => ({
+                  key: image.image.src,
                   src: image.image.src,
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
