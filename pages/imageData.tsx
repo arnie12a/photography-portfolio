@@ -249,4 +249,4 @@ const landscapeImages: Array<{
         key: 13
       },
   ];
-  export { landscapeImages, peopleImages, allImages };
+  export default { landscapeImages, peopleImages, allImages };
