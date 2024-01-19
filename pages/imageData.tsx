@@ -23,7 +23,11 @@ const landscapeImages: Array<{
     image: StaticImageData;
     title: string;
     description: string;
+<<<<<<< HEAD
     key: number;
+=======
+    // Add other properties as needed
+>>>>>>> parent of 58ef708 (finsihed)
   }> = [
     {
       image: landscape1, 
