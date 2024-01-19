@@ -21,8 +21,9 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 
-import { landscapeImages, peopleImages, allImages } from "./imageData"
-
+import landscapeImages from "./imageData";
+import peopleImages from "./imageData";
+import allImages from "./imageData";
 
 import { useRef } from "react"
 
@@ -46,7 +47,7 @@ const tabs = [
   }
 ]
 export default function Home() {
-
+  console.log(allImages)
   const lightboxRef = useRef<LightGallery | null>(null)
 
   return (
