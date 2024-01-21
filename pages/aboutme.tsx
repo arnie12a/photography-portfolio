@@ -35,8 +35,8 @@ export default function Home() {
             <div className="md:w-1/2 md:pl-8">
               <h2 className="text-2xl font-bold mb-4">Arnav Karnik</h2>
               <p>
-                I am an aspiring photographer. I love exploring new places and capturing its beauty. 
-                My portfolio showcases all my favorite pictures I have taken on all my adventures. 
+                I am an aspiring professional photographer. I love exploring new places and capturing their beauty. 
+                My portfolio showcases my favorite pictures I have taken on my adventures. 
                 I am looking forward to collaborating with others and seeing where photography takes me!
               </p><br/>
               <p className="inline-block relative">
