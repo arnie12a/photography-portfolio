@@ -25,19 +25,10 @@ export default function Home() {
   
         </header>
   
-        <main className="pt-[10px]">
-            <div className="text-white-500 m-32 grid h-16 place-items-center">
-                
-                
-                <span className="inline-grid grid-cols-2 gap-4">
-                    <span>
-                        <Image src={profilePic} alt="profile picture" className="rounded w-64 h-auto"/>
-                    </span>
-                    <span className="flex items-center justify-center">
-                        <h1 className="text-lg">Arnav Karnik</h1>
-                        <p className="text-white-600"></p>
-                    </span>
-                </span>
+        <main className="pt-[110px]">
+            <div className="flex items-center justify-center">
+                <h1>About Me</h1>
+
             </div>
         </main>
   
