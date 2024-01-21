@@ -25,11 +25,30 @@ export default function Home() {
   
         </header>
   
-        <main className="pt-[110px]">
-            <div className="flex items-center justify-center">
-                <h1>About Me</h1>
+        <main className="pt-[110px]"> 
 
+          <div className="container mx-auto p-8 md:flex">
+            <div className="md:w-1/2 mb-4 md:mb-0 md:h-auto">
+              <Image src={profilePic} alt="Your Picture" className="w-96 h-auto object-cover rounded" />
             </div>
+
+            <div className="md:w-1/2 md:pl-8">
+              <h2 className="text-2xl font-bold mb-4">Arnav Karnik</h2>
+              <p>
+                I am an aspiring photographer. I love exploring new places and capturing its beauty. 
+                My portfolio showcases all my favorite pictures I have taken.
+              </p><br></br>
+              <p>
+                This upcoming month I am traveling to India which I am escatic for. Stay tuned for some 
+                India pictures!
+              </p>
+              <br/>
+              <a href="https://www.instagram.com/arnavkarnikphotos/">Instagram</a><br/>
+              <a href="mailto:arnavkarnikphotos@gmail.com">Contact Me</a>
+            </div>
+          </div>
+
+
         </main>
   
         
