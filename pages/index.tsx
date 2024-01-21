@@ -239,7 +239,8 @@ const tabs = [
     display: 'People'
   }
 ]
-export default function Home() {
+
+export default function AboutMe() {
 
   const lightboxRef = useRef<LightGallery | null>(null)
 
@@ -255,8 +256,8 @@ export default function Home() {
         <span className="uppercase text-lg font-large">
           Arnav Karnik Photography
         </span>
-        <Link href="mailto:arnavkarnikphotos@gmail.com" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
-          Contact Me
+        <Link href="/aboutme" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
+          About Me
         </Link>
 
       </header>
