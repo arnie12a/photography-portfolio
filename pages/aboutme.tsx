@@ -40,13 +40,11 @@ export default function Home() {
                 I am looking forward to collaborating with others and seeing where photography takes me!
               </p><br/>
               <p className="inline-block relative">
-                This upcoming month I am traveling to &nbsp;
+                This upcoming month I am traveling and exploring around &nbsp;
                 <span className="relative inline-block">
                   <img src="india.png" alt="indian flag" className="inline-block w-8" />
                   &nbsp;India    
                 </span>
-                &nbsp;
-                and exploring a bunch of places with my parents. 
               </p>
               <br/><br />
               <p>Stay tuned...</p>
