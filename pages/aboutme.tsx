@@ -42,8 +42,9 @@ export default function Home() {
               <p className="inline-block relative">
                 This upcoming month I am traveling and exploring around &nbsp;
                 <span className="relative inline-block">
+                  India  &nbsp;
                   <img src="india.png" alt="indian flag" className="inline-block w-8" />
-                  &nbsp;India    
+                    
                 </span>
               </p>
               <br/><br />
