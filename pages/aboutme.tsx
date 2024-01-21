@@ -29,7 +29,7 @@ export default function Home() {
 
           <div className="container mx-auto p-8 md:flex">
             <div className="md:w-1/2 mb-4 md:mb-0 md:h-auto">
-              <Image src={profilePic} alt="Your Picture" className="w-96 h-auto object-cover rounded" />
+              <Image src={profilePic} alt="Your Picture" className="w-96 h-auto object-cover rounded pl-16" />
             </div>
 
             <div className="md:w-1/2 md:pl-8">
