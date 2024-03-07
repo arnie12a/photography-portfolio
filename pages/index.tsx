@@ -17,10 +17,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
-//import landscapeImages from "./landscapeData";
-//import peopleImages from "./peopleData";
-//import allImages from "./imageData";
-// Images
+// Landscape Images
 import landscape1 from "../public/landscape/chicagoSkyline.jpg"
 import landscape2 from "../public/landscape/grandCanyon.jpeg"
 import landscape3 from "../public/landscape/hanaleiBay.jpg"
@@ -35,10 +32,15 @@ import landscape11 from "../public/landscape/waimeaCanyon.jpg"
 import landscape12 from "../public/landscape/zionSunset.jpg"
 import landscape13 from "../public/landscape/zionCarsBackdrop.jpg"
 
+// People Images
 import people1 from "../public/people/arnie.jpg"
 import people3 from "../public/people/lucas.jpg"
 import people4 from "../public/people/nathan.jpg"
 import people5 from "../public/people/alondraPoipu.jpg"
+
+// Animal Images
+import animal1 from "../public/animals/goat.jpg"
+import animal2 from "../public/animals/running.jpg"
 
 const landscapeImages = [
   {
@@ -132,94 +134,19 @@ const peopleImages = [
     },
 ];
 
-const allImages = [
+const animals = [
   {
-      image: people1, 
-      title: "Arnav Karnik",
-      description: "Welcome to my Photography Portfolio.",
+      image: animal1, 
+      title: "Mountain Goat",
+      description: "Driving through Zion National Park and this guy wanted a photoshoot",
     },
     
     {
-      image: landscape3, 
-      title: "Hanelei Bay, Kauai",
-      description: "My favorite place in Kauai",
-    },
-    {
-      image: people5, 
-      title: "Alondra",
-      description: "On a morning stroll in Poipu",
-    },
-    {
-      image: landscape4, 
-      title: "Location: Kalalau Lookout",
-      description: "Clear skies make for the best views here",
-    },
-    {
-      image: landscape2, 
-      title: "Grand Canyon National Park",
-      description: "Hiked the South Kaibab Trail to Skeleton Point",
-    },
-    {
-      image: landscape5, 
-      title: "Ocean Shore in Princeville, Kauai",
-      description: "Most beautiful turquoise water",
-    },
-    {
-      image: landscape6, 
-      title: "The Napali Coast",
-      description: "What a stunning coastline showcasing natures sheer power",
-    },
-    {
-      image: landscape8, 
-      title: "Smokey Mountains National Park",
-      description: "Best sunset I have ever captured",
+      image: animal2, 
+      title: "Cute doggo",
+      description: "Puppies are so full of energy!",
     },
     
-    {
-      image: landscape11, 
-      title: "Waimea Canyon State Park",
-      description: "Photo By: Arnav Karnik",
-    },
-    {
-      image: people3, 
-      title: "Lucas",
-      description: "Scavenging for which recipe to cook next",
-    },
-    {
-      image: landscape10, 
-      title: "Zion National Park: <i>The Narrows</i>",
-      description: "Favorite hike",
-    },
-    {
-      image: landscape7, 
-      title: "Costa Rica: <i>Rio Celeste Waterfall</i>",
-      description: "A chemical reaction allows for the baby blue water",
-    },
-    {
-      image: people4, 
-      title: "Nathan",
-      description: "Searching for apples to make apple pie",
-    },
-    {
-      image: landscape1, 
-      title: "Chicago Skyline",
-      description: "The beauty of human development",
-    },
-    {
-      image: landscape9, 
-      title: "Smokey Mountains National Park",
-      description: "Looks like the valleys extend forever",
-    },
-    {
-      image: landscape12, 
-      title: "Zion National Park Sunset",
-      description: "Love looking at the glowing vivid orange cliffs",
-    },
-    {
-      image: landscape13, 
-      title: "Zion National Park",
-      description: "Felt like I was in the movie Cars",
-    },
 ];
 
 
@@ -227,16 +154,16 @@ import { useRef } from "react"
 
 const tabs = [
   {
-    key: 'all',
-    display: 'All'
+    key: 'people',
+    display: 'People'
   },
   {
     key: 'landscapes',
     display: 'Landscapes'
   },
   {
-    key: 'people',
-    display: 'People'
+    key: 'animals',
+    display: 'Animals'
   }
 ]
 
@@ -287,7 +214,7 @@ export default function AboutMe() {
                   columnClassName=""
                 >
 
-                  {allImages.map((image, index) => {
+                  {animals.map((image, index) => {
                     return <div className="relative">
                       <Image
                       key={image.image.src}
@@ -318,7 +245,7 @@ export default function AboutMe() {
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
-                dynamicEl={allImages.map(image => ({
+                dynamicEl={animals.map(image => ({
                   src: image.image.src, 
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
