@@ -134,7 +134,7 @@ const peopleImages = [
     },
 ];
 
-const animals = [
+const animalImages = [
   {
       image: animal1, 
       title: "Mountain Goat",
@@ -214,7 +214,7 @@ export default function AboutMe() {
                   columnClassName=""
                 >
 
-                  {animals.map((image, index) => {
+                  {peopleImages.map((image, index) => {
                     return <div className="relative">
                       <Image
                       key={image.image.src}
@@ -245,7 +245,7 @@ export default function AboutMe() {
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
-                dynamicEl={animals.map(image => ({
+                dynamicEl={peopleImages.map(image => ({
                   src: image.image.src, 
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
@@ -308,7 +308,7 @@ export default function AboutMe() {
                   key={3}
                 >
 
-                  {peopleImages.map((image, index) => {
+                  {animalImages.map((image, index) => {
                     return <div className="relative">
                       <Image
                       key={image.image.src}
@@ -339,7 +339,7 @@ export default function AboutMe() {
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 dynamic
-                dynamicEl={peopleImages.map(image => ({
+                dynamicEl={animalImages.map(image => ({
                   src: image.image.src, 
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
