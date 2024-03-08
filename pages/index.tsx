@@ -19,18 +19,18 @@ import lgZoom from 'lightgallery/plugins/zoom';
 
 // Landscape Images
 import landscape1 from "../public/landscape/chicagoSkyline.jpg"
-import landscape2 from "../public/landscape/grandCanyon.jpeg"
 import landscape3 from "../public/landscape/hanaleiBay.jpg"
 import landscape4 from "../public/landscape/kalalauLookout.jpg"
 import landscape5 from "../public/landscape/kauaiOcean.jpg"
-import landscape6 from "../public/landscape/napaliCoast.jpg"
 import landscape7 from "../public/landscape/rioCelesteWaterfall.jpg"
 import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
-import landscape9 from "../public/landscape/smokeyMountains.jpg"
 import landscape10 from "../public/landscape/theNarrows.jpg"
 import landscape11 from "../public/landscape/waimeaCanyon.jpg"
-import landscape12 from "../public/landscape/zionSunset.jpg"
 import landscape13 from "../public/landscape/zionCarsBackdrop.jpg"
+import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
+import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
+import munnar from "../public/landscape/munnar.jpg"
+import sinahgadFort from "../public/landscape/sinahgadFort.jpg"
 
 // People Images
 import people1 from "../public/people/arnie.jpg"
@@ -41,6 +41,9 @@ import people5 from "../public/people/alondraPoipu.jpg"
 // Animal Images
 import animal1 from "../public/animals/goat.jpg"
 import animal2 from "../public/animals/running.jpg"
+import animal3 from "../public/animals/hilton.jpg"
+import animal4 from "../public/animals/lion.jpg"
+import animal5 from "../public/animals/monkey.jpg"
 
 const landscapeImages = [
   {
@@ -52,11 +55,6 @@ const landscapeImages = [
     image: landscape10, 
     title: "Zion National Park: <i>The Narrows</i>",
     description: "Favorite hike",
-  },
-  {
-    image: landscape2, 
-    title: "Grand Canyon National Park",
-    description: "Hiked the South Kaibab Trail to Skeleton Point",
   },
   {
     image: landscape3, 
@@ -74,11 +72,6 @@ const landscapeImages = [
     description: "Most beautiful turquoise water",
   },
   {
-    image: landscape6, 
-    title: "The Napali Coast",
-    description: "What a stunning coastline showcasing natures sheer power",
-  },
-  {
     image: landscape7, 
     title: "Costa Rica: <i>Rio Celeste Waterfall</i>",
     description: "A chemical reaction allows for the baby blue water",
@@ -89,24 +82,34 @@ const landscapeImages = [
     description: "Best sunset I have ever captured",
   },
   {
-    image: landscape9, 
-    title: "Smokey Mountains National Park",
-    description: "Looks like the valleys extend forever",
-  },
-  {
     image: landscape11, 
     title: "Waimea Canyon State Park",
     description: "Photo By: Arnav Karnik",
   },
   {
-    image: landscape12, 
-    title: "Zion National Park Sunset",
-    description: "Love looking at the glowing vivid orange cliffs",
-  },
-  {
     image: landscape13, 
     title: "Zion National Park",
     description: "Felt like I was in the movie Cars",
+  },
+  {
+    image: munnar, 
+    title: "Vines on Tree",
+    description: "Hotel had a bunch of these beautiful trees and I knew I had to capture this",
+  },
+  {
+    image: sinahgadFort, 
+    title: "Sinahgad Fort",
+    description: "What a beautiful view near Pune",
+  },
+  {
+    image: khanchenjunga, 
+    title: "Khanchenjunga",
+    description: "On the way to Tsongmo Lake, found this gem of a lookout",
+  },
+  {
+    image: bryceCanyon, 
+    title: "Bryce Canyon National Park",
+    description: "Seeing the Hoodoos fill the entire landscape was a lot to take in.",
   },
   
 ];
@@ -135,7 +138,7 @@ const peopleImages = [
 ];
 
 const animalImages = [
-  {
+    {
       image: animal1, 
       title: "Mountain Goat",
       description: "Driving through Zion National Park and this guy wanted a photoshoot",
@@ -146,7 +149,21 @@ const animalImages = [
       title: "Cute doggo",
       description: "Puppies are so full of energy!",
     },
-    
+    {
+      image: animal4, 
+      title: "Lioness",
+      description: "Bhannerghatta National Park, Bangalore",
+    },
+    {
+      image: animal3, 
+      title: "Hilton",
+      description: "Beautiful dog from Gangtok hotel",
+    },
+    {
+      image: animal5, 
+      title: "Monkey",
+      description: "Nandi Hills",
+    },
 ];
 
 
