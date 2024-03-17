@@ -18,11 +18,9 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 // Landscape Images
-import landscape1 from "../public/landscape/chicagoSkyline.jpg"
 import landscape3 from "../public/landscape/hanaleiBay.jpg"
 import landscape4 from "../public/landscape/kalalauLookout.jpg"
 import landscape5 from "../public/landscape/kauaiOcean.jpg"
-import landscape7 from "../public/landscape/rioCelesteWaterfall.jpg"
 import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
 import landscape10 from "../public/landscape/theNarrows.jpg"
 import landscape11 from "../public/landscape/waimeaCanyon.jpg"
@@ -47,11 +45,6 @@ import animal5 from "../public/animals/monkey.jpg"
 
 const landscapeImages = [
   {
-    image: landscape1, 
-    title: "Chicago Skyline",
-    description: "The beauty of human development",
-  },
-  {
     image: landscape10, 
     title: "Zion National Park: <i>The Narrows</i>",
     description: "Favorite hike",
@@ -72,11 +65,6 @@ const landscapeImages = [
     description: "Most beautiful turquoise water",
   },
   {
-    image: landscape7, 
-    title: "Costa Rica: <i>Rio Celeste Waterfall</i>",
-    description: "A chemical reaction allows for the baby blue water",
-  },
-  {
     image: landscape8, 
     title: "Smokey Mountains National Park Sunset",
     description: "Best sunset I have ever captured",
@@ -93,8 +81,8 @@ const landscapeImages = [
   },
   {
     image: munnar, 
-    title: "Vines on Tree",
-    description: "Hotel had a bunch of these beautiful trees and I knew I had to capture this",
+    title: "Munnar, India",
+    description: "Vines intertwining along the tree.",
   },
   {
     image: sinahgadFort, 
