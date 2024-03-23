@@ -45,18 +45,25 @@ import animal5 from "../public/animals/monkey.jpg"
 
 const landscapeImages = [
   {
-    image: landscape10, 
-    title: "Zion National Park: <i>The Narrows</i>",
-    description: "Favorite hike",
+    image: khanchenjunga, 
+    title: "Khanchenjunga, Sikkim",
+    description: "Feast your eyes at the world's third largest mountain",
   },
+  
   {
     image: landscape3, 
     title: "Hanelei Bay, Kauai",
     description: "My favorite place in Kauai",
   },
   {
+    image: landscape10, 
+    title: "Zion National Park: <i>The Narrows</i>, USA",
+    description: "Favorite hike",
+  },
+  
+  {
     image: landscape4, 
-    title: "Location: Kalalau Lookout",
+    title: "Kalalau Lookout, Kauai",
     description: "Clear skies make for the best views here",
   },
   {
@@ -66,17 +73,17 @@ const landscapeImages = [
   },
   {
     image: landscape8, 
-    title: "Smokey Mountains National Park Sunset",
+    title: "Smokey Mountains National Park, USA",
     description: "Best sunset I have ever captured",
   },
   {
     image: landscape11, 
-    title: "Waimea Canyon State Park",
+    title: "Waimea Canyon State Park, USA",
     description: "Photo By: Arnav Karnik",
   },
   {
     image: landscape13, 
-    title: "Zion National Park",
+    title: "Zion National Park, USA",
     description: "Felt like I was in the movie Cars",
   },
   {
@@ -86,17 +93,12 @@ const landscapeImages = [
   },
   {
     image: sinahgadFort, 
-    title: "Sinahgad Fort",
+    title: "Sinahgad Fort, India",
     description: "What a beautiful view near Pune",
   },
   {
-    image: khanchenjunga, 
-    title: "Khanchenjunga",
-    description: "On the way to Tsongmo Lake, found this gem of a lookout",
-  },
-  {
     image: bryceCanyon, 
-    title: "Bryce Canyon National Park",
+    title: "Bryce Canyon National Park, USA",
     description: "Seeing the Hoodoos fill the entire landscape was a lot to take in.",
   },
   
