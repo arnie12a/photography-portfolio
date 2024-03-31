@@ -28,7 +28,9 @@ import landscape13 from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import munnar from "../public/landscape/munnar.jpg"
-import sinahgadFort from "../public/landscape/sinahgadFort.jpg"
+import auroville from "../public/landscape/auroville.jpg"
+import raigad from "../public/landscape/raigad.jpg"
+
 
 // People Images
 import people1 from "../public/people/arnie.jpg"
@@ -42,6 +44,9 @@ import animal2 from "../public/animals/running.jpg"
 import animal3 from "../public/animals/hilton.jpg"
 import animal4 from "../public/animals/lion.jpg"
 import animal5 from "../public/animals/monkey.jpg"
+import buffalo from "../public/animals/buffalo.jpg"
+import dotter from "../public/animals/dotter.jpg"
+import elephants from "../public/animals/elephant.jpg"
 
 const landscapeImages = [
   {
@@ -60,11 +65,21 @@ const landscapeImages = [
     title: "Zion National Park: <i>The Narrows</i>, USA",
     description: "Favorite hike",
   },
+  {
+    image: auroville,
+    title: "Matrimandir, Auroville",
+    description: "A town where men and women of all countries are able to live in peace and harmony",
+  },
   
   {
     image: landscape4, 
     title: "Kalalau Lookout, Kauai",
     description: "Clear skies make for the best views here",
+  },
+  {
+    image: raigad,
+    title: "Raigad Fort",
+    description: "Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj",
   },
   {
     image: landscape5, 
@@ -92,11 +107,6 @@ const landscapeImages = [
     description: "Vines intertwining along the tree.",
   },
   {
-    image: sinahgadFort, 
-    title: "Sinahgad Fort, India",
-    description: "What a beautiful view near Pune",
-  },
-  {
     image: bryceCanyon, 
     title: "Bryce Canyon National Park, USA",
     description: "Seeing the Hoodoos fill the entire landscape was a lot to take in.",
@@ -107,8 +117,8 @@ const landscapeImages = [
 const peopleImages = [
   {
       image: people1, 
-      title: "Arnav Karnik",
-      description: "Welcome to my Photography Portfolio.",
+      title: "<h1>Arnav Karnik</h1>",
+      description: "<h3>Welcome to my Photography Portfolio.</h3><br><p>Here are a combination of my favorite photos</p>",
     },
     {
       image: people3, 
@@ -133,11 +143,25 @@ const animalImages = [
       title: "Mountain Goat",
       description: "Driving through Zion National Park and this guy wanted a photoshoot",
     },
-    
+    {
+      image: dotter,
+      title: "Dotter peering into the distance",
+      description: "",
+    },
     {
       image: animal2, 
       title: "Cute doggo",
-      description: "Puppies are so full of energy!",
+      description: "Puppies are so full of energy! Happy this fellow found herself a home.",
+    },
+    {
+      image: animal3, 
+      title: "Hilton",
+      description: "Beautiful dog from Gangtok hotel",
+    },
+    {
+      image: elephants,
+      title: "Elephant herd at sunset",
+      description: "",
     },
     {
       image: animal4, 
@@ -145,9 +169,9 @@ const animalImages = [
       description: "Bhannerghatta National Park, Bangalore",
     },
     {
-      image: animal3, 
-      title: "Hilton",
-      description: "Beautiful dog from Gangtok hotel",
+      image: buffalo,
+      title: "Buffalo taking a mud bath",
+      description: ""
     },
     {
       image: animal5, 
@@ -239,7 +263,6 @@ export default function AboutMe() {
                     </div>
                     
                   })}
-                 
                 </Masonry>
 
                 <LightGalleryComponent
@@ -257,7 +280,6 @@ export default function AboutMe() {
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
-               
                 />
 
               </Tab.Panel>
@@ -284,9 +306,7 @@ export default function AboutMe() {
                         }}
                       ></div>
                     </div>
-                    
                   })}
-                 
                 </Masonry>
 
                 <LightGalleryComponent
@@ -304,7 +324,6 @@ export default function AboutMe() {
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
-               
                 />
               </Tab.Panel>
               <Tab.Panel className="overflow-auto rounded">
@@ -333,7 +352,6 @@ export default function AboutMe() {
                     </div>
                     
                   })}
-                 
                 </Masonry>
 
                 <LightGalleryComponent
@@ -351,7 +369,6 @@ export default function AboutMe() {
                   thumb: image.image.src,
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
-               
                 />
               </Tab.Panel>
             </Tab.Panels>
