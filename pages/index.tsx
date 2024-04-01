@@ -51,55 +51,55 @@ import elephants from "../public/animals/elephant.jpg"
 const landscapeImages = [
   {
     image: khanchenjunga, 
-    title: "Khanchenjunga, Sikkim",
-    description: "Feast your eyes at the world's third largest mountain",
+    title: "Khanchenjunga",
+    description: "Standing at  28,169 feet, Khanchenjunga is the third highest mountain in the world.",
   },
   
   {
     image: landscape3, 
     title: "Hanelei Bay, Kauai",
-    description: "My favorite place in Kauai",
+    description: "By far my favorite place in Kauai.",
   },
   {
     image: landscape10, 
-    title: "Zion National Park: <i>The Narrows</i>, USA",
-    description: "Favorite hike",
+    title: "Zion National Park: <i>The Narrows</i>",
+    description: "Definitely my favorite hike I've been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience.",
   },
   {
     image: auroville,
-    title: "Matrimandir, Auroville",
-    description: "A town where men and women of all countries are able to live in peace and harmony",
+    title: "Auroville, India",
+    description: "A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.",
   },
   
   {
     image: landscape4, 
-    title: "Kalalau Lookout, Kauai",
-    description: "Clear skies make for the best views here",
+    title: "Kalalau Valley Lookout",
+    description: "I loved seeing the contrast between the lush green valley and the dark blue ocean with a clear sky.",
   },
   {
     image: raigad,
     title: "Raigad Fort",
-    description: "Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj",
+    description: "Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.",
   },
   {
     image: landscape5, 
-    title: "Ocean Shore in Princeville, Kauai",
-    description: "Most beautiful turquoise water",
+    title: "Ocean Shore in Princeville",
+    description: "The most beautiful turquoise water.",
   },
   {
     image: landscape8, 
-    title: "Smokey Mountains National Park, USA",
-    description: "Best sunset I have ever captured",
+    title: "Smokey Mountains National Park",
+    description: "My favorite sunset I have ever captured.",
   },
   {
     image: landscape11, 
-    title: "Waimea Canyon State Park, USA",
-    description: "Photo By: Arnav Karnik",
+    title: "Waimea Canyon",
+    description: "Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.",
   },
   {
     image: landscape13, 
-    title: "Zion National Park, USA",
-    description: "Felt like I was in the movie Cars",
+    title: "Zion National Park",
+    description: "Felt like I was right out of the movie Cars.",
   },
   {
     image: munnar, 
@@ -108,8 +108,8 @@ const landscapeImages = [
   },
   {
     image: bryceCanyon, 
-    title: "Bryce Canyon National Park, USA",
-    description: "Seeing the Hoodoos fill the entire landscape was a lot to take in.",
+    title: "Bryce Canyon National Park",
+    description: "Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.",
   },
   
 ];
@@ -118,22 +118,22 @@ const peopleImages = [
   {
       image: people1, 
       title: "<h1>Arnav Karnik</h1>",
-      description: "<h3>Welcome to my Photography Portfolio.</h3><br><p>Here are a combination of my favorite photos</p>",
+      description: "<h3>Welcome to my Photography Portfolio.</h3><br><p>Here are a portfolio of my favorite photos.</p>",
     },
     {
       image: people3, 
       title: "Lucas",
-      description: "Scavenging for which recipe to cook next",
+      description: "Scavenging for which recipe to cook next.",
     },
     {
       image: people5, 
       title: "Alondra",
-      description: "On a morning stroll in Poipu",
+      description: "On a morning stroll in Poipu, Kauai.",
     },
     {
       image: people4, 
       title: "Nathan",
-      description: "Searching for apples to make apple pie",
+      description: "Searching for apples to make apple pie.",
     },
 ];
 
@@ -145,8 +145,8 @@ const animalImages = [
     },
     {
       image: dotter,
-      title: "Dotter peering into the distance",
-      description: "",
+      title: "Yala National Park",
+      description: "Dotter peering into the distance.",
     },
     {
       image: animal2, 
@@ -156,12 +156,12 @@ const animalImages = [
     {
       image: animal3, 
       title: "Hilton",
-      description: "Beautiful dog from Gangtok hotel",
+      description: "Beautiful dog from Gangtok hotel.",
     },
     {
       image: elephants,
-      title: "Elephant herd at sunset",
-      description: "",
+      title: "Yala National Park",
+      description: "Elephant herd at sunset",
     },
     {
       image: animal4, 
@@ -170,8 +170,8 @@ const animalImages = [
     },
     {
       image: buffalo,
-      title: "Buffalo taking a mud bath",
-      description: ""
+      title: "Yala National Park",
+      description: "Buffalo taking a mud bath to cool off."
     },
     {
       image: animal5, 
@@ -205,7 +205,7 @@ export default function AboutMe() {
   return (
     <div className="h-full bg-stone-950 overflow-auto">
       <Head>
-        <title>Photography Portfolio</title>
+        <title>Arnav's Photography Portfolio</title>
         <meta name="description" content="Generated by create next app" />
         <link rel="icon" href="/camera.png" />
       </Head>
