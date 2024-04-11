@@ -118,7 +118,7 @@ const peopleImages = [
   {
       image: people1, 
       title: "<h1>Arnav Karnik</h1>",
-      description: "<h3>Welcome to my Photography Portfolio.</h3><br><p>Here are a portfolio of my favorite photos.</p>",
+      description: "<h3>Welcome to my Photography Portfolio.</h3><br><p>Here is a portfolio of my favorite photos.</p>",
     },
     {
       image: people3, 

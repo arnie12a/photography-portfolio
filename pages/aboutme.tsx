@@ -39,7 +39,6 @@ export default function Home() {
                 My portfolio showcases my favorite pictures I have taken on my many adventures. 
                 Looking forward to the many more and the stories I tell along the way.
               </p><br/>
-              
 
               <br/>
               <div className="flex justify-center">
