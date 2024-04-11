@@ -27,7 +27,6 @@ import landscape11 from "../public/landscape/waimeaCanyon.jpg"
 import landscape13 from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
-import munnar from "../public/landscape/munnar.jpg"
 import auroville from "../public/landscape/auroville.jpg"
 import raigad from "../public/landscape/raigad.jpg"
 
@@ -89,7 +88,7 @@ const landscapeImages = [
   {
     image: landscape8, 
     title: "Smokey Mountains National Park",
-    description: "My favorite sunset I have ever captured.",
+    description: "My favorite sunset I have ever captured. ",
   },
   {
     image: landscape11, 
@@ -100,11 +99,6 @@ const landscapeImages = [
     image: landscape13, 
     title: "Zion National Park",
     description: "Felt like I was right out of the movie Cars.",
-  },
-  {
-    image: munnar, 
-    title: "Munnar, India",
-    description: "Vines intertwining along the tree.",
   },
   {
     image: bryceCanyon, 
@@ -118,7 +112,7 @@ const peopleImages = [
   {
       image: people1, 
       title: "<h1>Arnav Karnik</h1>",
-      description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos.</p></div>',
+      description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
     },
     {
       image: people3, 
@@ -160,17 +154,17 @@ const animalImages = [
     },
     {
       image: elephants,
-      title: "Yal5a National Park",
-      description: "Elephant herd at sunset",
+      title: "Yala National Park, Sri Lanka",
+      description: "Elephant herd at sunset preparing for the night they have ahead. ",
     },
     {
       image: animal4, 
-      title: "Lioness",
-      description: "Bhannerghatta National Park, Bangalore",
+      title: "Bhannerghatta National Park, India",
+      description: "Lioness",
     },
     {
       image: buffalo,
-      title: "Yala National Park",
+      title: "Yala National Park, Sri Lanka",
       description: "Buffalo taking a mud bath to cool off."
     },
     {
