@@ -52,7 +52,7 @@ const landscapeImages = [
   {
     image: khanchenjunga, 
     title: "Khanchenjunga",
-    description: "Standing at  28,169 feet, Khanchenjunga is the third highest mountain in the world.",
+    description: '<div className="text-center"><p className="text-lg text-gray-700 mb-4">Standing at <span className="font-bold">28,169 feet</span>, Khanchenjunga is the third highest mountain in the world. It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
   },
   
   {
@@ -118,11 +118,11 @@ const peopleImages = [
   {
       image: people1, 
       title: "<h1>Arnav Karnik</h1>",
-      description: "<h3>Welcome to my Photography Portfolio.</h3><br><p>Here is a portfolio of my favorite photos.</p>",
+      description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos.</p></div>',
     },
     {
       image: people3, 
-      title: "Lucas",
+      title: "<a href='https://www.lucasleeho.com/' target='_blank'>Lucas</a>",
       description: "Scavenging for which recipe to cook next.",
     },
     {
