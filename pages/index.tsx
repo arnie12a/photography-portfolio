@@ -160,7 +160,7 @@ const animalImages = [
     },
     {
       image: elephants,
-      title: "Yala National Park",
+      title: "Yal5a National Park",
       description: "Elephant herd at sunset",
     },
     {
@@ -195,6 +195,10 @@ const tabs = [
   {
     key: 'animals',
     display: 'Animals'
+  },
+  {
+    key: 'Stories',
+    display: 'Stories'
   }
 ]
 
@@ -370,6 +374,9 @@ export default function AboutMe() {
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                 />
+              </Tab.Panel>
+              <Tab.Panel className="overflow-auto rounded">
+                <h1>Coming soon...</h1>
               </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>

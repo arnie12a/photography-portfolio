@@ -39,16 +39,7 @@ export default function Home() {
                 My portfolio showcases my favorite pictures I have taken on my many adventures. 
                 Looking forward to the many more and the stories I tell along the way.
               </p><br/>
-              <p className="inline-block relative">
-                This upcoming month I am traveling and exploring around &nbsp;
-                <span className="relative inline-block">
-                  India  &nbsp;
-                  <img src="india.png" alt="indian flag" className="inline-block w-8" />
-                    
-                </span>
-              </p>
-              <br/><br />
-              <p>Stay tuned...</p>
+              
 
               <br/>
               <div className="flex justify-center">
