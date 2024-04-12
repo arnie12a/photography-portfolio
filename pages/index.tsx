@@ -18,13 +18,13 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 // Landscape Images
-import landscape3 from "../public/landscape/hanaleiBay.jpg"
-import landscape4 from "../public/landscape/kalalauLookout.jpg"
-import landscape5 from "../public/landscape/kauaiOcean.jpg"
-import landscape8 from "../public/landscape/smokeyMountainsSunset.jpg"
-import landscape10 from "../public/landscape/theNarrows.jpg"
-import landscape11 from "../public/landscape/waimeaCanyon.jpg"
-import landscape13 from "../public/landscape/zionCarsBackdrop.jpg"
+import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
+import kalalauLookout from "../public/landscape/kalalauLookout.jpg"
+import kauaiOcean from "../public/landscape/kauaiOcean.jpg"
+import smokeyMountainsSunset from "../public/landscape/smokeyMountainsSunset.jpg"
+import theNarrows from "../public/landscape/theNarrows.jpg"
+import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
+import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import auroville from "../public/landscape/auroville.jpg"
@@ -32,15 +32,15 @@ import raigad from "../public/landscape/raigad.jpg"
 
 
 // People Images
-import people1 from "../public/people/arnie.jpg"
-import people3 from "../public/people/lucas.jpg"
-import people4 from "../public/people/nathan.jpg"
-import people5 from "../public/people/alondraPoipu.jpg"
+import me from "../public/people/arnie.jpg"
+import lucasho from "../public/people/lucas.jpg"
+import nathan from "../public/people/nathan.jpg"
+import alondra from "../public/people/alondraPoipu.jpg"
 
 // Animal Images
-import animal1 from "../public/animals/goat.jpg"
-import animal2 from "../public/animals/running.jpg"
-import animal3 from "../public/animals/hilton.jpg"
+import goat from "../public/animals/goat.jpg"
+import sprinkles from "../public/animals/running.jpg"
+import hilton from "../public/animals/hilton.jpg"
 import animal4 from "../public/animals/lion.jpg"
 import animal5 from "../public/animals/monkey.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
@@ -51,18 +51,18 @@ const landscapeImages = [
   {
     image: khanchenjunga, 
     title: "Khanchenjunga",
-    description: '<div className="text-center"><p className="text-lg text-gray-700 mb-4">Standing at <span className="font-bold">28,169 feet</span>, Khanchenjunga is the third highest mountain in the world. It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
+    description: '<div className="text-center"><p className="text-lg text-gray-700 mb-4">Standing at <b>28,169 feet</b>, Khanchenjunga is the third highest mountain in the world.</p><p className="text-lg text-gray-700 mb-4">It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
   },
   
   {
-    image: landscape3, 
+    image: hanaleiBay, 
     title: "Hanelei Bay, Kauai",
     description: "By far my favorite place in Kauai.",
   },
   {
-    image: landscape10, 
+    image: theNarrows, 
     title: "Zion National Park: <i>The Narrows</i>",
-    description: "Definitely my favorite hike I've been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience.",
+    description: "Definitely my favorite hike I've been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.",
   },
   {
     image: auroville,
@@ -71,7 +71,7 @@ const landscapeImages = [
   },
   
   {
-    image: landscape4, 
+    image: kalalauLookout, 
     title: "Kalalau Valley Lookout",
     description: "I loved seeing the contrast between the lush green valley and the dark blue ocean with a clear sky.",
   },
@@ -81,22 +81,22 @@ const landscapeImages = [
     description: "Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.",
   },
   {
-    image: landscape5, 
+    image: kauaiOcean, 
     title: "Ocean Shore in Princeville",
     description: "The most beautiful turquoise water.",
   },
   {
-    image: landscape8, 
+    image: smokeyMountainsSunset, 
     title: "Smokey Mountains National Park",
-    description: "My favorite sunset I have ever captured. ",
+    description: "My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.",
   },
   {
-    image: landscape11, 
+    image: waimeaCanyon, 
     title: "Waimea Canyon",
     description: "Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.",
   },
   {
-    image: landscape13, 
+    image: zionCarsBackdrop, 
     title: "Zion National Park",
     description: "Felt like I was right out of the movie Cars.",
   },
@@ -110,45 +110,45 @@ const landscapeImages = [
 
 const peopleImages = [
   {
-      image: people1, 
+      image: me, 
       title: "<h1>Arnav Karnik</h1>",
       description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
     },
     {
-      image: people3, 
-      title: "<a href='https://www.lucasleeho.com/' target='_blank'>Lucas</a>",
-      description: "Scavenging for which recipe to cook next.",
+      image: lucasho, 
+      title: "<a href='https://www.lucasleeho.com/' target='_blank'>Lucas Ho</a>",
+      description: "A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.",
     },
     {
-      image: people5, 
-      title: "Alondra",
+      image: alondra, 
+      title: "Alondra Guerrero Toledo",
       description: "On a morning stroll in Poipu, Kauai.",
     },
     {
-      image: people4, 
-      title: "Nathan",
-      description: "Searching for apples to make apple pie.",
+      image: nathan, 
+      title: "Nathan Yoon",
+      description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
     },
 ];
 
 const animalImages = [
     {
-      image: animal1, 
+      image: goat, 
       title: "Mountain Goat",
       description: "Driving through Zion National Park and this guy wanted a photoshoot",
     },
     {
       image: dotter,
-      title: "Yala National Park",
+      title: "Yala National Park, Sri Lanka",
       description: "Dotter peering into the distance.",
     },
     {
-      image: animal2, 
+      image: sprinkles, 
       title: "Cute doggo",
-      description: "Puppies are so full of energy! Happy this fellow found herself a home.",
+      description: "Puppies are so full of energy! Happy Sprinkles found herself a home.",
     },
     {
-      image: animal3, 
+      image: hilton, 
       title: "Hilton",
       description: "Beautiful dog from Gangtok hotel.",
     },
