@@ -150,7 +150,7 @@ const animalImages = [
     {
       image: hilton, 
       title: "Hilton",
-      description: "Beautiful dog from Gangtok hotel.",
+      description: "Best way to spend the night after all the excusions in Gangtok is with this beautiful boy at the hotel.",
     },
     {
       image: elephants,
@@ -159,18 +159,18 @@ const animalImages = [
     },
     {
       image: animal4, 
-      title: "Bhannerghatta National Park, India",
-      description: "Lioness",
+      title: "Lioness in Bhannerghatta National Park, India",
+      description: "",
     },
     {
       image: buffalo,
-      title: "Yala National Park, Sri Lanka",
-      description: "Buffalo taking a mud bath to cool off."
+      title: "Bison in Yala National Park, Sri Lanka",
+      description: "With such scorching heat, the only way to stay cool is by taking a dip in the mud."
     },
     {
       image: animal5, 
-      title: "Monkey",
-      description: "Nandi Hills",
+      title: "Monkey at Nandi Hills",
+      description: "Located just two hours from Bangalore, you will find yourself plenty of monkeys living life with a great view.",
     },
 ];
 
@@ -189,6 +189,10 @@ const tabs = [
   {
     key: 'animals',
     display: 'Animals'
+  },
+  {
+  key: 'Street',
+  display: 'Street'
   }
 ]
 
@@ -214,23 +218,22 @@ export default function AboutMe() {
 
       </header>
 
-      <main className="pt-[110px]">
+      <main className="pt-[105px]">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
-            <Tab.List className="flex items-center gap-12">
-              {tabs.map((tab) => {
-                return <Tab key={tab.key} className="p-2">
-                {({selected}) => (
-                  <span className={classNames("uppercase text-lg", selected ? 'text-white' : 'text-stone-600')}>
-                    {tab.display}
-                  </span>
+          <Tab.List className="flex overflow-x-auto items-center gap-12">
+            {tabs.map((tab) => {
+              return (
+                <Tab key={tab.key} className="p-2">
+                  {({ selected }) => (
+                    <span className={classNames("uppercase text-lg", selected ? 'text-white' : 'text-stone-600')}>
+                      {tab.display}
+                    </span>
                   )}
-              </Tab>
-              })
-              }
-              
-              
-            </Tab.List>
+                </Tab>
+              );
+            })}
+          </Tab.List>
             <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6 rounded">
               <Tab.Panel className="overflow-auto">
                 <Masonry 
