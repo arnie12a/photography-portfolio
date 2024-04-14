@@ -36,6 +36,8 @@ import me from "../public/people/arnie.jpg"
 import lucasho from "../public/people/lucas.jpg"
 import nathan from "../public/people/nathan.jpg"
 import alondra from "../public/people/alondraPoipu.jpg"
+import uiucBoys from "../public/people/uiucBoys.jpg"
+import lucasjacopo from "../public/people/dumplingmaking.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -128,6 +130,16 @@ const peopleImages = [
       image: nathan, 
       title: "Nathan Yoon",
       description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
+    },
+    {
+      image: lucasjacopo, 
+      title: "Lucas & Jacopo",
+      description: "Making dumplings is no easy feat. They turned out to be really good",
+    },
+    {
+      image: uiucBoys, 
+      title: "Alvin, Vineet, & Knipp arguing about god knows what.",
+      description: "",
     },
 ];
 
