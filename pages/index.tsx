@@ -75,7 +75,7 @@ const landscapeImages = [
   {
     image: kalalauLookout, 
     title: "Kalalau Valley Lookout",
-    description: "I loved seeing the contrast between the lush green valley and the dark blue ocean with a clear sky.",
+    description: 'At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>"Jurassic Park"</i>',
   },
   {
     image: raigad,
@@ -134,7 +134,7 @@ const peopleImages = [
     {
       image: lucasjacopo, 
       title: "Lucas & Jacopo",
-      description: "Making dumplings is no easy feat. They turned out to be really good",
+      description: "Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned our perfect and I couldn't stop devouring them ",
     },
     {
       image: uiucBoys, 
@@ -201,6 +201,10 @@ const tabs = [
   {
     key: 'animals',
     display: 'Animals'
+  },
+  {
+    key: 'stories',
+    display: 'Stories'
   }
 ]
 
@@ -376,6 +380,9 @@ export default function AboutMe() {
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                 />
+              </Tab.Panel>
+              <Tab.Panel>
+                Loading...
               </Tab.Panel>
               
             </Tab.Panels>
