@@ -233,7 +233,7 @@ export default function AboutMe() {
       <main className="pt-[105px]">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
-            <Tab.List className="flex items-center gap-12">
+            <Tab.List className="flex items-center gap-6">
               {tabs.map((tab) => {
                 return <Tab key={tab.key} className="p-2">
                 {({selected}) => (
@@ -247,6 +247,8 @@ export default function AboutMe() {
               
               
             </Tab.List>
+            
+
             <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6 rounded">
               <Tab.Panel className="overflow-auto">
                 <Masonry 
