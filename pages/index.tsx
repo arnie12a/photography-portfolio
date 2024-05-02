@@ -201,10 +201,6 @@ const tabs = [
   {
     key: 'animals',
     display: 'Animals'
-  },
-  {
-    key: 'stories',
-    display: 'Stories'
   }
 ]
 
@@ -233,7 +229,7 @@ export default function AboutMe() {
       <main className="pt-[105px]">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
-            <Tab.List className="flex items-center gap-6">
+            <Tab.List className="flex items-center gap-8">
               {tabs.map((tab) => {
                 return <Tab key={tab.key} className="p-2">
                 {({selected}) => (
