@@ -38,6 +38,9 @@ import nathan from "../public/people/nathan.jpg"
 import alondra from "../public/people/alondraPoipu.jpg"
 import uiucBoys from "../public/people/uiucBoys.jpg"
 import lucasjacopo from "../public/people/dumplingmaking.jpg"
+import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
+import neeva from "../public/people/neeva.jpg"
+import knipp from "../public/people/knipp.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -122,6 +125,11 @@ const peopleImages = [
       description: "A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.",
     },
     {
+      image: neeva, 
+      title: "Neeva",
+      description: "",
+    },
+    {
       image: alondra, 
       title: "Alondra Guerrero Toledo",
       description: "On a morning stroll in Poipu, Kauai.",
@@ -132,15 +140,26 @@ const peopleImages = [
       description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
     },
     {
+      image: mayraAndSnehal, 
+      title: "Snehal & Mayra",
+      description: "Guess who was more excited to eat the birthday cake?",
+    },
+    {
       image: lucasjacopo, 
       title: "Lucas & Jacopo",
       description: "Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned our perfect and I couldn't stop devouring them ",
+    },
+    {
+      image: knipp, 
+      title: "Knipp",
+      description: "",
     },
     {
       image: uiucBoys, 
       title: "Alvin, Vineet, & Knipp arguing about god knows what.",
       description: "",
     },
+
 ];
 
 const animalImages = [
@@ -195,8 +214,8 @@ const tabs = [
     display: 'People'
   },
   {
-    key: 'landscapes',
-    display: 'Landscapes'
+    key: 'Nature',
+    display: 'Nature'
   },
   {
     key: 'animals',
@@ -378,9 +397,6 @@ export default function AboutMe() {
                   subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
                 }))}
                 />
-              </Tab.Panel>
-              <Tab.Panel>
-                Loading...
               </Tab.Panel>
               
             </Tab.Panels>
