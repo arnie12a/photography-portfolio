@@ -130,9 +130,9 @@ const peopleImages = [
       description: "",
     },
     {
-      image: alondra, 
-      title: "Alondra Guerrero Toledo",
-      description: "On a morning stroll in Poipu, Kauai.",
+      image: mayraAndSnehal, 
+      title: "Snehal & Mayra",
+      description: "Guess who was more excited to eat the birthday cake?",
     },
     {
       image: nathan, 
@@ -140,9 +140,9 @@ const peopleImages = [
       description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
     },
     {
-      image: mayraAndSnehal, 
-      title: "Snehal & Mayra",
-      description: "Guess who was more excited to eat the birthday cake?",
+      image: alondra, 
+      title: "Alondra Guerrero Toledo",
+      description: "On a morning stroll in Poipu, Kauai.",
     },
     {
       image: lucasjacopo, 
@@ -150,13 +150,13 @@ const peopleImages = [
       description: "Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned our perfect and I couldn't stop devouring them ",
     },
     {
-      image: knipp, 
-      title: "Knipp",
+      image: uiucBoys, 
+      title: "Alvin, Vineet, & Knipp arguing about god knows what.",
       description: "",
     },
     {
-      image: uiucBoys, 
-      title: "Alvin, Vineet, & Knipp arguing about god knows what.",
+      image: knipp, 
+      title: "Knipp",
       description: "",
     },
 
