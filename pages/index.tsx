@@ -129,11 +129,7 @@ const peopleImages = [
       title: "Neeva",
       description: "",
     },
-    {
-      image: mayraAndSnehal, 
-      title: "Snehal & Mayra",
-      description: "Guess who was more excited to eat the birthday cake?",
-    },
+    
     {
       image: nathan, 
       title: "Nathan Yoon",
@@ -148,6 +144,11 @@ const peopleImages = [
       image: lucasjacopo, 
       title: "Lucas & Jacopo",
       description: "Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned our perfect and I couldn't stop devouring them ",
+    },
+    {
+      image: mayraAndSnehal, 
+      title: "Snehal & Mayra",
+      description: "Guess who was more excited to eat the birthday cake?",
     },
     {
       image: uiucBoys, 
