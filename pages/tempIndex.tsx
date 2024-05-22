@@ -215,8 +215,11 @@ export default function AboutMe() {
                     />
 
                 </Tab.Panel>
-                <Tab.Panel className="overflow-auto rounded">
-                    
+                <Tab.Panel className="overflow-auto rounded flex justify-center space-x-4 mb-4">
+                    <Link href="/animals" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">Animals</Link>
+                    <Link href="/city" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">City</Link>
+                    <Link href="/people" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">People</Link>
+                    <Link href="/nature" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">Nature</Link>
                 </Tab.Panel>
                 <Tab.Panel className="overflow-auto rounded">
                 <div className="container mx-auto p-8 md:flex">
