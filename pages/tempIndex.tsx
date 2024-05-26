@@ -39,24 +39,17 @@ import hilton from "../public/animals/hilton.jpg"
 import dotter from "../public/animals/dotter.jpg"
 import elephants from "../public/animals/elephant.jpg"
 
+// Structure Images
+import londonBridge from "../public/structures/londonBridge.jpg"
+import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
+
 const favoriteImages = [
     {
         image: khanchenjunga, 
         title: "Khanchenjunga",
         description: '<div className="text-center"><p className="text-lg text-gray-700 mb-4">Standing at <b>28,169 feet</b>, Khanchenjunga is the third highest mountain in the world.</p><p className="text-lg text-gray-700 mb-4">It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
     },
-    
-    {
-        image: hanaleiBay, 
-        title: "Hanelei Bay, Kauai",
-        description: "By far my favorite place in Kauai.",
-    },
-    
-    {
-        image: kalalauLookout, 
-        title: "Kalalau Valley Lookout",
-        description: 'At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>"Jurassic Park"</i>',
-    },
+   
     {
         image: raigad,
         title: "Raigad Fort",
@@ -72,6 +65,38 @@ const favoriteImages = [
         image: lucasho, 
         title: "<a href='https://www.lucasleeho.com/' target='_blank'>Lucas Ho</a>",
         description: "A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.",
+    },
+     
+    {
+        image: dotter,
+        title: "Yala National Park, Sri Lanka",
+        description: "Dotter peering into the distance.",
+    },
+    {
+        image: hilton, 
+        title: "Hilton",
+        description: "Best way to spend the night after all the excusions in Gangtok is with this beautiful boy at the hotel.",
+    },
+    {
+        image: chicagoSkyline,
+        title: "Chicago Skyline",
+        description: "Definitely my favorite way to see the city of Chicago"
+    },
+    {
+        image: hanaleiBay, 
+        title: "Hanelei Bay, Kauai",
+        description: "By far my favorite place in Kauai.",
+    },
+    
+    {
+        image: kalalauLookout, 
+        title: "Kalalau Valley Lookout",
+        description: 'At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>"Jurassic Park"</i>',
+    },
+    {
+        image: londonBridge,
+        title: "View from Horizon 22",
+        description: "My favorite place to see all the important places in London"
     },
     {
         image: neeva, 
@@ -93,16 +118,6 @@ const favoriteImages = [
         image: goat, 
         title: "Mountain Goat",
         description: "Driving through Zion National Park and this guy wanted a photoshoot",
-    },
-    {
-        image: dotter,
-        title: "Yala National Park, Sri Lanka",
-        description: "Dotter peering into the distance.",
-    },
-    {
-        image: hilton, 
-        title: "Hilton",
-        description: "Best way to spend the night after all the excusions in Gangtok is with this beautiful boy at the hotel.",
     },
     {
         image: elephants,

@@ -18,52 +18,38 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 // Landscape Images
-import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
-import kalalauLookout from "../public/landscape/kalalauLookout.jpg"
 import kauaiOcean from "../public/landscape/kauaiOcean.jpg"
-import smokeyMountainsSunset from "../public/landscape/smokeyMountainsSunset.jpg"
 import theNarrows from "../public/landscape/theNarrows.jpg"
 import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
 import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
-import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import auroville from "../public/landscape/auroville.jpg"
-import raigad from "../public/landscape/raigad.jpg"
 
 
 // People Images
 import me from "../public/people/arnie.jpg"
-import lucasho from "../public/people/lucas.jpg"
 import nathan from "../public/people/nathan.jpg"
 import alondra from "../public/people/alondraPoipu.jpg"
 import uiucBoys from "../public/people/uiucBoys.jpg"
-import lucasjacopo from "../public/people/dumplingmaking.jpg"
 import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
-import neeva from "../public/people/neeva.jpg"
 import knipp from "../public/people/knipp.jpg"
 
 // Animal Images
-import goat from "../public/animals/goat.jpg"
 import sprinkles from "../public/animals/running.jpg"
-import hilton from "../public/animals/hilton.jpg"
 import animal4 from "../public/animals/lion.jpg"
 import animal5 from "../public/animals/monkey.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
-import dotter from "../public/animals/dotter.jpg"
-import elephants from "../public/animals/elephant.jpg"
+
+// Structure Images
+import bigBen from "../public/structures/bigBen.jpg"
+import galleFort from "../public/structures/galleFort.jpg"
+import gangtokStadium from "../public/structures/gangtokStadium.jpg"
+import mumbai from "../public/structures/mumbai.jpg"
+import mumbaiWater from "../public/structures/mumbaiWater.jpg"
+import oldTrafford from "../public/structures/oldTrafford.jpg"
+import pelling from "../public/structures/pelling.jpg"
 
 const landscapeImages = [
-  {
-    image: khanchenjunga, 
-    title: "Khanchenjunga",
-    description: '<div className="text-center"><p className="text-lg text-gray-700 mb-4">Standing at <b>28,169 feet</b>, Khanchenjunga is the third highest mountain in the world.</p><p className="text-lg text-gray-700 mb-4">It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
-  },
-  
-  {
-    image: hanaleiBay, 
-    title: "Hanelei Bay, Kauai",
-    description: "By far my favorite place in Kauai.",
-  },
   {
     image: theNarrows, 
     title: "Zion National Park: <i>The Narrows</i>",
@@ -74,26 +60,10 @@ const landscapeImages = [
     title: "Auroville, India",
     description: "A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.",
   },
-  
-  {
-    image: kalalauLookout, 
-    title: "Kalalau Valley Lookout",
-    description: 'At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>"Jurassic Park"</i>',
-  },
-  {
-    image: raigad,
-    title: "Raigad Fort",
-    description: "Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.",
-  },
   {
     image: kauaiOcean, 
     title: "Ocean Shore in Princeville",
     description: "The most beautiful turquoise water.",
-  },
-  {
-    image: smokeyMountainsSunset, 
-    title: "Smokey Mountains National Park",
-    description: "My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.",
   },
   {
     image: waimeaCanyon, 
@@ -120,17 +90,6 @@ const peopleImages = [
       description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
     },
     {
-      image: lucasho, 
-      title: "<a href='https://www.lucasleeho.com/' target='_blank'>Lucas Ho</a>",
-      description: "A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.",
-    },
-    {
-      image: neeva, 
-      title: "Neeva",
-      description: "",
-    },
-    
-    {
       image: nathan, 
       title: "Nathan Yoon",
       description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
@@ -139,11 +98,6 @@ const peopleImages = [
       image: alondra, 
       title: "Alondra Guerrero Toledo",
       description: "On a morning stroll in Poipu, Kauai.",
-    },
-    {
-      image: lucasjacopo, 
-      title: "Lucas & Jacopo",
-      description: "Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned our perfect and I couldn't stop devouring them ",
     },
     {
       image: mayraAndSnehal, 
@@ -165,29 +119,9 @@ const peopleImages = [
 
 const animalImages = [
     {
-      image: goat, 
-      title: "Mountain Goat",
-      description: "Driving through Zion National Park and this guy wanted a photoshoot",
-    },
-    {
-      image: dotter,
-      title: "Yala National Park, Sri Lanka",
-      description: "Dotter peering into the distance.",
-    },
-    {
       image: sprinkles, 
       title: "Cute doggo",
       description: "Puppies are so full of energy! Happy Sprinkles found herself a home.",
-    },
-    {
-      image: hilton, 
-      title: "Hilton",
-      description: "Best way to spend the night after all the excusions in Gangtok is with this beautiful boy at the hotel.",
-    },
-    {
-      image: elephants,
-      title: "Yala National Park, Sri Lanka",
-      description: "Elephant herd at sunset preparing for the night they have ahead. ",
     },
     {
       image: animal4, 
@@ -206,6 +140,44 @@ const animalImages = [
     },
 ];
 
+const structureImages = [
+  {
+    image: pelling,
+    title: "Pelling",
+    descritpion: "The city amongst the mountains."
+  },
+  {
+    image: oldTrafford,
+    title: "The Theatre of Dreams",
+    descritpion: ""
+  },
+  {
+    image: galleFort,
+    title: "Galle Fort",
+    descritpion: ""
+  },
+  {
+    image: bigBen,
+    title: "Big Ben",
+    descritpion: ""
+  },
+  {
+    image: mumbaiWater,
+    title: "View from the Taj Hotel",
+    descritpion: ""
+  },
+  {
+    image: mumbai,
+    title: "The Mumbai Skyline",
+    description: ""
+  },
+  {
+    image: gangtokStadium,
+    title: "Soccer Stadium in Gangtok, Sikkim",
+    descritpion: ""
+  },
+]
+
 
 import { useRef } from "react"
 
@@ -223,8 +195,8 @@ const tabs = [
     display: 'Animals'
   }, 
   {
-    key: 'city',
-    display: 'City'
+    key: 'structures',
+    display: 'Sturctures'
   }
 ]
 
@@ -403,7 +375,51 @@ export default function Portfolio() {
                 }))}
                 />
               </Tab.Panel>
-              
+              <Tab.Panel className="overflow-auto rounded">
+              <Masonry 
+                  breakpointCols={2} 
+                  className="flex gap-4" 
+                  columnClassName=""
+                  key={3}
+                >
+
+                  {structureImages.map((image, index) => {
+                    return <div className="relative">
+                      <Image
+                      key={image.image.src}
+                      src={image.image}
+                      alt="placeholder"
+                      className="my-4 hover:opacity-70 cursor-pointer rounded"
+                      placeholder="blur"
+                      
+                      />
+                      <div className="absolute w-full h-full inset-0 bg-transparent hover:bg-stone-900 hover:bg-opacity-10 cursor-pointer"
+                        onClick={() => {
+                          lightboxRef.current?.openGallery(index);
+                        }}
+                      ></div>
+                    </div>
+                    
+                  })}
+                </Masonry>
+
+                <LightGalleryComponent
+                onInit={(ref) => {
+                  if (ref) {
+                    lightboxRef.current = ref.instance
+                  }
+                }}
+                download={false}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+                dynamic
+                dynamicEl={structureImages.map(image => ({
+                  src: image.image.src, 
+                  thumb: image.image.src,
+                  subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
+                }))}
+                />
+              </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
         </div>
