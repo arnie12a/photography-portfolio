@@ -229,42 +229,17 @@ export default function TempIndex() {
                     />
 
                 </Tab.Panel>
-                <Tab.Panel className="grid grid-cols-2 gap-4 p-4">
-    {[
-        { category: 'Animals', svg: (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6zm6 4h-2v-4h2v4zm0-6h-2V7h2v6z"/>
-            </svg>
-        ) },
-        { category: 'City', svg: (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                <path d="M12 2L2 12h3v7h6v-4h2v4h6v-7h3L12 2zm0 12h-2v2h-2v-2H6v-2h2V9h2v3h2v2zm2-2h-2v-2h2v2z"/>
-            </svg>
-        ) },
-        { category: 'People', svg: (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-            </svg>
-        ) },
-        { category: 'Nature', svg: (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
-                <path d="M12 2c2.21 0 4 1.79 4 4 0 .86-.28 1.65-.76 2.29C16.45 8.74 17 9.81 17 11c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.19.55-2.26 1.41-2.71C8.28 7.65 8 6.86 8 6c0-2.21 1.79-4 4-4zm0 18c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-            </svg>
-        ) }
-    ].map(({ category, svg }) => (
-        <Link 
-            key={category} 
-            href="/portfolio" 
-            className="relative block p-4 bg-white border border-gray-800 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center"
-            style={{ minWidth: '100px', minHeight: '100px' }}
-        >
-            <div className="flex justify-center mb-2">
-                {svg}
-            </div>
-            <span className="relative">{category}</span>
-        </Link>
-    ))}
-</Tab.Panel>
+                <Tab.Panel className="grid grid-cols-1 place-items-center p-4">
+                    <a href="/portfolio" className="flex items-center justify-center p-6 min-w-[200px] bg-blue-300 text-white rounded-lg shadow-lg hover:bg-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7H3zm2 0a2 2 0 0 0-2-2h14a2 2 0 0 0-2 2H5zm4-2a2 2 0 0 1 4 0h4a2 2 0 0 1 2 2h-4a2 2 0 0 1-4 0H7a2 2 0 0 1 2-2z" />
+                        </svg>
+                        <span className="ml-4 text-xl font-bold">Portfolio</span>
+                    </a>
+                </Tab.Panel>
+
+
+
 
 
                 <Tab.Panel className="overflow-auto rounded">
