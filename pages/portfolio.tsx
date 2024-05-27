@@ -196,7 +196,7 @@ const tabs = [
   }, 
   {
     key: 'structures',
-    display: 'Sturctures'
+    display: 'Structures'
   }
 ]
 
