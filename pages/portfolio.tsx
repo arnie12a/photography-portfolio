@@ -144,27 +144,27 @@ const structureImages = [
   {
     image: pelling,
     title: "Pelling",
-    descritpion: "The city amongst the mountains."
+    description: "The city amongst the mountains."
   },
   {
     image: oldTrafford,
     title: "The Theatre of Dreams",
-    descritpion: ""
+    description: ""
   },
   {
     image: galleFort,
     title: "Galle Fort",
-    descritpion: ""
+    description: ""
   },
   {
     image: bigBen,
     title: "Big Ben",
-    descritpion: ""
+    description: ""
   },
   {
     image: mumbaiWater,
     title: "View from the Taj Hotel",
-    descritpion: ""
+    description: ""
   },
   {
     image: mumbai,
@@ -174,7 +174,7 @@ const structureImages = [
   {
     image: gangtokStadium,
     title: "Soccer Stadium in Gangtok, Sikkim",
-    descritpion: ""
+    description: ""
   },
 ]
 
