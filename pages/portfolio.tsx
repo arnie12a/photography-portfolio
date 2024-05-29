@@ -219,19 +219,18 @@ export default function Portfolio() {
       <main className="pt-[105px]">
         <div className="flex flex-col items-center h-full">
           <Tab.Group>
-          <Tab.List className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            {tabs.map((tab) => {
-              return (
-                <Tab key={tab.key} className="p-2">
-                  {({ selected }) => (
-                    <span className={classNames("uppercase text-base md:text-lg", selected ? 'text-white' : 'text-stone-600')}>
-                      {tab.display}
-                    </span>
-                  )}
-                </Tab>
-              );
-            })}
+          <Tab.List className="flex flex-row md:flex-row items-center gap-4 md:gap-8 overflow-x-auto whitespace-nowrap scrollbar-hide">
+            {tabs.map((tab) => (
+              <Tab key={tab.key} className="p-2">
+                {({ selected }) => (
+                  <span className={classNames("uppercase text-base md:text-lg", selected ? 'text-white' : 'text-stone-600')}>
+                    {tab.display}
+                  </span>
+                )}
+              </Tab>
+            ))}
           </Tab.List>
+
             
 
             <Tab.Panels className="h-full bg-stone-900 bg-opacity-80 h-full max-w-[900px] w-full p-2 sm:p-4 my-6 rounded">
