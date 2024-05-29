@@ -29,7 +29,6 @@ import auroville from "../public/landscape/auroville.jpg"
 // People Images
 import me from "../public/people/arnie.jpg"
 import nathan from "../public/people/nathan.jpg"
-import alondra from "../public/people/alondraPoipu.jpg"
 import uiucBoys from "../public/people/uiucBoys.jpg"
 import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
 import knipp from "../public/people/knipp.jpg"
@@ -95,11 +94,6 @@ const peopleImages = [
       description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
     },
     {
-      image: alondra, 
-      title: "Alondra Guerrero Toledo",
-      description: "On a morning stroll in Poipu, Kauai.",
-    },
-    {
       image: mayraAndSnehal, 
       title: "Snehal & Mayra",
       description: "Guess who was more excited to eat the birthday cake?",
@@ -112,7 +106,7 @@ const peopleImages = [
     {
       image: knipp, 
       title: "Knipp",
-      description: "",
+      description: "Unfortuantely for Michael, this ball was sent straight into the bunker.",
     },
 
 ];
@@ -144,22 +138,22 @@ const structureImages = [
   {
     image: pelling,
     title: "Pelling",
-    description: "The city amongst the mountains."
+    description: "A small city in the foothills of Mount Khanchenjunga."
   },
   {
     image: oldTrafford,
     title: "The Theatre of Dreams",
-    description: ""
+    description: "My view inside Old Trafford when the Red Devils smashed Sheffield United 4 to 2 on 4/24/24"
   },
   {
     image: galleFort,
     title: "Galle Fort",
-    description: ""
+    description: "Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century."
   },
   {
     image: bigBen,
     title: "Big Ben",
-    description: ""
+    description: "What an iconic clock tower"
   },
   {
     image: mumbaiWater,
@@ -169,7 +163,7 @@ const structureImages = [
   {
     image: mumbai,
     title: "The Mumbai Skyline",
-    description: ""
+    description: "Took in the sunset on Marine Drive."
   },
   {
     image: gangtokStadium,
