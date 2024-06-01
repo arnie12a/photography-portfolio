@@ -55,11 +55,6 @@ const landscapeImages = [
     description: "Definitely my favorite hike I've been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.",
   },
   {
-    image: auroville,
-    title: "Auroville, India",
-    description: "A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.",
-  },
-  {
     image: kauaiOcean, 
     title: "Ocean Shore in Princeville",
     description: "The most beautiful turquoise water.",
@@ -149,6 +144,11 @@ const structureImages = [
     image: galleFort,
     title: "Galle Fort",
     description: "Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century."
+  },
+  {
+    image: auroville,
+    title: "Auroville, India",
+    description: "A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.",
   },
   {
     image: bigBen,
