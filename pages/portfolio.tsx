@@ -137,8 +137,8 @@ const structureImages = [
   },
   {
     image: oldTrafford,
-    title: "The Theatre of Dreams",
-    description: "My view inside Old Trafford when the Red Devils smashed Sheffield United 4 to 2 on 4/24/24"
+    title: "<h3>The Theatre of Dreams</h3>",
+    description: "My view inside Old Trafford when the Red Devils beat Sheffield United 4-2"
   },
   {
     image: galleFort,
