@@ -32,6 +32,8 @@ import nathan from "../public/people/nathan.jpg"
 import uiucBoys from "../public/people/uiucBoys.jpg"
 import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
 import knipp from "../public/people/knipp.jpg"
+import vanessa from "../public/people/vanessa.jpg"
+import lucas from "../public/people/lucas.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
@@ -84,18 +86,31 @@ const peopleImages = [
       description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
     },
     {
-      image: nathan, 
-      title: "Nathan Yoon",
-      description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
+      image: lucas, 
+      title: "Lucas focusing on making the perfect dumpling",
+      description: "",
     },
+    
+    
     {
       image: mayraAndSnehal, 
       title: "Snehal & Mayra",
       description: "Guess who was more excited to eat the birthday cake?",
     },
     {
+      image: nathan, 
+      title: "Nathan Yoon",
+      description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
+    },
+    {
       image: uiucBoys, 
       title: "Alvin, Vineet, & Knipp arguing about god knows what.",
+      description: "",
+    },
+    
+    {
+      image: vanessa, 
+      title: "Vanessa loves apples",
       description: "",
     },
     {
