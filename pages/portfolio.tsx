@@ -52,140 +52,138 @@ import pelling from "../public/structures/pelling.jpg"
 
 const landscapeImages = [
   {
-    image: theNarrows, 
-    title: "Zion National Park: <i>The Narrows</i>",
-    description: "Definitely my favorite hike I've been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.",
+    image: theNarrows,
+    title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
+    description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
   },
   {
-    image: kauaiOcean, 
-    title: "Ocean Shore in Princeville",
-    description: "The most beautiful turquoise water.",
+    image: kauaiOcean,
+    title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville</span>',
+    description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
   },
   {
-    image: waimeaCanyon, 
-    title: "Waimea Canyon",
-    description: "Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.",
+    image: waimeaCanyon,
+    title: '<span class="text-2xl font-bold text-white">Waimea Canyon</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
   },
   {
-    image: zionCarsBackdrop, 
-    title: "Zion National Park",
-    description: "Felt like I was right out of the movie Cars.",
+    image: zionCarsBackdrop,
+    title: '<span class="text-2xl font-bold text-white">Zion National Park</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Felt like I was right out of the movie Cars.</p>',
   },
   {
-    image: bryceCanyon, 
-    title: "Bryce Canyon National Park",
-    description: "Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.",
+    image: bryceCanyon,
+    title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
   },
-  
 ];
+
 
 const peopleImages = [
   {
-      image: me, 
-      title: "<h1>Arnav Karnik</h1>",
-      description: '<div className="text-center"><h3 className="text-3xl font-bold mb-4">Welcome to my Photography Portfolio.</h3><p className="text-lg text-gray-600">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
-    },
-    {
-      image: lucas, 
-      title: "Lucas focusing on making the perfect dumpling",
-      description: "",
-    },
-    
-    
-    {
-      image: mayraAndSnehal, 
-      title: "Snehal & Mayra",
-      description: "Guess who was more excited to eat the birthday cake?",
-    },
-    {
-      image: nathan, 
-      title: "Nathan Yoon",
-      description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
-    },
-    {
-      image: uiucBoys, 
-      title: "Alvin, Vineet, & Knipp arguing about god knows what.",
-      description: "",
-    },
-    
-    {
-      image: vanessa, 
-      title: "Vanessa loves apples",
-      description: "",
-    },
-    {
-      image: knipp, 
-      title: "Knipp",
-      description: "Unfortuantely for Michael, this ball was sent straight into the bunker.",
-    },
-
+    image: me,
+    title: '<h1 class="text-3xl font-bold text-white">Arnav Karnik</h1>',
+    description: '<div class="text-center"><h3 class="text-3xl font-bold text-white mb-4">Welcome to my Photography Portfolio.</h3><p class="text-lg text-gray-300">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
+  },
+  {
+    image: lucas,
+    title: '<span class="text-2xl font-bold text-white">Lucas focusing on making the perfect dumpling</span>',
+    description: '',
+  },
+  {
+    image: mayraAndSnehal,
+    title: '<span class="text-2xl font-bold text-white">Snehal & Mayra</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Guess who was more excited to eat the birthday cake?</p>',
+  },
+  {
+    image: nathan,
+    title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
+  },
+  {
+    image: uiucBoys,
+    title: '<span class="text-2xl font-bold text-white">Alvin, Vineet, & Knipp arguing about god knows what.</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Always bickering ...</p>',
+  },
+  {
+    image: vanessa,
+    title: '<span class="text-2xl font-bold text-white">Vanessa loves apples</span>',
+    description: '',
+  },
+  {
+    image: knipp,
+    title: '<span class="text-2xl font-bold text-white">Knipp</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Unfortunately for Michael, this ball was sent straight into the bunker.</p>',
+  },
 ];
 
 const animalImages = [
-    {
-      image: sprinkles, 
-      title: "Cute doggo",
-      description: "Puppies are so full of energy! Happy Sprinkles found herself a home.",
-    },
-    {
-      image: animal4, 
-      title: "Lioness in Bhannerghatta National Park, India",
-      description: "",
-    },
-    {
-      image: buffalo,
-      title: "Bison in Yala National Park, Sri Lanka",
-      description: "With such scorching heat, the only way to stay cool is by taking a dip in the mud."
-    },
-    {
-      image: animal5, 
-      title: "Monkey at Nandi Hills",
-      description: "Located just two hours from Bangalore, you will find yourself plenty of monkeys living life with a great view.",
-    },
+  {
+    image: sprinkles,
+    title: '<span class="text-2xl font-bold text-white">Cute doggo</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Puppies are so full of energy! Happy Sprinkles found herself a home.</p>',
+  },
+  {
+    image: animal4,
+    title: '<span class="text-2xl font-bold text-white">Lioness in Bhannerghatta National Park, India</span>',
+    description: '',
+  },
+  {
+    image: buffalo,
+    title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
+    description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
+  },
+  {
+    image: animal5,
+    title: '<span class="text-2xl font-bold text-white">Monkey at Nandi Hills</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Located just two hours from Bangalore, you will find yourself plenty of monkeys living life with a great view.</p>',
+  },
 ];
 
 const structureImages = [
   {
     image: pelling,
-    title: "Pelling",
-    description: "A small city in the foothills of Mount Khanchenjunga."
+    title: '<span class="text-2xl font-bold text-white">Pelling</span>',
+    description: '<p class="text-base text-gray-300 mt-2">A small city in the foothills of Mount Khanchenjunga.</p>'
   },
   {
     image: oldTrafford,
-    title: "<h3>The Theatre of Dreams</h3>",
-    description: "My view inside Old Trafford when the Red Devils beat Sheffield United 4-2"
+    title: '<h3 class="text-2xl font-bold text-white">The Theatre of Dreams</h3>',
+    description: '<p class="text-base text-gray-300 mt-2">My view inside Old Trafford when the Red Devils beat Sheffield United 4-2</p>'
   },
   {
     image: galleFort,
-    title: "Galle Fort",
-    description: "Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century."
+    title: '<span class="text-2xl font-bold text-white">Galle Fort</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century.</p>'
   },
   {
     image: auroville,
-    title: "Auroville, India",
-    description: "A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.",
+    title: '<span class="text-2xl font-bold text-white">Auroville, India</span>',
+    description: '<p class="text-base text-gray-300 mt-2">A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.</p>'
   },
   {
     image: bigBen,
-    title: "Big Ben",
-    description: "What an iconic clock tower"
+    title: '<span class="text-2xl font-bold text-white">Big Ben</span>',
+    description: '<p class="text-base text-gray-300 mt-2">What an iconic clock tower</p>'
   },
   {
     image: mumbaiWater,
-    title: "View from the Taj Hotel",
-    description: ""
+    title: '<span class="text-2xl font-bold text-white">View from the Taj Hotel</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Look at all those boats and oil rigs.</p>'
   },
   {
     image: mumbai,
-    title: "The Mumbai Skyline",
-    description: "Took in the sunset on Marine Drive."
+    title: '<span class="text-2xl font-bold text-white">The Mumbai Skyline</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Took in the sunset on Marine Drive.</p>'
   },
   {
     image: gangtokStadium,
-    title: "Soccer Stadium in Gangtok, Sikkim",
-    description: ""
+    title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
+    description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. So you can definitely say that soccer is huge in Sikkim.</p>'
   },
-]
+];
+
+
 
 
 import { useRef } from "react"

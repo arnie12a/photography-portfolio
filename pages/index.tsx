@@ -45,86 +45,82 @@ import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
 
 const favoriteImages = [
     {
-        image: khanchenjunga, 
-        title: "Khanchenjunga",
-        description: '<div className="text-center"><p className="text-lg text-gray-700 mb-4">Standing at <b>28,169 feet</b>, Khanchenjunga is the third highest mountain in the world.</p><p className="text-lg text-gray-700 mb-4">It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
-    },
-   
-    {
-        image: raigad,
-        title: "Raigad Fort",
-        description: "Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.",
-    },
-    
-    {
-        image: smokeyMountainsSunset, 
-        title: "Smokey Mountains National Park",
-        description: "My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.",
+      image: khanchenjunga,
+      title: '<span class="text-2xl font-bold text-white">Khanchenjunga</span>',
+      description: '<div class="text-center"><p class="text-lg text-gray-300 mb-4">Standing at <b>28,169 feet</b>, Khanchenjunga is the third highest mountain in the world.</p><p class="text-lg text-gray-300 mb-4">It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
     },
     {
-        image: lucasho, 
-        title: "<a href='https://www.lucasleeho.com/' target='_blank'>Lucas Ho</a>",
-        description: "A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.",
+      image: raigad,
+      title: '<span class="text-2xl font-bold text-white">Raigad Fort</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.</p>',
     },
     {
-        image: dotter,
-        title: "Yala National Park, Sri Lanka",
-        description: "Dotter peering into the distance.",
+      image: smokeyMountainsSunset,
+      title: '<span class="text-2xl font-bold text-white">Smokey Mountains National Park</span>',
+      description: '<p class="text-base text-gray-300 mt-2">My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.</p>',
     },
     {
-        image: hilton, 
-        title: "Hilton",
-        description: "Best way to spend the night after all the excusions in Gangtok is with this beautiful boy at the hotel.",
+      image: lucasho,
+      title: '<a href="https://www.lucasleeho.com/" target="_blank" class="text-2xl font-bold text-blue-400">Lucas Ho</a>',
+      description: '<p class="text-base text-gray-300 mt-2">A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.</p>',
     },
     {
-        image: chicagoSkyline,
-        title: "Chicago Skyline",
-        description: "Definitely my favorite way to see the city of Chicago"
+      image: dotter,
+      title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Dotter peering into the distance.</p>',
     },
     {
-        image: hanaleiBay, 
-        title: "Hanelei Bay, Kauai",
-        description: "By far my favorite place in Kauai.",
-    },
-    
-    {
-        image: kalalauLookout, 
-        title: "Kalalau Valley Lookout",
-        description: 'At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>"Jurassic Park"</i>',
+      image: hilton,
+      title: '<span class="text-2xl font-bold text-white">Hilton</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Best way to spend the night after all the excursions in Gangtok is with this beautiful boy at the hotel.</p>',
     },
     {
-        image: londonBridge,
-        title: "View from Horizon 22",
-        description: "My favorite place to see all the important places in London"
+      image: chicagoSkyline,
+      title: '<span class="text-2xl font-bold text-white">Chicago Skyline</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite way to see the city of Chicago.</p>',
     },
     {
-        image: neeva, 
-        title: "Neeva",
-        description: "",
-    },
-    
-    {
-        image: nathan, 
-        title: "Nathan Yoon",
-        description: "Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.",
+      image: hanaleiBay,
+      title: '<span class="text-2xl font-bold text-white">Hanelei Bay, Kauai</span>',
+      description: '<p class="text-base text-gray-300 mt-2">By far my favorite place in Kauai. Loved the food and the relaxing vibes that the town had to offer.</p>',
     },
     {
-        image: lucasjacopo, 
-        title: "Lucas & Jacopo",
-        description: "Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned our perfect and I couldn't stop devouring them ",
+      image: kalalauLookout,
+      title: '<span class="text-2xl font-bold text-white">Kalalau Valley Lookout</span>',
+      description: '<p class="text-base text-gray-300 mt-2">At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>Jurassic Park</i>.</p>',
     },
     {
-        image: goat, 
-        title: "Mountain Goat",
-        description: "Driving through Zion National Park and this guy wanted a photoshoot",
+      image: londonBridge,
+      title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of everything in London from this view.</p>',
     },
     {
-        image: elephants,
-        title: "Yala National Park, Sri Lanka",
-        description: "Elephant herd at sunset preparing for the night they have ahead. ",
+      image: neeva,
+      title: '<span class="text-2xl font-bold text-white">Neeva</span>',
+      description: '',
     },
-];
-
+    {
+      image: nathan,
+      title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
+    },
+    {
+      image: lucasjacopo,
+      title: '<span class="text-2xl font-bold text-white">Lucas & Jacopo</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned out perfect and I couldn\'t stop devouring them.</p>',
+    },
+    {
+      image: goat,
+      title: '<span class="text-2xl font-bold text-white">Mountain Goat</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
+    },
+    {
+      image: elephants,
+      title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night they have ahead.</p>',
+    },
+  ];
+  
 
 
 import { useRef } from "react"
