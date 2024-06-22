@@ -24,7 +24,7 @@ import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
 import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import auroville from "../public/landscape/auroville.jpg"
-
+import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 
 // People Images
 import me from "../public/people/arnie.jpg"
@@ -75,6 +75,11 @@ const landscapeImages = [
     image: bryceCanyon,
     title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park</span>',
     description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
+  },
+  {
+    image: rioCelesteWaterfall,
+    title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
+    description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
   },
 ];
 
