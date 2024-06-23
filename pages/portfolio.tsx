@@ -37,6 +37,7 @@ import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
 import knipp from "../public/people/knipp.jpg"
 import vanessa from "../public/people/vanessa.jpg"
 import lucas from "../public/people/lucas.jpg"
+import alondraPoipu from "../public/people/alondraPoipu.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
@@ -117,6 +118,11 @@ const peopleImages = [
     image: nathan,
     title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
     description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
+  },
+  {
+    image: alondraPoipu,
+    title: '<span class="text-2xl font-bold text-white">Walks in Poipu</span>',
+    description: '',
   },
   {
     image: uiucBoys,
