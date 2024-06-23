@@ -25,6 +25,9 @@ import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import auroville from "../public/landscape/auroville.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
+import munnarFlower from "../public/landscape/munnarFlower.jpg"
+import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
+
 
 // People Images
 import me from "../public/people/arnie.jpg"
@@ -80,6 +83,16 @@ const landscapeImages = [
     image: rioCelesteWaterfall,
     title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
     description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
+  },
+  {
+    image: munnarFlower,
+    title: '<span class="text-2xl font-bold text-white">Spotted this beautiful flower on a hike in Munnar, India</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
+  },
+  {
+    image: tsongmoLake,
+    title: '<span class="text-2xl font-bold text-white">Tsongmo Lake, India</span>',
+    description: '<p class="text-base text-gray-300 mt-2">This lake is located at an elevation of approximately 12,000 ft and was completely frozen over when we visited in the winter time.</p>',
   },
 ];
 
