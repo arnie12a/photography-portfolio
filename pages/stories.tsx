@@ -35,7 +35,7 @@ export default function Stories() {
                 <div className="flex flex-col items-center h-full">
                     <div
                         onClick={handleOpenModal}
-                        className="mt-5 cursor-pointer rounded-3xl bg-white text-stone-900 px-6 py-4 hover:bg-opacity-90 shadow-lg flex items-center justify-center space-x-3 w-80 h-40"
+                        className="mt-5 cursor-pointer rounded-3xl bg-slate-400 text-stone-900 px-6 py-4 hover:bg-opacity-90 shadow-lg flex items-center justify-center space-x-3 w-80 h-40"
                     >
                         <FaMapMarkerAlt className="text-red-500 text-2xl" />
                         <div>
@@ -48,7 +48,7 @@ export default function Stories() {
 
             {showModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-20">
-                    <div className="bg-white rounded-lg p-8 w-3/4 max-w-3xl overflow-y-auto max-h-[80vh] text-black shadow-2xl">
+                    <div className="bg-blue-50 rounded-lg p-8 w-3/4 max-w-3xl overflow-y-auto max-h-[80vh] text-black shadow-2xl">
                         <h2 className="text-2xl font-bold mb-6">India Blog Post</h2>
                         <div className="space-y-6">
                             <div className="text-lg">
