@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { FaMapMarkerAlt } from 'react-icons/fa';  // Importing Font Awesome icon
+import raigad from "../public/landscape/raigad.jpg"
+import Image from 'next/image';
 
 export default function Stories() {
     const [showModal, setShowModal] = useState(false);
@@ -118,8 +120,8 @@ export default function Stories() {
                         <strong>Sinhagad Fort</strong>, located near Pune, Maharashtra, is renowned for its strategic importance and the heroic 1647 battle led by Tanaji Malusare under Chhatrapati Shivaji Maharaj.
                       </div>
                       <div>
-                        <img src="maharashtra-image-url-1" alt="Raigad Fort" className="w-full h-auto mb-4" />
-                        <img src="maharashtra-image-url-2" alt="Sinhagad Fort" className="w-full h-auto mb-4" />
+                      <Image src={raigad} alt="Raigad Fort" className="w-full h-auto mb-4"/>
+                      <img src="maharashtra-image-url-2" alt="Sinhagad Fort" className="w-full h-auto mb-4" />
                       </div>
                     </div>
                   </div>
