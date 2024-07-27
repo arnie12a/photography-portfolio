@@ -9,6 +9,8 @@ import buffalo from "../public/animals/buffalo.jpg"
 import dotter from "../public/animals/dotter.jpg"
 import elephants from "../public/animals/elephant.jpg"
 import munnar from "../public/landscape/munnarTea.jpg"
+import kolukkumalia from "../public/landscape/kolumkulai.jpg"
+import sinhagad from "../public/structures/sinhagad.jpg"
 import Image from 'next/image';
 
 export default function Stories() {
@@ -114,7 +116,8 @@ export default function Stories() {
                       </div>
                       <div>
                       <Image src={munnar} alt='Munnar Tea' className='w-full h-auto mb-4' />
-                      <img src="munnar-image-url-2" alt="Kolukkumalia Valley" className="w-full h-auto mb-4" />
+                      <Image src={kolukkumalia} alt='Kolukkumalia Valley' className='w-full h-auto mb-4' />
+
                       </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -129,7 +132,8 @@ export default function Stories() {
                       </div>
                       <div>
                       <Image src={raigad} alt="Raigad Fort" className="w-full h-auto mb-4"/>
-                      <img src="maharashtra-image-url-2" alt="Sinhagad Fort" className="w-full h-auto mb-4" />
+                      <Image src={sinhagad} alt='Sinhagad Fort' className='w-full h-auto mb-4' />
+
                       </div>
                     </div>
                   </div>
