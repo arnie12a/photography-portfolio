@@ -3,6 +3,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { FaMapMarkerAlt } from 'react-icons/fa';  // Importing Font Awesome icon
 import raigad from "../public/landscape/raigad.jpg"
+import pelling from "../public/structures/pelling.jpg"
+import kanchenjunga from "../public/landscape/khanchenjunga.jpg"
+import buffalo from "../public/animals/buffalo.jpg"
+import dotter from "../public/animals/dotter.jpg"
+import elephants from "../public/animals/elephant.jpg"
+import munnar from "../public/landscape/munnarTea.jpg"
 import Image from 'next/image';
 
 export default function Stories() {
@@ -78,9 +84,9 @@ export default function Stories() {
                         Then was Gangtok, the capital of Sikkim, which happened to be my favorite. An enormous city scattered throughout the ridge of a mountain. The only way to venture around is by climbing up and down or taking on the winding roads. My highlight was our adventure to Tsomgo Lake. On the way there we saw the absolute best view of Kanchenjunga. I still remember the first instant I saw it and the adrenaline that rushed through me. I can’t wait to return and hike up to the base camp of Kanchenjunga.
                       </div>
                       <div>
-                        <img src="sikkim-image-url-1" alt="Darjeeling" className="w-full h-auto mb-4" />
-                        <img src="sikkim-image-url-2" alt="Pelling" className="w-full h-auto mb-4" />
-                        <img src="sikkim-image-url-3" alt="Gangtok" className="w-full h-auto mb-4" />
+                        <Image src={pelling} alt='Pelling' className='w-full h-auto mb-4' />
+                        <Image src={kanchenjunga} alt='Kanchenjunga' className='w-full h-auto mb-4' />
+
                       </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -92,8 +98,10 @@ export default function Stories() {
                         And you cannot forget about the pristine beaches of Mirissa. Waking up to the waves hitting the sand and having Sri Lankan curries on a table right beside the ocean.
                       </div>
                       <div>
-                        <img src="sri-lanka-image-url-1" alt="Yala National Park" className="w-full h-auto mb-4" />
-                        <img src="sri-lanka-image-url-2" alt="Mirissa Beach" className="w-full h-auto mb-4" />
+                      <Image src={buffalo} alt='Buffalo' className='w-full h-auto mb-4' />
+                      <Image src={elephants} alt='Elephants' className='w-full h-auto mb-4' />
+                      <Image src={dotter} alt='Dotter' className='w-full h-auto mb-4' />
+
                       </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -105,8 +113,8 @@ export default function Stories() {
                         Never thought that beauty existed in India. Like the valleys of Kolukkumalia in Munnar are quite similar to the valleys you would see in Kauai. Makes you realize that everything is very similar all across the globe, but there are obviously little differences that are accounted for by biodiversity and evolution by location.
                       </div>
                       <div>
-                        <img src="munnar-image-url-1" alt="Munnar Tea Plantations" className="w-full h-auto mb-4" />
-                        <img src="munnar-image-url-2" alt="Kolukkumalia Valley" className="w-full h-auto mb-4" />
+                      <Image src={munnar} alt='Munnar Tea' className='w-full h-auto mb-4' />
+                      <img src="munnar-image-url-2" alt="Kolukkumalia Valley" className="w-full h-auto mb-4" />
                       </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
