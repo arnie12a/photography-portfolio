@@ -27,6 +27,7 @@ import auroville from "../public/landscape/auroville.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
+import monteserratView from "../public/landscape/coolRockMonteserrat.jpg"
 
 
 // People Images
@@ -38,12 +39,15 @@ import knipp from "../public/people/knipp.jpg"
 import vanessa from "../public/people/vanessa.jpg"
 import lucas from "../public/people/lucas.jpg"
 import alondraPoipu from "../public/people/alondraPoipu.jpg"
+import ashwini from "../public/people/ashwini.jpg"
+import kaylem from "../public/people/kaylem.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
 import animal4 from "../public/animals/lion.jpg"
 import animal5 from "../public/animals/monkey.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
+import seagull from "../public/animals/seagull.jpg"
 
 // Structure Images
 import bigBen from "../public/structures/bigBen.jpg"
@@ -53,6 +57,9 @@ import mumbai from "../public/structures/mumbai.jpg"
 import mumbaiWater from "../public/structures/mumbaiWater.jpg"
 import oldTrafford from "../public/structures/oldTrafford.jpg"
 import pelling from "../public/structures/pelling.jpg"
+import porto from "../public/structures/porto.jpg"
+import monteserrat from "../public/structures/monteserrat.jpg"
+import washingtonMonument from "../public/structures/washingtonMonument.jpg"
 
 const landscapeImages = [
   {
@@ -70,6 +77,7 @@ const landscapeImages = [
     title: '<span class="text-2xl font-bold text-white">Waimea Canyon</span>',
     description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
   },
+  
   {
     image: zionCarsBackdrop,
     title: '<span class="text-2xl font-bold text-white">Zion National Park</span>',
@@ -81,6 +89,16 @@ const landscapeImages = [
     description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
   },
   {
+    image: tsongmoLake,
+    title: '<span class="text-2xl font-bold text-white">Tsongmo Lake, India</span>',
+    description: '<p class="text-base text-gray-300 mt-2">This lake is located at an elevation of approximately 12,000 ft and was completely frozen over when we visited in the winter time.</p>',
+  },
+  {
+    image: monteserratView,
+    title: '<span class="text-2xl font-bold text-white">Beautiful rock in Monteserrat</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
+  },
+  {
     image: rioCelesteWaterfall,
     title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
     description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
@@ -90,11 +108,8 @@ const landscapeImages = [
     title: '<span class="text-2xl font-bold text-white">Spotted this beautiful flower on a hike in Munnar, India</span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>',
   },
-  {
-    image: tsongmoLake,
-    title: '<span class="text-2xl font-bold text-white">Tsongmo Lake, India</span>',
-    description: '<p class="text-base text-gray-300 mt-2">This lake is located at an elevation of approximately 12,000 ft and was completely frozen over when we visited in the winter time.</p>',
-  },
+  
+  
 ];
 
 
@@ -115,9 +130,19 @@ const peopleImages = [
     description: '<p class="text-base text-gray-300 mt-2">Guess who was more excited to eat the birthday cake?</p>',
   },
   {
+    image: ashwini,
+    title: '<span class="text-2xl font-bold text-white">Ashwini</span>',
+    description: '<p class="text-base text-gray-300 mt-2">My mom taking in the view of the Douro Valley.</p>',
+  },
+  {
     image: nathan,
     title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
     description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
+  },
+  {
+    image: kaylem,
+    title: '<span class="text-2xl font-bold text-white">Kaylem</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
   },
   {
     image: alondraPoipu,
@@ -162,6 +187,11 @@ const animalImages = [
     title: '<span class="text-2xl font-bold text-white">Monkey at Nandi Hills</span>',
     description: '<p class="text-base text-gray-300 mt-2">Located just two hours from Bangalore, you will find yourself plenty of monkeys living life with a great view.</p>',
   },
+  {
+    image: seagull,
+    title: '<span class="text-2xl font-bold text-white">Seagull in Porto, Portugal</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
+  },
 ];
 
 const structureImages = [
@@ -176,9 +206,24 @@ const structureImages = [
     description: '<p class="text-base text-gray-300 mt-2">My view inside Old Trafford when the Red Devils beat Sheffield United 4-2</p>'
   },
   {
+    image: washingtonMonument,
+    title: '<span class="text-2xl font-bold text-white">Washington Monument</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>'
+  },
+  {
     image: galleFort,
     title: '<span class="text-2xl font-bold text-white">Galle Fort</span>',
     description: '<p class="text-base text-gray-300 mt-2">Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century.</p>'
+  },
+  {
+    image: monteserrat,
+    title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
+    description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
+  },
+  {
+    image: porto,
+    title: '<span class="text-2xl font-bold text-white">Sunset views in Porto</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>'
   },
   {
     image: auroville,
@@ -195,6 +240,7 @@ const structureImages = [
     title: '<span class="text-2xl font-bold text-white">View from the Taj Hotel</span>',
     description: '<p class="text-base text-gray-300 mt-2">Look at all those boats and oil rigs.</p>'
   },
+ 
   {
     image: mumbai,
     title: '<span class="text-2xl font-bold text-white">The Mumbai Skyline</span>',
