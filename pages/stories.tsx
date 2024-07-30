@@ -73,7 +73,6 @@ export default function Stories() {
                     </div>
                     
                     <div className="text-lg leading-relaxed">
-                      <Image src={pelling} alt='Pelling' className='w-full h-auto rounded-lg shadow-lg mb-4' />
                       <strong>The Most Beautiful?</strong><br />
                       <strong>Sikkim</strong><br />
                       Located on a thin strip of land between Nepal and Bhutan, Sikkim is home to the world’s third tallest mountain, Mount Kanchenjunga. The region is notable for its biodiversity, including alpine and subtropical climates along with its rich culture.
@@ -82,43 +81,47 @@ export default function Stories() {
                       <br /><br />
                       <strong>Darjeeling</strong> is widely known for its tea, which is exported to places all over the globe. You may very well be sitting down at your dining table right now sipping some tea which is actually grown here. The highlights here include sunrise at Tiger Hill viewpoint where I got my first view of Mount Kanchenjunga, seeing Himalayan Mountaineering Institution, the zoo, and the tea plantations.
                       <br /><br />
-                      Unfortunately for us, the clouds took over in Pelling. Typically the view of Kanchenjunga from here is the best of the few cities we visited which was a huge bummer. But, the small town did provide its beauty through its monasteries located at the very top of the foothills. The drives in Pelling also hit differently. The moment that hit me was when we were driving through the valleys of the mountains and at the top of the ridges are huts. And I am just thinking, how do these people get food, water, transport things, etc. Their way of life is completely different from mine. They essentially live in the wild. And this is something that I always experience when I come to India, that people from the other side of the globe live life in ways that you cannot even imagine. And there is definitely a beauty in that which I believe everyone should experience once in their lives.
+                      <Image src={pelling} alt='Pelling' className='w-full h-auto rounded-lg shadow-lg mb-4' />
+
+                      Unfortunately for us, the clouds took over in <strong>Pelling</strong>. Typically the view of Kanchenjunga from here is the best of the few cities we visited which was a huge bummer. But, the small town did provide its beauty through its monasteries located at the very top of the foothills. The drives in Pelling also hit differently. The moment that hit me was when we were driving through the valleys of the mountains and at the top of the ridges are huts. And I am just thinking, how do these people get food, water, transport things, etc. Their way of life is completely different from mine. They essentially live in the wild. And this is something that I always experience when I come to India, that people from the other side of the globe live life in ways that you cannot even imagine. And there is definitely a beauty in that which I believe everyone should experience once in their lives.
                       <br /><br />
-                      Then was Gangtok, the capital of Sikkim, which happened to be my favorite. An enormous city scattered throughout the ridge of a mountain. The only way to venture around is by climbing up and down or taking on the winding roads. My highlight was our adventure to Tsomgo Lake. On the way there we saw the absolute best view of Kanchenjunga. I still remember the first instant I saw it and the adrenaline that rushed through me. I can’t wait to return and hike up to the base camp of Kanchenjunga.
+                      Then was <strong>Gangtok</strong>, the capital of Sikkim, which happened to be my favorite. An enormous city scattered throughout the ridge of a mountain. The only way to venture around is by climbing up and down or taking on the winding roads. My highlight was our adventure to Tsomgo Lake. On the way there we saw the absolute best view of Kanchenjunga. I still remember the first instant I saw it and the adrenaline that rushed through me. I can’t wait to return and hike up to the base camp of Kanchenjunga.
                       <Image src={kanchenjunga} alt='Kanchenjunga' className='w-full h-auto rounded-lg shadow-lg mt-4' />
                     </div>
               
                     <div className="text-lg leading-relaxed">
-                      <Image src={buffalo} alt='Buffalo' className='w-full h-auto rounded-lg shadow-lg mb-4' />
                       <strong>Miscellaneous Award?</strong><br />
                       <strong>Sri Lanka</strong><br />
                       Located just below India, Sri Lanka is a tropical paradise. My mom and I explored the southern region of the country which is very well known for its pristine beaches and wildlife. The highlight for me was learning photography tips from my tour driver at Yala National Park. The wildlife sanctuary is widely popular for its variety of wildlife and important conservation of Sri Lankan elephants, Sri Lankan leopards, and aquatic birds. Here are a couple of my favorite animals I was able to capture on the safari.
                       <br /><br />
                       And you cannot forget about the pristine beaches of Mirissa. Waking up to the waves hitting the sand and having Sri Lankan curries on a table right beside the ocean.
+                      <Image src={buffalo} alt='Buffalo' className='w-full h-auto rounded-lg shadow-lg mb-4' />
                       <Image src={elephants} alt='Elephants' className='w-full h-auto rounded-lg shadow-lg mt-4' />
                       <Image src={dotter} alt='Dotter' className='w-full h-auto rounded-lg shadow-lg mt-4' />
                     </div>
               
                     <div className="text-lg leading-relaxed">
-                      <Image src={munnar} alt='Munnar Tea' className='w-full h-auto rounded-lg shadow-lg mb-4' />
                       <strong>My Favorite?</strong><br />
                       <strong>Munnar</strong><br />
                       On the horizon and in every direction, all you see are tea plantations. Located in the southern state of Kerala, Munnar is a popular hill station known for its sprawling tea gardens, misty mountains, and pleasant climate. It is a paradise for trekkers and nature enthusiasts which is exactly why I had a great experience here.
                       <br /><br />
                       Never thought that beauty existed in India. Like the valleys of Kolukkumalia in Munnar are quite similar to the valleys you would see in Kauai. Makes you realize that everything is very similar all across the globe, but there are obviously little differences that are accounted for by biodiversity and evolution by location.
+                      <Image src={munnar} alt='Munnar Tea' className='w-full h-auto rounded-lg shadow-lg mb-4' />
                       <Image src={kolukkumalia} alt='Kolukkumalia Valley' className='w-full h-auto rounded-lg shadow-lg mt-4' />
                     </div>
               
                     <div className="text-lg leading-relaxed">
-                      <Image src={raigad} alt="Raigad Fort" className="w-full h-auto rounded-lg shadow-lg mb-4"/>
                       <strong>Historic Favorite?</strong><br />
                       <strong>Maharashtra</strong><br />
                       Learning about the history behind my family’s home state was a real eye-opener for me. When visiting the city of Pune, my dad and I visited two very prominent forts named Raigad and Sinhagad fort.
                       <br /><br />
+                      <Image src={raigad} alt="Raigad Fort" className="w-full h-auto rounded-lg shadow-lg mb-4"/>
+
                       <strong>Raigad Fort</strong>, situated in the Sahyadri mountain range of Maharashtra, served as the capital of the Maratha Empire and was the site of Chhatrapati Shivaji Maharaj's coronation in 1674.
                       <br /><br />
-                      <strong>Sinhagad Fort</strong>, located near Pune, Maharashtra, is renowned for its strategic importance and the heroic 1647 battle led by Tanaji Malusare under Chhatrapati Shivaji Maharaj.
                       <Image src={sinhagad} alt='Sinhagad Fort' className='w-full h-auto rounded-lg shadow-lg mt-4' />
+
+                      <strong>Sinhagad Fort</strong>, located near Pune, Maharashtra, is renowned for its strategic importance and the heroic 1647 battle led by Tanaji Malusare under Chhatrapati Shivaji Maharaj.
                     </div>
                   </div>
                   <button
