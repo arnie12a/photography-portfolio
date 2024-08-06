@@ -233,13 +233,7 @@ export default function TempIndex() {
                     <span className="ml-4 text-xl font-bold">Portfolio</span>
                 </a>
 
-                <a href="/stories" className="flex items-center justify-center p-6 min-w-[200px] bg-gradient-to-r from-green-400 to-green-600 text-white rounded-lg shadow-lg hover:from-green-500 hover:to-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl mt-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M12 20h9" />
-                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19.001H4v-3L16.5 3.5z" />
-                    </svg>
-                    <span className="ml-4 text-xl font-bold">Stories</span>
-                </a>
+                
 
 
 
