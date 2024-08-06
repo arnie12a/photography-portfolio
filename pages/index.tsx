@@ -233,12 +233,7 @@ export default function TempIndex() {
                       <span className="ml-4 text-xl font-bold">Portfolio</span>
                   </a>
 
-                  <a href="/stories" className="flex items-center justify-center p-6 mb-6 min-w-[200px] bg-gradient-to-r from-green-400 to-green-600 text-white rounded-lg shadow-lg hover:from-green-500 hover:to-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7H3zm2 0a2 2 0 0 0-2-2h14a2 2 0 0 0-2 2H5zm4-2a2 2 0 0 1 4 0h4a2 2 0 0 1 2 2h-4a2 2 0 0 1-4 0H7a2 2 0 0 1 2-2z" />
-                      </svg>
-                      <span className="ml-4 text-xl font-bold">Stories</span>
-                  </a>
+                  
               </Tab.Panel>
 
 
