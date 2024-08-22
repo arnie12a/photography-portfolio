@@ -28,6 +28,8 @@ import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
 import monteserratView from "../public/landscape/coolRockMonteserrat.jpg"
+import dolomites1 from "../public/landscape/dolomites1.jpg"
+import dolomites3 from "../public/landscape/dolomites3.jpg"
 
 
 // People Images
@@ -68,6 +70,11 @@ const landscapeImages = [
     description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
   },
   {
+    image: dolomites3,
+    title: '<span class="text-2xl font-bold text-white"></span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
+  },
+  {
     image: kauaiOcean,
     title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville</span>',
     description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
@@ -96,6 +103,11 @@ const landscapeImages = [
   {
     image: monteserratView,
     title: '<span class="text-2xl font-bold text-white">Beautiful rock in Monteserrat</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
+  },
+  {
+    image: dolomites1,
+    title: '<span class="text-2xl font-bold text-white"></span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>',
   },
   {

@@ -23,6 +23,7 @@ import kalalauLookout from "../public/landscape/kalalauLookout.jpg"
 import smokeyMountainsSunset from "../public/landscape/smokeyMountainsSunset.jpg"
 import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import raigad from "../public/landscape/raigad.jpg"
+import dolomites2 from "../public/landscape/dolomites2.jpg"
 
 
 // People Images
@@ -64,6 +65,7 @@ const favoriteImages = [
       title: '<a href="https://www.lucasleeho.com/" target="_blank" class="text-2xl font-bold text-blue-400">Lucas Ho</a>',
       description: '<p class="text-base text-gray-300 mt-2">A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.</p>',
     },
+    
     {
       image: dotter,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
@@ -78,6 +80,11 @@ const favoriteImages = [
       image: chicagoSkyline,
       title: '<span class="text-2xl font-bold text-white">Chicago Skyline</span>',
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite way to see the city of Chicago.</p>',
+    },
+    {
+      image: dolomites2,
+      title: '<span class="text-2xl font-bold text-white">Rifugio Averau </span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
       image: hanaleiBay,
