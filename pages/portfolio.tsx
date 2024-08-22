@@ -43,6 +43,7 @@ import lucas from "../public/people/lucas.jpg"
 import alondraPoipu from "../public/people/alondraPoipu.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
+import neeva from "../public/people/neeva.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
@@ -140,6 +141,11 @@ const peopleImages = [
     image: mayraAndSnehal,
     title: '<span class="text-2xl font-bold text-white">Snehal & Mayra</span>',
     description: '<p class="text-base text-gray-300 mt-2">Guess who was more excited to eat the birthday cake?</p>',
+  },
+  {
+    image: neeva,
+    title: '<span class="text-2xl font-bold text-white">Neeva</span>',
+    description: '',
   },
   {
     image: ashwini,

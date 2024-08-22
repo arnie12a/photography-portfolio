@@ -101,11 +101,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
       description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of everything in London from this view.</p>',
     },
-    {
-      image: neeva,
-      title: '<span class="text-2xl font-bold text-white">Neeva</span>',
-      description: '',
-    },
+    
     {
       image: nathan,
       title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
