@@ -107,11 +107,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
       description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
     },
-    {
-      image: lucasjacopo,
-      title: '<span class="text-2xl font-bold text-white">Lucas & Jacopo</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Making dumplings is no easy feat. Thanks to these chefs, the dumplings turned out perfect and I couldn\'t stop devouring them.</p>',
-    },
+    
     {
       image: goat,
       title: '<span class="text-2xl font-bold text-white">Mountain Goat</span>',

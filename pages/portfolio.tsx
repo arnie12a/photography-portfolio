@@ -85,17 +85,18 @@ const landscapeImages = [
     title: '<span class="text-2xl font-bold text-white">Waimea Canyon</span>',
     description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
   },
+  {
+    image: dolomites1,
+    title: '<span class="text-2xl font-bold text-white"></span>',
+    description: '<p class="text-base text-gray-300 mt-2">Loved the landscape on the hike from Rifugio Averau</p>',
+  },
   
   {
     image: zionCarsBackdrop,
     title: '<span class="text-2xl font-bold text-white">Zion National Park</span>',
     description: '<p class="text-base text-gray-300 mt-2">Felt like I was right out of the movie Cars.</p>',
   },
-  {
-    image: bryceCanyon,
-    title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
-  },
+  
   {
     image: tsongmoLake,
     title: '<span class="text-2xl font-bold text-white">Tsongmo Lake, India</span>',
@@ -103,18 +104,19 @@ const landscapeImages = [
   },
   {
     image: monteserratView,
-    title: '<span class="text-2xl font-bold text-white">Beautiful rock in Monteserrat</span>',
+    title: '<span class="text-2xl font-bold text-white">Beautiful terrain in Monteserrat</span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>',
   },
-  {
-    image: dolomites1,
-    title: '<span class="text-2xl font-bold text-white"></span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>',
-  },
+  
   {
     image: rioCelesteWaterfall,
     title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
     description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
+  },
+  {
+    image: bryceCanyon,
+    title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
   },
   {
     image: munnarFlower,
