@@ -70,11 +70,7 @@ const landscapeImages = [
     title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
     description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
   },
-  {
-    image: dolomites3,
-    title: '<span class="text-2xl font-bold text-white"></span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>',
-  },
+  
   {
     image: kauaiOcean,
     title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville</span>',
@@ -121,6 +117,11 @@ const landscapeImages = [
   {
     image: munnarFlower,
     title: '<span class="text-2xl font-bold text-white">Spotted this beautiful flower on a hike in Munnar, India</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>',
+  },
+  {
+    image: dolomites3,
+    title: '<span class="text-2xl font-bold text-white"></span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>',
   },
   
