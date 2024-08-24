@@ -83,8 +83,8 @@ const landscapeImages = [
   },
   {
     image: dolomites1,
-    title: '<span class="text-2xl font-bold text-white"></span>',
-    description: '<p class="text-base text-gray-300 mt-2">Loved the landscape on the hike from Rifugio Averau</p>',
+    title: '<span class="text-2xl font-bold text-white">Hike to Rifugio Averau</span>',
+    description: '<p class="text-base text-gray-300 mt-2">I still picture this backdrop whenever I shut my eyes. </p>',
   },
   
   {
@@ -101,7 +101,7 @@ const landscapeImages = [
   {
     image: monteserratView,
     title: '<span class="text-2xl font-bold text-white">Beautiful terrain in Monteserrat</span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>',
+    description: '<p class="text-base text-gray-300 mt-2">Highly recommend taking the two hour train ride from Barcelona to check out this beautiful location.</p>',
   },
   
   {
@@ -121,7 +121,7 @@ const landscapeImages = [
   },
   {
     image: dolomites3,
-    title: '<span class="text-2xl font-bold text-white"></span>',
+    title: '<span class="text-2xl font-bold text-white">Dolomites</span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>',
   },
   

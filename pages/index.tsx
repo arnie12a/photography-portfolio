@@ -82,6 +82,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite way to see the city of Chicago.</p>',
     },
     {
+      image: goat,
+      title: '<span class="text-2xl font-bold text-white">Mountain Goat</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
+    },
+    {
       image: dolomites2,
       title: '<span class="text-2xl font-bold text-white">Rifugio Averau </span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
@@ -108,11 +113,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
     },
     
-    {
-      image: goat,
-      title: '<span class="text-2xl font-bold text-white">Mountain Goat</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
-    },
+  
     {
       image: elephants,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
