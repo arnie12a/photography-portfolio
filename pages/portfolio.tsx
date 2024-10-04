@@ -29,7 +29,6 @@ import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
 import monteserratView from "../public/landscape/coolRockMonteserrat.jpg"
 import dolomites1 from "../public/landscape/dolomites1.jpg"
-import dolomites3 from "../public/landscape/dolomites3.jpg"
 
 
 // People Images
@@ -78,7 +77,7 @@ const landscapeImages = [
   },
   {
     image: waimeaCanyon,
-    title: '<span class="text-2xl font-bold text-white">Waimea Canyon</span>',
+    title: '<span class="text-2xl font-bold text-white">Waimea Canyon, Kauai</span>',
     description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
   },
   {
@@ -100,7 +99,7 @@ const landscapeImages = [
   },
   {
     image: monteserratView,
-    title: '<span class="text-2xl font-bold text-white">Beautiful terrain in Monteserrat</span>',
+    title: '<span class="text-2xl font-bold text-white">Beautiful terrain in Monteserrat Spain</span>',
     description: '<p class="text-base text-gray-300 mt-2">Highly recommend taking the two hour train ride from Barcelona to check out this beautiful location.</p>',
   },
   
@@ -116,14 +115,10 @@ const landscapeImages = [
   },
   {
     image: munnarFlower,
-    title: '<span class="text-2xl font-bold text-white">Spotted this beautiful flower on a hike in Munnar, India</span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>',
+    title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
+    description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower</p>',
   },
-  {
-    image: dolomites3,
-    title: '<span class="text-2xl font-bold text-white">Dolomites</span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>',
-  },
+  
   
   
 ];

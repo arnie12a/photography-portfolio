@@ -29,8 +29,7 @@ import dolomites2 from "../public/landscape/dolomites2.jpg"
 // People Images
 import lucasho from "../public/people/lucas.jpg"
 import nathan from "../public/people/nathan.jpg"
-import lucasjacopo from "../public/people/dumplingmaking.jpg"
-import neeva from "../public/people/neeva.jpg"
+
 import profilePic from "../public/people/arnie.jpg"
 
 
@@ -47,17 +46,17 @@ import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
 const favoriteImages = [
     {
       image: khanchenjunga,
-      title: '<span class="text-2xl font-bold text-white">Khanchenjunga</span>',
+      title: '<span class="text-2xl font-bold text-white">Khanchenjunga, India</span>',
       description: '<div class="text-center"><p class="text-lg text-gray-300 mb-4">Standing at <b>28,169 feet</b>, Khanchenjunga is the third highest mountain in the world.</p><p class="text-lg text-gray-300 mb-4">It holds great cultural and environmental significance for the people in Sikkim, India.</p></div>',
     },
     {
       image: raigad,
-      title: '<span class="text-2xl font-bold text-white">Raigad Fort</span>',
+      title: '<span class="text-2xl font-bold text-white">Raigad Fort, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.</p>',
     },
     {
       image: smokeyMountainsSunset,
-      title: '<span class="text-2xl font-bold text-white">Smokey Mountains National Park</span>',
+      title: '<span class="text-2xl font-bold text-white">Smokey Mountains National Park, USA</span>',
       description: '<p class="text-base text-gray-300 mt-2">My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.</p>',
     },
     {
@@ -74,7 +73,7 @@ const favoriteImages = [
     {
       image: hilton,
       title: '<span class="text-2xl font-bold text-white">Hilton</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Best way to spend the night after all the excursions in Gangtok is with this beautiful boy at the hotel.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Say hello to Hilton the hotel dog. What a fluffy and gentle boy.</p>',
     },
     {
       image: chicagoSkyline,
@@ -88,8 +87,8 @@ const favoriteImages = [
     },
     {
       image: dolomites2,
-      title: '<span class="text-2xl font-bold text-white">Rifugio Averau </span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Rifugio Averau, Italian Dolomites</span>',
+      description: '<p class="text-base text-gray-300 mt-2">I cannot get enough of the panoramic views while hiking in the Dolomites.</p>',
     },
     {
       image: hanaleiBay,
@@ -104,7 +103,7 @@ const favoriteImages = [
     {
       image: londonBridge,
       title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of everything in London from this view.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of London from above.</p>',
     },
     
     {
