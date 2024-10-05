@@ -87,7 +87,7 @@ const favoriteImages = [
     },
     {
       image: dolomites2,
-      title: '<span class="text-2xl font-bold text-white">Rifugio Averau, Italian Dolomites</span>',
+      title: '<span class="text-2xl font-bold text-white">Rifugio Averau, Italy</span>',
       description: '<p class="text-base text-gray-300 mt-2">I cannot get enough of the panoramic views while hiking in the Dolomites.</p>',
     },
     {
@@ -103,7 +103,7 @@ const favoriteImages = [
     {
       image: londonBridge,
       title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of London from above.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
     },
     
     {
@@ -116,7 +116,7 @@ const favoriteImages = [
     {
       image: elephants,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night they have ahead.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night ahead.</p>',
     },
   ];
   

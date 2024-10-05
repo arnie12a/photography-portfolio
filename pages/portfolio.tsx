@@ -82,13 +82,13 @@ const landscapeImages = [
   },
   {
     image: dolomites1,
-    title: '<span class="text-2xl font-bold text-white">Hike to Rifugio Averau</span>',
+    title: '<span class="text-2xl font-bold text-white">Hike to Rifugio Averau, Italy</span>',
     description: '<p class="text-base text-gray-300 mt-2">I still picture this backdrop whenever I shut my eyes. </p>',
   },
   
   {
     image: zionCarsBackdrop,
-    title: '<span class="text-2xl font-bold text-white">Zion National Park</span>',
+    title: '<span class="text-2xl font-bold text-white">Zion National Park, USA</span>',
     description: '<p class="text-base text-gray-300 mt-2">Felt like I was right out of the movie Cars.</p>',
   },
   
@@ -99,7 +99,7 @@ const landscapeImages = [
   },
   {
     image: monteserratView,
-    title: '<span class="text-2xl font-bold text-white">Beautiful terrain in Monteserrat Spain</span>',
+    title: '<span class="text-2xl font-bold text-white">Monteserrat, Spain</span>',
     description: '<p class="text-base text-gray-300 mt-2">Highly recommend taking the two hour train ride from Barcelona to check out this beautiful location.</p>',
   },
   
@@ -110,7 +110,7 @@ const landscapeImages = [
   },
   {
     image: bryceCanyon,
-    title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park</span>',
+    title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park, USA</span>',
     description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
   },
   {
