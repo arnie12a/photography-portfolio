@@ -28,7 +28,6 @@ import dolomites2 from "../public/landscape/dolomites2.jpg"
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
-import nathan from "../public/people/nathan.jpg"
 
 import profilePic from "../public/people/arnie.jpg"
 
@@ -106,12 +105,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
     },
     
-    {
-      image: nathan,
-      title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
-    },
-    
+   
   
     {
       image: elephants,
