@@ -23,7 +23,6 @@ import theNarrows from "../public/landscape/theNarrows.jpg"
 import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
 import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
-import auroville from "../public/landscape/auroville.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
@@ -241,11 +240,7 @@ const structureImages = [
     title: '<span class="text-2xl font-bold text-white">Sunset views in Porto</span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>'
   },
-  {
-    image: auroville,
-    title: '<span class="text-2xl font-bold text-white">Auroville, India</span>',
-    description: '<p class="text-base text-gray-300 mt-2">A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.</p>'
-  },
+  
   {
     image: bigBen,
     title: '<span class="text-2xl font-bold text-white">Big Ben</span>',

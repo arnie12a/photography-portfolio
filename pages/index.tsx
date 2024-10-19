@@ -28,7 +28,6 @@ import dolomites2 from "../public/landscape/dolomites2.jpg"
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
-
 import profilePic from "../public/people/arnie.jpg"
 
 
@@ -41,6 +40,8 @@ import elephants from "../public/animals/elephant.jpg"
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
 import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
+import auroville from "../public/landscape/auroville.jpg"
+
 
 const favoriteImages = [
     {
@@ -105,7 +106,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
     },
     
-   
+    {
+      image: auroville,
+      title: '<span class="text-2xl font-bold text-white">Auroville, India</span>',
+      description: '<p class="text-base text-gray-300 mt-2">A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.</p>'
+    },
   
     {
       image: elephants,
@@ -219,15 +224,14 @@ export default function TempIndex() {
 
                 </Tab.Panel>
                 <Tab.Panel className="grid grid-cols-1 place-items-center">
-                  <a href="/portfolio" className="flex items-center justify-center p-6 mb-6 min-w-[200px] bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7H3zm2 0a2 2 0 0 0-2-2h14a2 2 0 0 0-2 2H5zm4-2a2 2 0 0 1 4 0h4a2 2 0 0 1 2 2h-4a2 2 0 0 1-4 0H7a2 2 0 0 1 2-2z" />
-                      </svg>
-                      <span className="ml-4 text-xl font-bold">Portfolio</span>
+                  <a href="/portfolio" className="flex items-center justify-center py-8 px-6 mb-6 min-w-[200px] bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7H3zm2 0a2 2 0 0 0-2-2h14a2 2 0 0 0-2 2H5zm4-2a2 2 0 0 1 4 0h4a2 2 0 0 1 2 2h-4a2 2 0 0 1-4 0H7a2 2 0 0 1 2-2z" />
+                    </svg>
+                    <span className="ml-4 text-lg font-bold">Portfolio</span>
                   </a>
+                </Tab.Panel>
 
-                  
-              </Tab.Panel>
 
 
 
@@ -241,11 +245,12 @@ export default function TempIndex() {
                     </div>
 
                     <div className="md:w-1/2 md:pl-8">
-                    <h2 className="text-2xl font-bold mb-4">Arnav Karnik</h2>
+                    <h2 className="text-2xl font-bold mb-4">My name is Arnav Karnik</h2>
                     <p>
-                        I am an aspiring professional travel photographer. I love exploring new places and capturing their beauty. 
-                        My portfolio showcases my favorite pictures I have taken on my many adventures. 
-                        Looking forward to the many more and the stories I tell along the way.
+                        
+                        I am an aspiring travel photographer. I love exploring new places and capturing their beauty. 
+                        My portfolio showcases my favorite landscape, portrait, and structure photos from these unqiue locations. 
+                        I hope to improve my technique and my storytelling as I bring you along on my future adventures!
                     </p><br/>
 
                     <br/>
