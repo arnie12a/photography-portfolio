@@ -37,7 +37,6 @@ import uiucBoys from "../public/people/uiucBoys.jpg"
 import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
 import knipp from "../public/people/knipp.jpg"
 import vanessa from "../public/people/vanessa.jpg"
-import lucas from "../public/people/lucas.jpg"
 import alondraPoipu from "../public/people/alondraPoipu.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
@@ -129,11 +128,7 @@ const peopleImages = [
     title: '<h1 class="text-3xl font-bold text-white">Arnav Karnik</h1>',
     description: '<div class="text-center"><h3 class="text-3xl font-bold text-white mb-4">Welcome to my Photography Portfolio.</h3><p class="text-lg text-gray-300">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
   },
-  {
-    image: lucas,
-    title: '<span class="text-2xl font-bold text-white">Lucas focusing on making the perfect dumpling</span>',
-    description: '',
-  },
+  
   {
     image: mayraAndSnehal,
     title: '<span class="text-2xl font-bold text-white">Snehal & Mayra</span>',
@@ -218,7 +213,7 @@ const structureImages = [
   {
     image: oldTrafford,
     title: '<h3 class="text-2xl font-bold text-white">The Theatre of Dreams</h3>',
-    description: '<p class="text-base text-gray-300 mt-2">My view inside Old Trafford when the Red Devils beat Sheffield United 4-2</p>'
+    description: '<p class="text-base text-gray-300 mt-2">I think I was 8 years old when I first started following Manchester United after watching the movie <i>Bend it Like Beckham</i>. Visiting Old Trafford was a dream come true. I cannot wait to return for a Champions League match in the near future!</p>'
   },
   {
     image: washingtonMonument,
