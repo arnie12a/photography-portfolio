@@ -93,7 +93,7 @@ const favoriteImages = [
     {
       image: hanaleiBay,
       title: '<span class="text-2xl font-bold text-white">Hanelei Bay, Kauai</span>',
-      description: '<p class="text-base text-gray-300 mt-2">By far my favorite place in Kauai. Loved the food and the relaxing vibes that the town had to offer.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">By far my favorite place in Kauai. Loved the food and the relaxing vibes that the town had to offer. And ofcourse nothing beats the lush mountainous backdrop.</p>',
     },
     {
       image: kalalauLookout,

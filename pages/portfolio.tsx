@@ -233,7 +233,7 @@ const structureImages = [
   {
     image: porto,
     title: '<span class="text-2xl font-bold text-white">Sunset views in Porto</span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>'
+    description: '<p class="text-base text-gray-300 mt-2">Watching a beautiful sunset and eating incredible food are my two biggest takeaways from Porto, Portugal.</p>'
   },
   
   {
@@ -255,7 +255,7 @@ const structureImages = [
   {
     image: gangtokStadium,
     title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
-    description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. So you can definitely say that soccer is huge in Sikkim.</p>'
+    description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. Love seeing the beautiful game in India!</p>'
   },
 ];
 
