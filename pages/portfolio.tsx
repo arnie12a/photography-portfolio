@@ -60,7 +60,6 @@ import pelling from "../public/structures/pelling.jpg"
 import porto from "../public/structures/porto.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import washingtonMonument from "../public/structures/washingtonMonument.jpg"
-import barcelonaBuildings from "../public/structures/barcelonaBuilding.jpg"
 import lincolnMemorial from "../public/structures/lincolnMemorial.jpg"
 import portoCathedral from "../public/structures/portoCathedral.jpg"
 import portoBuilding from "../public/structures/portugalBuilding.jpg"
@@ -231,11 +230,6 @@ const structureImages = [
     image: washingtonMonument,
     title: '<span class="text-2xl font-bold text-white">Washington Monument</span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>'
-  },
-  {
-    image: barcelonaBuildings,
-    title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
-    description: '<p class="text-base text-gray-300 mt-2">The rooftops are just so pretty.</p>'
   },
   {
     image: galleFort,
