@@ -42,7 +42,6 @@ import kaylem from "../public/people/kaylem.jpg"
 import neeva from "../public/people/neeva.jpg"
 import gregPosing from "../public/people/gregPosing.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
-import nathanHalfMarathon from "../public/people/nathanHalfMarathon.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
@@ -169,7 +168,7 @@ const peopleImages = [
   {
     image: gregPosing,
     title: '<span class="text-2xl font-bold text-white">Greg</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Nice little portrait of my buddy.</p>',
+    description: '<p class="text-base text-gray-300 mt-2">Nice little portrait of my buddy Greg Vogt.</p>',
   },
   {
     image: kaylem,
