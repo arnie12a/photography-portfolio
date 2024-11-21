@@ -40,7 +40,6 @@ import vanessa from "../public/people/vanessa.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
 import neeva from "../public/people/neeva.jpg"
-import gregPosing from "../public/people/gregPosing.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
 
 // Animal Images
@@ -165,11 +164,7 @@ const peopleImages = [
     description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
   },
  
-  {
-    image: gregPosing,
-    title: '<span class="text-2xl font-bold text-white">Greg</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Nice little portrait of my buddy Greg Vogt.</p>',
-  },
+ 
   {
     image: kaylem,
     title: '<span class="text-2xl font-bold text-white">Kaylem</span>',
