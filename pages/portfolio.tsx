@@ -37,10 +37,12 @@ import uiucBoys from "../public/people/uiucBoys.jpg"
 import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
 import knipp from "../public/people/knipp.jpg"
 import vanessa from "../public/people/vanessa.jpg"
-import alondraPoipu from "../public/people/alondraPoipu.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
 import neeva from "../public/people/neeva.jpg"
+import gregPosing from "../public/people/gregPosing.jpg"
+import muhabPhone from "../public/people/muhabPhone.jpg"
+import nathanHalfMarathon from "../public/people/nathanHalfMarathon.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
@@ -60,6 +62,13 @@ import pelling from "../public/structures/pelling.jpg"
 import porto from "../public/structures/porto.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import washingtonMonument from "../public/structures/washingtonMonument.jpg"
+import barcelonaBuildings from "../public/structures/barcelonaBuilding.jpg"
+import lincolnMemorial from "../public/structures/lincolnMemorial.jpg"
+import portoCathedral from "../public/structures/portoCathedral.jpg"
+import portoBuilding from "../public/structures/portugalBuilding.jpg"
+import insideSagradaFamilia from "../public/structures/sagradaFamilia.jpg"
+import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
+
 
 const landscapeImages = [
   {
@@ -135,29 +144,37 @@ const peopleImages = [
     description: '<p class="text-base text-gray-300 mt-2">Guess who was more excited to eat the birthday cake?</p>',
   },
   {
-    image: neeva,
-    title: '<span class="text-2xl font-bold text-white">Neeva</span>',
+    image: muhabPhone,
+    title: '<span class="text-2xl font-bold text-white">Muhab</span>',
     description: '',
   },
+  
   {
     image: ashwini,
     title: '<span class="text-2xl font-bold text-white">Ashwini</span>',
     description: '<p class="text-base text-gray-300 mt-2">My mom taking in the view of the Douro Valley.</p>',
+  },
+  
+  {
+    image: neeva,
+    title: '<span class="text-2xl font-bold text-white">Neeva</span>',
+    description: '',
   },
   {
     image: nathan,
     title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
     description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
   },
+ 
+  {
+    image: gregPosing,
+    title: '<span class="text-2xl font-bold text-white">Greg</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Nice little portrait of my buddy.</p>',
+  },
   {
     image: kaylem,
     title: '<span class="text-2xl font-bold text-white">Kaylem</span>',
     description: '<p class="text-base text-gray-300 mt-2"></p>',
-  },
-  {
-    image: alondraPoipu,
-    title: '<span class="text-2xl font-bold text-white">Walks in Poipu</span>',
-    description: '',
   },
   {
     image: uiucBoys,
@@ -169,6 +186,7 @@ const peopleImages = [
     title: '<span class="text-2xl font-bold text-white">Vanessa loves apples</span>',
     description: '',
   },
+  
   {
     image: knipp,
     title: '<span class="text-2xl font-bold text-white">Knipp</span>',
@@ -221,9 +239,19 @@ const structureImages = [
     description: '<p class="text-base text-gray-300 mt-2"></p>'
   },
   {
+    image: barcelonaBuildings,
+    title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
+    description: '<p class="text-base text-gray-300 mt-2">The rooftops are just so pretty.</p>'
+  },
+  {
     image: galleFort,
     title: '<span class="text-2xl font-bold text-white">Galle Fort</span>',
     description: '<p class="text-base text-gray-300 mt-2">Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century.</p>'
+  },
+  {
+    image: outsideSagradaFamilia,
+    title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
+    description: '<p class="text-base text-gray-300 mt-2">The view of Sagrada Familia from a far.</p>'
   },
   {
     image: monteserrat,
@@ -231,15 +259,30 @@ const structureImages = [
     description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
   },
   {
+    image: portoBuilding,
+    title: '<span class="text-2xl font-bold text-white">Porto, Portugal</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Golden hour on building.</p>'
+  },
+  {
     image: porto,
     title: '<span class="text-2xl font-bold text-white">Sunset views in Porto</span>',
     description: '<p class="text-base text-gray-300 mt-2">Watching a beautiful sunset and eating incredible food are my two biggest takeaways from Porto, Portugal.</p>'
+  },
+  {
+    image: portoCathedral,
+    title: '<span class="text-2xl font-bold text-white">Cathedral in Porto, Portugal</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>'
   },
   
   {
     image: bigBen,
     title: '<span class="text-2xl font-bold text-white">Big Ben</span>',
     description: '<p class="text-base text-gray-300 mt-2">What an iconic clock tower</p>'
+  },
+  {
+    image: lincolnMemorial,
+    title: '<span class="text-2xl font-bold text-white">Lincoln Memorial</span>',
+    description: '<p class="text-base text-gray-300 mt-2"></p>'
   },
   {
     image: mumbaiWater,
@@ -251,6 +294,11 @@ const structureImages = [
     image: mumbai,
     title: '<span class="text-2xl font-bold text-white">The Mumbai Skyline</span>',
     description: '<p class="text-base text-gray-300 mt-2">Took in the sunset on Marine Drive.</p>'
+  },
+  {
+    image: insideSagradaFamilia,
+    title: '<span class="text-2xl font-bold text-white">Sagrada Familia</span>',
+    description: '<p class="text-base text-gray-300 mt-2">Lovely view inside the biggest cathedral in Barcelona.</p>'
   },
   {
     image: gangtokStadium,

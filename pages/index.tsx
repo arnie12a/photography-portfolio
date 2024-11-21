@@ -24,11 +24,13 @@ import smokeyMountainsSunset from "../public/landscape/smokeyMountainsSunset.jpg
 import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import raigad from "../public/landscape/raigad.jpg"
 import dolomites2 from "../public/landscape/dolomites2.jpg"
+import seceda from "../public/landscape/seceda.jpg"
 
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
+import nathanHalfMarathon from "../public/people/nathanHalfMarathon.jpg"
 
 
 // Animal Images
@@ -101,6 +103,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>Jurassic Park</i>.</p>',
     },
     {
+      image: nathanHalfMarathon,
+      title: '<span class="text-2xl font-bold text-white">Nathan</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Just 15 second shy of his personal best for a half marathon in Madison.</p>',
+    },
+    {
       image: londonBridge,
       title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
       description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
@@ -116,6 +123,11 @@ const favoriteImages = [
       image: elephants,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night ahead.</p>',
+    },
+    {
+      image: seceda,
+      title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
+      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
     },
   ];
   
