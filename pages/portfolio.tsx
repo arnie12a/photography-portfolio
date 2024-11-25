@@ -163,7 +163,6 @@ const peopleImages = [
     description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
   },
  
- 
   {
     image: kaylem,
     title: '<span class="text-2xl font-bold text-white">Kaylem</span>',

@@ -25,12 +25,11 @@ import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import raigad from "../public/landscape/raigad.jpg"
 import dolomites2 from "../public/landscape/dolomites2.jpg"
 import seceda from "../public/landscape/seceda.jpg"
-
+import rainbow from "../public/landscape/rainbow.jpg"
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
-import nathanHalfMarathon from "../public/people/nathanHalfMarathon.jpg"
 
 
 // Animal Images
@@ -103,9 +102,9 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">At 4,000 feet elevation, the valley and surrounding coast here have served as the backdrop to many films which the biggest being <i>Jurassic Park</i>.</p>',
     },
     {
-      image: nathanHalfMarathon,
-      title: '<span class="text-2xl font-bold text-white">Nathan</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Just 15 second shy of his personal best for a half marathon in Madison.</p>',
+      image: rainbow,
+      title: '<span class="text-2xl font-bold text-white">Rainbow</span>',
+      description: "<p class='text-base text-gray-300 mt-2'>What an absolute view from outside my parent's place</p>",
     },
     {
       image: londonBridge,
