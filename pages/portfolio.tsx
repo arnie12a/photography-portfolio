@@ -27,42 +27,31 @@ import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
 import monteserratView from "../public/landscape/coolRockMonteserrat.jpg"
-import dolomites1 from "../public/landscape/dolomites1.jpg"
 
 
 // People Images
 import me from "../public/people/arnie.jpg"
 import nathan from "../public/people/nathan.jpg"
 import uiucBoys from "../public/people/uiucBoys.jpg"
-import mayraAndSnehal from "../public/people/mayraAndSnehal.jpg"
-import knipp from "../public/people/knipp.jpg"
 import vanessa from "../public/people/vanessa.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
-import neeva from "../public/people/neeva.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
 
 // Animal Images
 import sprinkles from "../public/animals/running.jpg"
-import animal4 from "../public/animals/lion.jpg"
 import animal5 from "../public/animals/monkey.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
 import seagull from "../public/animals/seagull.jpg"
 
 // Structure Images
 import bigBen from "../public/structures/bigBen.jpg"
-import galleFort from "../public/structures/galleFort.jpg"
 import gangtokStadium from "../public/structures/gangtokStadium.jpg"
-import mumbai from "../public/structures/mumbai.jpg"
 import mumbaiWater from "../public/structures/mumbaiWater.jpg"
 import oldTrafford from "../public/structures/oldTrafford.jpg"
 import pelling from "../public/structures/pelling.jpg"
-import porto from "../public/structures/porto.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
-import washingtonMonument from "../public/structures/washingtonMonument.jpg"
 import lincolnMemorial from "../public/structures/lincolnMemorial.jpg"
-import portoCathedral from "../public/structures/portoCathedral.jpg"
-import portoBuilding from "../public/structures/portugalBuilding.jpg"
 import insideSagradaFamilia from "../public/structures/sagradaFamilia.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
 
@@ -84,11 +73,11 @@ const landscapeImages = [
     title: '<span class="text-2xl font-bold text-white">Waimea Canyon, Kauai</span>',
     description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
   },
-  {
-    image: dolomites1,
-    title: '<span class="text-2xl font-bold text-white">Hike to Rifugio Averau, Italy</span>',
-    description: '<p class="text-base text-gray-300 mt-2">I still picture this backdrop whenever I shut my eyes. </p>',
-  },
+  // {
+  //   image: dolomites1,
+  //   title: '<span class="text-2xl font-bold text-white">Hike to Rifugio Averau, Italy</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">I still picture this backdrop whenever I shut my eyes. </p>',
+  // },
   
   {
     image: zionCarsBackdrop,
@@ -135,11 +124,11 @@ const peopleImages = [
     description: '<div class="text-center"><h3 class="text-3xl font-bold text-white mb-4">Welcome to my Photography Portfolio.</h3><p class="text-lg text-gray-300">Here is a portfolio of my favorite photos. Shout out Nathan for taking this photo!</p></div>',
   },
   
-  {
-    image: mayraAndSnehal,
-    title: '<span class="text-2xl font-bold text-white">Snehal & Mayra</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Guess who was more excited to eat the birthday cake?</p>',
-  },
+  // {
+  //   image: mayraAndSnehal,
+  //   title: '<span class="text-2xl font-bold text-white">Snehal & Mayra</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">Guess who was more excited to eat the birthday cake?</p>',
+  // },
   {
     image: muhabPhone,
     title: '<span class="text-2xl font-bold text-white">Muhab</span>',
@@ -152,11 +141,11 @@ const peopleImages = [
     description: '<p class="text-base text-gray-300 mt-2">My mom taking in the view of the Douro Valley.</p>',
   },
   
-  {
-    image: neeva,
-    title: '<span class="text-2xl font-bold text-white">Neeva</span>',
-    description: '',
-  },
+  // {
+  //   image: neeva,
+  //   title: '<span class="text-2xl font-bold text-white">Neeva</span>',
+  //   description: '',
+  // },
   {
     image: nathan,
     title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
@@ -179,11 +168,11 @@ const peopleImages = [
     description: '',
   },
   
-  {
-    image: knipp,
-    title: '<span class="text-2xl font-bold text-white">Knipp</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Unfortunately for Michael, this ball was sent straight into the bunker.</p>',
-  },
+  // {
+  //   image: knipp,
+  //   title: '<span class="text-2xl font-bold text-white">Knipp</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">Unfortunately for Michael, this ball was sent straight into the bunker.</p>',
+  // },
 ];
 
 const animalImages = [
@@ -192,11 +181,11 @@ const animalImages = [
     title: '<span class="text-2xl font-bold text-white">Cute doggo</span>',
     description: '<p class="text-base text-gray-300 mt-2">Puppies are so full of energy! Happy Sprinkles found herself a home.</p>',
   },
-  {
-    image: animal4,
-    title: '<span class="text-2xl font-bold text-white">Lioness in Bhannerghatta National Park, India</span>',
-    description: '',
-  },
+  // {
+  //   image: animal4,
+  //   title: '<span class="text-2xl font-bold text-white">Lioness in Bhannerghatta National Park, India</span>',
+  //   description: '',
+  // },
   {
     image: buffalo,
     title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
@@ -225,16 +214,16 @@ const structureImages = [
     title: '<h3 class="text-2xl font-bold text-white">The Theatre of Dreams</h3>',
     description: '<p class="text-base text-gray-300 mt-2">I think I was 8 years old when I first started following Manchester United after watching the movie <i>Bend it Like Beckham</i>. Visiting Old Trafford was a dream come true. I cannot wait to return for a Champions League match in the near future!</p>'
   },
-  {
-    image: washingtonMonument,
-    title: '<span class="text-2xl font-bold text-white">Washington Monument</span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>'
-  },
-  {
-    image: galleFort,
-    title: '<span class="text-2xl font-bold text-white">Galle Fort</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century.</p>'
-  },
+  // {
+  //   image: washingtonMonument,
+  //   title: '<span class="text-2xl font-bold text-white">Washington Monument</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2"></p>'
+  // },
+  // {
+  //   image: galleFort,
+  //   title: '<span class="text-2xl font-bold text-white">Galle Fort</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">Explored around this fort which was bult by the Portuguese in the 16th century and extensively fortified by the Dutch in the 17th century.</p>'
+  // },
   {
     image: outsideSagradaFamilia,
     title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
@@ -245,21 +234,21 @@ const structureImages = [
     title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
     description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
   },
-  {
-    image: portoBuilding,
-    title: '<span class="text-2xl font-bold text-white">Porto, Portugal</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Golden hour on building.</p>'
-  },
-  {
-    image: porto,
-    title: '<span class="text-2xl font-bold text-white">Sunset views in Porto</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Watching a beautiful sunset and eating incredible food are my two biggest takeaways from Porto, Portugal.</p>'
-  },
-  {
-    image: portoCathedral,
-    title: '<span class="text-2xl font-bold text-white">Cathedral in Porto, Portugal</span>',
-    description: '<p class="text-base text-gray-300 mt-2"></p>'
-  },
+  // {
+  //   image: portoBuilding,
+  //   title: '<span class="text-2xl font-bold text-white">Porto, Portugal</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">Golden hour on building.</p>'
+  // },
+  // {
+  //   image: porto,
+  //   title: '<span class="text-2xl font-bold text-white">Sunset views in Porto</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">Watching a beautiful sunset and eating incredible food are my two biggest takeaways from Porto, Portugal.</p>'
+  // },
+  // {
+  //   image: portoCathedral,
+  //   title: '<span class="text-2xl font-bold text-white">Cathedral in Porto, Portugal</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2"></p>'
+  // },
   
   {
     image: bigBen,
@@ -277,11 +266,11 @@ const structureImages = [
     description: '<p class="text-base text-gray-300 mt-2">Look at all those boats and oil rigs.</p>'
   },
  
-  {
-    image: mumbai,
-    title: '<span class="text-2xl font-bold text-white">The Mumbai Skyline</span>',
-    description: '<p class="text-base text-gray-300 mt-2">Took in the sunset on Marine Drive.</p>'
-  },
+  // {
+  //   image: mumbai,
+  //   title: '<span class="text-2xl font-bold text-white">The Mumbai Skyline</span>',
+  //   description: '<p class="text-base text-gray-300 mt-2">Took in the sunset on Marine Drive.</p>'
+  // },
   {
     image: insideSagradaFamilia,
     title: '<span class="text-2xl font-bold text-white">Sagrada Familia</span>',
