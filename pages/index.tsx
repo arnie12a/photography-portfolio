@@ -140,10 +140,6 @@ const tabs = [
         display: 'My Favorites'
     },
     {
-        key: 'portfolio',
-        display: 'Portfolio'
-    },
-    {
         key: 'aboutme',
         display: 'About Me'
     }
@@ -161,7 +157,9 @@ export default function TempIndex() {
       </Head>
 
       <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10 bg-white shadow-md">
-        <span className="uppercase text-lg font-bold">Arnav Karnik Photography</span>
+        <span className="uppercase text-lg font-bold tracking-wide text-gray-800">
+          Arnav Karnik Photography
+        </span>
       </header>
 
       <main className="pt-[105px]">
@@ -173,8 +171,8 @@ export default function TempIndex() {
                   {({ selected }) => (
                     <span
                       className={classNames(
-                        'uppercase text-lg',
-                        selected ? 'text-black' : 'text-gray-600'
+                        'uppercase text-lg tracking-wide',
+                        selected ? 'text-gray-900 font-semibold' : 'text-gray-600'
                       )}
                     >
                       {tab.display}
@@ -184,15 +182,16 @@ export default function TempIndex() {
               ))}
             </Tab.List>
 
-            <Tab.Panels className="h-full bg-gray-100 bg-opacity-80 max-w-[1200px] w-full p-4 my-6 rounded shadow-md">
+            <Tab.Panels className="h-full bg-gray-50 max-w-[1200px] w-full p-4 my-6 rounded shadow-md">
+              {/* Image Gallery */}
               <Tab.Panel className="overflow-auto">
-                <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                   {favoriteImages.map((image, index) => (
                     <div key={index} className="relative">
                       <Image
                         src={image.image}
                         alt="placeholder"
-                        className="w-full h-auto hover:opacity-70 cursor-pointer rounded"
+                        className="w-full h-auto hover:opacity-80 cursor-pointer"
                         placeholder="blur"
                       />
                       <div
@@ -223,61 +222,47 @@ export default function TempIndex() {
                 />
               </Tab.Panel>
 
-              <Tab.Panel className="grid grid-cols-1 place-items-center">
-                <a
-                  href="/portfolio"
-                  className="flex items-center justify-center py-8 px-6 mb-6 min-w-[200px] bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-12 h-12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7H3zm2 0a2 2 0 0 0-2-2h14a2 2 0 0 0-2 2H5zm4-2a2 2 0 0 1 4 0h4a2 2 0 0 1 2 2h-4a2 2 0 0 1-4 0H7a2 2 0 0 1 2-2z" />
-                  </svg>
-                  <span className="ml-4 text-lg font-bold">Portfolio</span>
-                </a>
-              </Tab.Panel>
-
+              {/* About Section */}
               <Tab.Panel className="overflow-auto rounded">
                 <div className="container mx-auto p-8 md:flex">
                   <div className="md:w-1/2 mb-4 md:mb-0">
                     <Image
-                      src="/profilePic.jpg"
+                      src={profilePic}
                       alt="Your Picture"
-                      className="w-96 h-auto object-cover rounded"
+                      className="w-96 h-auto object-cover rounded pl-16"
                     />
                   </div>
 
-                  <div className="md:w-1/2 md:pl-8">
-                    <h2 className="text-2xl font-bold mb-4">
-                      My name is Arnav Karnik
-                    </h2>
-                    <p>
-                      I am an aspiring travel photographer. I love exploring
-                      new places and capturing their beauty. My portfolio
-                      showcases my favorite landscape, portrait, and structure
-                      photos from these unique locations. I hope to improve my
-                      technique and my storytelling as I bring you along on my
-                      future adventures!
+                  <div className="md:w-1/2 md:pl-8 text-gray-800">
+                    <h2 className="text-3xl font-bold mb-4">My name is Arnav Karnik</h2>
+                    <p className="text-lg leading-relaxed">
+                      I am an aspiring travel photographer. I love exploring new places and
+                      capturing their beauty. My portfolio showcases my favorite landscape,
+                      portrait, and structure photos from these unique locations. I hope to improve
+                      my technique and my storytelling as I bring you along on my future
+                      adventures!
                     </p>
-                    <div className="flex justify-center mt-4">
+                    <div className="flex justify-start mt-4">
                       <a
                         href="https://www.instagram.com/arnavkarnikphotos/"
-                        className="py-px pr-2"
+                        className="py-1 pr-2"
                       >
-                        <img src="/instagram.svg" alt="Instagram" className="w-10" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="48"
+                          height="48"
+                          viewBox="0 0 48 48"
+                        >
+                          {/* Instagram SVG */}
+                        </svg>
                       </a>
                       <a
                         href="mailto:arnavkarnikphotos@gmail.com"
-                        className="pl-2"
+                        className="pt-1 pl-2"
                       >
-                        <img src="/email.svg" alt="Email" className="w-10" />
+                        <img src="email.svg" alt="email svg" className="w-10" />
                       </a>
                     </div>
                   </div>
@@ -289,7 +274,7 @@ export default function TempIndex() {
       </main>
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-lg font-medium bg-white shadow-md">
-        <p>Arnav Karnik Photography</p>
+        <p className="text-gray-700">Arnav Karnik Photography</p>
       </footer>
     </div>
   );
