@@ -156,11 +156,14 @@ export default function TempIndex() {
         <link rel="icon" href="/camera.png" />
       </Head>
 
-      <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10 bg-white shadow-md">
-        <span className="uppercase text-lg font-bold tracking-wide text-gray-800">
+      <header className="fixed top-0 w-full z-10 flex justify-center items-center h-[90px] px-10 bg-white shadow-md">
+        <span className="uppercase text-4xl font-bold tracking-wide text-gray-800">
           Arnav Karnik Photography
         </span>
+        
       </header>
+
+
 
       <main className="pt-[105px]">
         <div className="flex flex-col items-center h-full">
@@ -185,7 +188,7 @@ export default function TempIndex() {
             <Tab.Panels className="h-full bg-gray-50 max-w-[1200px] w-full p-4 my-6 rounded shadow-md">
               {/* Image Gallery */}
               <Tab.Panel className="overflow-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                   {favoriteImages.map((image, index) => (
                     <div key={index} className="relative">
                       <Image
