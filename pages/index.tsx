@@ -26,22 +26,50 @@ import raigad from "../public/landscape/raigad.jpg"
 import dolomites2 from "../public/landscape/dolomites2.jpg"
 import seceda from "../public/landscape/seceda.jpg"
 import rainbow from "../public/landscape/rainbow.jpg"
+import kauaiOcean from "../public/landscape/kauaiOcean.jpg"
+import theNarrows from "../public/landscape/theNarrows.jpg"
+import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
+import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
+import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
+import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
+import munnarFlower from "../public/landscape/munnarFlower.jpg"
+import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
+import monteserratView from "../public/landscape/coolRockMonteserrat.jpg"
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
-
+import nathan from "../public/people/nathan.jpg"
+import uiucBoys from "../public/people/uiucBoys.jpg"
+import vanessa from "../public/people/vanessa.jpg"
+import ashwini from "../public/people/ashwini.jpg"
+import kaylem from "../public/people/kaylem.jpg"
+import muhabPhone from "../public/people/muhabPhone.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
 import hilton from "../public/animals/hilton.jpg"
 import dotter from "../public/animals/dotter.jpg"
 import elephants from "../public/animals/elephant.jpg"
+import sprinkles from "../public/animals/running.jpg"
+import animal5 from "../public/animals/monkey.jpg"
+import buffalo from "../public/animals/buffalo.jpg"
+import seagull from "../public/animals/seagull.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
 import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
 import auroville from "../public/landscape/auroville.jpg"
+import bigBen from "../public/structures/bigBen.jpg"
+import gangtokStadium from "../public/structures/gangtokStadium.jpg"
+import mumbaiWater from "../public/structures/mumbaiWater.jpg"
+import oldTrafford from "../public/structures/oldTrafford.jpg"
+import pelling from "../public/structures/pelling.jpg"
+import monteserrat from "../public/structures/monteserrat.jpg"
+import lincolnMemorial from "../public/structures/lincolnMemorial.jpg"
+import insideSagradaFamilia from "../public/structures/sagradaFamilia.jpg"
+import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
+
 
 
 const favoriteImages = [
@@ -87,6 +115,16 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
     },
     {
+      image: kauaiOcean,
+      title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
+    },
+    {
+      image: waimeaCanyon,
+      title: '<span class="text-2xl font-bold text-white">Waimea Canyon, Kauai</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
+    },
+    {
       image: dolomites2,
       title: '<span class="text-2xl font-bold text-white">Rifugio Averau, Italy</span>',
       description: '<p class="text-base text-gray-300 mt-2">I cannot get enough of the panoramic views while hiking in the Dolomites.</p>',
@@ -111,6 +149,16 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
       description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
     },
+    {
+      image: rioCelesteWaterfall,
+      title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
+    },
+    {
+      image: tsongmoLake,
+      title: '<span class="text-2xl font-bold text-white">Tsongmo Lake, India</span>',
+      description: '<p class="text-base text-gray-300 mt-2">This lake is located at an elevation of approximately 12,000 ft and was completely frozen over when we visited in the winter time.</p>',
+    },
     
     {
       image: auroville,
@@ -128,6 +176,76 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
       description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
     },
+    {
+      image: vanessa,
+      title: '<span class="text-2xl font-bold text-white">Vanessa loves apples</span>',
+      description: '',
+    },
+    {
+      image: theNarrows,
+      title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
+      description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
+    },
+    {
+      image: muhabPhone,
+      title: '<span class="text-2xl font-bold text-white">Muhab</span>',
+      description: '',
+    },
+    {
+      image: sprinkles,
+      title: '<span class="text-2xl font-bold text-white">Cute doggo</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Puppies are so full of energy! Happy Sprinkles found herself a home.</p>',
+    },
+    {
+      image: bryceCanyon,
+      title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park, USA</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
+    },
+    {
+      image: kaylem,
+      title: '<span class="text-2xl font-bold text-white">Kaylem</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
+      image: buffalo,
+      title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
+      description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
+    },
+    {
+      image: oldTrafford,
+      title: '<h3 class="text-2xl font-bold text-white">The Theatre of Dreams</h3>',
+      description: '<p class="text-base text-gray-300 mt-2">I think I was 8 years old when I first started following Manchester United after watching the movie <i>Bend it Like Beckham</i>. Visiting Old Trafford was a dream come true. I cannot wait to return for a Champions League match in the near future!</p>'
+    },
+    {
+      image: outsideSagradaFamilia,
+      title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The view of Sagrada Familia from a far.</p>'
+    },
+    {
+      image: monteserrat,
+      title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
+      description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
+    },
+    {
+      image: nathan,
+      title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
+    },
+    {
+      image: gangtokStadium,
+      title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. Love seeing the beautiful game in India!</p>'
+    },
+    {
+      image: zionCarsBackdrop,
+      title: '<span class="text-2xl font-bold text-white">Zion National Park, USA</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Felt like I was right out of the movie Cars.</p>',
+    },
+    {
+      image: munnarFlower,
+      title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower</p>',
+    },
   ];
   
 
@@ -138,10 +256,6 @@ const tabs = [
     {
         key: 'myfavorites',
         display: 'My Favorites'
-    },
-    {
-        key: 'portfolio',
-        display: 'Portfolio'
     },
     {
         key: 'aboutme',
@@ -161,13 +275,13 @@ export default function TempIndex() {
             <link rel="icon" href="/camera.png" />
         </Head>
 
-        <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10">
-            <span className="uppercase text-lg font-large">
+        
+        <header className="fixed top-0 w-full z-10 flex justify-center items-center h-[90px] px-10">
+          <span className="uppercase text-3xl font-large">
             Arnav Karnik Photography
-            </span>
-            
-
+          </span>
         </header>
+
 
         <main className="pt-[105px]">
             <div className="flex flex-col items-center h-full">
@@ -193,7 +307,6 @@ export default function TempIndex() {
                     <Masonry 
                     breakpointCols={2} 
                     className="flex gap-4" 
-                    columnClassName=""
                     >
 
                     {favoriteImages.map((image, index) => {
@@ -234,16 +347,7 @@ export default function TempIndex() {
                     />
 
                 </Tab.Panel>
-                <Tab.Panel className="grid grid-cols-1 place-items-center">
-                  <a href="/portfolio" className="flex items-center justify-center py-8 px-6 mb-6 min-w-[200px] bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M3 7v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7H3zm2 0a2 2 0 0 0-2-2h14a2 2 0 0 0-2 2H5zm4-2a2 2 0 0 1 4 0h4a2 2 0 0 1 2 2h-4a2 2 0 0 1-4 0H7a2 2 0 0 1 2-2z" />
-                    </svg>
-                    <span className="ml-4 text-lg font-bold">Portfolio</span>
-                  </a>
-                </Tab.Panel>
-
-
+                
 
 
 
