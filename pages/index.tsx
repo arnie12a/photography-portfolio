@@ -34,13 +34,11 @@ import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
-import monteserratView from "../public/landscape/coolRockMonteserrat.jpg"
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
 import nathan from "../public/people/nathan.jpg"
-import uiucBoys from "../public/people/uiucBoys.jpg"
 import vanessa from "../public/people/vanessa.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
@@ -52,9 +50,7 @@ import hilton from "../public/animals/hilton.jpg"
 import dotter from "../public/animals/dotter.jpg"
 import elephants from "../public/animals/elephant.jpg"
 import sprinkles from "../public/animals/running.jpg"
-import animal5 from "../public/animals/monkey.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
-import seagull from "../public/animals/seagull.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
@@ -254,8 +250,8 @@ import { useRef } from "react"
 
 const tabs = [
     {
-        key: 'myfavorites',
-        display: 'My Favorites'
+        key: 'prints',
+        display: 'Prints'
     },
     {
         key: 'aboutme',
