@@ -254,6 +254,10 @@ const tabs = [
         display: 'Prints'
     },
     {
+        key: 'projects',
+        display: 'Projects'
+    },
+    {
         key: 'aboutme',
         display: 'About Me'
     }
@@ -344,6 +348,28 @@ export default function TempIndex() {
 
                 </Tab.Panel>
                 
+                <Tab.Panel className="overflow-auto rounded">
+                    <div className="container mx-auto p-8">
+                        <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="group relative cursor-pointer">
+                                <img
+                                    src="hiker.png"
+                                    alt="Hiking Adventure"
+                                    className="rounded-lg shadow-lg hover:scale-105 transform transition duration-300"
+                                />
+                                <a href="/hiking">
+                                  <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center rounded-lg">
+                                      <span className="text-white text-lg font-semibold">
+                                          Read about Hiking Adventures
+                                      </span>
+                                  </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </Tab.Panel>
+
 
 
 
