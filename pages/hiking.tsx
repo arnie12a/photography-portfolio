@@ -1,16 +1,15 @@
-import { useState } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
+import React, { useState } from 'react';
+import Modal from './modal';
 
 interface Hike {
     id: number;
     name: string;
     location: string;
-    enjoyment: number; // Rating from 1-10
-    difficulty: number; // Rating from 1-10
+    enjoyment: number;
+    difficulty: number;
     description: string;
-    photo: string; // Path to the photo
+    detailedDescription: string;
+    photo: string;
 }
 
 const hikes: Hike[] = [
@@ -20,45 +19,18 @@ const hikes: Hike[] = [
         location: 'Dolomites, Italy',
         enjoyment: 9,
         difficulty: 7,
-        description:
-            'A stunning loop hike in the Dolomites featuring breathtaking views of jagged peaks and pristine alpine lakes.',
+        description: 'A stunning loop hike in the Dolomites.',
+        detailedDescription:
+            'Tre Cime di Lavaredo is one of the most iconic hikes in the Dolomites. The loop trail offers incredible views of jagged peaks, pristine alpine lakes, and scenic valleys. Perfect for photography enthusiasts and adventurers alike. Expect moderate difficulty with some rocky paths.',
         photo: '/images/tre-cime.jpg',
     },
-    {
-        id: 2,
-        name: 'Valley of Flowers',
-        location: 'India',
-        enjoyment: 8,
-        difficulty: 6,
-        description:
-            'A serene hike through a UNESCO World Heritage site filled with vibrant flowers and majestic landscapes.',
-        photo: '/images/valley-of-flowers.jpg',
-    },
-    {
-        id: 3,
-        name: 'Kalalau Trail',
-        location: 'Kauai, Hawaii',
-        enjoyment: 10,
-        difficulty: 9,
-        description:
-            'An epic trail along the Na Pali Coast offering jaw-dropping ocean views and lush tropical scenery.',
-        photo: '/images/kalalau-trail.jpg',
-    },
-    {
-        id: 4,
-        name: 'Bright Angel Trail',
-        location: 'Grand Canyon, USA',
-        enjoyment: 9,
-        difficulty: 8,
-        description:
-            'A classic hike descending into the Grand Canyon with unparalleled views of the canyon walls.',
-        photo: '/images/bright-angel.jpg',
-    },
-    // Add more hikes as needed
+    // Add more hikes here
 ];
 
 export default function Hiking() {
     const [filters, setFilters] = useState({ enjoyment: 0, difficulty: 0 });
+    const [selectedHike, setSelectedHike] = useState<Hike | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const filteredHikes = hikes.filter(
         (hike) =>
@@ -66,24 +38,22 @@ export default function Hiking() {
             hike.difficulty >= filters.difficulty
     );
 
+    const openModal = (hike: Hike) => {
+        setSelectedHike(hike);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedHike(null);
+        setIsModalOpen(false);
+    };
+
     return (
         <div className="h-full bg-stone-950 overflow-auto">
-            <Head>
-                <title>Arnav Karnik Photography</title>
-                <meta name="description" content="Blog post about hiking adventures" />
-                <link rel="icon" href="/camera.png" />
-            </Head>
-
             <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10">
                 <span className="uppercase text-lg font-large text-white">
-                    Arnav Karnik Photography
+                    Hiking Adventures
                 </span>
-                <Link
-                    href="/"
-                    className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90"
-                >
-                    Back to Portfolio
-                </Link>
             </header>
 
             <main className="pt-[105px]">
@@ -130,14 +100,13 @@ export default function Hiking() {
                         {filteredHikes.map((hike) => (
                             <div
                                 key={hike.id}
-                                className="rounded-lg bg-stone-800 p-4 shadow-lg"
+                                onClick={() => openModal(hike)}
+                                className="rounded-lg bg-stone-800 p-4 shadow-lg cursor-pointer"
                             >
-                                <Image
+                                <img
                                     src={hike.photo}
                                     alt={hike.name}
-                                    width={500}
-                                    height={300}
-                                    className="rounded-lg object-cover mb-4"
+                                    className="rounded-lg object-cover mb-4 w-full h-64"
                                 />
                                 <h2 className="text-xl font-bold">{hike.name}</h2>
                                 <p className="text-sm text-gray-400">{hike.location}</p>
@@ -154,8 +123,14 @@ export default function Hiking() {
                 </div>
             </main>
 
+            <Modal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                hike={selectedHike}
+            />
+
             <footer className="h-[90px] flex justify-center items-center uppercase text-lg font-medium text-white">
-                <p>Arnav Karnik Photography</p>
+                <p>Hiking Adventures</p>
             </footer>
         </div>
     );
