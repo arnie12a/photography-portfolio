@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './modal';
+import Link from "next/link"
+
 
 interface Hike {
     id: number;
@@ -15,14 +17,14 @@ interface Hike {
 const hikes: Hike[] = [
     {
         id: 1,
-        name: 'Tre Cime di Lavaredo',
-        location: 'Dolomites, Italy',
-        enjoyment: 9,
-        difficulty: 7,
-        description: 'A stunning loop hike in the Dolomites.',
+        name: 'South Kaibab Trail to Skeleton Point',
+        location: 'Grand Canyon, Arizona',
+        enjoyment: 8,
+        difficulty: 8,
+        description: 'My first hike into the abyss of the Grand Canyon.',
         detailedDescription:
-            'Tre Cime di Lavaredo is one of the most iconic hikes in the Dolomites. The loop trail offers incredible views of jagged peaks, pristine alpine lakes, and scenic valleys. Perfect for photography enthusiasts and adventurers alike. Expect moderate difficulty with some rocky paths.',
-        photo: '/images/tre-cime.jpg',
+            'By far one of the hardest hikes I have ever been on.',
+        photo: '/landscape/grandCanyon.jpeg',
     },
     // Add more hikes here
 ];
@@ -54,6 +56,9 @@ export default function Hiking() {
                 <span className="uppercase text-lg font-large text-white">
                     Hiking Adventures
                 </span>
+                <Link href="/" className="rounded-3xl bg-white text-stone-900 px-3 py-2 hover:bg-opacity-90">
+                    Back to Portfolio
+                </Link>
             </header>
 
             <main className="pt-[105px]">
