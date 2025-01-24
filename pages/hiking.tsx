@@ -26,7 +26,17 @@ const hikes: Hike[] = [
             'By far one of the hardest hikes I have ever been on.',
         photo: '/landscape/grandCanyon.jpeg',
     },
-    // Add more hikes here
+    {
+        id: 2,
+        name: 'Rifugio Averau',
+        location: "Cortina d'Ampezzo, Italy",
+        enjoyment: 9,
+        difficulty: 6,
+        description: 'The best view I captured in the Dolomites.',
+        detailedDescription:
+            'Hiking throughout the dolomites is an experience every hiking lover should have one in their life. Every single hike provides such beauty, its truly incredible. Here is one of my favorite hikes I went to and the panoramic view at the Refugio was truly unforgetable.',
+        photo: '/landscape/dolomites2.jpg',
+    },
 ];
 
 export default function Hiking() {
