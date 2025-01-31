@@ -21,22 +21,34 @@ const hikes: Hike[] = [
         location: 'Grand Canyon, Arizona',
         enjoyment: 8,
         difficulty: 8,
-        description: 'My first hike into the abyss of the Grand Canyon.',
-        detailedDescription:
-            'By far one of the hardest hikes I have ever been on.',
+        description: 'Hiking into the Grand Canyon is no joke.',
+        detailedDescription: `
+            The hike on the South Kaibab trail to Skeleton Point is only 5.8 miles out and back, but my god, it took a toll on my body. 
+            I remember dragging my feet at the end of the hike, begging for a bed to plop onto. But it was all worth it. 
+
+            My favorite part of the hike was the overwhelming sense of scale—no matter how deep I ventured into the Grand Canyon, its vastness remained endless. 
+            The canyon stretched beyond sight in every direction, with no visible end ahead, to the left, or to the right. 
+
+            I look forward to being able to reach the very bottom and hiking rim to rim upon my return to the Grand Canyon!
+        `,
         photo: '/landscape/grandCanyon.jpeg',
     },
     {
         id: 2,
-        name: 'Rifugio Averau',
+        name: 'Cinque Torri + Hike to Rifugio Averau',
         location: "Cortina d'Ampezzo, Italy",
         enjoyment: 9,
         difficulty: 6,
-        description: 'The best view I captured in the Dolomites.',
-        detailedDescription:
-            'Hiking throughout the dolomites is an experience every hiking lover should have one in their life. Every single hike provides such beauty, its truly incredible. Here is one of my favorite hikes I went to and the panoramic view at the Refugio was truly unforgetable.',
+        description: 'My favorite hike in the Dolomites.',
+        detailedDescription: `
+            The backdrop you get once you reach Rifugio Averau is jaw-dropping. Nothing can beat it. 
+            So much so that now, when I log onto my work laptop, it's the first thing I see every day. 
+            It makes me smile every time and reminds me why I love hiking so much. 
+
+            I guess the fresh ham and cheese sandwich had a factor in my rating as well 🙂.
+        `,
         photo: '/landscape/dolomites2.jpg',
-    },
+    }
 ];
 
 export default function Hiking() {
