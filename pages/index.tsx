@@ -34,6 +34,10 @@ import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
+import wildfire from "../public/landscape/fire.jpg"
+import napaliCoast from "../public/landscape/napaliCoast.jpg"
+import munnarHike from "../public/landscape/munnarHike.jpg"
+
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
@@ -43,6 +47,8 @@ import vanessa from "../public/people/vanessa.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
+import knif from "../public/people/knif.jpg"
+
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -51,6 +57,7 @@ import dotter from "../public/animals/dotter.jpg"
 import elephants from "../public/animals/elephant.jpg"
 import sprinkles from "../public/animals/running.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
+import elephant from "../public/animals/closeElephant.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
@@ -65,6 +72,8 @@ import monteserrat from "../public/structures/monteserrat.jpg"
 import lincolnMemorial from "../public/structures/lincolnMemorial.jpg"
 import insideSagradaFamilia from "../public/structures/sagradaFamilia.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
+import lucasKitchen from "../public/structures/lucasKitchen.jpg"
+import gatewatOfIndia from "../public/structures/gatewayOfIndia.jpg"
 
 
 
@@ -203,6 +212,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
+      image: lucasKitchen,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
       image: buffalo,
       title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
@@ -223,6 +237,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
     },
     {
+      image: napaliCoast,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
       image: nathan,
       title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
       description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
@@ -241,6 +260,33 @@ const favoriteImages = [
       image: munnarFlower,
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower</p>',
+    },
+    {
+      image: knif,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
+      image: munnarHike,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    
+    {
+      image: gatewatOfIndia,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    
+    {
+      image: elephant,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
+      image: pelling,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
   ];
   
