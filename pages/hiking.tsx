@@ -25,10 +25,10 @@ const hikes: Hike[] = [
         detailedDescription: `
             The hike on the South Kaibab trail to Skeleton Point is only 5.8 miles out and back, but my god, it took a toll on my body. 
             I remember dragging my feet at the end of the hike, begging for a bed to plop onto. But it was all worth it. 
-
+            
             My favorite part of the hike was the overwhelming sense of scale—no matter how deep I ventured into the Grand Canyon, its vastness remained endless. 
             The canyon stretched beyond sight in every direction, with no visible end ahead, to the left, or to the right. 
-
+            
             I look forward to being able to reach the very bottom and hiking rim to rim upon my return to the Grand Canyon!
         `,
         photo: '/landscape/grandCanyon.jpeg',
@@ -44,7 +44,7 @@ const hikes: Hike[] = [
             The backdrop you get once you reach Rifugio Averau is jaw-dropping. Nothing can beat it. 
             So much so that now, when I log onto my work laptop, it's the first thing I see every day. 
             It makes me smile every time and reminds me why I love hiking so much. 
-
+            
             I guess the fresh ham and cheese sandwich had a factor in my rating as well 🙂.
         `,
         photo: '/landscape/dolomites2.jpg',
@@ -128,7 +128,7 @@ export default function Hiking() {
                             <div
                                 key={hike.id}
                                 onClick={() => openModal(hike)}
-                                className="rounded-lg bg-stone-800 p-4 shadow-lg cursor-pointer"
+                                className="rounded-lg bg-stone-800 p-4 shadow-lg cursor-pointer "
                             >
                                 <img
                                     src={hike.photo}
