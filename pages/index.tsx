@@ -43,7 +43,6 @@ import munnarHike from "../public/landscape/munnarHike.jpg"
 import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
 import nathan from "../public/people/nathan.jpg"
-import vanessa from "../public/people/vanessa.jpg"
 import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
@@ -120,6 +119,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
     },
     {
+      image: nathan,
+      title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
+    },
+    {
       image: kauaiOcean,
       title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
@@ -177,15 +181,21 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night ahead.</p>',
     },
     {
+      image: knif,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
+      image: munnarHike,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
       image: seceda,
       title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
       description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
     },
-    {
-      image: vanessa,
-      title: '<span class="text-2xl font-bold text-white">Vanessa loves apples</span>',
-      description: '',
-    },
+    
     {
       image: theNarrows,
       title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
@@ -241,11 +251,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white"></span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
-    {
-      image: nathan,
-      title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
-    },
+    
     {
       image: gangtokStadium,
       title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
@@ -261,16 +267,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower</p>',
     },
-    {
-      image: knif,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
-    {
-      image: munnarHike,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
+   
     
     {
       image: gatewatOfIndia,
