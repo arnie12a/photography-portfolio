@@ -258,8 +258,8 @@ const favoriteImages = [
     },
     {
       image: napaliCoast,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Lush green beauty</p>',
     },
     
     {
