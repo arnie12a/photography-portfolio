@@ -363,9 +363,9 @@ export default function TempIndex() {
                     >
 
                     {favoriteImages.map((image, index) => {
-                        return <div className="relative">
+                        return <div className="relative" key={image.image.src}>
                         <Image
-                        key={image.image.src}
+                        
                         src={image.image}
                         alt="placeholder"
                         className="my-4 hover:opacity-70 cursor-pointer rounded"
