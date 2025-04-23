@@ -1,4 +1,4 @@
-import Head from "next/head"
+ import Head from "next/head"
 import Link from "next/link"
 import {Tab} from "@headlessui/react"
 import Masonry from 'react-masonry-css'
@@ -34,20 +34,19 @@ import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
-import wildfire from "../public/landscape/fire.jpg"
 import napaliCoast from "../public/landscape/napaliCoast.jpg"
 import munnarHike from "../public/landscape/munnarHike.jpg"
+import emeraldLake from "../public/landscape/emeraldLake.png"
 
 
 // People Images
 import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
 import nathan from "../public/people/nathan.jpg"
-import ashwini from "../public/people/ashwini.jpg"
 import kaylem from "../public/people/kaylem.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
 import knif from "../public/people/knif.jpg"
-
+import nathanBridge from "../public/people/nathanBridge.png"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -119,6 +118,12 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
     },
     {
+      image: emeraldLake,
+      title: '<span class="text-2xl font-bold text-white">Hike to Emerald Lake</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+
+    {
       image: nathan,
       title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
       description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
@@ -162,6 +167,11 @@ const favoriteImages = [
       image: rioCelesteWaterfall,
       title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
       description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
+    },
+    {
+      image: nathanBridge,
+      title: '<span class="text-2xl font-bold text-white">Nathan</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the Rocky Mountains National Park.</p>',
     },
     {
       image: tsongmoLake,
@@ -297,8 +307,8 @@ const tabs = [
         display: 'Prints'
     },
     {
-        key: 'projects',
-        display: 'Projects'
+        key: 'stories',
+        display: 'Stories'
     },
     {
         key: 'aboutme',
@@ -393,23 +403,8 @@ export default function TempIndex() {
                 
                 <Tab.Panel className="overflow-auto rounded">
                     <div className="container mx-auto p-8">
-                        <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="group relative cursor-pointer">
-                                <img
-                                    src="hiker.png"
-                                    alt="Hiking Adventure"
-                                    className="rounded-lg shadow-lg hover:scale-105 transform transition duration-300"
-                                />
-                                <a href="/hiking">
-                                  <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center rounded-lg">
-                                      <span className="text-white text-lg font-semibold">
-                                          Read about Hiking Adventures
-                                      </span>
-                                  </div>
-                                </a>
-                            </div>
-                        </div>
+                        <h2 className="text-2xl font-bold mb-4 text-center">Stories</h2>
+                        
                     </div>
                 </Tab.Panel>
 
