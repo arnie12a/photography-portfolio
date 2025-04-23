@@ -275,7 +275,7 @@ const favoriteImages = [
     {
       image: munnarFlower,
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
-      description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower</p>',
+      description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens</p>',
     },
    
     
