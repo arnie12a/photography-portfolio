@@ -120,7 +120,7 @@ const favoriteImages = [
     {
       image: emeraldLake,
       title: '<span class="text-2xl font-bold text-white">Hike to Emerald Lake</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      description: '<p class="text-base text-gray-300 mt-2">Nathan taking in his surroundings.</p>',
     },
 
     {
@@ -233,7 +233,7 @@ const favoriteImages = [
     },
     {
       image: lucasKitchen,
-      title: '<span class="text-2xl font-bold text-white"></span>',
+      title: '<span class="text-2xl font-bold text-white">Peaceful Kitchen</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
@@ -259,7 +259,7 @@ const favoriteImages = [
     {
       image: napaliCoast,
       title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Lush green beauty</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Lush perfect green beauty.</p>',
     },
     
     {
@@ -275,24 +275,23 @@ const favoriteImages = [
     {
       image: munnarFlower,
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
-      description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens</p>',
+      description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens.</p>',
     },
    
-    
     {
       image: gatewatOfIndia,
-      title: '<span class="text-2xl font-bold text-white"></span>',
+      title: '<span class="text-2xl font-bold text-white">Gateway of India</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     
     {
       image: elephant,
-      title: '<span class="text-2xl font-bold text-white"></span>',
+      title: '<span class="text-2xl font-bold text-white">Elephant in Yala National Park</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
       image: pelling,
-      title: '<span class="text-2xl font-bold text-white"></span>',
+      title: '<span class="text-2xl font-bold text-white">Pelling, India</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
   ];
