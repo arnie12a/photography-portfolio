@@ -37,6 +37,9 @@ import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
 import napaliCoast from "../public/landscape/napaliCoast.jpg"
 import munnarHike from "../public/landscape/munnarHike.jpg"
 import emeraldLake from "../public/landscape/emeraldLake.png"
+import betweenZionAndBryce from "../public/landscape/betweenZionAndBryceCanyon.jpg"
+import munnarTeaHike from "../public/landscape/munnarTeaPlantationHike.jpg"
+import sinhagad from "../public/landscape/sinhagadHike.jpg"
 
 
 // People Images
@@ -47,6 +50,8 @@ import kaylem from "../public/people/kaylem.jpg"
 import muhabPhone from "../public/people/muhabPhone.jpg"
 import knif from "../public/people/knif.jpg"
 import nathanBridge from "../public/people/nathanBridge.png"
+import nihar from "../public/people/niharPellingFort.jpg"
+import lifonso from "../public/people/lifonsoTours.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -56,6 +61,8 @@ import elephants from "../public/animals/elephant.jpg"
 import sprinkles from "../public/animals/running.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
 import elephant from "../public/animals/closeElephant.jpg"
+import salsa from "../public/animals/salsa2.jpg"
+import monkey from "../public/animals/monkeyNandiHills2.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
@@ -72,7 +79,7 @@ import insideSagradaFamilia from "../public/structures/sagradaFamilia.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
 import lucasKitchen from "../public/structures/lucasKitchen.jpg"
 import gatewatOfIndia from "../public/structures/gatewayOfIndia.jpg"
-
+import darjeeling from "../public/structures/viewOfDarjeeling.jpg"
 
 
 const favoriteImages = [
