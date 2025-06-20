@@ -81,6 +81,8 @@ import lucasKitchen from "../public/structures/lucasKitchen.jpg"
 import gatewatOfIndia from "../public/structures/gatewayOfIndia.jpg"
 import darjeeling from "../public/structures/viewOfDarjeeling.jpg"
 
+// Food Images
+import spaghettiBolognese from "../public/food/spaghettiBolognese.jpg"
 
 const favoriteImages = [
     {
@@ -198,6 +200,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night ahead.</p>',
     },
     {
+      image: munnarTeaHike,
+      title: '<span class="text-2xl font-bold text-white">Hiked through this tea plantation.</span>',
+      description: '',
+    },
+    {
       image: knif,
       title: '<span class="text-2xl font-bold text-white"></span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
@@ -212,7 +219,21 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
       description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
     },
-    
+    {
+      image: muhabPhone,
+      title: '<span class="text-2xl font-bold text-white">Muhab</span>',
+      description: '',
+    },
+    {
+      image: sinhagad,
+      title: '<span class="text-2xl font-bold text-white">View from Sinhigad Fort.</span>',
+      description: '',
+    },
+    {
+      image: monkey,
+      title: '<span class="text-2xl font-bold text-white">Nandi Hills</span>',
+      description: '',
+    },
     {
       image: theNarrows,
       title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
@@ -224,9 +245,19 @@ const favoriteImages = [
       description: '',
     },
     {
+      image: lifonso,
+      title: '<span class="text-2xl font-bold text-white">The best tour guide in Lisbon Portugal.</span>',
+      description: '',
+    },
+    {
       image: sprinkles,
       title: '<span class="text-2xl font-bold text-white">Cute doggo</span>',
       description: '<p class="text-base text-gray-300 mt-2">Puppies are so full of energy! Happy Sprinkles found herself a home.</p>',
+    },
+    {
+      image: betweenZionAndBryce,
+      title: '<span class="text-2xl font-bold text-white">Somewhere on the road between Zion and Bryce Canyon National Park</span>',
+      description: '',
     },
     {
       image: bryceCanyon,
@@ -244,6 +275,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
+      image: nihar,
+      title: '<span class="text-2xl font-bold text-white">Nihar</span>',
+      description: '',
+    },
+    {
       image: buffalo,
       title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
@@ -259,6 +295,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">The view of Sagrada Familia from a far.</p>'
     },
     {
+      image: darjeeling,
+      title: '<span class="text-2xl font-bold text-white">View of Darjeeling.</span>',
+      description: '',
+    },
+    {
       image: monteserrat,
       title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
       description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
@@ -267,6 +308,11 @@ const favoriteImages = [
       image: napaliCoast,
       title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
       description: '<p class="text-base text-gray-300 mt-2">Lush perfect green beauty.</p>',
+    },
+    {
+      image: spaghettiBolognese,
+      title: '<span class="text-2xl font-bold text-white">Spaghetti Bolognese</span>',
+      description: '',
     },
     
     {
@@ -284,7 +330,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens.</p>',
     },
-   
+    {
+      image: salsa,
+      title: '<span class="text-2xl font-bold text-white">Salsa</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The most precious cat I have ever come across.</p>',
+    },
     {
       image: gatewatOfIndia,
       title: '<span class="text-2xl font-bold text-white">Gateway of India</span>',
