@@ -139,7 +139,7 @@ const favoriteImages = [
     },
     {
       image: kauaiOcean,
-      title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville</span>',
+      title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville, Kauai</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
     },
     {
@@ -165,7 +165,7 @@ const favoriteImages = [
     {
       image: rainbow,
       title: '<span class="text-2xl font-bold text-white">Rainbow</span>',
-      description: "<p class='text-base text-gray-300 mt-2'>What an absolute view from outside my parent's place</p>",
+      description: "<p class='text-base text-gray-300 mt-2'>What an absolute view from outside my parent's place.</p>",
     },
     {
       image: londonBridge,
@@ -201,18 +201,18 @@ const favoriteImages = [
     },
     {
       image: munnarTeaHike,
-      title: '<span class="text-2xl font-bold text-white">Hiked through this tea plantation.</span>',
-      description: '',
+      title: '<span class="text-2xl font-bold text-white">Munnar Hike</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Trekked through this tea garden to get a panoramic view of the surrounding tea plantations.</p>',
     },
     {
       image: knif,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Knif</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Had to take in a flick with the Hollywood sign in the background.</p>',
     },
     {
       image: munnarHike,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Munnar Tea Plantation Hike</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Lush green tea plantations go on forever.</p>',
     },
     {
       image: seceda,
@@ -222,17 +222,17 @@ const favoriteImages = [
     {
       image: muhabPhone,
       title: '<span class="text-2xl font-bold text-white">Muhab</span>',
-      description: '',
+      description: '<p class="text-base text-gray-300 mt-2">One of the most selfless human beings I know.</p>',
     },
     {
       image: sinhagad,
       title: '<span class="text-2xl font-bold text-white">View from Sinhigad Fort.</span>',
-      description: '',
+      description: '<p class="text-base text-gray-300 mt-2">Golden hour hits different from the top of Pune.</p>',
     },
     {
       image: monkey,
       title: '<span class="text-2xl font-bold text-white">Nandi Hills</span>',
-      description: '',
+      description: '<p class="text-base text-gray-300 mt-2">Relaxing on the post.</p>',
     },
     {
       image: theNarrows,
@@ -240,14 +240,9 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
     },
     {
-      image: muhabPhone,
-      title: '<span class="text-2xl font-bold text-white">Muhab</span>',
-      description: '',
-    },
-    {
       image: lifonso,
-      title: '<span class="text-2xl font-bold text-white">The best tour guide in Lisbon Portugal.</span>',
-      description: '',
+      title: '<span class="text-2xl font-bold text-white">Lifonso Tours</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The best tour guide in Lisbon Portugal.</p>',
     },
     {
       image: sprinkles,
@@ -256,8 +251,8 @@ const favoriteImages = [
     },
     {
       image: betweenZionAndBryce,
-      title: '<span class="text-2xl font-bold text-white">Somewhere on the road between Zion and Bryce Canyon National Park</span>',
-      description: '',
+      title: '<span class="text-2xl font-bold text-white">Nature in Utah</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Somewhere on the road between Zion and Bryce Canyon National Park.</p>',
     },
     {
       image: bryceCanyon,
@@ -277,7 +272,7 @@ const favoriteImages = [
     {
       image: nihar,
       title: '<span class="text-2xl font-bold text-white">Nihar</span>',
-      description: '',
+      description: '<p class="text-base text-gray-300 mt-2">Peering into the mountainous surroundings.</p>',
     },
     {
       image: buffalo,
@@ -297,7 +292,7 @@ const favoriteImages = [
     {
       image: darjeeling,
       title: '<span class="text-2xl font-bold text-white">View of Darjeeling.</span>',
-      description: '',
+      description: '<p class="text-base text-gray-300 mt-2">City in the Foothills of Kanchenjunga.</p>',
     },
     {
       image: monteserrat,
@@ -312,7 +307,7 @@ const favoriteImages = [
     {
       image: spaghettiBolognese,
       title: '<span class="text-2xl font-bold text-white">Spaghetti Bolognese</span>',
-      description: '',
+      description: '<p class="text-base text-gray-300 mt-2">Jacopo made this bad boy from scratch.</p>',
     },
     
     {
@@ -337,19 +332,19 @@ const favoriteImages = [
     },
     {
       image: gatewatOfIndia,
-      title: '<span class="text-2xl font-bold text-white">Gateway of India</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Mumbai, India</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Gateway of Indai.</p>',
     },
     
     {
       image: elephant,
-      title: '<span class="text-2xl font-bold text-white">Elephant in Yala National Park</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The leader of the herd making sure its safe to cross the road.</p>',
     },
     {
       image: pelling,
       title: '<span class="text-2xl font-bold text-white">Pelling, India</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      description: '<p class="text-base text-gray-300 mt-2">SUch a peaceful city full of monastaries and incredible views.</p>',
     },
   ];
   
