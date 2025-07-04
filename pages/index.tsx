@@ -474,7 +474,7 @@ export default function TempIndex() {
                     <h2 className="text-2xl font-bold mb-4">My name is Arnav Karnik</h2>
                     <p>
                     I am a photographer who loves to capture meaningful moments. My passion lies in photographing the beauty of nature during my many adventures. 
-                    I look forward to discovering new places and continuing to tell stories through the lens.
+                    My dream is to develop a side hustle traveling on expeditions and taking photos. I look forward to making this dream into a reality, discovering new places and continuing to tell stories through the lens.
                     </p><br/>
 
                     <br/>
