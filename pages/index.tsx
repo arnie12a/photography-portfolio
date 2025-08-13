@@ -65,8 +65,6 @@ import gangtokStadium from "../public/structures/gangtokStadium.jpg"
 import pelling from "../public/structures/pelling.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
-import lucasKitchen from "../public/structures/lucasKitchen.jpg"
-import gatewatOfIndia from "../public/structures/gatewayOfIndia.jpg"
 
 const favoriteImages = [
     {
