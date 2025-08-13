@@ -33,7 +33,6 @@ import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
 import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
-import tsongmoLake from "../public/landscape/TsongmoLake.jpg"
 import napaliCoast from "../public/landscape/napaliCoast.jpg"
 import munnarHike from "../public/landscape/munnarHike.jpg"
 import emeraldLake from "../public/landscape/emeraldLake.png"
@@ -43,15 +42,10 @@ import sinhagad from "../public/landscape/sinhagadHike.jpg"
 
 
 // People Images
-import lucasho from "../public/people/lucas.jpg"
 import profilePic from "../public/people/arnie.jpg"
-import nathan from "../public/people/nathan.jpg"
-import kaylem from "../public/people/kaylem.jpg"
-import muhabPhone from "../public/people/muhabPhone.jpg"
 import knif from "../public/people/knif.jpg"
 import nathanBridge from "../public/people/nathanBridge.png"
 import nihar from "../public/people/niharPellingFort.jpg"
-import lifonso from "../public/people/lifonsoTours.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -62,27 +56,17 @@ import sprinkles from "../public/animals/running.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
 import elephant from "../public/animals/closeElephant.jpg"
 import salsa from "../public/animals/salsa2.jpg"
-import monkey from "../public/animals/monkeyNandiHills2.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
 import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
 import auroville from "../public/landscape/auroville.jpg"
-import bigBen from "../public/structures/bigBen.jpg"
 import gangtokStadium from "../public/structures/gangtokStadium.jpg"
-import mumbaiWater from "../public/structures/mumbaiWater.jpg"
-import oldTrafford from "../public/structures/oldTrafford.jpg"
 import pelling from "../public/structures/pelling.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
-import lincolnMemorial from "../public/structures/lincolnMemorial.jpg"
-import insideSagradaFamilia from "../public/structures/sagradaFamilia.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
 import lucasKitchen from "../public/structures/lucasKitchen.jpg"
 import gatewatOfIndia from "../public/structures/gatewayOfIndia.jpg"
-import darjeeling from "../public/structures/viewOfDarjeeling.jpg"
-
-// Food Images
-import spaghettiBolognese from "../public/food/spaghettiBolognese.jpg"
 
 const favoriteImages = [
     {
@@ -99,11 +83,6 @@ const favoriteImages = [
       image: smokeyMountainsSunset,
       title: '<span class="text-2xl font-bold text-white">Smokey Mountains National Park, USA</span>',
       description: '<p class="text-base text-gray-300 mt-2">My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.</p>',
-    },
-    {
-      image: lucasho,
-      title: '<a href="https://www.lucasleeho.com/" target="_blank" class="text-2xl font-bold text-blue-400">Lucas Ho</a>',
-      description: '<p class="text-base text-gray-300 mt-2">A first-generation Taiwanese American filmmaker, food content creator, and artist scavenging for which recipe to cook next.</p>',
     },
     
     {
@@ -130,12 +109,6 @@ const favoriteImages = [
       image: emeraldLake,
       title: '<span class="text-2xl font-bold text-white">Hike to Emerald Lake</span>',
       description: '<p class="text-base text-gray-300 mt-2">Nathan taking in his surroundings.</p>',
-    },
-
-    {
-      image: nathan,
-      title: '<span class="text-2xl font-bold text-white">Nathan Yoon</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Decided to make a visit to a local apple orchard to find the perfect apples for apple pie.</p>',
     },
     {
       image: kauaiOcean,
@@ -182,11 +155,6 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Nathan</span>',
       description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the Rocky Mountains National Park.</p>',
     },
-    {
-      image: tsongmoLake,
-      title: '<span class="text-2xl font-bold text-white">Tsongmo Lake, India</span>',
-      description: '<p class="text-base text-gray-300 mt-2">This lake is located at an elevation of approximately 12,000 ft and was completely frozen over when we visited in the winter time.</p>',
-    },
     
     {
       image: auroville,
@@ -220,29 +188,14 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
     },
     {
-      image: muhabPhone,
-      title: '<span class="text-2xl font-bold text-white">Muhab</span>',
-      description: '<p class="text-base text-gray-300 mt-2">One of the most selfless human beings I know.</p>',
-    },
-    {
       image: sinhagad,
       title: '<span class="text-2xl font-bold text-white">View from Sinhigad Fort.</span>',
       description: '<p class="text-base text-gray-300 mt-2">Golden hour hits different from the top of Pune.</p>',
     },
     {
-      image: monkey,
-      title: '<span class="text-2xl font-bold text-white">Nandi Hills</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Relaxing on the post.</p>',
-    },
-    {
       image: theNarrows,
       title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
-    },
-    {
-      image: lifonso,
-      title: '<span class="text-2xl font-bold text-white">Lifonso Tours</span>',
-      description: '<p class="text-base text-gray-300 mt-2">The best tour guide in Lisbon Portugal.</p>',
     },
     {
       image: sprinkles,
@@ -260,11 +213,6 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
     },
     {
-      image: kaylem,
-      title: '<span class="text-2xl font-bold text-white">Kaylem</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
-    {
       image: lucasKitchen,
       title: '<span class="text-2xl font-bold text-white">Peaceful Kitchen</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
@@ -280,20 +228,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
     },
     {
-      image: oldTrafford,
-      title: '<h3 class="text-2xl font-bold text-white">The Theatre of Dreams</h3>',
-      description: '<p class="text-base text-gray-300 mt-2">I think I was 8 years old when I first started following Manchester United after watching the movie <i>Bend it Like Beckham</i>. Visiting Old Trafford was a dream come true. I cannot wait to return for a Champions League match in the near future!</p>'
-    },
-    {
       image: outsideSagradaFamilia,
       title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
       description: '<p class="text-base text-gray-300 mt-2">The view of Sagrada Familia from a far.</p>'
     },
-    {
-      image: darjeeling,
-      title: '<span class="text-2xl font-bold text-white">View of Darjeeling.</span>',
-      description: '<p class="text-base text-gray-300 mt-2">City in the Foothills of Kanchenjunga.</p>',
-    },
+ 
     {
       image: monteserrat,
       title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
@@ -304,11 +243,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
       description: '<p class="text-base text-gray-300 mt-2">Lush perfect green beauty.</p>',
     },
-    {
-      image: spaghettiBolognese,
-      title: '<span class="text-2xl font-bold text-white">Spaghetti Bolognese</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Jacopo made this bad boy from scratch.</p>',
-    },
+
     
     {
       image: gangtokStadium,
