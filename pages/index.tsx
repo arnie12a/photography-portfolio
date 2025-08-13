@@ -210,11 +210,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park, USA</span>',
       description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
     },
-    {
-      image: lucasKitchen,
-      title: '<span class="text-2xl font-bold text-white">Peaceful Kitchen</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
+  
     {
       image: nihar,
       title: '<span class="text-2xl font-bold text-white">Nihar</span>',
@@ -262,11 +258,6 @@ const favoriteImages = [
       image: salsa,
       title: '<span class="text-2xl font-bold text-white">Salsa</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most precious cat I have ever come across.</p>',
-    },
-    {
-      image: gatewatOfIndia,
-      title: '<span class="text-2xl font-bold text-white">Mumbai, India</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Gateway of Indai.</p>',
     },
     
     {
