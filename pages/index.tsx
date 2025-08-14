@@ -39,6 +39,7 @@ import emeraldLake from "../public/landscape/emeraldLake.png"
 import betweenZionAndBryce from "../public/landscape/betweenZionAndBryceCanyon.jpg"
 import munnarTeaHike from "../public/landscape/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/landscape/sinhagadHike.jpg"
+import fanalForest from "../public/landscape/fanelForest.jpg"
 
 
 // People Images
@@ -56,6 +57,7 @@ import sprinkles from "../public/animals/running.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
 import elephant from "../public/animals/closeElephant.jpg"
 import salsa from "../public/animals/salsa2.jpg"
+import highlandCow from "../public/animals/highlandCow.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
@@ -65,6 +67,9 @@ import gangtokStadium from "../public/structures/gangtokStadium.jpg"
 import pelling from "../public/structures/pelling.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
+import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
+import parisBasketball from "../public/structures/parisBasketball.jpg"
+import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
 
 const favoriteImages = [
     {
@@ -81,6 +86,11 @@ const favoriteImages = [
       image: smokeyMountainsSunset,
       title: '<span class="text-2xl font-bold text-white">Smokey Mountains National Park, USA</span>',
       description: '<p class="text-base text-gray-300 mt-2">My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.</p>',
+    },
+    {
+      image: parisBasketball,
+      title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     
     {
@@ -99,10 +109,16 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite way to see the city of Chicago.</p>',
     },
     {
+      image: oldTrafford,
+      title: '<span class="text-2xl font-bold text-white">Old Trafford</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
       image: goat,
       title: '<span class="text-2xl font-bold text-white">Mountain Goat</span>',
       description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
     },
+   
     {
       image: emeraldLake,
       title: '<span class="text-2xl font-bold text-white">Hike to Emerald Lake</span>',
@@ -147,6 +163,11 @@ const favoriteImages = [
       image: rioCelesteWaterfall,
       title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
       description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
+    },
+    {
+      image: highlandCow,
+      title: '<span class="text-2xl font-bold text-white">Edinburgh, Scotland</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
       image: nathanBridge,
@@ -237,7 +258,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
       description: '<p class="text-base text-gray-300 mt-2">Lush perfect green beauty.</p>',
     },
-
+    {
+      image: madeiraFutbol,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
     
     {
       image: gangtokStadium,
@@ -258,6 +283,11 @@ const favoriteImages = [
       image: salsa,
       title: '<span class="text-2xl font-bold text-white">Salsa</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most precious cat I have ever come across.</p>',
+    },
+    {
+      image: fanalForest,
+      title: '<span class="text-2xl font-bold text-white"></span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     
     {
