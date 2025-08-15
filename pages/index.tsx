@@ -4,7 +4,7 @@ import {Tab} from "@headlessui/react"
 import Masonry from 'react-masonry-css'
 import classNames from 'classnames'
 import Image from "next/image"
-import BlogPostCard from "./components/blogPostCard";
+import BlogPostCard from "./blogPostCard";
 
 
 import type {LightGallery} from 'lightgallery/lightgallery'
@@ -418,7 +418,7 @@ export default function TempIndex() {
                         title="Manchester United"
                         image={oldTrafford}
                         alt="Old Trafford Stadium"
-                        description="My experience visiting Old Trafford and why that stadium felt so historic and electric."
+                        description="Read more about hearing why I love Manchester United."
                       />
 
                       <BlogPostCard
@@ -426,7 +426,7 @@ export default function TempIndex() {
                         title="Paris Basketball"
                         image={parisBasketball}
                         alt="Paris Basketball"
-                        description="Breaking down the rise of the Paris Basketball team and what it was like attending a game overseas."
+                        description="Hooped with this view of the Eiffel Tower."
                       />
                     </div>
                   </div>
