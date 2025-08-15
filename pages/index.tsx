@@ -4,6 +4,8 @@ import {Tab} from "@headlessui/react"
 import Masonry from 'react-masonry-css'
 import classNames from 'classnames'
 import Image from "next/image"
+import BlogPostCard from "./components/blogPostCard";
+
 
 import type {LightGallery} from 'lightgallery/lightgallery'
 import LightGalleryComponent from 'lightgallery/react';
@@ -407,48 +409,28 @@ export default function TempIndex() {
                 </Tab.Panel>
                 
                 <Tab.Panel className="overflow-auto rounded">
-  <div className="container mx-auto p-8">
-    <h2 className="text-2xl font-bold mb-8 text-center">Stories</h2>
+                  <div className="container mx-auto p-8">
+                    <h2 className="text-2xl font-bold mb-8 text-center">Stories</h2>
 
-    <div className="grid grid-cols-1 gap-8"> {/* 1 column grid */}
-      {/* Blog Post Card 1 */}
-      <Link
-        href="/blogPosts/manchesterUnited"
-        className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden"
-      >
-        <div className="w-full h-60 relative"> {/* taller for full width */}
-          <Image
-            src={oldTrafford}
-            alt="Old Trafford Stadium"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="p-4">
-          <h3 className="text-xl font-bold text-gray-800">Manchester United</h3>
-        </div>
-      </Link>
+                    <div className="max-w-xl mx-auto space-y-8">
+                      <BlogPostCard
+                        href="/blogPosts/manchesterUnited"
+                        title="Manchester United"
+                        image={oldTrafford}
+                        alt="Old Trafford Stadium"
+                        description="My experience visiting Old Trafford and why that stadium felt so historic and electric."
+                      />
 
-      {/* Blog Post Card 2 */}
-      <Link
-        href="/blogPosts/parisBasketball"
-        className="block bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden"
-      >
-        <div className="w-full h-60 relative">
-          <Image
-            src={parisBasketball}
-            alt="Paris Basketball"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="p-4">
-          <h3 className="text-xl font-bold text-gray-800">Paris Basketball</h3>
-        </div>
-      </Link>
-    </div>
-  </div>
-</Tab.Panel>
+                      <BlogPostCard
+                        href="/blogPosts/parisBasketball"
+                        title="Paris Basketball"
+                        image={parisBasketball}
+                        alt="Paris Basketball"
+                        description="Breaking down the rise of the Paris Basketball team and what it was like attending a game overseas."
+                      />
+                    </div>
+                  </div>
+                </Tab.Panel>
 
 
 
