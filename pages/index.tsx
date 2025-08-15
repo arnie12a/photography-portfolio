@@ -4,7 +4,7 @@ import {Tab} from "@headlessui/react"
 import Masonry from 'react-masonry-css'
 import classNames from 'classnames'
 import Image from "next/image"
-import BlogPostCard from "./blogPostCard";
+import BlogPostCard from "../components/blogPostCard";
 
 
 import type {LightGallery} from 'lightgallery/lightgallery'
