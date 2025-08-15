@@ -407,10 +407,24 @@ export default function TempIndex() {
                 </Tab.Panel>
                 
                 <Tab.Panel className="overflow-auto rounded">
-                    <div className="container mx-auto p-8">
-                        <h2 className="text-2xl font-bold mb-4 text-center">Stories</h2>
-                        
+                  <div className="container mx-auto p-8">
+                    <h2 className="text-2xl font-bold mb-4 text-center">Stories</h2>
+                    
+                    <div className="text-center">
+                      <Link
+                        href="/blogPosts/manchesterUnited"
+                        className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+                      >
+                        View United
+                      </Link>
+                      <Link
+                        href="/blogPosts/parisBasketball"
+                        className="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition"
+                      >
+                        View Paris
+                      </Link>
                     </div>
+                  </div>
                 </Tab.Panel>
 
 
