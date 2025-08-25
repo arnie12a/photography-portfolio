@@ -64,13 +64,13 @@ export default function ManchesterUnited() {
 
             <p className="text-lg leading-relaxed text-stone-300">
               There have been a lot of ups and downs over the past couple of
-              years, from Marcus Rashford's incredible 22–23 season to losing
+              years, from Marcus Rashford incredible 22–23 season to losing
               against Tottenham in the Europa League final.
             </p>
 
             <p className="text-lg leading-relaxed text-stone-300">
               I am manifesting a successful future ahead of the upcoming season!
-              Let’s see if Ruben Amorim can turn the tide like he did at
+              Lets see if Ruben Amorim can turn the tide like he did at
               Sporting FC.
             </p>
           </div>
