@@ -274,7 +274,7 @@ const favoriteImages = [
     },
     {
       image: fire,
-      title: '<span class="text-2xl font-bold text-white">Fire</span>',
+      title: '<span class="text-2xl font-bold text-white">Wildfire</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
