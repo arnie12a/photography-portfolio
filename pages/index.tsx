@@ -42,7 +42,9 @@ import betweenZionAndBryce from "../public/landscape/betweenZionAndBryceCanyon.j
 import munnarTeaHike from "../public/landscape/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/landscape/sinhagadHike.jpg"
 import fanalForest from "../public/landscape/fanelForest.jpg"
-
+import coolRockMonteserrat from "../public/landscape/coolRockMonteserrat.jpg"
+import dolomitePeaks from "../public/landscape/dolomites3.jpg"
+import fire from "../public/landscape/fire.jpg"
 
 // People Images
 import profilePic from "../public/people/arnie.jpg"
@@ -72,6 +74,8 @@ import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jp
 import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 import parisBasketball from "../public/structures/parisBasketball.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
+import bigBen from "../public/structures/bigBen.jpg"
+import washingtonMonument from "../public/structures/washingtonMonument.jpg"
 
 const favoriteImages = [
     {
@@ -194,15 +198,16 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Trekked through this tea garden to get a panoramic view of the surrounding tea plantations.</p>',
     },
     {
+      image: dolomitePeaks,
+      title: '<span class="text-2xl font-bold text-white">Italian Dolomites Peaks</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
       image: knif,
       title: '<span class="text-2xl font-bold text-white">Knif</span>',
       description: '<p class="text-base text-gray-300 mt-2">Had to take in a flick with the Hollywood sign in the background.</p>',
     },
-    {
-      image: munnarHike,
-      title: '<span class="text-2xl font-bold text-white">Munnar Tea Plantation Hike</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Lush green tea plantations go on forever.</p>',
-    },
+    
     {
       image: seceda,
       title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
@@ -224,10 +229,17 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Puppies are so full of energy! Happy Sprinkles found herself a home.</p>',
     },
     {
+      image: munnarHike,
+      title: '<span class="text-2xl font-bold text-white">Munnar Tea Plantation Hike</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Lush green tea plantations go on forever.</p>',
+    },
+    
+    {
       image: betweenZionAndBryce,
       title: '<span class="text-2xl font-bold text-white">Nature in Utah</span>',
       description: '<p class="text-base text-gray-300 mt-2">Somewhere on the road between Zion and Bryce Canyon National Park.</p>',
     },
+    
     {
       image: bryceCanyon,
       title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park, USA</span>',
@@ -245,6 +257,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
     },
     {
+      image: coolRockMonteserrat,
+      title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
       image: outsideSagradaFamilia,
       title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
       description: '<p class="text-base text-gray-300 mt-2">The view of Sagrada Familia from a far.</p>'
@@ -254,6 +271,11 @@ const favoriteImages = [
       image: monteserrat,
       title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
       description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
+    },
+    {
+      image: fire,
+      title: '<span class="text-2xl font-bold text-white">Fire</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     {
       image: napaliCoast,
@@ -281,16 +303,13 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens.</p>',
     },
-    {
-      image: salsa,
-      title: '<span class="text-2xl font-bold text-white">Salsa</span>',
-      description: '<p class="text-base text-gray-300 mt-2">The most precious cat I have ever come across.</p>',
-    },
+    
     {
       image: fanalForest,
       title: '<span class="text-2xl font-bold text-white"></span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
+    
     
     {
       image: elephant,
@@ -301,6 +320,21 @@ const favoriteImages = [
       image: pelling,
       title: '<span class="text-2xl font-bold text-white">Pelling, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">SUch a peaceful city full of monastaries and incredible views.</p>',
+    },
+    {
+      image: washingtonMonument,
+      title: '<span class="text-2xl font-bold text-white">Washington Monument</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
+    {
+      image: salsa,
+      title: '<span class="text-2xl font-bold text-white">Salsa</span>',
+      description: '<p class="text-base text-gray-300 mt-2">The most precious cat I have ever come across.</p>',
+    },
+    {
+      image: bigBen,
+      title: '<span class="text-2xl font-bold text-white">Big Ben</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
   ];
   
