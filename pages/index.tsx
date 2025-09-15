@@ -96,7 +96,7 @@ const favoriteImages = [
     {
       image: parisBasketball,
       title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball coursts I have laid my eyes on.</p>',
     },
     
     {
@@ -117,7 +117,7 @@ const favoriteImages = [
     {
       image: oldTrafford,
       title: '<span class="text-2xl font-bold text-white">Old Trafford</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      description: '<p class="text-base text-gray-300 mt-2">One of my favorite places <3 </p>',
     },
     {
       image: goat,
@@ -173,7 +173,7 @@ const favoriteImages = [
     {
       image: highlandCow,
       title: '<span class="text-2xl font-bold text-white">Edinburgh, Scotland</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      description: '<p class="text-base text-gray-300 mt-2">Highland cows munchin on grass.</p>',
     },
     {
       image: nathanBridge,
@@ -194,7 +194,7 @@ const favoriteImages = [
     },
     {
       image: munnarTeaHike,
-      title: '<span class="text-2xl font-bold text-white">Munnar Hike</span>',
+      title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">Trekked through this tea garden to get a panoramic view of the surrounding tea plantations.</p>',
     },
     {
@@ -436,7 +436,7 @@ export default function TempIndex() {
                     dynamicEl={favoriteImages.map(image => ({
                     src: image.image.src, 
                     thumb: image.image.src,
-                    subHtml: `<h4>${image.title}</h4><p>${image.description}</p>`,
+                    subHtml: `<h5>${image.title}</h5><p>${image.description}</p>`,
                     }))}
                     />
 
