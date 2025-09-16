@@ -42,7 +42,6 @@ import betweenZionAndBryce from "../public/landscape/betweenZionAndBryceCanyon.j
 import munnarTeaHike from "../public/landscape/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/landscape/sinhagadHike.jpg"
 import fanalForest from "../public/landscape/fanelForest.jpg"
-import coolRockMonteserrat from "../public/landscape/coolRockMonteserrat.jpg"
 import dolomitePeaks from "../public/landscape/dolomites3.jpg"
 import fire from "../public/landscape/fire.jpg"
 
@@ -205,7 +204,7 @@ const favoriteImages = [
     {
       image: knif,
       title: '<span class="text-2xl font-bold text-white">Knif</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Had to take in a flick with the Hollywood sign in the background.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Had to take a flick of Ethan with the Hollywood sign in the background.</p>',
     },
     
     {
@@ -249,18 +248,14 @@ const favoriteImages = [
     {
       image: nihar,
       title: '<span class="text-2xl font-bold text-white">Nihar</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Peering into the mountainous surroundings.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Peering into the mountainous surroundings of Kanchenjunga.</p>',
     },
     {
       image: buffalo,
       title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
     },
-    {
-      image: coolRockMonteserrat,
-      title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
+    
     {
       image: outsideSagradaFamilia,
       title: '<span class="text-2xl font-bold text-white">Barcelona, Spain</span>',
@@ -274,8 +269,8 @@ const favoriteImages = [
     },
     {
       image: fire,
-      title: '<span class="text-2xl font-bold text-white">Wildfire</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Wildfire in Sikkim</span>',
+      description: '<p class="text-base text-gray-300 mt-2">I had to take many steps back just because of the power of the fire.</p>',
     },
     {
       image: napaliCoast,
