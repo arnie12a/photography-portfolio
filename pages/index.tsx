@@ -95,7 +95,7 @@ const favoriteImages = [
     {
       image: parisBasketball,
       title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
-      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball coursts I have laid my eyes on.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball courts I have played on.</p>',
     },
     
     {
@@ -111,12 +111,12 @@ const favoriteImages = [
     {
       image: chicagoSkyline,
       title: '<span class="text-2xl font-bold text-white">Chicago Skyline</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite way to see the city of Chicago.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite view of the city.</p>',
     },
     {
       image: oldTrafford,
       title: '<span class="text-2xl font-bold text-white">Old Trafford</span>',
-      description: '<p class="text-base text-gray-300 mt-2">One of my favorite places <3 </p>',
+      description: '<p class="text-base text-gray-300 mt-2">Took a stadium tour of the Theatre of Dreams. Such a beautiful place full of rich history.</p>',
     },
     {
       image: goat,
@@ -127,7 +127,7 @@ const favoriteImages = [
     {
       image: emeraldLake,
       title: '<span class="text-2xl font-bold text-white">Hike to Emerald Lake</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Nathan taking in his surroundings.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Nathan taking in his surroundings on the hike.</p>',
     },
     {
       image: kauaiOcean,
@@ -248,7 +248,7 @@ const favoriteImages = [
     {
       image: nihar,
       title: '<span class="text-2xl font-bold text-white">Nihar</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Peering into the mountainous surroundings of Kanchenjunga.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">My Dad peering into the mountainous surroundings of Kanchenjunga.</p>',
     },
     {
       image: buffalo,
@@ -279,8 +279,8 @@ const favoriteImages = [
     },
     {
       image: madeiraFutbol,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      title: '<span class="text-2xl font-bold text-white">Madeira, Portugal</span>',
+      description: '<p class="text-base text-gray-300 mt-2">While driving around the island, we came across this beautiful pitch.</p>',
     },
     
     {
