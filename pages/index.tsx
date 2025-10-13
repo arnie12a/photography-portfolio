@@ -101,7 +101,7 @@ const favoriteImages = [
     {
       image: dotter,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Dotter peering into the distance.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">The dotter is a water bird with a long and slender neck. The dotter often spends a lot of its time submerged in water. So to dry its wings you can often find the bird perched on a rock or branch with its wings outstretched which is funny because that is exactly what I captured.</p>',
     },
     {
       image: hilton,
