@@ -443,14 +443,6 @@ export default function TempIndex() {
 
                     <div className="max-w-xl mx-auto space-y-8">
                       <BlogPostCard
-                        href="/blogPosts/manchesterUnited"
-                        title="Manchester United"
-                        image={oldTrafford}
-                        alt="Old Trafford Stadium"
-                        description="Read more about hearing why I love Manchester United."
-                      />
-
-                      <BlogPostCard
                         href="/blogPosts/parisBasketball"
                         title="Paris Basketball"
                         image={parisBasketball}
