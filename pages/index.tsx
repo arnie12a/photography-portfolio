@@ -44,6 +44,8 @@ import sinhagad from "../public/landscape/sinhagadHike.jpg"
 import fanalForest from "../public/landscape/fanelForest.jpg"
 import dolomitePeaks from "../public/landscape/dolomites3.jpg"
 import fire from "../public/landscape/fire.jpg"
+import rainier from "../public/landscape/rainier.jpg"
+import meganAndrewRainier from "../public/landscape/meganAndrewRainier.jpg"
 
 // People Images
 import profilePic from "../public/people/arnie.jpg"
@@ -130,6 +132,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Nathan taking in his surroundings on the hike.</p>',
     },
     {
+      image: rainier,
+      title: '<span class="text-2xl font-bold text-white">Rainier</span>',
+      description: '<p class="text-base text-gray-300 mt-2">View of the Volcano from the Skyline Loop Trail.</p>',
+    },
+    {
       image: kauaiOcean,
       title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville, Kauai</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
@@ -163,6 +170,11 @@ const favoriteImages = [
       image: londonBridge,
       title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
       description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
+    },
+    {
+      image: meganAndrewRainier,
+      title: '<span class="text-2xl font-bold text-white">Megan & Andrew</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the mountainous surroundings.</p>',
     },
     {
       image: rioCelesteWaterfall,
