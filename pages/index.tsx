@@ -22,7 +22,6 @@ import lgZoom from 'lightgallery/plugins/zoom';
 // Landscape Images
 import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
 import kalalauLookout from "../public/landscape/kalalauLookout.jpg"
-import smokeyMountainsSunset from "../public/landscape/smokeyMountainsSunset.jpg"
 import khanchenjunga from "../public/landscape/khanchenjunga.jpg"
 import raigad from "../public/landscape/raigad.jpg"
 import dolomites2 from "../public/landscape/dolomites2.jpg"
@@ -31,20 +30,16 @@ import rainbow from "../public/landscape/rainbow.jpg"
 import kauaiOcean from "../public/landscape/kauaiOcean.jpg"
 import theNarrows from "../public/landscape/theNarrows.jpg"
 import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
-import zionCarsBackdrop from "../public/landscape/zionCarsBackdrop.jpg"
-import bryceCanyon from "../public/landscape/bryceCanyon.jpg"
 import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import napaliCoast from "../public/landscape/napaliCoast.jpg"
 import munnarHike from "../public/landscape/munnarHike.jpg"
-import emeraldLake from "../public/landscape/emeraldLake.png"
 import betweenZionAndBryce from "../public/landscape/betweenZionAndBryceCanyon.jpg"
 import munnarTeaHike from "../public/landscape/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/landscape/sinhagadHike.jpg"
 import fanalForest from "../public/landscape/fanelForest.jpg"
 import dolomitePeaks from "../public/landscape/dolomites3.jpg"
 import fire from "../public/landscape/fire.jpg"
-import rainier from "../public/landscape/rainier.jpg"
 import meganAndrewRainier from "../public/landscape/meganAndrewRainier.jpg"
 
 // People Images
@@ -89,11 +84,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Raigad Fort, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.</p>',
     },
-    {
-      image: smokeyMountainsSunset,
-      title: '<span class="text-2xl font-bold text-white">Smokey Mountains National Park, USA</span>',
-      description: '<p class="text-base text-gray-300 mt-2">My favorite sunset I have ever captured. The trick I learned here is that the best views from sunset come 10-15 minutes after the sun is gone below the horizon.</p>',
-    },
+    
     {
       image: parisBasketball,
       title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
@@ -126,16 +117,8 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
     },
    
-    {
-      image: emeraldLake,
-      title: '<span class="text-2xl font-bold text-white">Hike to Emerald Lake</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Nathan taking in his surroundings on the hike.</p>',
-    },
-    {
-      image: rainier,
-      title: '<span class="text-2xl font-bold text-white">Rainier</span>',
-      description: '<p class="text-base text-gray-300 mt-2">View of the Volcano from the Skyline Loop Trail.</p>',
-    },
+  
+   
     {
       image: kauaiOcean,
       title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville, Kauai</span>',
@@ -251,11 +234,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Somewhere on the road between Zion and Bryce Canyon National Park.</p>',
     },
     
-    {
-      image: bryceCanyon,
-      title: '<span class="text-2xl font-bold text-white">Bryce Canyon National Park, USA</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Never saw a single Hoodoo before so seeing an entire landscape of Hoodoos was a lot to take in.</p>',
-    },
+   
   
     {
       image: nihar,
@@ -300,11 +279,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
       description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. Love seeing the beautiful game in India!</p>'
     },
-    {
-      image: zionCarsBackdrop,
-      title: '<span class="text-2xl font-bold text-white">Zion National Park, USA</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Felt like I was right out of the movie Cars.</p>',
-    },
+
     {
       image: munnarFlower,
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
@@ -460,6 +435,14 @@ export default function TempIndex() {
                         image={parisBasketball}
                         alt="Paris Basketball"
                         description="Hooped with this view of the Eiffel Tower."
+                      />
+
+                      <BlogPostCard
+                        href="/blogPosts/nationalParks"
+                        title="National Parks"
+                        image={meganAndrewRainier}
+                        alt="National Parks"
+                        description="Here are the favorite moments at national parks."
                       />
                     </div>
                   </div>
