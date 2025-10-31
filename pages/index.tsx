@@ -444,6 +444,14 @@ export default function TempIndex() {
                         alt="National Parks"
                         description="Here are the favorite moments at national parks."
                       />
+
+                      <BlogPostCard
+                        href="/blogPosts/portraits"
+                        title="Portraits"
+                        image={nihar}
+                        alt="Portraits"
+                        description="Here are the favorite portrait photos I have taken."
+                      />
                     </div>
                   </div>
                 </Tab.Panel>
