@@ -67,14 +67,14 @@ export default function Portraits() {
         /> */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
-            Portrait Photography
+            Portraits
           </h1>
-          <p className="mt-4 text-lg text-stone-200 max-w-2xl">
+          {/* <p className="mt-4 text-lg text-stone-200 max-w-2xl">
             Portraits are my favorite way to connect with people. A single look,
             a subtle gesture, or the way light hits someone’s face can tell an
             entire story. These are a few portraits that mean the most to me —
             each one capturing a unique emotion and moment in time.
-          </p>
+          </p> */}
         </div>
       </section>
 
