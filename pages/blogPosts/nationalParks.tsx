@@ -21,13 +21,13 @@ export default function NationalParks() {
       name: "Grand Canyon National Park",
       image: grandCanyon,
       description:
-        ".",
+        "Hiked halfway down the Granc Canyon. I cannot wait to return and go rim to rim.",
     },
     {
       name: "Byrce Canyon National Park",
       image: bryceCanyon,
       description:
-        ".",
+        "The Hoodoos :) ",
     },
     {
         name: "Rainier National Park",

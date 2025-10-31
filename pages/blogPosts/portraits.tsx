@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import kaylem from "../../public/people/kaylem.jpg"
 import ashwini from "../../public/people/ashwini.jpg"
+import knifsend from "../../public/people/knif.jpg"
 
 
 export default function Portraits() {
@@ -14,6 +15,13 @@ export default function Portraits() {
         "Enjoy his mom's surprise birthday party.",
       orientation: "vertical",
     },
+    {
+        name: "Ethan",
+        image: knifsend,
+        description:
+          "Posing with the Hollywood sign.",
+        orientation: "horizontal",
+      },
     {
         name: "Ashwini",
         image: ashwini,
