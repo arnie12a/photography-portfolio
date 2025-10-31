@@ -70,7 +70,6 @@ import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jp
 import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 import parisBasketball from "../public/structures/parisBasketball.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
-import bigBen from "../public/structures/bigBen.jpg"
 import washingtonMonument from "../public/structures/washingtonMonument.jpg"
 
 const favoriteImages = [
@@ -202,11 +201,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Had to take a flick of Ethan with the Hollywood sign in the background.</p>',
     },
     
-    {
-      image: seceda,
-      title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
-      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
-    },
+    
     {
       image: sinhagad,
       title: '<span class="text-2xl font-bold text-white">View from Sinhigad Fort.</span>',
@@ -314,10 +309,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">The most precious cat I have ever come across.</p>',
     },
     {
-      image: bigBen,
-      title: '<span class="text-2xl font-bold text-white">Big Ben</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      image: seceda,
+      title: '<span class="text-2xl font-bold text-white">Seceda in the Dolomites</span>',
+      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest views I have ever seen.</p>',
     },
+
   ];
   
 
