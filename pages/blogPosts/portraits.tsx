@@ -4,6 +4,7 @@ import Image from "next/image"
 import kaylem from "../../public/people/kaylem.jpg"
 import ashwini from "../../public/people/ashwini.jpg"
 import knifsend from "../../public/people/knif.jpg"
+import mudathiru from "../../public/people/mudathiru.jpg"
 
 
 export default function Portraits() {
@@ -27,6 +28,13 @@ export default function Portraits() {
         image: ashwini,
         description:
           "Taking in the views of the Douro Valley.",
+        orientation: "vertical",
+      },
+      {
+        name: "Mudathiru",
+        image: mudathiru,
+        description:
+          "Got some good portraits of the Professor.",
         orientation: "vertical",
       },
     
