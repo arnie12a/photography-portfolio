@@ -15,7 +15,7 @@ export default function NationalParks() {
       name: "Zion National Park",
       image: zion,
       description:
-        ".",
+        "Felt like I was in the movie Cars.",
     },
     {
       name: "Grand Canyon National Park",
@@ -27,19 +27,19 @@ export default function NationalParks() {
       name: "Byrce Canyon National Park",
       image: bryceCanyon,
       description:
-        "The Hoodoos :) ",
+        "TThe biggest Hoodoos I have seen in my life.",
     },
     {
         name: "Rainier National Park",
         image: rainier,
         description:
-            "Skyline Loop Trail",
+            "Skyline Loop Trail: Hardest hike I have done.",
     },
     {
         name: "Smokey Mountains National Park",
         image: smokeyMountains,
         description:
-            "Prettiest sunset",
+            "Prettiest sunset I have ever captured.",
     },
     {
         name: "Rocky Mountains National Park",
