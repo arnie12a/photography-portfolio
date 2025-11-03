@@ -5,7 +5,10 @@ import kaylem from "../../public/people/kaylem.jpg"
 import ashwini from "../../public/people/ashwini.jpg"
 import knifsend from "../../public/people/knif.jpg"
 import mudathiru from "../../public/people/mudathiru.jpg"
-
+import ugoPreciuosWedding from "../../public/people/ugoPrecious.jpg"
+import niharMadeira from "../../public/people/nihar.jpg"
+import munachiEmily from "../../public/people/munachiEmily.jpg"
+import lifonso from "../../public/people/lifonso.jpg"
 
 export default function Portraits() {
   const portraits = [
@@ -23,6 +26,13 @@ export default function Portraits() {
           "Posing with the Hollywood sign.",
         orientation: "horizontal",
       },
+      {
+        name: "Ugo & Precious",
+        image: ugoPreciuosWedding,
+        description:
+          "Had the pleasure of taking their wedding photos",
+        orientation: "horizontal",
+      },
     {
         name: "Ashwini",
         image: ashwini,
@@ -35,6 +45,27 @@ export default function Portraits() {
         image: mudathiru,
         description:
           "Got some good portraits of the Professor.",
+        orientation: "vertical",
+      },
+      {
+        name: "Lifonso",
+        image: lifonso,
+        description:
+          "If you are ever in Lisbon, get this man to give you a tour of the city",
+        orientation: "horizontal",
+      },
+      {
+        name: "Munachi & Emily",
+        image: munachiEmily,
+        description:
+          "Throwing darts after work",
+        orientation: "horizontal",
+      },
+      {
+        name: "Nihar",
+        image: niharMadeira,
+        description:
+          "Madeira, Portugal",
         orientation: "vertical",
       },
     
