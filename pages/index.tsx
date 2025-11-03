@@ -480,7 +480,7 @@ export default function TempIndex() {
                         </svg>
                         </a>
                         <br/>
-                        <a href="mailto:arnavkarnikphotos@gmail.com" className="pt-2 pl-2">
+                        <a href="mailto:arnav.n.karnik@gmail.com" className="pt-2 pl-2">
                         <img src="email.svg" alt="email svg" className="w-11"/>
                         </a>
                     </div>
