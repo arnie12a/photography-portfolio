@@ -96,26 +96,27 @@ export default function Portraits() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] pt-[90px]">
-        {/* <Image
-          src={parisPortrait}
+      {/* <section className="relative w-full h-[60vh] pt-[90px]">
+        <Image
+          src={ugoPreciuosWedding}
           alt="Portrait Photography"
           fill
           priority
           className="object-cover brightness-75"
-        /> */}
+        />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
             Portraits
           </h1>
-          {/* <p className="mt-4 text-lg text-stone-200 max-w-2xl">
+          <p className="mt-4 text-lg text-stone-200 max-w-2xl">
             Portraits are my favorite way to connect with people. A single look,
             a subtle gesture, or the way light hits someone’s face can tell an
             entire story. These are a few portraits that mean the most to me —
             each one capturing a unique emotion and moment in time.
-          </p> */}
+
+          </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Main Content */}
       <main className="pt-16 pb-20 px-6">

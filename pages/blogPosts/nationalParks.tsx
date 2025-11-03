@@ -71,26 +71,27 @@ export default function NationalParks() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] pt-[90px]">
-        {/* <Image
+      {/* <section className="relative w-full h-[60vh] pt-[90px]">
+        <Image
           src={grandCanyon}
           alt="Yosemite Valley"
           fill
           priority
-          className="object-cover brightness-75"
-        /> */}
+          className="object-cover brightness-90"
+        />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
             National Parks
           </h1>
-          {/* <p className="mt-4 text-lg text-stone-200 max-w-2xl">
+          <p className="mt-4 text-lg text-stone-200 max-w-2xl">
             National parks remind me how small we are — yet how connected we can
             feel to something greater. Every park has its own story, its own
             colors, its own light. These photos capture a few moments from parks
             that have left their mark on me.
-          </p> */}
+            Nature has been something I have always been obsessed with 
+          </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Main Content */}
       <main className="pt-16 pb-20 px-6">
