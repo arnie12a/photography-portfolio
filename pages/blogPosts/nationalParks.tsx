@@ -7,46 +7,53 @@ import bryceCanyon from "../../public/landscape/bryceCanyon.jpg"
 import rainier from "../../public/landscape/rainier.jpg"
 import smokeyMountains from "../../public/landscape/smokeyMountainsSunset.jpg"
 import rockyMountains from "../../public/landscape/emeraldLake.png"
+import rioCelesteWaterfall from "../../public/landscape/rioCelesteWaterfall.jpg"
 
 export default function NationalParks() {
   const parks = [
     
     {
-      name: "Zion National Park",
+      name: "Zion National Park in USA",
       image: zion,
       description:
         "Felt like I was in the movie Cars.",
     },
     {
-      name: "Grand Canyon National Park",
+      name: "Grand Canyon National Park in USA",
       image: grandCanyon,
       description:
         "Hiked halfway down the Granc Canyon. I cannot wait to return and go rim to rim.",
     },
     {
-      name: "Byrce Canyon National Park",
+      name: "Byrce Canyon National Park in USA",
       image: bryceCanyon,
       description:
         "TThe biggest Hoodoos I have seen in my life.",
     },
     {
-        name: "Rainier National Park",
+        name: "Rainier National Park in USA",
         image: rainier,
         description:
             "Skyline Loop Trail: Hardest hike I have done.",
     },
     {
-        name: "Smokey Mountains National Park",
+        name: "Smokey Mountains National Park in USA",
         image: smokeyMountains,
         description:
             "Prettiest sunset I have ever captured.",
     },
     {
-        name: "Rocky Mountains National Park",
+        name: "Rocky Mountains National Park in USA",
         image: rockyMountains,
         description:
             "Emerald Lake",
     },
+    {
+      name: "Tenorio Volcano National Park in Costa Rica",
+      image: rockyMountains,
+      description:
+          "Rio Celeste National Park",
+  },
   ]
 
   return (

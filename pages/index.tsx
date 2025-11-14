@@ -30,7 +30,6 @@ import rainbow from "../public/landscape/rainbow.jpg"
 import kauaiOcean from "../public/landscape/kauaiOcean.jpg"
 import theNarrows from "../public/landscape/theNarrows.jpg"
 import waimeaCanyon from "../public/landscape/waimeaCanyon.jpg"
-import rioCelesteWaterfall from "../public/landscape/rioCelesteWaterfall.jpg"
 import munnarFlower from "../public/landscape/munnarFlower.jpg"
 import napaliCoast from "../public/landscape/napaliCoast.jpg"
 import munnarHike from "../public/landscape/munnarHike.jpg"
@@ -158,11 +157,6 @@ const favoriteImages = [
       image: meganAndrewRainier,
       title: '<span class="text-2xl font-bold text-white">Megan & Andrew</span>',
       description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the mountainous surroundings.</p>',
-    },
-    {
-      image: rioCelesteWaterfall,
-      title: '<span class="text-2xl font-bold text-white">Rio Celeste Waterfall, Costa Rica</span>',
-      description: '<p class="text-base text-gray-300 mt-2">The bluest water I have ever seen.</p>',
     },
     {
       image: highlandCow,
