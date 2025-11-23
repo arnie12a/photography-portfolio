@@ -8,6 +8,7 @@ import rainier from "../../public/landscape/rainier.jpg"
 import smokeyMountains from "../../public/landscape/smokeyMountainsSunset.jpg"
 import rockyMountains from "../../public/landscape/emeraldLake.png"
 import rioCelesteWaterfall from "../../public/landscape/rioCelesteWaterfall.jpg"
+import elephantYalaNationalPark from "../../public/animals/elephant.jpg"
 
 export default function NationalParks() {
   const parks = [
@@ -50,10 +51,16 @@ export default function NationalParks() {
     },
     {
       name: "Tenorio Volcano National Park in Costa Rica",
-      image: rockyMountains,
+      image: rioCelesteWaterfall,
       description:
           "Rio Celeste National Park",
-  },
+    },
+    {
+      name: "Yala National Park in Sri Lanka",
+      image: elephantYalaNationalPark,
+      description:
+          "Had the privilege of taking these photos of an elephant herd preparing for the night.",
+    },
   ]
 
   return (

@@ -51,7 +51,6 @@ import nihar from "../public/people/niharPellingFort.jpg"
 import goat from "../public/animals/goat.jpg"
 import hilton from "../public/animals/hilton.jpg"
 import dotter from "../public/animals/dotter.jpg"
-import elephants from "../public/animals/elephant.jpg"
 import sprinkles from "../public/animals/running.jpg"
 import buffalo from "../public/animals/buffalo.jpg"
 import elephant from "../public/animals/closeElephant.jpg"
@@ -175,11 +174,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.</p>'
     },
   
-    {
-      image: elephants,
-      title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Elephant herd at sunset preparing for the night ahead.</p>',
-    },
+  
     {
       image: munnarTeaHike,
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
