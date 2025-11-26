@@ -456,10 +456,19 @@ export default function TempIndex() {
 
                     <div className="md:w-1/2 md:pl-8">
                     <h2 className="text-2xl font-bold mb-4">My name is Arnav Karnik</h2>
-                    <p>
-                    I am a photographer who loves to capture meaningful moments. My passion lies in photographing the beauty of nature during my many adventures. 
-                    My dream is to develop a side hustle traveling on expeditions and taking photos. I look forward to making this dream into a reality, discovering new places and continuing to tell stories through the lens.
-                    </p><br/>
+                    
+                    <div>
+                      <p>
+                        I am a photographer who loves to capture meaningful moments. My passion lies in photographing the beauty of nature during my many adventures.
+                      </p>
+                      <p>
+                        My dream is to build a side hustle where I explore the uncertainty of nature and share its beauty with as many people as possible, inspiring us all to protect this incredible planet.
+                      </p>
+                      <p>
+                        I look forward to making this dream into a reality, discovering new places, and continuing to tell stories through the lens.
+                      </p>
+                    </div>
+
 
                     <br/>
                     <div className="flex justify-center">
