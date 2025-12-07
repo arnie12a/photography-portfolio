@@ -415,13 +415,6 @@ export default function TempIndex() {
                     <h2 className="text-2xl font-bold mb-8 text-center">Stories</h2>
 
                     <div className="max-w-xl mx-auto space-y-8">
-                      <BlogPostCard
-                        href="/blogPosts/parisBasketball"
-                        title="Paris Basketball"
-                        image={parisBasketball}
-                        alt="Paris Basketball"
-                        description="Hooped with this view of the Eiffel Tower."
-                      />
 
                       <BlogPostCard
                         href="/blogPosts/nationalParks"
@@ -429,6 +422,14 @@ export default function TempIndex() {
                         image={meganAndrewRainier}
                         alt="National Parks"
                         description="Here are the favorite moments at national parks."
+                      />
+
+                      <BlogPostCard
+                        href="/blogPosts/parisBasketball"
+                        title="Paris Basketball"
+                        image={parisBasketball}
+                        alt="Paris Basketball"
+                        description="Hooped with this view of the Eiffel Tower."
                       />
 
                       <BlogPostCard

@@ -17,25 +17,25 @@ export default function NationalParks() {
       name: "Zion National Park in USA",
       image: zion,
       description:
-        "Felt like I was in the movie Cars.",
+        "My favorite moment in this national park was just driving around and taking in the unique landscape. This photo was a personal favorite because it makes me feel I was in the movie Cars.",
     },
     {
       name: "Grand Canyon National Park in USA",
       image: grandCanyon,
       description:
-        "Hiked halfway down the Granc Canyon. I cannot wait to return and go rim to rim.",
+        "Hiked halfway down the grand canyon via the South Kaibab Trail to Skeleton Point. One of the hardest hikes I have experienced but I am excited to return and hike rim to rim.",
     },
     {
       name: "Byrce Canyon National Park in USA",
       image: bryceCanyon,
       description:
-        "TThe biggest Hoodoos I have seen in my life.",
+        "The biggest and most Hoodoos I have seen in my life.",
     },
     {
         name: "Rainier National Park in USA",
         image: rainier,
         description:
-            "Skyline Loop Trail: Hardest hike I have done.",
+            "I have been wanting to visit this park for the longest time. Hiked the Skyline Loop Trail an experienced the toughest weather conditions to date.",
     },
     {
         name: "Smokey Mountains National Park in USA",
@@ -47,7 +47,7 @@ export default function NationalParks() {
         name: "Rocky Mountains National Park in USA",
         image: rockyMountains,
         description:
-            "Emerald Lake",
+            "Hiked with nathan to Emerald Lake. ",
     },
     {
       name: "Tenorio Volcano National Park in Costa Rica",
