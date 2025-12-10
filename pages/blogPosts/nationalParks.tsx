@@ -29,7 +29,7 @@ export default function NationalParks() {
       name: "Byrce Canyon National Park in USA",
       image: bryceCanyon,
       description:
-        "The biggest and most Hoodoos I have seen in my life.",
+        "The biggest and most Hoodoos I have seen in my life. Have to return to see the night sky.",
     },
     {
         name: "Rainier National Park in USA",
