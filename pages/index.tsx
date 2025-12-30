@@ -4,7 +4,6 @@ import {Tab} from "@headlessui/react"
 import Masonry from 'react-masonry-css'
 import classNames from 'classnames'
 import Image from "next/image"
-import BlogPostCard from "../components/blogPostCard";
 
 
 import type {LightGallery} from 'lightgallery/lightgallery'
@@ -69,6 +68,21 @@ import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 import parisBasketball from "../public/structures/parisBasketball.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
 import washingtonMonument from "../public/structures/washingtonMonument.jpg"
+
+// Blog Post Cover Images
+import hoopingInParis from "../public/blogCover/HoopinInParis.jpg"
+
+const stories = [
+  {
+    title: "Hooping in Paris",
+    preview:
+      "The prettiest place I have played pickup at.",
+    image: hoopingInParis,
+    link: "https://arnavkarnik.medium.com/basketball-in-paris-87953cbbc300",
+  },
+ 
+];
+
 
 const favoriteImages = [
     {
@@ -412,36 +426,66 @@ export default function TempIndex() {
                 
                 <Tab.Panel className="overflow-auto rounded">
                   <div className="container mx-auto p-8">
-                    <h2 className="text-2xl font-bold mb-8 text-center">Stories</h2>
+                    {/* Header */}
+                    <h2 className="text-2xl font-bold mb-4 text-center text-white">
+                      Stories
+                    </h2>
 
-                    <div className="max-w-xl mx-auto space-y-8">
+                    {/* Medium link */}
+                    <div className="flex justify-center mb-10">
+                      <a
+                        href="https://arnavkarnik.medium.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-2 px-6 py-3 rounded-full 
+                                  bg-stone-800 hover:bg-stone-700 transition"
+                      >
+                        <span className="text-stone-300 group-hover:text-white">
+                          Read all stories on Medium
+                        </span>
+                        <span className="text-stone-500 group-hover:text-white">→</span>
+                      </a>
+                    </div>
 
-                      <BlogPostCard
-                        href="/blogPosts/nationalParks"
-                        title="National Parks"
-                        image={meganAndrewRainier}
-                        alt="National Parks"
-                        description="Here are the favorite moments at national parks."
-                      />
+                    {/* Horizontal scroll */}
+                    <div className="relative">
+                      <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
+                        {stories.map((story, idx) => (
+                          <a
+                            key={idx}
+                            href={story.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="min-w-[280px] max-w-[280px] snap-start 
+                                      bg-stone-900 rounded-lg overflow-hidden 
+                                      hover:scale-[1.02] transition-transform"
+                          >
+                            {/* Image */}
+                            <div className="relative h-40">
+                              <Image
+                                src={story.image}
+                                alt={story.title}
+                                fill
+                                className="object-cover"
+                              />
+                            </div>
 
-                      <BlogPostCard
-                        href="/blogPosts/parisBasketball"
-                        title="Paris Basketball"
-                        image={parisBasketball}
-                        alt="Paris Basketball"
-                        description="Hooped with this view of the Eiffel Tower."
-                      />
-
-                      <BlogPostCard
-                        href="/blogPosts/portraits"
-                        title="Portraits"
-                        image={nihar}
-                        alt="Portraits"
-                        description="Here are the favorite portrait photos I have taken."
-                      />
+                            {/* Text */}
+                            <div className="p-4">
+                              <h3 className="text-lg font-semibold text-white mb-2">
+                                {story.title}
+                              </h3>
+                              <p className="text-sm text-stone-400 line-clamp-3">
+                                {story.preview}
+                              </p>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </Tab.Panel>
+
 
 
 
