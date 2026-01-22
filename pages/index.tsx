@@ -39,12 +39,14 @@ import fanalForest from "../public/landscape/fanelForest.jpg"
 import dolomitePeaks from "../public/landscape/dolomites3.jpg"
 import fire from "../public/landscape/fire.jpg"
 import meganAndrewRainier from "../public/landscape/meganAndrewRainier.jpg"
+import popocatepetl from "../public/landscape/popocatepetl.jpg"
 
 // People Images
 import profilePic from "../public/people/arnie.jpg"
 import knif from "../public/people/knif.jpg"
 import nathanBridge from "../public/people/nathanBridge.png"
 import nihar from "../public/people/niharPellingFort.jpg"
+import davidNotebook from "../public/people/davidNotebook.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -142,6 +144,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
     },
     {
+      image: davidNotebook,
+      title: '<span class="text-2xl font-bold text-white">Davids Notebooks</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Purchased some handmade and recycled notebooks from David in Mexico City.</p>',
+    },
+    {
       image: dolomites2,
       title: '<span class="text-2xl font-bold text-white">Rifugio Averau, Italy</span>',
       description: '<p class="text-base text-gray-300 mt-2">I cannot get enough of the panoramic views while hiking in the Dolomites.</p>',
@@ -215,6 +222,11 @@ const favoriteImages = [
       image: theNarrows,
       title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite hike I\'ve been on. Traveling through & along the winding river with 1,000-2,000 foot canyons on each side was an awesome experience. I felt like every five minutes I was taking out my camera to capture something pretty.</p>',
+    },
+    {
+      image: popocatepetl,
+      title: '<span class="text-2xl font-bold text-white">Popocatépetl</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Hiked 1.5 hours from Mexico City and saw the Smoking Volcano with my own eyes.</p>',
     },
     {
       image: sprinkles,
