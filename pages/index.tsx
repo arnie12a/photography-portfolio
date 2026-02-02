@@ -72,7 +72,7 @@ import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
 import washingtonMonument from "../public/structures/washingtonMonument.jpg"
 
 // Blog Post Cover Images
-import hoopingInParis from "../public/blogCover/HoopinInParis.jpg"
+import hoopingInParis from "../public/blogPhotos/parisHoops.jpg"
 
 const stories = [
   {
@@ -80,7 +80,21 @@ const stories = [
     preview:
       "The prettiest place I have played pickup at.",
     image: hoopingInParis,
-    link: "https://arnavkarnik.medium.com/basketball-in-paris-87953cbbc300",
+    link: "/blogPosts/parisBasketball",
+  },
+  {
+    title: "Portraits",
+    preview:
+      "Here are my favorite photos of people.",
+    image: goat,
+    link: "/blogPosts/portraits",
+  },
+  {
+    title: "National Parks",
+    preview:
+      "Here are my photos from National Parks I have visited.",
+    image: goat,
+    link: "/blogPosts/nationalParks",
   },
  
 ];
@@ -97,9 +111,6 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Raigad Fort, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.</p>',
     },
-    
-    
-    
     {
       image: dotter,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
@@ -365,7 +376,7 @@ export default function TempIndex() {
 
         
         <header className="fixed top-0 w-full z-10 flex justify-center items-center h-[90px] px-10">
-          <span className="uppercase text-3xl font-large">
+          <span className="uppercase text-xl tracking-[0.3em] text-stone-300">
             Arnav Karnik Photography
           </span>
         </header>
@@ -438,65 +449,43 @@ export default function TempIndex() {
                 
                 <Tab.Panel className="overflow-auto rounded">
                   <div className="container mx-auto p-8">
-                    {/* Header */}
-                    <h2 className="text-2xl font-bold mb-4 text-center text-white">
-                      Stories
-                    </h2>
 
-                    {/* Medium link */}
-                    <div className="flex justify-center mb-10">
-                      <a
-                        href="https://arnavkarnik.medium.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-2 px-6 py-3 rounded-full 
-                                  bg-stone-800 hover:bg-stone-700 transition"
-                      >
-                        <span className="text-stone-300 group-hover:text-white">
-                          Read all stories on Medium
-                        </span>
-                        <span className="text-stone-500 group-hover:text-white">→</span>
-                      </a>
+                    {/* 2x2 Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                      {stories.map((story, idx) => (
+                        <a
+                          key={idx}
+                          href={story.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group block bg-stone-900 rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105"
+                        >
+                          {/* Image */}
+                          <div className="relative h-48 w-full">
+                            <Image
+                              src={story.image}
+                              alt={story.title}
+                              fill
+                              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            />
+                          </div>
+
+                          {/* Text */}
+                          <div className="p-4">
+                            <h3 className="text-lg font-semibold text-white mb-2">
+                              {story.title}
+                            </h3>
+                            <p className="text-sm text-stone-400 line-clamp-3">
+                              {story.preview}
+                            </p>
+                          </div>
+                        </a>
+                      ))}
                     </div>
 
-                    {/* Horizontal scroll */}
-                    <div className="relative">
-                      <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
-                        {stories.map((story, idx) => (
-                          <a
-                            key={idx}
-                            href={story.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="min-w-[280px] max-w-[280px] snap-start 
-                                      bg-stone-900 rounded-lg overflow-hidden 
-                                      hover:scale-[1.02] transition-transform"
-                          >
-                            {/* Image */}
-                            <div className="relative h-40">
-                              <Image
-                                src={story.image}
-                                alt={story.title}
-                                fill
-                                className="object-cover"
-                              />
-                            </div>
-
-                            {/* Text */}
-                            <div className="p-4">
-                              <h3 className="text-lg font-semibold text-white mb-2">
-                                {story.title}
-                              </h3>
-                              <p className="text-sm text-stone-400 line-clamp-3">
-                                {story.preview}
-                              </p>
-                            </div>
-                          </a>
-                        ))}
-                      </div>
-                    </div>
                   </div>
                 </Tab.Panel>
+
 
 
 
@@ -551,8 +540,8 @@ export default function TempIndex() {
         
         </main>
 
-        <footer className="h-[90px] flex justify-center items-center uppercase text-lg font-medium">
-            <p>Arnav Karnik Photography</p>
+        <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
+          Arnav Karnik Photography
         </footer>
         </div>
         
