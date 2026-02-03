@@ -47,6 +47,7 @@ import knif from "../public/people/knif.jpg"
 import nathanBridge from "../public/people/nathanBridge.png"
 import nihar from "../public/people/niharPellingFort.jpg"
 import davidNotebook from "../public/people/davidNotebook.jpg"
+import preciousUgo from "../public/people/ugoPrecious.jpg"
 
 // Animal Images
 import goat from "../public/animals/goat.jpg"
@@ -86,7 +87,7 @@ const stories = [
     title: "Portraits",
     preview:
       "Here are my favorite photos of people.",
-    image: goat,
+    image: preciousUgo,
     link: "/blogPosts/portraits",
   },
   {

@@ -6,6 +6,13 @@ import Link from "next/link"
 import bryceCanyon from "../../public/landscape/bryceCanyon.jpg"
 import grandCanyon from "../../public/landscape/grandCanyon.jpeg"
 import popocatepetl from "../../public/landscape/popocatepetl.jpg"
+import rainiernp from "../../public/landscape/rainier.jpg"
+import rockyMountains from "../../public/landscape/emeraldLake.png"
+import zion from "../../public/landscape/theNarrows.jpg"
+import rioCelesteWaterfall from "../../public/landscape/rioCelesteWaterfall.jpg"
+import smokeyMountains from "../../public/landscape/smokeyMountainsSunset.jpg"
+import napaliCoast from "../../public/landscape/napaliCoast.jpg"
+import waimeaCanyon from "../../public/landscape/waimeaCanyon.jpg"
 
 type ParkPhoto = {
   src: StaticImageData
@@ -25,8 +32,44 @@ const parkPhotos: ParkPhoto[] = [
     orientation: "horizontal",
   },
   {
+    src: rioCelesteWaterfall,
+    description: "Rio Celeste Waterfall",
+    orientation: "horizontal",
+  },
+  {
+    src: zion,
+    description: "Zion National Park -- The Narrows",
+    orientation: "vertical",
+  },
+  {
+    src: napaliCoast,
+    description: "Nā Pali Coast State Wilderness Park",
+    orientation: "horizontal",
+  },
+  {
     src: popocatepetl,
     description: "Parque Nacional Iztaccíhuatl - Popocatépetl",
+    orientation: "horizontal",
+  },
+
+  {
+    src: waimeaCanyon,
+    description: "Waimea Canyon State Park",
+    orientation: "horizontal",
+  },
+  {
+    src: smokeyMountains,
+    description: "Smokey Mountains National Park",
+    orientation: "vertical",
+  },
+  {
+    src: rainiernp,
+    description: "Rainier National Park",
+    orientation: "horizontal",
+  },
+  {
+    src: rockyMountains,
+    description: "Rocky Mountains National Park",
     orientation: "horizontal",
   },
 ]
