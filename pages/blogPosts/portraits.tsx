@@ -15,7 +15,8 @@ import niharMadeira from "../../public/people/nihar.jpg"
 import mudathiru from "../../public/people/mudathiru.jpg"
 import munachiEmily from "../../public/people/munachiEmily.jpg"
 import nathanBridge from "../../public/people/nathanBridge.png"
-
+import keitlin from "../../public/people/keitlin.jpg"
+import vrushtiMegan from "../../public/people/vrushtiMuhab.jpg"
 
 type PortraitPhoto = {
   src: StaticImageData
@@ -62,6 +63,16 @@ const portraitPhotos: PortraitPhoto[] = [
   {
     src: knif,
     description: "Hiked with Knif in Los Angeles",
+    orientation: "horizontal",
+  },
+  {
+    src: vrushtiMegan,
+    description: "Megan & Vrushti at Mishal's engegement dinner",
+    orientation: "horizontal",
+  },
+  {
+    src: keitlin,
+    description: "Keitlin with the puppies she is fostering",
     orientation: "horizontal",
   },
   {
