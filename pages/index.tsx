@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 // Importing images for sections
 import dolomites2 from "../public/landscape/dolomites2.jpg"
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="flex flex-col">
           {/* Landscape/Nature Section */}
           <Section
-            title="Landscape/Nature"
+            title="Landscape"
             imageSrc={dolomites2}
             link="/landscapes"
           />

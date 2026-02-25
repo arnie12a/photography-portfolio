@@ -4,19 +4,19 @@ import Link from "next/link"
 
 // 👉 Import your portrait photos here
 // Example:
-import ashwini from "../../public/people/ashwini.jpg"
-import davidNotebook from "../../public/people/davidNotebook.jpg"
-import ugoPrecious from "../../public/people/ugoPrecious.jpg"
-import kaylem from "../../public/people/kaylem.jpg"
-import niharPellingFort from "../../public/people/niharPellingFort.jpg"
-import lifonso from "../../public/people/lifonso.jpg"
-import knif from "../../public/people/knif.jpg"
-import niharMadeira from "../../public/people/nihar.jpg"
-import mudathiru from "../../public/people/mudathiru.jpg"
-import munachiEmily from "../../public/people/munachiEmily.jpg"
-import nathanBridge from "../../public/people/nathanBridge.png"
-import keitlin from "../../public/people/keitlin.jpg"
-import vrushtiMegan from "../../public/people/vrushtiMuhab.jpg"
+import ashwini from "../public/people/ashwini.jpg"
+import davidNotebook from "../public/people/davidNotebook.jpg"
+import ugoPrecious from "../public/people/ugoPrecious.jpg"
+import kaylem from "../public/people/kaylem.jpg"
+import niharPellingFort from "../public/people/niharPellingFort.jpg"
+import lifonso from "../public/people/lifonso.jpg"
+import knif from "../public/people/knif.jpg"
+import niharMadeira from "../public/people/nihar.jpg"
+import mudathiru from "../public/people/mudathiru.jpg"
+import munachiEmily from "../public/people/munachiEmily.jpg"
+import nathanBridge from "../public/people/nathanBridge.png"
+import keitlin from "../public/people/keitlin.jpg"
+import vrushtiMegan from "../public/people/vrushtiMuhab.jpg"
 
 type PortraitPhoto = {
   src: StaticImageData
