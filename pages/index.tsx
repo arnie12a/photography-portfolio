@@ -1,13 +1,14 @@
+
 import Head from "next/head"
 import Link from "next/link"
 import Image, { StaticImageData } from "next/image"
 
-// Importing images for sections
-import dolomites2 from "../public/landscape/dolomites2.jpg"
+// Importing images
+import heroImage from "../public/landscape/dolomites2.jpg"
 import preciousUgo from "../public/people/ugoPrecious.jpg"
 import auroville from "../public/landscape/auroville.jpg"
 import goat from "../public/animals/goat.jpg"
-import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
+import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
 
 export default function Home() {
   return (
@@ -19,49 +20,73 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="fixed top-0 w-full z-10 flex justify-center items-center h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800">
-        <span className="uppercase text-xl tracking-[0.3em] text-stone-300">
+      <header className="fixed top-0 w-full z-20 h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800 flex items-center justify-between">
+
+        {/* Left: Title */}
+        <span className="uppercase text-xl md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
           Arnav Karnik Photography
         </span>
+
+
+        {/* Right: Navigation */}
+        <nav className="flex items-center space-x-8 text-stone-300 text-sm md:text-base">
+
+          {/* GALLERIES with dropdown */}
+          <div className="relative group">
+            <span className="cursor-pointer hover:text-white transition">
+              GALLERIES
+            </span>
+
+            {/* Dropdown */}
+            <div className="absolute right-0 mt-2 w-48 bg-stone-900 border border-stone-700 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
+              <Link href="/galleries/india" className="block px-4 py-2 hover:bg-stone-800 transition">India</Link>
+              <Link href="/galleries/dolomites" className="block px-4 py-2 hover:bg-stone-800 transition">Italian Dolomites</Link>
+              <Link href="/galleries/portugal" className="block px-4 py-2 hover:bg-stone-800 transition">Portugal</Link>
+            </div>
+          </div>
+
+          <Link href="/about" className="hover:text-white transition">ABOUT</Link>
+          <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
+
+          {/* Instagram Icon */}
+          <a
+            href="https://www.instagram.com/arnavkarnikphotos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              className="w-6 h-6"
+            >
+              <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+            </svg>
+          </a>
+        </nav>
       </header>
 
-      <main className="pt-[105px]">
-        {/* Sections */}
-        <div className="flex flex-col">
-          {/* Landscape/Nature Section */}
-          <Section
-            title="Landscape"
-            imageSrc={dolomites2}
-            link="/landscapes"
-          />
+      <main className="pt-[90px]">
 
-          {/* Portraits Section */}
-          <Section
-            title="Portraits"
-            imageSrc={preciousUgo}
-            link="/portraits"
+        {/* Hero Image */}
+        <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh]">
+          <Image
+            src={heroImage}
+            alt="Hero"
+            fill
+            className="object-cover"
+            placeholder="blur"
           />
+          <div className="absolute inset-0 bg-black/30" />
+        </div>
 
-          {/* Short Stories Section */}
-          <Section
-            title="Short Stories"
-            imageSrc={auroville}
-            link="/shortStories"
-          />
-
-          {/* Animals Section */}
-          <Section
-            title="Animals"
-            imageSrc={goat}
-            link="/animals"
-          />
-
-          {/* Structures Section */}
-          <Section
-            title="Structures"
-            imageSrc={chicagoSkyline}
-            link="/structures"
-          />
+        {/* Grid Section */}
+        <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <GridItem title="Nature" imageSrc={hanaleiBay} link="/landscapes" />
+          <GridItem title="Portraits" imageSrc={preciousUgo} link="/portraits" />
+          <GridItem title="Animals" imageSrc={goat} link="/animals" />
+          <GridItem title="Short Stories" imageSrc={auroville} link="/shortStories" />
         </div>
       </main>
 
@@ -73,37 +98,26 @@ export default function Home() {
   )
 }
 
-type SectionProps = {
+type GridItemProps = {
   title: string
   imageSrc: StaticImageData
   link: string
 }
 
-function Section({ title, imageSrc, link }: SectionProps) {
+function GridItem({ title, imageSrc, link }: GridItemProps) {
   return (
-    <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full group">
-      {/* Background Image */}
+    <Link href={link} className="group relative h-[250px] sm:h-[300px] lg:h-[350px] block rounded overflow-hidden">
       <Image
         src={imageSrc}
         alt={title}
         fill
-        className="object-cover"
+        className="object-cover transition-transform duration-300 group-hover:scale-105"
         placeholder="blur"
       />
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-300" />
-
-      {/* Title */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white">{title}</h2>
-        <Link
-          href={link}
-          className="mt-4 px-6 py-2 text-lg font-medium text-stone-200 bg-stone-800 bg-opacity-70 hover:bg-opacity-90 rounded transition"
-        >
-          Explore
-        </Link>
+      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300" />
+      <div className="absolute inset-0 flex justify-center items-center">
+        <h2 className="text-2xl font-semibold text-white">{title}</h2>
       </div>
-    </div>
+    </Link>
   )
 }
