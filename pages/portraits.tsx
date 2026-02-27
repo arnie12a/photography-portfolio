@@ -106,7 +106,7 @@ export default function Portraits() {
           <Link href="/" className="uppercase text-sm tracking-widest hover:text-white transition">
             ← Back
           </Link>
-          <span className="uppercase text-xl tracking-[0.3em] text-stone-300">
+          <span className="uppercase text-xl tracking-[0.3em] text-stone-400">
             Arnav Karnik Photography
           </span>
           <div />
