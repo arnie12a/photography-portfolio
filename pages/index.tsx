@@ -39,13 +39,13 @@ export default function Home() {
 
             {/* Dropdown */}
             <div className="absolute right-0 mt-2 w-48 bg-stone-900 border border-stone-700 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
-              <Link href="/galleries/india" className="block px-4 py-2 hover:bg-stone-800 transition">India</Link>
-              <Link href="/galleries/dolomites" className="block px-4 py-2 hover:bg-stone-800 transition">Italian Dolomites</Link>
-              <Link href="/galleries/portugal" className="block px-4 py-2 hover:bg-stone-800 transition">Portugal</Link>
+              <Link href="/gallery/india" className="block px-4 py-2 hover:bg-stone-800 transition">India</Link>
+              <Link href="/gallery/nationalParks" className="block px-4 py-2 hover:bg-stone-800 transition">National Parks</Link>
+              <Link href="/galleries/portugal" className="block px-4 py-2 hover:bg-stone-800 transition">Paris</Link>
             </div>
           </div>
 
-          <Link href="/about" className="hover:text-white transition">ABOUT</Link>
+          <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>
           <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
 
           {/* Instagram Icon */}
@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* Grid Section */}
         <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <GridItem title="Nature" imageSrc={hanaleiBay} link="/landscapes" />
+          <GridItem title="Nature" imageSrc={hanaleiBay} link="/nature" />
           <GridItem title="Portraits" imageSrc={preciousUgo} link="/portraits" />
           <GridItem title="Animals" imageSrc={goat} link="/animals" />
           <GridItem title="Short Stories" imageSrc={auroville} link="/shortStories" />
