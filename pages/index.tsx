@@ -38,11 +38,22 @@ export default function Home() {
             </span>
 
             {/* Dropdown */}
-            <div className="absolute right-0 mt-2 w-48 bg-stone-900 border border-stone-700 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
-              <Link href="/gallery/india" className="block px-4 py-2 hover:bg-stone-800 transition">India</Link>
-              <Link href="/gallery/nationalParks" className="block px-4 py-2 hover:bg-stone-800 transition">National Parks</Link>
-              <Link href="/galleries/portugal" className="block px-4 py-2 hover:bg-stone-800 transition">Paris</Link>
-            </div>
+            <div className="absolute right-0 mt-3 w-52 bg-stone-900/60 backdrop-blur-xl border border-stone-700/50 
+                rounded-xl shadow-2xl opacity-0 translate-y-3 
+                group-hover:opacity-100 group-hover:translate-y-0 
+                pointer-events-none group-hover:pointer-events-auto transition-all duration-300">
+
+                <Link href="/gallery/india" 
+                      className="block px-5 py-3 text-sm hover:bg-white/10 transition rounded-t-xl">
+                  India
+                </Link>
+
+                <Link href="/gallery/nationalParks" 
+                      className="block px-5 py-3 text-sm hover:bg-white/10 transition">
+                  National Parks
+                </Link>
+              </div>
+
           </div>
 
           <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>

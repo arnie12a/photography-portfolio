@@ -2,32 +2,17 @@ import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 
-// Replace with your real story images
-import dolomitesImg from "../public/landscape/dolomites2.jpg"
-import hanaleiImg from "../public/landscape/hanaleiBay.jpg"
-import aurovilleImg from "../public/landscape/auroville.jpg"
+// Import your Paris Basketball story image
+import parisBasketballImg from "../public/structures/parisBasketball.jpg" 
+// ⬆️ Make sure this path matches your folder structure
 
 export default function ShortStories() {
   const stories = [
-    
-    
     {
-      title: "The Dolomites",
-      subtitle: "Italy’s jagged giants at sunrise.",
-      img: dolomitesImg,
-      link: "/shortStories/story1",
-    },
-    {
-      title: "Hanalei Bay",
-      subtitle: "A quiet morning on Kauai’s north shore.",
-      img: hanaleiImg,
-      link: "/shortStories/story2",
-    },
-    {
-      title: "Auroville",
-      subtitle: "Light, color, and stillness.",
-      img: aurovilleImg,
-      link: "/shortStories/story3",
+      title: "Paris Basketball",
+      subtitle: "A story from the courts of Paris.",
+      img: parisBasketballImg,
+      link: "/stories/parisBasketball",
     },
   ]
 

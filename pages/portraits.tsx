@@ -101,27 +101,24 @@ export default function Portraits() {
           <meta name="description" content="Portrait photography collection by Arnav Karnik." />
         </Head>
   
-        {/* Header */}
-        <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800">
-          <Link href="/" className="uppercase text-sm tracking-widest hover:text-white transition">
-            ← Back
-          </Link>
-          <span className="uppercase text-xl tracking-[0.3em] text-stone-400">
-            Arnav Karnik Photography
-          </span>
-          <div />
-        </header>
+        <header className="fixed top-0 w-full z-20 h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800 flex items-center justify-between">
+        <span className="uppercase text-xl md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
+          Arnav Karnik Photography
+        </span>
+
+        <Link
+          href="/"
+          className="rounded-3xl bg-white text-stone-900 px-4 py-2 text-sm font-medium hover:bg-opacity-90 transition"
+        >
+          Back to Portfolio
+        </Link>
+      </header>
+
   
         <main className="pt-[140px] pb-28 px-6">
           <div className="max-w-7xl mx-auto">
   
-            {/* Page Title */}
-            <div className="mb-16 text-center">
-              <h1 className="text-5xl md:text-6xl font-semibold text-white tracking-tight">
-                Portrait Photography
-              </h1>
-              <div className="w-24 h-[2px] bg-stone-700 mx-auto mt-6" />
-            </div>
+            
   
             {/* Gallery Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
