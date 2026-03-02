@@ -9,7 +9,6 @@ import bird from "../public/animals/highlandCow.jpg"
 import elephant from "../public/animals/dotter.jpg"
 import fox from "../public/animals/goat.jpg"
 
-
 // Replace with your favorite hero image
 import heroImage from "../public/animals/goat.jpg"
 
@@ -20,7 +19,6 @@ export default function Animals() {
     { src: bird, alt: "Bird" },
     { src: elephant, alt: "Elephant" },
     { src: fox, alt: "Fox" },
-    // Add more photos here
   ]
 
   return (
@@ -66,14 +64,13 @@ export default function Animals() {
         <section className="max-w-7xl mx-auto px-6 mt-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {animalPhotos.map((photo, i) => (
-              <div key={i} className="relative h-72 rounded-lg overflow-hidden group">
+              <div key={i} className="relative w-full rounded-lg overflow-hidden group">
                 <Image
                   src={photo.src}
                   alt={photo.alt}
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
+                  className="w-full h-auto object-cover rounded-lg transition-transform duration-500 group-hover:scale-105"
+                  placeholder="blur"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
               </div>
             ))}
           </div>

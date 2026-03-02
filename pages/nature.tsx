@@ -1,81 +1,102 @@
-import Head from "next/head"
-import Link from "next/link"
+"use client"
+
 import Image from "next/image"
+import Masonry from "react-masonry-css"
+import LightGalleryComponent from "lightgallery/react"
+import lgThumbnail from "lightgallery/plugins/thumbnail"
+import lgZoom from "lightgallery/plugins/zoom"
+import { useRef } from "react"
 
-// Import your nature photos here
-import dolomites from "../public/landscape/dolomites2.jpg"
-import hanalei from "../public/landscape/hanaleiBay.jpg"
-import auroville from "../public/landscape/auroville.jpg"
-
-// Replace with your favorite hero image
-import heroImage from "../public/landscape/dolomites2.jpg"
+// Import your nature photos
+import waterfall from "../public/landscape/dolomites2.jpg"
+import forest from "../public/landscape/hanaleiBay.jpg"
+import lake from "../public/landscape/auroville.jpg"
+import canyon from "../public/landscape/dolomites2.jpg"
 
 export default function Nature() {
-  const naturePhotos = [
-    { src: dolomites, alt: "Dolomites" },
-    { src: hanalei, alt: "Hanalei Bay" },
-    { src: auroville, alt: "Auroville" },
+  const lightboxRef = useRef<any>(null)
 
-    // Add more photos here
+  const natureImages = [
+    {
+      image: waterfall,
+      title: `<span class="text-2xl font-bold text-white">Hidden Waterfall</span>`,
+      description: `<p class="text-base text-gray-300 mt-2">A secluded waterfall deep in the forest, untouched and echoing with the sound of falling water.</p>`,
+    },
+    {
+      image: forest,
+      title: `<span class="text-2xl font-bold text-white">Ancient Forest</span>`,
+      description: `<p class="text-base text-gray-300 mt-2">A dense canopy of towering trees, home to countless species and centuries of quiet growth.</p>`,
+    },
+    {
+      image: canyon,
+      title: `<span class="text-2xl font-bold text-white">Red Canyon</span>`,
+      description: `<p class="text-base text-gray-300 mt-2">Layers of red rock carved by wind and time, glowing at sunrise.</p>`,
+    },
+    {
+      image: lake,
+      title: `<span class="text-2xl font-bold text-white">Mirror Lake</span>`,
+      description: `<p class="text-base text-gray-300 mt-2">A perfectly still lake reflecting the mountains around it like glass.</p>`,
+    },
   ]
 
   return (
-    <div className="min-h-screen bg-stone-950 text-stone-200">
-      <Head>
-        <title>Nature — Arnav Karnik Photography</title>
-        <meta name="description" content="Nature photography by Arnav Karnik" />
-        <link rel="icon" href="/camera.png" />
-      </Head>
+    <div className="min-h-screen bg-stone-950 text-stone-200 pt-24 px-4">
 
-      {/* Header */}
-      <header className="fixed top-0 w-full z-20 h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800 flex items-center justify-between">
-        <span className="uppercase text-xl md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
-          Arnav Karnik Photography
-        </span>
+      <h1 className="text-3xl md:text-4xl font-bold tracking-wide mb-10 text-center">
+        Nature Photography
+      </h1>
 
-        <Link
-          href="/"
-          className="rounded-3xl bg-white text-stone-900 px-4 py-2 text-sm font-medium hover:bg-opacity-90 transition"
+      {/* FULL-WIDTH GRID */}
+      <div className="w-full px-2 sm:px-6 lg:px-12">
+
+        <Masonry
+          breakpointCols={{
+            default: 3,
+            1100: 3,
+            700: 2,
+            500: 1,
+          }}
+          className="flex gap-6 w-full"
         >
-          Back to Portfolio
-        </Link>
-      </header>
+          {natureImages.map((img, index) => (
+            <div className="relative" key={img.image.src}>
+              <Image
+                src={img.image}
+                alt="nature"
+                className="mb-6 hover:opacity-70 cursor-pointer rounded-lg"
+                placeholder="blur"
+              />
 
-      <main className="pt-[110px] pb-20">
+              {/* CLICK OVERLAY */}
+              <div
+                className="absolute inset-0 bg-transparent hover:bg-stone-900/10 cursor-pointer rounded-lg"
+                onClick={() => lightboxRef.current?.openGallery(index)}
+              ></div>
+            </div>
+          ))}
+        </Masonry>
 
-        {/* Hero Image */}
-        <div className="relative w-full h-[60vh]">
-          <Image
-            src={heroImage}
-            alt="Nature Hero"
-            fill
-            className="object-cover"
-            placeholder="blur"
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <h1 className="absolute bottom-10 left-10 text-5xl font-bold">
-            Nature
-          </h1>
-        </div>
-
-        {/* Photo Grid */}
-        <section className="max-w-7xl mx-auto px-6 mt-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {naturePhotos.map((photo, i) => (
-              <div key={i} className="relative h-72 rounded-lg overflow-hidden group">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  className="object-cover group-hover:scale-105 transition duration-500"
-                />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition" />
+        {/* FULLSCREEN MODAL */}
+        <LightGalleryComponent
+          onInit={(ref) => {
+            if (ref) lightboxRef.current = ref.instance
+          }}
+          download={false}
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          dynamic
+          dynamicEl={natureImages.map((img) => ({
+            src: img.image.src,
+            thumb: img.image.src,
+            subHtml: `
+              <div class="lg-px-10 text-center">
+                ${img.title}
+                ${img.description}
               </div>
-            ))}
-          </div>
-        </section>
-
-      </main>
+            `,
+          }))}
+        />
+      </div>
     </div>
   )
 }
