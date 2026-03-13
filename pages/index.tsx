@@ -70,17 +70,25 @@ export default function Home() {
         </div>
 
         {/* Grid Section */}
-        <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <GridItem title="Travel" imageSrc={oldTrafford} link="/travel" />
-          <GridItem title="Nature" imageSrc={hanaleiBay} link="/nature" />
-          <GridItem title="Portraits" imageSrc={preciousUgo} link="/portraits" />
-          <GridItem title="Animals" imageSrc={goat} link="/animals" />
+        <div className="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+        <GridItem
+          title="Places"
+          imageSrc={oldTrafford}
+          link="/places"
+        />
+
+        <GridItem
+          title="Stories"
+          imageSrc={auroville}
+          link="/stories"
+        />
 
         </div>
+
       </main>
 
 
-      <GridItem title="Short Stories" imageSrc={auroville} link="/shortStories" />
 
 
 
