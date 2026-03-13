@@ -9,6 +9,7 @@ import preciousUgo from "../public/people/ugoPrecious.jpg"
 import auroville from "../public/landscape/auroville.jpg"
 import goat from "../public/animals/goat.jpg"
 import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
+import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 
 export default function Home() {
   return (
@@ -31,31 +32,7 @@ export default function Home() {
         {/* Right: Navigation */}
         <nav className="flex items-center space-x-8 text-stone-300 text-sm md:text-base">
 
-          {/* GALLERIES with dropdown */}
-          <div className="relative group">
-            <span className="cursor-pointer hover:text-white transition">
-              GALLERIES
-            </span>
-
-            {/* Dropdown */}
-            <div className="absolute right-0 mt-3 w-52 bg-stone-900/60 backdrop-blur-xl border border-stone-700/50 
-                rounded-xl shadow-2xl opacity-0 translate-y-3 
-                group-hover:opacity-100 group-hover:translate-y-0 
-                pointer-events-none group-hover:pointer-events-auto transition-all duration-300">
-
-                <Link href="/gallery/india" 
-                      className="block px-5 py-3 text-sm hover:bg-white/10 transition rounded-t-xl">
-                  India
-                </Link>
-
-                <Link href="/gallery/nationalParks" 
-                      className="block px-5 py-3 text-sm hover:bg-white/10 transition">
-                  National Parks
-                </Link>
-              </div>
-
-          </div>
-
+          <Link href="/gallery" className="hover:text-white transition">GALLERY</Link>
           <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>
           <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
 
@@ -94,12 +71,18 @@ export default function Home() {
 
         {/* Grid Section */}
         <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <GridItem title="Travel" imageSrc={oldTrafford} link="/travel" />
           <GridItem title="Nature" imageSrc={hanaleiBay} link="/nature" />
           <GridItem title="Portraits" imageSrc={preciousUgo} link="/portraits" />
           <GridItem title="Animals" imageSrc={goat} link="/animals" />
-          <GridItem title="Short Stories" imageSrc={auroville} link="/shortStories" />
+
         </div>
       </main>
+
+
+      <GridItem title="Short Stories" imageSrc={auroville} link="/shortStories" />
+
+
 
       {/* Footer */}
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
