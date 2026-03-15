@@ -13,6 +13,24 @@ export default function Stories() {
       img: parisBasketballImg,
       link: "/stories/parisBasketball",
     },
+    {
+      title: "National Parks",
+      subtitle: "A photo essay from my travels to national parks across the world.",
+      img: parisBasketballImg, // Placeholder image, replace with an actual photo from your national parks story
+      link: "/stories/nationalParks",
+    },
+    {
+      title: "Pipeline, North Shore O'ahu",
+      subtitle: "A story from the legendary Pipeline surf break in Hawaii.",
+      img: parisBasketballImg, // Placeholder image, replace with an actual photo from your Pipeline story
+      link: "/stories/pipeline",
+    },
+    {
+      title: "Manchester United",
+      subtitle: "A photo essay from Old Trafford, the home of Manchester United.",
+      img: parisBasketballImg, // Placeholder image, replace with an actual photo from your Manchester United story
+      link: "/stories/manchesterUnited",
+    }
   ]
 
   return (

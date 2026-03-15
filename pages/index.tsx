@@ -2,6 +2,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import Image, { StaticImageData } from "next/image"
+import { useState } from "react"
 
 // Importing images
 import heroImage from "../public/landscape/dolomites2.jpg"
@@ -12,6 +13,8 @@ import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
 import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-stone-950 text-stone-200">
       <Head>
@@ -21,39 +24,78 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="fixed top-0 w-full z-20 h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800 flex items-center justify-between">
+      <header className="fixed top-0 w-full z-20 h-[90px] px-6 md:px-10 
+        bg-stone-950/80 backdrop-blur border-b border-stone-800 
+        flex items-center justify-between">
 
         {/* Left: Title */}
-        <span className="uppercase text-xl md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
+        <span className="uppercase text-lg md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
           Arnav Karnik Photography
         </span>
 
-
-        {/* Right: Navigation */}
-        <nav className="flex items-center space-x-8 text-stone-300 text-sm md:text-base">
-
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8 text-stone-300 text-sm md:text-base">
           <Link href="/gallery" className="hover:text-white transition">GALLERY</Link>
           <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>
           <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
 
-          {/* Instagram Icon */}
           <a
             href="https://www.instagram.com/arnavkarnikphotos"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="w-6 h-6"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 24 24" className="w-6 h-6">
               <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
             </svg>
           </a>
         </nav>
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-stone-300 hover:text-white transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
+            className="w-7 h-7">
+            <path strokeLinecap="round" strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
       </header>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden fixed top-[90px] left-0 w-full bg-stone-950/95 backdrop-blur 
+          border-b border-stone-800 flex flex-col space-y-6 px-6 py-6 
+          text-stone-300 text-lg z-10">
+
+          <Link href="/gallery" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
+            GALLERY
+          </Link>
+
+          <Link href="/aboutme" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
+            ABOUT
+          </Link>
+
+          <Link href="/contact" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
+            CONTACT
+          </Link>
+
+          <a
+            href="https://www.instagram.com/arnavkarnikphotos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition"
+            onClick={() => setMenuOpen(false)}
+          >
+            Instagram
+          </a>
+        </div>
+      )}
+
 
       <main className="pt-[90px]">
 

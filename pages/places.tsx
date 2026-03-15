@@ -5,6 +5,7 @@ import Image from "next/image"
 // Import your place images
 import parisImg from "../public/structures/parisBasketball.jpg"
 import dolomitesImg from "../public/landscape/dolomites2.jpg"
+import { title } from "process"
 
 export default function Places() {
   const places = [
@@ -21,6 +22,49 @@ export default function Places() {
       img: dolomitesImg,
       link: "/places/dolomites",
     },
+    {
+        title: "India",
+        subtitle: "Check out my two month trip across India in 2024.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from India
+        link: "/places/india",
+    },
+    {
+        title: "Sri Lanka",
+        subtitle: "Such a beautiflul country with so much to offer.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Sri Lanka
+        link: "/places/sriLanka",
+    },
+    {
+        title: "Hawaii", 
+        subtitle: "Here are photos from my adventures in Kauai and O'ahu.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Hawaii
+        link: "/places/hawaii",
+    },
+    {
+        title: "Madison, Wisconsin",
+        subtitle: "My college town, full of charm and character.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Madison
+        link: "/places/madison",
+    },
+    {
+        title: "Madeira, Portugal",
+        subtitle: "A stunning island with dramatic landscapes.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Madeira
+        link: "/places/madeira",
+    },
+    {
+        title: "Portugal",
+        subtitle: "From Lisbon to Porto, a country of vibrant culture and stunning views.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Portugal
+        link: "/places/portugal",
+    },
+    {
+        title: "Mexico City",
+        subtitle: "A vibrant city with a rich blend of culture and history.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Mexico City
+        link: "/places/mexicoCity",
+    }
+
     // Add more places here
   ]
 
