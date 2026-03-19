@@ -128,6 +128,42 @@ export default function Home() {
 
         </div>
 
+        {/* Full-Width Gallery CTA Section */}
+        <div className="relative w-full h-[45vh] sm:h-[55vh] lg:h-[60vh] my-16 overflow-hidden">
+
+        {/* Background Image */}
+        <Image
+          src={hanaleiBay} // or any imported photo
+          alt="Gallery Background"
+          fill
+          className="object-cover"
+          placeholder="blur"
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+
+        {/* Centered Content with Left/Right Padding */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 sm:px-16 lg:px-32">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white drop-shadow-lg mb-6">
+            Explore the Gallery
+          </h2>
+
+          <Link
+            href="/gallery"
+            className="px-8 py-4 text-lg sm:text-xl rounded-lg border border-white/40 
+                      bg-white/10 backdrop-blur-md text-white 
+                      hover:bg-white/20 hover:border-white/60 transition 
+                      tracking-wide shadow-lg"
+          >
+            View My Favorite Photos →
+          </Link>
+        </div>
+        </div>
+
+
+
+
       </main>
 
 
