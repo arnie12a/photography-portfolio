@@ -3,16 +3,14 @@ import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 
 // 👉 Import your national park photos
-import bryceCanyon from "../../public/landscape/bryceCanyon.jpg"
-import grandCanyon from "../../public/landscape/grandCanyon.jpeg"
-import popocatepetl from "../../public/landscape/popocatepetl.jpg"
-import rainiernp from "../../public/landscape/rainier.jpg"
-import rockyMountains from "../../public/landscape/emeraldLake.png"
-import zion from "../../public/landscape/theNarrows.jpg"
-import rioCelesteWaterfall from "../../public/landscape/rioCelesteWaterfall.jpg"
-import smokeyMountains from "../../public/landscape/smokeyMountainsSunset.jpg"
-import napaliCoast from "../../public/landscape/napaliCoast.jpg"
-import waimeaCanyon from "../../public/landscape/waimeaCanyon.jpg"
+import bryceCanyon from "../../public/stories/nationalParks/bryceCanyon.jpg"
+import grandCanyon from "../../public/stories/nationalParks/grandCanyon.jpeg"
+import popocatepetl from "../../public/stories/nationalParks/popocatepetl.jpg"
+import rainiernp from "../../public/stories/nationalParks/rainier.jpg"
+import rockyMountains from "../../public/stories/nationalParks/emeraldLake.png"
+import zion from "../../public/stories/nationalParks/theNarrows.jpg"
+import rioCelesteWaterfall from "../../public/stories/nationalParks/rioCelesteWaterfall.jpg"
+import smokeyMountains from "../../public/stories/nationalParks/smokeyMountainsSunset.jpg"
 
 type ParkPhoto = {
   src: StaticImageData
@@ -41,22 +39,14 @@ const parkPhotos: ParkPhoto[] = [
     description: "Zion National Park -- The Narrows",
     orientation: "vertical",
   },
-  {
-    src: napaliCoast,
-    description: "Nā Pali Coast State Wilderness Park",
-    orientation: "horizontal",
-  },
+  
   {
     src: popocatepetl,
     description: "Parque Nacional Iztaccíhuatl - Popocatépetl",
     orientation: "horizontal",
   },
 
-  {
-    src: waimeaCanyon,
-    description: "Waimea Canyon State Park",
-    orientation: "horizontal",
-  },
+ 
   {
     src: smokeyMountains,
     description: "Smokey Mountains National Park",
