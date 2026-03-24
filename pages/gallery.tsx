@@ -281,7 +281,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
       description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
     },
-    // { // for some reason it is not showing
+    // { // for some reason it is not showing bye bye branch
     //   image: fire,
     //   title: '<span class="text-2xl font-bold text-white">Wildfire in Sikkim</span>',
     //   description: '<p class="text-base text-gray-300 mt-2">I had to take many steps back just because of the power of the fire.</p>',
