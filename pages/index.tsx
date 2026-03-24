@@ -5,11 +5,9 @@ import Image, { StaticImageData } from "next/image"
 import { useState } from "react"
 
 // Importing images
-import heroImage from "../public/landscape/dolomites2.jpg"
-import preciousUgo from "../public/people/ugoPrecious.jpg"
-import auroville from "../public/landscape/auroville.jpg"
-import goat from "../public/animals/goat.jpg"
-import hanaleiBay from "../public/landscape/hanaleiBay.jpg"
+import heroImage from "../public/places/dolomites/dolomites2.jpg"
+import auroville from "../public/places/india/auroville.jpg"
+import hanaleiBay from "../public/places/hawaii/hanaleiBay.jpg"
 import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 
 export default function Home() {

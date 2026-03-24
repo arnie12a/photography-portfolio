@@ -4,17 +4,11 @@ import Image from "next/image"
 
 // Import your place images
 import parisImg from "../public/structures/parisBasketball.jpg"
-import dolomitesImg from "../public/landscape/dolomites2.jpg"
+import dolomitesImg from "../public/places/dolomites/dolomites2.jpg"
 import { title } from "process"
 
 export default function Places() {
   const places = [
-    {
-      title: "Paris",
-      subtitle: "Street life, architecture, and quiet corners.",
-      img: parisImg,
-      link: "/places/paris",
-    },
    
     {
       title: "Dolomites",
@@ -47,23 +41,18 @@ export default function Places() {
         link: "/places/madison",
     },
     {
-        title: "Madeira, Portugal",
-        subtitle: "A stunning island with dramatic landscapes.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Madeira
-        link: "/places/madeira",
-    },
-    {
         title: "Portugal",
         subtitle: "From Lisbon to Porto, a country of vibrant culture and stunning views.",
         img: dolomitesImg, // Placeholder image, replace with an actual photo from Portugal
         link: "/places/portugal",
     },
     {
-        title: "Mexico City",
-        subtitle: "A vibrant city with a rich blend of culture and history.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Mexico City
-        link: "/places/mexicoCity",
-    }
+        title: "Chicago",
+        subtitle: "The Windy City, captured through my lens.",
+        img: dolomitesImg, // Placeholder image, replace with an actual photo from Chicago
+        link: "/places/chicago",
+    },
+    
 
     // Add more places here
   ]
