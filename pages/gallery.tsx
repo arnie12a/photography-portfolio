@@ -35,45 +35,45 @@ import munnarHike from "../public/places/india/munnarHike.jpg"
 import betweenZionAndBryce from "../public/other/betweenZionAndBryceCanyon.jpg"
 import munnarTeaHike from "../public/places/india/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/places/india/sinhagadHike.jpg"
-import fanalForest from "../public/stories/europe2026/fanalForest.jpg"
+// import fanalForest from "../public/stories/europe2026/fanalForest.jpg"
 import dolomitePeaks from "../public/places/dolomites/dolomites3.jpg"
-import fire from "../public/places/india/fire.jpg"
+// import fire from "../public/places/india/fire.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
 
 // People Images
 import profilePic from "../public/people/arnie.jpg"
-import knif from "../public/people/knif.jpg"
-import nathanBridge from "../public/people/nathanBridge.png"
-import nihar from "../public/people/niharPellingFort.jpg"
-import davidNotebook from "../public/people/davidNotebook.jpg"
-import preciousUgo from "../public/people/ugoPrecious.jpg"
+import knif from "../public/other/knif.jpg"
+import nathanBridge from "../public/stories/nationalParks/nathanBridge.png"
+import nihar from "../public/places/india/niharPellingFort.jpg"
+import davidNotebook from "../public/other/davidNotebook.jpg"
+import preciousUgo from "../public/places/chicago/ugoPrecious.jpg"
 
 // Animal Images
-import goat from "../public/animals/goat.jpg"
-import hilton from "../public/animals/hilton.jpg"
-import dotter from "../public/animals/dotter.jpg"
-import sprinkles from "../public/animals/running.jpg"
-import buffalo from "../public/animals/buffalo.jpg"
-import elephant from "../public/animals/closeElephant.jpg"
-import salsa from "../public/animals/salsa2.jpg"
-import highlandCow from "../public/animals/highlandCow.jpg"
+import goat from "../public/stories/nationalParks/goat.jpg"
+import hilton from "../public/places/india/hilton.jpg"
+import dotter from "../public/places/srilanka/dotter.jpg"
+import sprinkles from "../public/other/running.jpg"
+import buffalo from "../public/places/srilanka/buffalo.jpg"
+import elephant from "../public/places/srilanka/closeElephant.jpg"
+import salsa from "../public/other/salsa2.jpg"
+import highlandCow from "../public/stories/europe2026/highlandCow.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
-import chicagoSkyline from "../public/structures/chicagoSkyline.jpg"
-import auroville from "../public/places/auroville.jpg"
-import gangtokStadium from "../public/structures/gangtokStadium.jpg"
+import chicagoSkyline from "../public/places/chicago/chicagoSkyline.jpg"
+import auroville from "../public/places/india/auroville.jpg"
+import gangtokStadium from "../public/places/india/gangtokStadium.jpg"
 import pelling from "../public/structures/pelling.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
-import oldTrafford from "../public/stories/Europe2026/oldTraffordStadium.jpg"
+import oldTrafford from "../public/stories/europe2026/oldTrafford1.jpg"
 import parisBasketball from "../public/structures/parisBasketball.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
-import washingtonMonument from "../public/structures/washingtonMonument.jpg"
+import washingtonMonument from "../public/other/washingtonMonument.jpg"
 
 // Blog Post Cover Images
-import hoopingInParis from "../public/blogPhotos/parisHoops.jpg"
+import hoopingInParis from "../public/stories/parisHoops/parisHoops.jpg"
 
 const stories = [
   {
@@ -281,11 +281,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
       description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
     },
-    {
-      image: fire,
-      title: '<span class="text-2xl font-bold text-white">Wildfire in Sikkim</span>',
-      description: '<p class="text-base text-gray-300 mt-2">I had to take many steps back just because of the power of the fire.</p>',
-    },
+    // { // for some reason it is not showing
+    //   image: fire,
+    //   title: '<span class="text-2xl font-bold text-white">Wildfire in Sikkim</span>',
+    //   description: '<p class="text-base text-gray-300 mt-2">I had to take many steps back just because of the power of the fire.</p>',
+    // },
     {
       image: napaliCoast,
       title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
@@ -309,11 +309,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens.</p>',
     },
     
-    {
-      image: fanalForest,
-      title: '<span class="text-2xl font-bold text-white"></span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
+    // {
+    //   image: fanalForest,
+    //   title: '<span class="text-2xl font-bold text-white"></span>',
+    //   description: '<p class="text-base text-gray-300 mt-2"></p>',
+    // },
     
     
     {
