@@ -5,6 +5,13 @@ import Image from "next/image"
 // Import your place images
 import parisImg from "../public/structures/parisBasketball.jpg"
 import dolomitesImg from "../public/places/dolomites/dolomites2.jpg"
+import indiaImg from "../public/places/india/mumbaiSkyline.jpg"
+import sriLankaImg from "../public/places/srilanka/closeElephant.jpg"
+import hawaiiImg from "../public/places/hawaii/hanaleiBay.jpg"
+import madisonImg from "../public/places/madison/mendota.jpg"
+import portugalImg from "../public/places/portugal/lisbon1.jpg"
+import chicagoImg from "../public/places/chicago/chicagoSkyline.jpg"
+
 import { title } from "process"
 
 export default function Places() {
@@ -19,37 +26,37 @@ export default function Places() {
     {
         title: "India",
         subtitle: "Check out my two month trip across India in 2024.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from India
+        img: indiaImg, // Placeholder image, replace with an actual photo from India
         link: "/places/india",
     },
     {
         title: "Sri Lanka",
         subtitle: "Such a beautiflul country with so much to offer.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Sri Lanka
+        img: sriLankaImg, // Placeholder image, replace with an actual photo from Sri Lanka
         link: "/places/sriLanka",
     },
     {
         title: "Hawaii", 
         subtitle: "Here are photos from my adventures in Kauai and O'ahu.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Hawaii
+        img: hawaiiImg, // Placeholder image, replace with an actual photo from Hawaii
         link: "/places/hawaii",
     },
     {
         title: "Madison, Wisconsin",
         subtitle: "My college town, full of charm and character.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Madison
+        img: madisonImg, // Placeholder image, replace with an actual photo from Madison
         link: "/places/madison",
     },
     {
         title: "Portugal",
         subtitle: "From Lisbon to Porto, a country of vibrant culture and stunning views.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Portugal
+        img: portugalImg, // Placeholder image, replace with an actual photo from Portugal
         link: "/places/portugal",
     },
     {
         title: "Chicago",
         subtitle: "The Windy City, captured through my lens.",
-        img: dolomitesImg, // Placeholder image, replace with an actual photo from Chicago
+        img: chicagoImg, // Placeholder image, replace with an actual photo from Chicago
         link: "/places/chicago",
     },
     

@@ -4,6 +4,8 @@ import Image from "next/image"
 
 // Import your Paris Basketball story image
 import parisBasketballImg from "../public/stories/europe2026/hoopsInParis.jpg"
+import nationalParksImg from "../public/stories/nationalParks/grandCanyon.jpeg"
+import euro2026Img from "../public/stories/europe2026/oldTrafford1.jpg"
 
 export default function Stories() {
   const stories = [
@@ -16,13 +18,13 @@ export default function Stories() {
     {
       title: "National Parks",
       subtitle: "A photo essay from my travels to national parks across the world.",
-      img: parisBasketballImg, // Placeholder image, replace with an actual photo from your national parks story
+      img: nationalParksImg, // Placeholder image, replace with an actual photo from your national parks story
       link: "/stories/nationalParks",
     },
     {
       title: "Europe 2026 Trip",
       subtitle: "I decided to take a trip across Europe in the summer of 2026. Here are some highlights.",
-      img: parisBasketballImg, // Placeholder image, replace with an actual photo from your Pipeline story
+      img: euro2026Img, // Placeholder image, replace with an actual photo from your Pipeline story
       link: "/stories/euro2026",
     },
     
