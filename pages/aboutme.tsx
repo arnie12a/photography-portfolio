@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
-import profilePic from "../public/people/arnie.jpg"
+import profilePic from "../public/other/arnie.jpg"
 
 export default function Home() {
   return (

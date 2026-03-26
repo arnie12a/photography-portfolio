@@ -68,7 +68,6 @@ import pelling from "../public/structures/pelling.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
 import oldTrafford from "../public/stories/europe2026/oldTrafford1.jpg"
-import parisBasketball from "../public/structures/parisBasketball.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
 import washingtonMonument from "../public/other/washingtonMonument.jpg"
 
@@ -117,11 +116,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">The dotter is a water bird with a long and slender neck. The dotter often spends a lot of its time submerged in water. So to dry its wings you can often find the bird perched on a rock or branch with its wings outstretched which is funny because that is exactly what I captured.</p>',
     },
-    {
-      image: parisBasketball,
-      title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
-      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball courts I have played on.</p>',
-    },
+    // {
+    //   image: parisBasketball,
+    //   title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
+    //   description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball courts I have played on.</p>',
+    // },
     {
       image: hilton,
       title: '<span class="text-2xl font-bold text-white">Hilton</span>',

@@ -6,7 +6,6 @@ import Link from "next/link"
 import stateStreet from "../../public/places/madison/stateStreet.jpg"
 import abe from "../../public/places/madison/abe.jpg"
 import collegeLibrary from "../../public/places/madison/collegeLibrary.jpg"
-import farmersMarket from "../../public/places/madison/farmersMarket.jpg"
 import mendota from "../../public/places/madison/mendota.jpg"
 import science from "../../public/places/madison/science.jpg"
 import sunset from "../../public/places/madison/sunset.jpg"
@@ -15,7 +14,6 @@ const MADISON_IMAGES = [
   stateStreet,
   abe,
   collegeLibrary,
-  farmersMarket,
   mendota,
   science,
   sunset,
