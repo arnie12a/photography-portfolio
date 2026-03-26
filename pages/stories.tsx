@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 // Import your Paris Basketball story image
-import parisBasketballImg from "../public/structures/parisBasketball.jpg"
+import parisBasketballImg from "../public/stories/europe2026/hoopsInParis.jpg"
 
 export default function Stories() {
   const stories = [
@@ -20,17 +20,12 @@ export default function Stories() {
       link: "/stories/nationalParks",
     },
     {
-      title: "Pipeline, North Shore O'ahu",
-      subtitle: "A story from the legendary Pipeline surf break in Hawaii.",
+      title: "Europe 2026 Trip",
+      subtitle: "I decided to take a trip across Europe in the summer of 2026. Here are some highlights.",
       img: parisBasketballImg, // Placeholder image, replace with an actual photo from your Pipeline story
-      link: "/stories/pipeline",
+      link: "/stories/euro2026",
     },
-    {
-      title: "Manchester United",
-      subtitle: "A photo essay from Old Trafford, the home of Manchester United.",
-      img: parisBasketballImg, // Placeholder image, replace with an actual photo from your Manchester United story
-      link: "/stories/manchesterUnited",
-    }
+    
   ]
 
   return (

@@ -42,7 +42,7 @@ export default function MadisonGallery() {
 
         {/* Right: Back Button */}
         <Link
-          href="/"
+          href="/places"
           className="text-stone-300 hover:text-white text-sm tracking-wide 
             border border-stone-700 px-4 py-1 rounded-lg 
             hover:bg-stone-800 transition-all"

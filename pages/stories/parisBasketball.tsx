@@ -2,7 +2,8 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 
-import parisHoopsPhoto from "../../public/blogPhotos/parisHoops.jpg"
+
+import parisHoopsPhoto from "../../public/stories/europe2026/hoopsInParis.jpg"
 
 export default function ParisHoopsPost() {
   return (
@@ -14,7 +15,7 @@ export default function ParisHoopsPost() {
 
       {/* Header */}
       <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10 bg-stone-950/80 backdrop-blur">
-        <Link href="/" className="uppercase text-sm tracking-widest hover:text-white transition">
+        <Link href="/stories" className="uppercase text-sm tracking-widest hover:text-white transition">
           ← Back
         </Link>
         <span className="uppercase text-xl tracking-[0.3em] text-stone-300">

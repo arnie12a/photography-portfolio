@@ -74,7 +74,7 @@ export default function NationalParks() {
 
       {/* Header */}
       <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800">
-        <Link href="/" className="uppercase text-sm tracking-widest hover:text-white transition">
+        <Link href="/stories" className="uppercase text-sm tracking-widest hover:text-white transition">
           ← Back
         </Link>
         <span className="uppercase text-xl tracking-[0.3em] text-stone-300">
