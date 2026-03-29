@@ -57,7 +57,7 @@ import sprinkles from "../public/other/running.jpg"
 import buffalo from "../public/places/srilanka/buffalo.jpg"
 import elephant from "../public/places/srilanka/closeElephant.jpg"
 import salsa from "../public/other/salsa2.jpg"
-import highlandCow from "../public/stories/europe2026/highlandCow.jpg"
+import highlandCow from "../public/places/scotland/highlandCow.jpg"
 
 // Structure Images
 import londonBridge from "../public/structures/londonBridge.jpg"
@@ -67,7 +67,7 @@ import gangtokStadium from "../public/places/india/gangtokStadium.jpg"
 import pelling from "../public/structures/pelling.jpg"
 import monteserrat from "../public/structures/monteserrat.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
-import oldTrafford from "../public/stories/europe2026/oldTrafford1.jpg"
+import oldTrafford from "../public/places/england/oldTrafford1.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
 import washingtonMonument from "../public/other/washingtonMonument.jpg"
 
