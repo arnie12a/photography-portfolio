@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-import parisHoopsPhoto from "../../public/stories/europe2026/hoopsInParis.jpg"
+import parisHoopsPhoto from "../../public/places/france/hoopsInParis.jpg"
 
 export default function ParisHoopsPost() {
   return (
