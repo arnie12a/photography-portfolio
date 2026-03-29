@@ -5,8 +5,12 @@ import Link from "next/link"
 import dolomites2 from "../../public/places/dolomites/dolomites2.jpg"
 import dolomites3 from "../../public/places/dolomites/dolomites3.jpg"
 import seceda from "../../public/places/dolomites/seceda.jpg"
+import cinqueTorri from "../../public/places/dolomites/cinqueTorri.jpg"
+import dolomites4 from "../../public/places/dolomites/dolomites4.jpg"
+import lagoDiBraies from "../../public/places/dolomites/lagoDiBraies.jpg"
+import dolomitesCountryside from "../../public/places/dolomites/dolomitesCountryside.jpg"
 
-const DOLOMITES_IMAGES = [dolomites2, dolomites3, seceda]
+const DOLOMITES_IMAGES = [dolomites2, dolomites3, seceda, cinqueTorri, dolomites4, lagoDiBraies, dolomitesCountryside]
 
 export default function DolomitesGallery() {
   return (

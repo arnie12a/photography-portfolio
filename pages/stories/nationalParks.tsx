@@ -72,15 +72,22 @@ export default function NationalParks() {
         <meta name="description" content="National park photography by Arnav Karnik." />
       </Head>
 
-      {/* Header */}
-      <header className="fixed top-0 w-full z-10 flex justify-between items-center h-[90px] px-10 bg-stone-950/80 backdrop-blur border-b border-stone-800">
-        <Link href="/stories" className="uppercase text-sm tracking-widest hover:text-white transition">
-          ← Back
-        </Link>
-        <span className="uppercase text-xl tracking-[0.3em] text-stone-300">
+       {/* Header */}
+       <header className="fixed top-0 left-0 w-full z-20 h-[90px] px-10 
+        bg-stone-950/80 backdrop-blur border-b border-stone-800 
+        flex items-center justify-between">
+        <span className="uppercase text-xl md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
           Arnav Karnik Photography
         </span>
-        <div />
+
+        <Link
+          href="/stories"
+          className="text-stone-300 hover:text-white text-sm tracking-wide 
+            border border-stone-700 px-4 py-1 rounded-lg 
+            hover:bg-stone-800 transition-all"
+        >
+          ← Back
+        </Link>
       </header>
 
       <main className="pt-[140px] pb-28 px-6">
