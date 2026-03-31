@@ -128,38 +128,7 @@ export default function Home() {
         </div>
 
 
-{/* Featured Trip – India */}
-<div className="w-full flex justify-center my-20 px-6 sm:px-10 lg:px-20">
-  <div className="relative w-full max-w-5xl h-[40vh] sm:h-[50vh] lg:h-[55vh] 
-                  rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
 
-    {/* Background Image */}
-    <Image
-      src={india}
-      alt="India Trip"
-      fill
-      className="object-cover transition-transform duration-500 group-hover:scale-105"
-      placeholder="blur"
-    />
-
-    {/* Soft Overlay for readability */}
-    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition" />
-
-    <div className="absolute inset-0 flex justify-center items-center">
-  <Link
-    href="/places/india"
-    className="text-white text-2xl sm:text-3xl lg:text-5xl font-semibold 
-              drop-shadow-[0_4px_12px_rgba(0,0,0,0.7)] 
-              hover:opacity-90 transition"
-  >
-    Explore my 2‑month journey through India
-  </Link>
-</div>
-
-
-
-  </div>
-</div>
 
 
 
