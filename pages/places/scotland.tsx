@@ -7,12 +7,16 @@ import edinburghSunset from "../../public/places/scotland/edinburghSunset.jpg"
 import highlandCow from "../../public/places/scotland/highlandCow.jpg"
 import highlandCow2 from "../../public/places/scotland/highlandCow2.jpg"
 import nishitaEdinburgh from "../../public/places/scotland/nishitaEdiburgh.jpg"
+import nishitaHighlandCow from "../../public/places/scotland/nishitaHighlandCow.jpg"
+import edinburghSunrise from "../../public/places/scotland/edinburghSunrise.jpg"
 
 const SCOTLAND_IMAGES = [
   edinburghSunset,
   highlandCow,
   highlandCow2,
   nishitaEdinburgh,
+  nishitaHighlandCow,
+  edinburghSunrise,
 ]
 
 export default function ScotlandGallery() {

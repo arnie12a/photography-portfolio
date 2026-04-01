@@ -16,7 +16,6 @@ import madeiraWater2 from "../../public/places/madeira/madeiraWater2.jpg"
 import madeiraWaterfall from "../../public/places/madeira/madeiraWaterfall.jpg"
 import madeiraWaterfall2 from "../../public/places/madeira/madeiraWaterfall2.jpg"
 import madeiraWindmills from "../../public/places/madeira/madeiraWindmills.jpg"
-import nihar from "../../public/places/madeira/nihar.jpg"
 import niharWaterfall from "../../public/places/madeira/niharWaterfall.jpg"
 import pr1Hike1 from "../../public/places/madeira/pr1Hike1.jpg"
 import pr1Hike2 from "../../public/places/madeira/pr1Hike2.jpg"
@@ -41,7 +40,6 @@ const MADEIRA_IMAGES = [
   madeiraWaterfall,
   madeiraWaterfall2,
   madeiraWindmills,
-  nihar,
   niharWaterfall,
   pr1Hike1,
   pr1Hike2,

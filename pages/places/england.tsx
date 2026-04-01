@@ -7,10 +7,20 @@ import bigBen from "../../public/places/england/bigBen.jpg"
 import oldTrafford1 from "../../public/places/england/oldTrafford1.jpg"
 import oldTrafford2 from "../../public/places/england/oldTrafford2.jpg"
 import oldTrafford3 from "../../public/places/england/oldTrafford3.jpg"
+import street1 from "../../public/places/england/street.jpg"
+import street2 from "../../public/places/england/street2.jpg"
+import MayraNSnehal from "../../public/places/england/MayraNSnehal.jpg"
+import neeva from "../../public/places/england/neeva.jpg"
+import londonFromAbove from "../../public/places/england/londonFromAbove.jpg"
 
 const ENGLAND_IMAGES = [
   bigBen,
   oldTrafford1,
+  street1,
+  street2,
+  MayraNSnehal,
+  neeva,
+  londonFromAbove,
   oldTrafford2,
   oldTrafford3,
 ]
