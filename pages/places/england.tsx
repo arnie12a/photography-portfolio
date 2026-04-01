@@ -9,7 +9,7 @@ import oldTrafford2 from "../../public/places/england/oldTrafford2.jpg"
 import oldTrafford3 from "../../public/places/england/oldTrafford3.jpg"
 import street1 from "../../public/places/england/street.jpg"
 import street2 from "../../public/places/england/street2.jpg"
-import MayraNSnehal from "../../public/places/england/MayraNSnehal.jpg"
+import MayraNSnehal from "../../public/places/england/mayraNSnehal.jpg"
 import neeva from "../../public/places/england/neeva.jpg"
 import londonFromAbove from "../../public/places/england/londonFromAbove.jpg"
 
