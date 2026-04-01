@@ -45,9 +45,7 @@ export default function Home() {
 
             {/* YOUR EXACT TEXT — unchanged */}
             <p className="text-stone-300 leading-relaxed">
-              I am an aspiring professional travel photographer. I love exploring new places and capturing their beauty. 
-              My portfolio showcases my favorite pictures I have taken on my many adventures. 
-              Looking forward to the many more and the stories I tell along the way.
+              Coming soon...
             </p>
 
 

@@ -40,14 +40,16 @@ import dolomitePeaks from "../public/places/dolomites/dolomites3.jpg"
 // import fire from "../public/places/india/fire.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
+import dolomites5 from "../public/places/dolomites/dolomites5.jpg"
+import wiliwilinuiRidgeHike3 from "../public/places/hawaii/wiliwilinuiRidgeHike3.jpg"
 
 // People Images
-import profilePic from "../public/people/arnie.jpg"
 import knif from "../public/other/knif.jpg"
 import nathanBridge from "../public/stories/nationalParks/nathanBridge.png"
 import nihar from "../public/places/india/niharPellingFort.jpg"
 import davidNotebook from "../public/other/davidNotebook.jpg"
 import preciousUgo from "../public/places/chicago/ugoPrecious.jpg"
+import lucasCooking from "../public/places/chicago/lucasCooking.jpg"
 
 // Animal Images
 import goat from "../public/stories/nationalParks/goat.jpg"
@@ -205,7 +207,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Auroville, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.</p>'
     },
-  
+    {
+      image: lucasCooking,
+      title: '<span class="text-2xl font-bold text-white">Lucas Ho</span>',
+      description: '<p class="text-base text-gray-300 mt-2">My college roomates loves to cook for people and here is him making me tacos.</p>'
+    },
   
     {
       image: munnarTeaHike,
@@ -256,7 +262,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Somewhere on the road between Zion and Bryce Canyon National Park.</p>',
     },
     
-   
+    {
+      image: wiliwilinuiRidgeHike3,
+      title: '<span class="text-2xl font-bold text-white">Wiliwilinui Ridge Hike</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
+    },
   
     {
       image: nihar,
@@ -301,6 +311,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
       description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. Love seeing the beautiful game in India!</p>'
     },
+    {
+      image: dolomites5,
+      title: '<span class="text-2xl font-bold text-white">Dolomites</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Took a gondola and got this view of the peaks of the Dolomites.</p>'
+    },
 
     {
       image: munnarFlower,
@@ -323,7 +338,7 @@ const favoriteImages = [
     {
       image: pelling,
       title: '<span class="text-2xl font-bold text-white">Pelling, India</span>',
-      description: '<p class="text-base text-gray-300 mt-2">SUch a peaceful city full of monastaries and incredible views.</p>',
+      description: '<p class="text-base text-gray-300 mt-2">Such a peaceful city full of monastaries and incredible views.</p>',
     },
     {
       image: washingtonMonument,
