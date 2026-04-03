@@ -6,7 +6,7 @@ import Link from "next/link"
 import edinburghSunset from "../../public/places/scotland/edinburghSunset.jpg"
 import highlandCow from "../../public/places/scotland/highlandCow.jpg"
 import highlandCow2 from "../../public/places/scotland/highlandCow2.jpg"
-import nishitaEdinburgh from "../../public/places/scotland/nishitaEdiburgh.jpg"
+import nishitaEdinburgh from "../../public/places/scotland/nishitaEdinburgh.jpg"
 import nishitaHighlandCow from "../../public/places/scotland/nishitaHighlandCow.jpg"
 import edinburghSunrise from "../../public/places/scotland/edinburghSunrise.jpg"
 

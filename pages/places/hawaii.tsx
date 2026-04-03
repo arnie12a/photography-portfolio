@@ -12,7 +12,7 @@ import waimeaCanyon from "../../public/places/hawaii/waimeaCanyon.jpg"
 // Oahu images
 import oahu1 from "../../public/places/hawaii/botanicalGarden.jpg"
 import oahu2 from "../../public/places/hawaii/wiliwilinuiRidgeHike3.jpg"
-import oahu3 from "../../public/places/hawaii/pipelines.jpg"
+import oahu3 from "../../public/places/hawaii/pipeline.jpg"
 import oahu4 from "../../public/places/hawaii/wiliwilinuiRidgeHike1.jpg"
 import oahu5 from "../../public/places/hawaii/wiliwilinuiRidgeHike2.jpg"
 import oahu6 from "../../public/places/hawaii/tantalusLookout.jpg"
