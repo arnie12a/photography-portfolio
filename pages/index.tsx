@@ -10,6 +10,9 @@ import hanaleiBay from "../public/places/hawaii/hanaleiBay.jpg"
 import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 import chicagoSkyline from "../public/places/chicago/planetariumSkyline.jpg"
 import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
+import igoPrecious from "../public/places/chicago/ugoPrecious.jpg"
+import goat from "../public/stories/nationalParks/goat.jpg"
+import nature from "../public/places/hawaii/kauaiOcean.jpg"
 
 // Add your favorite horizontal landscape photos here
 const HERO_SLIDES = [
@@ -199,6 +202,24 @@ export default function Home() {
           title="Stories"
           imageSrc={auroville}
           link="/stories"
+        />
+
+        <GridItem
+          title="Portraits"
+          imageSrc={igoPrecious}
+          link="/portraits"
+        />
+
+        <GridItem
+          title="Nature"
+          imageSrc={nature}
+          link="/nature"
+        />
+
+        <GridItem
+          title="Animals"
+          imageSrc={goat}
+          link="/animals"
         />
 
       </div>

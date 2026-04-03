@@ -4,7 +4,6 @@ import Link from "next/link"
 import { useState } from "react"
 
 // ---- Imported Photos ----
-// ---- Imported Photos ----
 import aurangabad1 from "../../public/places/india/aurangabad1.jpg"
 import aurangabad2 from "../../public/places/india/aurangabad2.jpg"
 import auroville from "../../public/places/india/auroville.jpg"

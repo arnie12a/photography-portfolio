@@ -49,7 +49,7 @@ import nathanBridge from "../public/stories/nationalParks/nathanBridge.png"
 import nihar from "../public/places/india/niharPellingFort.jpg"
 import davidNotebook from "../public/other/davidNotebook.jpg"
 import preciousUgo from "../public/places/chicago/ugoPrecious.jpg"
-import lucasCooking from "../public/places/chicago/lucasCooking.jpg"
+import lucasCooking from "../public/places/chicago/lucasDinner1.jpg"
 
 // Animal Images
 import goat from "../public/stories/nationalParks/goat.jpg"
