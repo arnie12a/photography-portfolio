@@ -5,6 +5,7 @@ import Image from "next/image"
 // Import your Paris Basketball story image
 import parisBasketballImg from "../public/places/france/hoopsInParis.jpg"
 import nationalParksImg from "../public/stories/nationalParks/grandCanyon.jpeg"
+import hikesImg from "../public/places/madeira/pr1Hike1.jpg"
 
 export default function Stories() {
   const stories = [
@@ -20,6 +21,12 @@ export default function Stories() {
       img: nationalParksImg, // Placeholder image, replace with an actual photo from your national parks story
       link: "/stories/nationalParks",
     },
+    {
+      title: "Hikes",
+      subtitle: "A collection of photos from my favorite hikes around the world.",
+      img: hikesImg, // Placeholder image, replace with an actual photo from your hikes story
+      link: "/stories/hikes",
+    }
     
   ]
 

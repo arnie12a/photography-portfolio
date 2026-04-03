@@ -42,6 +42,9 @@ import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRaini
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
 import dolomites5 from "../public/places/dolomites/dolomites5.jpg"
 import wiliwilinuiRidgeHike3 from "../public/places/hawaii/wiliwilinuiRidgeHike3.jpg"
+import torreyPinesLookout from "../public/other/torreyPinesLookout.jpg"
+import bangalorePark1 from "../public/places/india/bangalorePark1.jpg"
+import munnarSunrise from "../public/places/india/munnarSunrise.jpg"
 
 // People Images
 import knif from "../public/other/knif.jpg"
@@ -192,6 +195,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the mountainous surroundings.</p>',
     },
     {
+      image: munnarSunrise,
+      title: '<span class="text-2xl font-bold text-white">Sunrise in Munnar</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>'
+    },
+    {
       image: highlandCow,
       title: '<span class="text-2xl font-bold text-white">Edinburgh, Scotland</span>',
       description: '<p class="text-base text-gray-300 mt-2">Highland cows munchin on grass.</p>',
@@ -278,6 +286,11 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Bison in Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">With such scorching heat, the only way to stay cool is by taking a dip in the mud.</p>',
     },
+    {
+      image: torreyPinesLookout,
+      title: '<span class="text-2xl font-bold text-white">San Diego</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>'
+    },
     
     {
       image: outsideSagradaFamilia,
@@ -328,7 +341,11 @@ const favoriteImages = [
     //   title: '<span class="text-2xl font-bold text-white"></span>',
     //   description: '<p class="text-base text-gray-300 mt-2"></p>',
     // },
-    
+    {
+      image: bangalorePark1,
+      title: '<span class="text-2xl font-bold text-white">Park in Bangalore</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>'
+    },
     
     {
       image: elephant,

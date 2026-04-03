@@ -28,6 +28,8 @@ import pr1Hike2 from "../public/places/madeira/pr1Hike2.jpg"
 import pr1Hike3 from "../public/places/madeira/pr1Hike3.jpg"
 import theNarrows from "../public/stories/nationalParks/theNarrows.jpg"
 import rainier from "../public/stories/nationalParks/rainier.jpg"
+import rioCelesteWaterfall from "../public/stories/nationalParks/rioCelesteWaterfall.jpg"
+import smokeyMountainsSunset from "../public/stories/nationalParks/smokeyMountainsSunset.jpg"
 
 const NATURE_IMAGES = [
   dolomites2,
@@ -55,7 +57,8 @@ const NATURE_IMAGES = [
     pr1Hike3,
     theNarrows,
     rainier,
-
+    rioCelesteWaterfall,
+    smokeyMountainsSunset,
 ]
 
 export default function MadisonGallery() {
