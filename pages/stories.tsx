@@ -15,12 +15,7 @@ export default function Stories() {
       img: parisBasketballImg,
       link: "/stories/parisBasketball",
     },
-    {
-      title: "National Parks",
-      subtitle: "A photo essay from my travels to national parks across the world.",
-      img: nationalParksImg, // Placeholder image, replace with an actual photo from your national parks story
-      link: "/stories/nationalParks",
-    },
+   
     {
       title: "Hikes",
       subtitle: "A collection of photos from my favorite hikes around the world.",
