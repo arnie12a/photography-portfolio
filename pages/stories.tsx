@@ -16,12 +16,6 @@ export default function Stories() {
       link: "/stories/parisBasketball",
     },
    
-    {
-      title: "Hikes",
-      subtitle: "A collection of photos from my favorite hikes around the world.",
-      img: hikesImg, // Placeholder image, replace with an actual photo from your hikes story
-      link: "/stories/hikes",
-    }
     
   ]
 
