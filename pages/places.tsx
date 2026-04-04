@@ -30,60 +30,28 @@ export default function Places() {
       img: chicagoImg,
       link: "/places/chicago",
     },
-    {
-      title: "Portugal",
-      subtitle: "From Lisbon to Porto, a country of vibrant culture and stunning views.",
-      img: portugalImg,
-      link: "/places/portugal",
-    },
+    
     {
       title: "India",
       subtitle: "Check out my two month trip across India in 2024.",
       img: indiaImg,
       link: "/places/india",
     },
-    {
-      title: "Sri Lanka",
-      subtitle: "Such a beautiful country with so much to offer.",
-      img: sriLankaImg,
-      link: "/places/srilanka",
-    },
-    {
-      title: "Madison, Wisconsin",
-      subtitle: "My college town, full of charm and character.",
-      img: madisonImg,
-      link: "/places/madison",
-    },
+    
     {
       title: "Dolomites",
       subtitle: "Italy’s jagged giants at sunrise.",
       img: dolomitesImg,
       link: "/places/dolomites",
     },
-    {
-      title: "Mexico",
-      subtitle: "Visited Mexico City for my 24th birthday.",
-      img: mexico,
-      link: "/places/mexico",
-    },
+    
     {
       title: "Madeira, Portugal",
       subtitle: "A stunning island with lush landscapes and vibrant culture.",
       img: madeira, // replace with Madeira image when ready
       link: "/places/madeira",
     },
-    {
-      title: "Scotland",
-      subtitle: "From the rugged Highlands to the vibrant cities, Scotland is a land of contrasts and beauty.",
-      img: scotland, // replace with Scotland image when ready
-      link: "/places/scotland",
-    },
-    {
-      title: "England",
-      subtitle: "From the bustling streets of London to the serene countryside, England offers a rich tapestry of culture and history.",
-      img: england, // replace with England image when ready
-      link: "/places/england",
-    }
+    
   ]
 
   return (
