@@ -83,8 +83,7 @@ import tsongmoLake from "../../public/places/india/tsongmoLake.jpg"
 
 
 const ALL_IMAGES = [
-  aurangabad1, aurangabad2, auroville, bandalorePark6,
-  bangalorePark1, bangalorePark2, bangalorePark3, bangalorePark4, bangalorePark5, bangaloreSteeet,
+  
   darjeeling1, darjeeling2, darjeeling3, darjeelingStreets, darjeelingSunrise,
   dogPune1, dogPune2,
   eravikulam1, eravikulam2,
@@ -109,6 +108,8 @@ const ALL_IMAGES = [
   sinhagadHike,
   soccerPitch,
   tsongmoLake,
+  aurangabad1, aurangabad2, auroville, bandalorePark6,
+  bangalorePark1, bangalorePark2, bangalorePark3, bangalorePark4, bangalorePark5, bangaloreSteeet,
 ]
 
 export default function IndiaAllPhotos() {

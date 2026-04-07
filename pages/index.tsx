@@ -13,6 +13,11 @@ import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
 import igoPrecious from "../public/places/chicago/ugoPrecious.jpg"
 import goat from "../public/stories/nationalParks/goat.jpg"
 import nature from "../public/places/hawaii/kauaiOcean.jpg"
+import dolomitesImg from "../public/places/dolomites/dolomites2.jpg"
+import indiaImg from "../public/places/india/mumbaiSkyline.jpg"
+import hawaiiImg from "../public/places/hawaii/hanaleiBay.jpg"
+import chicagoImg from "../public/places/chicago/chicagoSkyline.jpg"
+import madeira from "../public/places/madeira/clockTower.jpg"
 
 // Add your favorite horizontal landscape photos here
 const HERO_SLIDES = [
@@ -28,6 +33,41 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(true)
+  const [currentPlace, setCurrentPlace] = useState(0)
+
+  const places = [
+    {
+      title: "Hawaii",
+      subtitle: "Kauai & O'ahu adventures",
+      img: hanaleiBay,
+      link: "/places/hawaii",
+    },
+    {
+      title: "Chicago",
+      subtitle: "The Windy City",
+      img: chicagoSkyline,
+      link: "/places/chicago",
+    },
+    {
+      title: "India",
+      subtitle: "Two months across India",
+      img: auroville,
+      link: "/places/india",
+    },
+    {
+      title: "Dolomites",
+      subtitle: "Italy’s jagged giants",
+      img: heroImage,
+      link: "/places/dolomites",
+    },
+    {
+      title: "Madeira",
+      subtitle: "Island of clouds",
+      img: nature,
+      link: "/places/madeira",
+    },
+  ]
+  
 
   // Auto-slide every 5 seconds
   useEffect(() => {
@@ -188,20 +228,79 @@ export default function Home() {
         </div>
 
       </main>
+{/* 🌍 PLACES CAROUSEL */}
+<section className="w-full py-24 bg-stone-950">
+
+  {/* Carousel Container */}
+  <div className="relative max-w-4xl mx-auto px-6">
+
+    {/* Left Arrow */}
+    <button
+      onClick={() => setCurrentPlace((prev) => (prev === 0 ? places.length - 1 : prev - 1))}
+      className="absolute left-0 top-1/2 -translate-y-1/2 z-20
+                 bg-black/50 hover:bg-black/70 text-white
+                 p-4 sm:p-5 rounded-full backdrop-blur-md
+                 shadow-lg transition"
+    >
+      <span className="text-2xl sm:text-3xl font-bold">←</span>
+    </button>
+
+    {/* Right Arrow */}
+    <button
+      onClick={() => setCurrentPlace((prev) => (prev === places.length - 1 ? 0 : prev + 1))}
+      className="absolute right-0 top-1/2 -translate-y-1/2 z-20
+                 bg-black/50 hover:bg-black/70 text-white
+                 p-4 sm:p-5 rounded-full backdrop-blur-md
+                 shadow-lg transition"
+    >
+      <span className="text-2xl sm:text-3xl font-bold">→</span>
+    </button>
+
+    {/* Slide */}
+    <Link
+      href={places[currentPlace].link}
+      className="block relative h-[450px] sm:h-[520px] lg:h-[580px]
+                 rounded-xl overflow-hidden border border-stone-800
+                 hover:border-stone-600 transition"
+    >
+      <Image
+        src={places[currentPlace].img}
+        alt={places[currentPlace].title}
+        fill
+        className="object-cover transition-transform duration-700 hover:scale-105"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+
+      {/* Text */}
+      <div className="absolute bottom-8 left-8">
+        <h3 className="text-4xl font-semibold text-white drop-shadow-xl">
+          {places[currentPlace].title}
+        </h3>
+        <p className="text-stone-300 text-base mt-2">
+          {places[currentPlace].subtitle}
+        </p>
+      </div>
+    </Link>
+  </div>
+</section>
+
+
 
       {/* Grid Section */}
       <div className="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
 
-        <GridItem
+        {/* <GridItem
           title="Places"
           imageSrc={oldTrafford}
           link="/places"
-        />
+        /> */}
 
         <GridItem
           title="Stories"
           imageSrc={auroville}
-          link="/stories"
+          link="https://arnavkarnik.substack.com"
         />
 
         <GridItem
