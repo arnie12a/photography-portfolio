@@ -13,11 +13,6 @@ import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
 import igoPrecious from "../public/places/chicago/ugoPrecious.jpg"
 import goat from "../public/stories/nationalParks/goat.jpg"
 import nature from "../public/places/hawaii/kauaiOcean.jpg"
-import dolomitesImg from "../public/places/dolomites/dolomites2.jpg"
-import indiaImg from "../public/places/india/mumbaiSkyline.jpg"
-import hawaiiImg from "../public/places/hawaii/hanaleiBay.jpg"
-import chicagoImg from "../public/places/chicago/chicagoSkyline.jpg"
-import madeira from "../public/places/madeira/clockTower.jpg"
 
 // Add your favorite horizontal landscape photos here
 const HERO_SLIDES = [
@@ -198,104 +193,55 @@ export default function Home() {
 </div>
 
         {/* FULL-WIDTH GALLERY CTA — NO SPACE ABOVE */}
-        <div className="relative w-full h-[45vh] sm:h-[55vh] lg:h-[60vh] mt-0 mb-0 overflow-hidden">
+        {/* FULL-WIDTH GALLERY CTA — LARGE + SMOOTH FLOW */}
+<div className="relative w-full h-[75vh] sm:h-[85vh] lg:h-[95vh] overflow-hidden group">
 
-          <Image
-            src={hanaleiBay}
-            alt="Gallery Background"
-            fill
-            className="object-cover"
-            placeholder="blur"
-          />
+{/* Background Image with slow zoom */}
+<Image
+  src={hanaleiBay}
+  alt="Gallery Background"
+  fill
+  className="object-cover scale-110 transition-transform duration-[8000ms] group-hover:scale-[1.18]"
+  placeholder="blur"
+/>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
+{/* Deep cinematic gradient for readability */}
+<div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
 
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 sm:px-16 lg:px-32">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white drop-shadow-lg mb-6">
-              Explore the Gallery
-            </h2>
+{/* Soft top fade to blend with hero slider */}
+<div className="absolute top-0 left-0 right-0 h-[30%] bg-gradient-to-b from-stone-950/60 to-transparent" />
 
-            <Link
-              href="/gallery"
-              className="px-8 py-4 text-lg sm:text-xl rounded-lg border border-white/40 
-                        bg-white/10 backdrop-blur-md text-white 
-                        hover:bg-white/20 hover:border-white/60 transition 
-                        tracking-wide shadow-lg"
-            >
-              View My Favorite Photos →
-            </Link>
-          </div>
-        </div>
+{/* Content */}
+<div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 sm:px-16 lg:px-32 animate-fadeIn">
+  <h2 className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-white drop-shadow-2xl tracking-wide mb-8">
+    Explore the Gallery
+  </h2>
+
+  <p className="text-stone-200 text-lg sm:text-2xl max-w-3xl mb-10 opacity-90 leading-relaxed">
+    A curated collection of my favorite landscapes, portraits, and stories from around the world.
+  </p>
+
+  <Link
+    href="/gallery"
+    className="px-12 py-5 text-xl sm:text-2xl rounded-lg border border-white/40 
+              bg-white/10 backdrop-blur-md text-white 
+              hover:bg-white/20 hover:border-white/60 transition 
+              tracking-wide shadow-2xl"
+  >
+    View My Favorite Photos →
+  </Link>
+</div>
+</div>
 
       </main>
-{/* 🌍 PLACES CAROUSEL */}
-<section className="w-full py-24 bg-stone-950">
 
-  {/* Carousel Container */}
-  <div className="relative max-w-4xl mx-auto px-6">
-
-    {/* Left Arrow */}
-    <button
-      onClick={() => setCurrentPlace((prev) => (prev === 0 ? places.length - 1 : prev - 1))}
-      className="absolute left-0 top-1/2 -translate-y-1/2 z-20
-                 bg-black/50 hover:bg-black/70 text-white
-                 p-4 sm:p-5 rounded-full backdrop-blur-md
-                 shadow-lg transition"
-    >
-      <span className="text-2xl sm:text-3xl font-bold">←</span>
-    </button>
-
-    {/* Right Arrow */}
-    <button
-      onClick={() => setCurrentPlace((prev) => (prev === places.length - 1 ? 0 : prev + 1))}
-      className="absolute right-0 top-1/2 -translate-y-1/2 z-20
-                 bg-black/50 hover:bg-black/70 text-white
-                 p-4 sm:p-5 rounded-full backdrop-blur-md
-                 shadow-lg transition"
-    >
-      <span className="text-2xl sm:text-3xl font-bold">→</span>
-    </button>
-
-    {/* Slide */}
-    <Link
-      href={places[currentPlace].link}
-      className="block relative h-[450px] sm:h-[520px] lg:h-[580px]
-                 rounded-xl overflow-hidden border border-stone-800
-                 hover:border-stone-600 transition"
-    >
-      <Image
-        src={places[currentPlace].img}
-        alt={places[currentPlace].title}
-        fill
-        className="object-cover transition-transform duration-700 hover:scale-105"
-      />
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-
-      {/* Text */}
-      <div className="absolute bottom-8 left-8">
-        <h3 className="text-4xl font-semibold text-white drop-shadow-xl">
-          {places[currentPlace].title}
-        </h3>
-        <p className="text-stone-300 text-base mt-2">
-          {places[currentPlace].subtitle}
-        </p>
-      </div>
-    </Link>
-  </div>
-</section>
 
 
 
       {/* Grid Section */}
       <div className="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
 
-        {/* <GridItem
-          title="Places"
-          imageSrc={oldTrafford}
-          link="/places"
-        /> */}
+       
 
         <GridItem
           title="Stories"
