@@ -214,11 +214,11 @@ export default function Home() {
 {/* Content */}
 <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 sm:px-16 lg:px-32 animate-fadeIn">
   <h2 className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-white drop-shadow-2xl tracking-wide mb-8">
-    Explore the Gallery
+    Explore my Gallery
   </h2>
 
   <p className="text-stone-200 text-lg sm:text-2xl max-w-3xl mb-10 opacity-90 leading-relaxed">
-    A curated collection of my favorite landscapes, portraits, and stories from around the world.
+    Here is a collection of all my favorite photos from all my adventures. 
   </p>
 
   <Link
