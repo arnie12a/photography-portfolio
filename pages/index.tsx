@@ -13,6 +13,8 @@ import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
 import igoPrecious from "../public/places/chicago/ugoPrecious.jpg"
 import goat from "../public/stories/nationalParks/goat.jpg"
 import nature from "../public/places/hawaii/kauaiOcean.jpg"
+import MailerLiteForm from "../pages/components/MailerLiteForm"
+
 
 // Add your favorite horizontal landscape photos here
 const HERO_SLIDES = [
@@ -246,7 +248,7 @@ export default function Home() {
         <GridItem
           title="Stories"
           imageSrc={auroville}
-          link="https://arnavkarnik.substack.com"
+          link="/stories"
         />
 
         <GridItem
@@ -268,6 +270,17 @@ export default function Home() {
         />
 
       </div>
+
+      <div className="max-w-xl mx-auto px-6 py-16 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Join my email list</h2>
+        <p className="text-stone-300 mb-8">
+          Hear about my life through my camera. 
+        </p>
+
+        <MailerLiteForm />
+      </div>
+
+
 
       {/* Footer */}
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
@@ -300,3 +313,4 @@ function GridItem({ title, imageSrc, link }: GridItemProps) {
     </Link>
   )
 }
+
