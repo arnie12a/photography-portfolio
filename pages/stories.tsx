@@ -60,7 +60,7 @@ type Story = {
             </h1>
   
             <p className="text-stone-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Long‑form photography essays exploring culture, people, and the quiet moments that shape the world.
+              Check out my favorite adventures I have captured through my lens. 
             </p>
   
             <div className="mt-10 h-[2px] w-24 bg-stone-700 mx-auto"></div>
@@ -106,9 +106,7 @@ type Story = {
               Stay Inspired
             </h2>
   
-            <p className="text-stone-300 mb-10 text-lg leading-relaxed">
-              Get new stories, behind‑the‑scenes notes, and photo essays delivered to your inbox.
-            </p>
+           
   
             <MailerLiteForm />
           </section>
