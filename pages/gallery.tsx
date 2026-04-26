@@ -35,9 +35,7 @@ import munnarHike from "../public/places/india/munnarHike.jpg"
 import betweenZionAndBryce from "../public/other/betweenZionAndBryceCanyon.jpg"
 import munnarTeaHike from "../public/places/india/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/places/india/sinhagadHike.jpg"
-// import fanalForest from "../public/stories/europe2026/fanalForest.jpg"
 import dolomitePeaks from "../public/places/dolomites/dolomites3.jpg"
-// import fire from "../public/places/india/fire.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
 import dolomites5 from "../public/places/dolomites/dolomites5.jpg"
@@ -45,6 +43,7 @@ import wiliwilinuiRidgeHike3 from "../public/places/hawaii/wiliwilinuiRidgeHike3
 import torreyPinesLookout from "../public/other/torreyPinesLookout.jpg"
 import bangalorePark1 from "../public/places/india/bangalorePark1.jpg"
 import munnarSunrise from "../public/places/india/munnarSunrise.jpg"
+import dolomitesCountryside from "../public/places/dolomites/dolomitesCountryside.jpg"
 
 // People Images
 import knif from "../public/other/knif.jpg"
@@ -75,6 +74,7 @@ import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jp
 import oldTrafford from "../public/places/england/oldTrafford1.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
 import washingtonMonument from "../public/other/washingtonMonument.jpg"
+import galliFortCricketMatch from "../public/places/srilanka/galliFortCricketMatch.jpg"
 
 // Blog Post Cover Images
 import hoopingInParis from "../public/stories/parisHoops/parisHoops.jpg"
@@ -315,9 +315,19 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Lush perfect green beauty.</p>',
     },
     {
+      image: galliFortCricketMatch,
+      title: '<span class="text-2xl font-bold text-white">Cricket Match</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Was exploring Galli Fort when I got thei view of a cricket match between rival colleges in the area.</p>',
+    },
+    {
       image: madeiraFutbol,
       title: '<span class="text-2xl font-bold text-white">Madeira, Portugal</span>',
       description: '<p class="text-base text-gray-300 mt-2">While driving around the island, we came across this beautiful pitch.</p>',
+    },
+    {
+      image: dolomitesCountryside,
+      title: '<span class="text-2xl font-bold text-white">The countryside of the Dolomites</span>',
+      description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
     
     {
@@ -337,11 +347,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful flower through my lens.</p>',
     },
     
-    // {
-    //   image: fanalForest,
-    //   title: '<span class="text-2xl font-bold text-white"></span>',
-    //   description: '<p class="text-base text-gray-300 mt-2"></p>',
-    // },
+    
     {
       image: bangalorePark1,
       title: '<span class="text-2xl font-bold text-white">Park in Bangalore</span>',
@@ -363,6 +369,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Washington Monument</span>',
       description: '<p class="text-base text-gray-300 mt-2"></p>',
     },
+   
     {
       image: salsa,
       title: '<span class="text-2xl font-bold text-white">Salsa</span>',
