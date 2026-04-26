@@ -66,7 +66,6 @@ import salsa from "../public/other/salsa2.jpg"
 import highlandCow from "../public/places/scotland/highlandCow.jpg"
 
 // Structure Images
-import londonBridge from "../public/structures/londonBridge.jpg"
 import chicagoSkyline from "../public/places/chicago/chicagoSkyline.jpg"
 import auroville from "../public/places/india/auroville.jpg"
 import gangtokStadium from "../public/places/india/gangtokStadium.jpg"
@@ -185,11 +184,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Rainbow</span>',
       description: "<p class='text-base text-gray-300 mt-2'>What an absolute view from outside my parent's place.</p>",
     },
-    {
-      image: londonBridge,
-      title: '<span class="text-2xl font-bold text-white">View from Horizon 22</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Got a glimpse of all of London from above.</p>',
-    },
+   
     {
       image: meganAndrewRainier,
       title: '<span class="text-2xl font-bold text-white">Megan & Andrew</span>',
