@@ -32,7 +32,7 @@ export default function Madison() {
 
       <main className="pt-[120px] pb-32">
 
-       COMING SOON...
+       COMING SOON for Madison...
       </main>
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
