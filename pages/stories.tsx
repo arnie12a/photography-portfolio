@@ -6,12 +6,12 @@ import { StaticImageData } from "next/image"
 // Existing story cover
 import parisBasketball from "../public/stories/parisHoops/parisHoops.jpg"
 
-import dolomites from "../public/places/dolomites/dolomites2.jpg"
-import india from "../public/places/india/khanchenjunga.jpg"
-import sriLanka from "../public/places/srilanka/elephant.jpg"
-import wisconsinMadison from "../public/places/madison/mendota.jpg"
-import madeira from "../public/places/madeira/pr1Hike3.jpg"
-import manchesterUnited from "../public/places/england/oldTrafford2.jpg"
+// import dolomites from "../public/places/dolomites/dolomites2.jpg"
+// import india from "../public/places/india/khanchenjunga.jpg"
+// import sriLanka from "../public/places/srilanka/elephant.jpg"
+// import wisconsinMadison from "../public/places/madison/mendota.jpg"
+// import madeira from "../public/places/madeira/pr1Hike3.jpg"
+// import manchesterUnited from "../public/places/england/oldTrafford2.jpg"
 
 // Import your MailerLite component
 import MailerLiteForm from "../pages/components/MailerLiteForm"
@@ -31,42 +31,42 @@ export default function Stories() {
       img: parisBasketball,
       link: "/stories/parisBasketball",
     },
-    {
-      title: "India 2024 Trip",
-      subtitle: "(Coming Soon)",
-      img: india,
-      link: "/stories/india",
-    },
-    {
-      title: "Sri Lanka 2024 Trip",
-      subtitle: "(Coming Soon)",
-      img: sriLanka,
-      link: "/stories/srilanka",
-    },
-    {
-      title: "Wisconsin–Madison",
-      subtitle: "(Coming Soon)",
-      img: wisconsinMadison,
-      link: "/stories/madison",
-    },
-    {
-      title: "Madeira, Portugal",
-      subtitle: "(Coming Soon)",
-      img: madeira,
-      link: "/stories/madeira",
-    },
-    {
-      title: "Manchester United",
-      subtitle: "(Coming Soon)",
-      img: manchesterUnited,
-      link: "/stories/manchesterUnited",
-    },
-    {
-      title: "Dolomites, Italy",
-      subtitle: "(Coming Soon)",
-      img: dolomites,
-      link: "/stories/dolomites",
-    },
+    // {
+    //   title: "India 2024 Trip",
+    //   subtitle: "(Coming Soon)",
+    //   img: india,
+    //   link: "/stories/india",
+    // },
+    // {
+    //   title: "Sri Lanka 2024 Trip",
+    //   subtitle: "(Coming Soon)",
+    //   img: sriLanka,
+    //   link: "/stories/srilanka",
+    // },
+    // {
+    //   title: "Wisconsin–Madison",
+    //   subtitle: "(Coming Soon)",
+    //   img: wisconsinMadison,
+    //   link: "/stories/madison",
+    // },
+    // {
+    //   title: "Madeira, Portugal",
+    //   subtitle: "(Coming Soon)",
+    //   img: madeira,
+    //   link: "/stories/madeira",
+    // },
+    // {
+    //   title: "Manchester United",
+    //   subtitle: "(Coming Soon)",
+    //   img: manchesterUnited,
+    //   link: "/stories/manchesterUnited",
+    // },
+    // {
+    //   title: "Dolomites, Italy",
+    //   subtitle: "(Coming Soon)",
+    //   img: dolomites,
+    //   link: "/stories/dolomites",
+    // },
   ]
 
   return (

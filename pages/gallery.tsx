@@ -79,30 +79,7 @@ import galliFortCricketMatch from "../public/places/srilanka/galliFortCricketMat
 // Blog Post Cover Images
 import hoopingInParis from "../public/stories/parisHoops/parisHoops.jpg"
 
-const stories = [
-  {
-    title: "Hooping in Paris",
-    preview:
-      "The prettiest place I have played pickup at.",
-    image: hoopingInParis,
-    link: "/blogPosts/parisBasketball",
-  },
-  {
-    title: "Portraits",
-    preview:
-      "Here are my favorite photos of people.",
-    image: preciousUgo,
-    link: "/blogPosts/portraits",
-  },
-  {
-    title: "National Parks",
-    preview:
-      "Here are my photos from National Parks I have visited.",
-    image: goat,
-    link: "/blogPosts/nationalParks",
-  },
- 
-];
+
 
 
 const favoriteImages = [
