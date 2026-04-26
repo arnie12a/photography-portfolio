@@ -109,7 +109,7 @@ export default function Home() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8 text-stone-300 text-sm md:text-base">
-          <Link href="/gallery" className="hover:text-white transition">GALLERY</Link>
+          <Link href="/stories" className="hover:text-white transition">STORIES</Link>
           <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>
           <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
 
@@ -146,9 +146,11 @@ export default function Home() {
           border-b border-stone-800 flex flex-col space-y-6 px-6 py-6 
           text-stone-300 text-lg z-10">
 
-          <Link href="/gallery" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
-            GALLERY
+          <Link href="/stories" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
+            STORIES
           </Link>
+
+          
 
           <Link href="/aboutme" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
             ABOUT

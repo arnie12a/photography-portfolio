@@ -53,6 +53,7 @@ import nihar from "../public/places/india/niharPellingFort.jpg"
 import davidNotebook from "../public/other/davidNotebook.jpg"
 import preciousUgo from "../public/places/chicago/ugoPrecious.jpg"
 import lucasCooking from "../public/places/chicago/lucasDinner1.jpg"
+import keitlin from "../public/places/chicago/keitlin.jpg"
 
 // Animal Images
 import goat from "../public/stories/nationalParks/goat.jpg"
@@ -214,6 +215,11 @@ const favoriteImages = [
       image: auroville,
       title: '<span class="text-2xl font-bold text-white">Auroville, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">A town where men and women of all countries are able to live in peace and harmony, the Matrimandir sits here.</p>'
+    },
+    {
+      image: keitlin,
+      title: '<span class="text-2xl font-bold text-white">Keitlin</span>',
+      description: '<p class="text-base text-gray-300 mt-2">She loves to foster puppies with her boyfriend Miles.</p>',
     },
     {
       image: lucasCooking,
