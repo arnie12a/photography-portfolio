@@ -28,7 +28,6 @@ import seceda from "../public/places/dolomites/seceda.jpg"
 import rainbow from "../public/other/rainbow.jpg"
 import kauaiOcean from "../public/places/hawaii/kauaiOcean.jpg"
 import theNarrows from "../public/stories/nationalParks/theNarrows.jpg"
-import waimeaCanyon from "../public/places/hawaii/waimeaCanyon.jpg"
 import munnarFlower from "../public/places/india/munnarFlower.jpg"
 import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
 import munnarHike from "../public/places/india/munnarHike.jpg"
@@ -38,7 +37,6 @@ import sinhagad from "../public/places/india/sinhagadHike.jpg"
 import dolomitePeaks from "../public/places/dolomites/dolomites3.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
-import dolomites5 from "../public/places/dolomites/dolomites5.jpg"
 import wiliwilinuiRidgeHike3 from "../public/places/hawaii/wiliwilinuiRidgeHike3.jpg"
 import torreyPinesLookout from "../public/other/torreyPinesLookout.jpg"
 import bangalorePark1 from "../public/places/india/bangalorePark1.jpg"
@@ -77,7 +75,7 @@ import washingtonMonument from "../public/other/washingtonMonument.jpg"
 import galliFortCricketMatch from "../public/places/srilanka/galliFortCricketMatch.jpg"
 
 // Blog Post Cover Images
-import hoopingInParis from "../public/stories/parisHoops/parisHoops.jpg"
+import parisBasketball from "../public/stories/parisHoops/parisHoops2.jpg"
 
 
 
@@ -92,17 +90,13 @@ const favoriteImages = [
       image: raigad,
       title: '<span class="text-2xl font-bold text-white">Raigad Fort, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">Raigad Fort, situated near Pune, was the mountain stronghold of the legendary Maratha king Chhatrapati Shivaji Maharaj.</p>',
-    },
-    {
+    
+    },  {
       image: dotter,
       title: '<span class="text-2xl font-bold text-white">Yala National Park, Sri Lanka</span>',
       description: '<p class="text-base text-gray-300 mt-2">The dotter is a water bird with a long and slender neck. The dotter often spends a lot of its time submerged in water. So to dry its wings you can often find the bird perched on a rock or branch with its wings outstretched which is funny because that is exactly what I captured.</p>',
     },
-    // {
-    //   image: parisBasketball,
-    //   title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
-    //   description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball courts I have played on.</p>',
-    // },
+    
     {
       image: hilton,
       title: '<span class="text-2xl font-bold text-white">Hilton</span>',
@@ -114,6 +108,11 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">Definitely my favorite view of the city.</p>',
     },
     {
+      image: parisBasketball,
+      title: '<span class="text-2xl font-bold text-white">Paris, France</span>',
+      description: '<p class="text-base text-gray-300 mt-2">One of the prettiest outdoor basketball courts I have played on.</p>',
+    },
+    {
       image: oldTrafford,
       title: '<span class="text-2xl font-bold text-white">Old Trafford</span>',
       description: '<p class="text-base text-gray-300 mt-2">Took a stadium tour of the Theatre of Dreams. Such a beautiful place full of rich history.</p>',
@@ -123,19 +122,12 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Mountain Goat</span>',
       description: '<p class="text-base text-gray-300 mt-2">Driving through Zion National Park and this guy wanted a photoshoot.</p>',
     },
-   
-  
-   
     {
       image: kauaiOcean,
       title: '<span class="text-2xl font-bold text-white">Ocean Shore in Princeville, Kauai</span>',
       description: '<p class="text-base text-gray-300 mt-2">The most beautiful turquoise water.</p>',
     },
-    {
-      image: waimeaCanyon,
-      title: '<span class="text-2xl font-bold text-white">Waimea Canyon, Kauai</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Approximately 10 miles long and up to 3,000 feet deep, Waimea Canyon provides some breathtaking panoramic views.</p>',
-    },
+    
     {
       image: davidNotebook,
       title: '<span class="text-2xl font-bold text-white">Davids Notebooks</span>',
@@ -281,42 +273,31 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
       description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
     },
-    // { // for some reason it is not showing bye bye branch
-    //   image: fire,
-    //   title: '<span class="text-2xl font-bold text-white">Wildfire in Sikkim</span>',
-    //   description: '<p class="text-base text-gray-300 mt-2">I had to take many steps back just because of the power of the fire.</p>',
-    // },
+  
     {
       image: napaliCoast,
       title: '<span class="text-2xl font-bold text-white">Napali Coast</span>',
       description: '<p class="text-base text-gray-300 mt-2">Lush perfect green beauty.</p>',
     },
-    {
-      image: galliFortCricketMatch,
-      title: '<span class="text-2xl font-bold text-white">Cricket Match</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Was exploring Galli Fort when I got thei view of a cricket match between rival colleges in the area.</p>',
-    },
+    
     {
       image: madeiraFutbol,
       title: '<span class="text-2xl font-bold text-white">Madeira, Portugal</span>',
       description: '<p class="text-base text-gray-300 mt-2">While driving around the island, we came across this beautiful pitch.</p>',
     },
     {
-      image: dolomitesCountryside,
-      title: '<span class="text-2xl font-bold text-white">The countryside of the Dolomites</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
+      image: galliFortCricketMatch,
+      title: '<span class="text-2xl font-bold text-white">Cricket Match</span>',
+      description: '<p class="text-base text-gray-300 mt-2">Was exploring Galli Fort when I got thei view of a cricket match between rival colleges in the area.</p>',
     },
+ 
     
     {
       image: gangtokStadium,
       title: '<span class="text-2xl font-bold text-white">Soccer Stadium in Gangtok, Sikkim</span>',
       description: '<p class="text-base text-gray-300 mt-2">The field was full of people from sun up to sun down. Love seeing the beautiful game in India!</p>'
     },
-    {
-      image: dolomites5,
-      title: '<span class="text-2xl font-bold text-white">Dolomites</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Took a gondola and got this view of the peaks of the Dolomites.</p>'
-    },
+    
 
     {
       image: munnarFlower,

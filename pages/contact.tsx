@@ -47,7 +47,7 @@ export default function Contact() {
             <h2 className="text-3xl font-bold text-center mb-6">Contact Me</h2>
 
             <form
-            action="https://formsubmit.co/arnavkarnikphotography@gmail.com"
+            action="https://formsubmit.co/arnav.n.karnik@gmail.com"
             method="POST"
             className="space-y-4"
             >

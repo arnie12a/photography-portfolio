@@ -30,7 +30,6 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(true)
-  const [currentPlace, setCurrentPlace] = useState(0)
 
   const places = [
     {
@@ -109,6 +108,7 @@ export default function Home() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8 text-stone-300 text-sm md:text-base">
+          <Link href="/gallery" className="hover:text-white transition">PORTFOLIO</Link>
           <Link href="/stories" className="hover:text-white transition">STORIES</Link>
           <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>
           <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
@@ -146,11 +146,13 @@ export default function Home() {
           border-b border-stone-800 flex flex-col space-y-6 px-6 py-6 
           text-stone-300 text-lg z-10">
 
+          <Link href="/gallery" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
+            PORTFOLIO
+          </Link>
+
           <Link href="/stories" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
             STORIES
           </Link>
-
-          
 
           <Link href="/aboutme" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
             ABOUT
@@ -175,64 +177,64 @@ export default function Home() {
 
       <main className="pt-[90px]">
 
-{/* HERO SLIDER */}
-<div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
-  <div
-    className={`flex h-full ${isTransitioning ? "transition-transform duration-[1200ms] ease-out" : ""}`}
-    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-  >
-    {SLIDES.map((img, index) => (
-      <div key={index} className="relative w-full h-full flex-shrink-0">
+        {/* HERO SLIDER */}
+        <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
+          <div
+            className={`flex h-full ${isTransitioning ? "transition-transform duration-[1200ms] ease-out" : ""}`}
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {SLIDES.map((img, index) => (
+              <div key={index} className="relative w-full h-full flex-shrink-0">
+                <Image
+                  src={img}
+                  alt={`Slide ${index}`}
+                  fill
+                  className="object-cover"
+                  placeholder="blur"
+                />
+                <div className="absolute inset-0 bg-black/30" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+                {/* FULL-WIDTH GALLERY CTA — LARGE + SMOOTH FLOW */}
+        <div className="relative w-full h-[75vh] sm:h-[85vh] lg:h-[95vh] overflow-hidden group">
+
+        {/* Background Image with slow zoom */}
         <Image
-          src={img}
-          alt={`Slide ${index}`}
+          src={hanaleiBay}
+          alt="Gallery Background"
           fill
-          className="object-cover"
+          className="object-cover scale-110 transition-transform duration-[8000ms] group-hover:scale-[1.18]"
           placeholder="blur"
         />
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
-    ))}
-  </div>
-</div>
 
-        {/* FULL-WIDTH GALLERY CTA — LARGE + SMOOTH FLOW */}
-<div className="relative w-full h-[75vh] sm:h-[85vh] lg:h-[95vh] overflow-hidden group">
+        {/* Deep cinematic gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
 
-{/* Background Image with slow zoom */}
-<Image
-  src={hanaleiBay}
-  alt="Gallery Background"
-  fill
-  className="object-cover scale-110 transition-transform duration-[8000ms] group-hover:scale-[1.18]"
-  placeholder="blur"
-/>
+        {/* Soft top fade to blend with hero slider */}
+        <div className="absolute top-0 left-0 right-0 h-[30%] bg-gradient-to-b from-stone-950/60 to-transparent" />
 
-{/* Deep cinematic gradient for readability */}
-<div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
-
-{/* Soft top fade to blend with hero slider */}
-<div className="absolute top-0 left-0 right-0 h-[30%] bg-gradient-to-b from-stone-950/60 to-transparent" />
-
-{/* Content */}
-<div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 sm:px-16 lg:px-32 animate-fadeIn">
-  <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-white drop-shadow-2xl tracking-wide mb-8">
-    Explore my Gallery
-  </h2>
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 sm:px-16 lg:px-32 animate-fadeIn">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-semibold text-white drop-shadow-2xl tracking-wide mb-8">
+            Explore my Portfolio
+          </h2>
 
 
 
-  <Link
-    href="/gallery"
-    className="px-12 py-5 text-xl sm:text-2xl rounded-lg border border-white/40 
-              bg-white/10 backdrop-blur-md text-white 
-              hover:bg-white/20 hover:border-white/60 transition 
-              tracking-wide shadow-2xl"
-  >
-    View My Favorite Photos →
-  </Link>
-</div>
-</div>
+          <Link
+            href="/gallery"
+            className="px-12 py-5 text-xl sm:text-2xl rounded-lg border border-white/40 
+                      bg-white/10 backdrop-blur-md text-white 
+                      hover:bg-white/20 hover:border-white/60 transition 
+                      tracking-wide shadow-2xl"
+          >
+            View My Favorite Photos →
+          </Link>
+        </div>
+        </div>
 
       </main>
 

@@ -45,8 +45,8 @@ export default function Home() {
 
             {/* YOUR EXACT TEXT — unchanged */}
             <p className="text-stone-300 leading-relaxed">
-              Coming soon...
-            </p>
+             Coming Soon...
+             </p>
 
 
             
