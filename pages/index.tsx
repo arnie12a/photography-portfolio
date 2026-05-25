@@ -265,9 +265,9 @@ export default function Home() {
         />
 
         <GridItem
-          title="Animals"
+          title="Projects"
           imageSrc={goat}
-          link="/animals"
+          link="/projects"
         />
 
       </div>

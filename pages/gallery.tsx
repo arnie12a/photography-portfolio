@@ -395,14 +395,14 @@ export default function TempIndex() {
         <div className="w-full px-4 sm:px-6 lg:px-10">
           <Masonry
             breakpointCols={{ default: 3, 1100: 2, 700: 1 }}
-            className="flex gap-6 w-full"
+            className="flex gap-4 w-full"
           >
             {favoriteImages.map((image, index) => (
               <div className="relative" key={image.image.src}>
                 <Image
                   src={image.image}
                   alt={image.title}
-                  className="my-4 hover:opacity-70 cursor-pointer rounded-lg"
+                  className="my-4 hover:opacity-70 cursor-pointer rounded-sm"
                   placeholder="blur"
                 />
                 <div
