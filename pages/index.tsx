@@ -10,10 +10,8 @@ import hanaleiBay from "../public/places/hawaii/hanaleiBay.jpg"
 import oldTrafford from "../public/structures/oldTraffordStadium.jpg"
 import chicagoSkyline from "../public/places/chicago/planetariumSkyline.jpg"
 import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
-import igoPrecious from "../public/places/chicago/ugoPrecious.jpg"
 import goat from "../public/stories/nationalParks/goat.jpg"
 import nature from "../public/places/hawaii/kauaiOcean.jpg"
-import MailerLiteForm from "../pages/components/MailerLiteForm"
 
 
 // Add your favorite horizontal landscape photos here
@@ -109,7 +107,6 @@ export default function Home() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8 text-stone-300 text-sm md:text-base">
           <Link href="/gallery" className="hover:text-white transition">PORTFOLIO</Link>
-          <Link href="/stories" className="hover:text-white transition">STORIES</Link>
           <Link href="/aboutme" className="hover:text-white transition">ABOUT</Link>
           <Link href="/contact" className="hover:text-white transition">CONTACT</Link>
 
@@ -150,9 +147,7 @@ export default function Home() {
             PORTFOLIO
           </Link>
 
-          <Link href="/stories" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
-            STORIES
-          </Link>
+       
 
           <Link href="/aboutme" className="hover:text-white transition" onClick={() => setMenuOpen(false)}>
             ABOUT
@@ -252,18 +247,9 @@ export default function Home() {
           link="/stories"
         />
 
-        <GridItem
-          title="Portraits"
-          imageSrc={igoPrecious}
-          link="/portraits"
-        />
+      
 
-        <GridItem
-          title="Nature"
-          imageSrc={nature}
-          link="/nature"
-        />
-
+    
         <GridItem
           title="Projects"
           imageSrc={goat}
