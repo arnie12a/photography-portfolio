@@ -34,7 +34,6 @@ import munnarHike from "../public/places/india/munnarHike.jpg"
 import betweenZionAndBryce from "../public/other/betweenZionAndBryceCanyon.jpg"
 import munnarTeaHike from "../public/places/india/munnarTeaPlantationHike.jpg"
 import sinhagad from "../public/places/india/sinhagadHike.jpg"
-import dolomitePeaks from "../public/places/dolomites/dolomites3.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
 import wiliwilinuiRidgeHike3 from "../public/places/hawaii/wiliwilinuiRidgeHike3.jpg"
@@ -196,11 +195,7 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Munnar, India</span>',
       description: '<p class="text-base text-gray-300 mt-2">Trekked through this tea garden to get a panoramic view of the surrounding tea plantations.</p>',
     },
-    {
-      image: dolomitePeaks,
-      title: '<span class="text-2xl font-bold text-white">Italian Dolomites Peaks</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>',
-    },
+    
     {
       image: knif,
       title: '<span class="text-2xl font-bold text-white">Knif</span>',
@@ -391,45 +386,45 @@ export default function TempIndex() {
 
 
       <main className="pt-[110px] pb-20 w-full">
-        {/* FULL-WIDTH MASONRY GRID */}
-        <div className="w-full px-4 sm:px-6 lg:px-10">
-          <Masonry
-            breakpointCols={{ default: 3, 1100: 2, 700: 1 }}
-            className="flex gap-4 w-full"
-          >
-            {favoriteImages.map((image, index) => (
-              <div className="relative" key={image.image.src}>
-                <Image
-                  src={image.image}
-                  alt={image.title}
-                  className="my-4 hover:opacity-70 cursor-pointer rounded-sm"
-                  placeholder="blur"
-                />
-                <div
-                  className="absolute inset-0 bg-transparent hover:bg-black/10 cursor-pointer"
-                  onClick={() => lightboxRef.current?.openGallery(index)}
-                />
-              </div>
-            ))}
-          </Masonry>
+  <div className="w-full px-4 sm:px-6 lg:px-10">
 
-          {/* Lightbox */}
-          <LightGalleryComponent
-            onInit={(ref) => {
-              if (ref) lightboxRef.current = ref.instance
-            }}
-            download={false}
-            speed={500}
-            plugins={[lgThumbnail, lgZoom]}
-            dynamic
-            dynamicEl={favoriteImages.map((image) => ({
-              src: image.image.src,
-              thumb: image.image.src,
-              subHtml: `<h5>${image.title}</h5><p>${image.description}</p>`,
-            }))}
+    <Masonry
+      breakpointCols={{ default: 2, 700: 1 }}
+      className="flex gap-8 w-full"
+    >
+      {favoriteImages.map((image, index) => (
+        <div className="relative w-full" key={image.image.src}>
+          <Image
+            src={image.image}
+            alt={image.title}
+            className="mb-8 hover:opacity-70 cursor-pointer rounded-sm"
+            placeholder="blur"
+          />
+          <div
+            className="absolute inset-0 bg-transparent hover:bg-black/10 cursor-pointer"
+            onClick={() => lightboxRef.current?.openGallery(index)}
           />
         </div>
-      </main>
+      ))}
+    </Masonry>
+
+    <LightGalleryComponent
+      onInit={(ref) => {
+        if (ref) lightboxRef.current = ref.instance
+      }}
+      download={false}
+      speed={500}
+      plugins={[lgThumbnail, lgZoom]}
+      dynamic
+      dynamicEl={favoriteImages.map((image) => ({
+        src: image.image.src,
+        thumb: image.image.src,
+        subHtml: `<h5>${image.title}</h5><p>${image.description}</p>`,
+      }))}
+    />
+  </div>
+</main>
+
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
         Arnav Karnik Photography
