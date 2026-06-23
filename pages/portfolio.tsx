@@ -33,18 +33,13 @@ import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
 import munnarHike from "../public/places/india/munnarHike.jpg"
 import betweenZionAndBryce from "../public/other/betweenZionAndBryceCanyon.jpg"
 import munnarTeaHike from "../public/places/india/munnarTeaPlantationHike.jpg"
-import sinhagad from "../public/places/india/sinhagadHike.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import popocatepetl from "../public/stories/nationalParks/popocatepetl.jpg"
 import wiliwilinuiRidgeHike3 from "../public/places/hawaii/wiliwilinuiRidgeHike3.jpg"
 import torreyPinesLookout from "../public/other/torreyPinesLookout.jpg"
-import bangalorePark1 from "../public/places/india/bangalorePark1.jpg"
-import munnarSunrise from "../public/places/india/munnarSunrise.jpg"
-import dolomitesCountryside from "../public/places/dolomites/dolomitesCountryside.jpg"
 
 // People Images
 import knif from "../public/other/knif.jpg"
-import nathanBridge from "../public/stories/nationalParks/nathanBridge.png"
 import nihar from "../public/places/india/niharPellingFort.jpg"
 import davidNotebook from "../public/other/davidNotebook.jpg"
 import preciousUgo from "../public/places/chicago/ugoPrecious.jpg"
@@ -66,7 +61,6 @@ import chicagoSkyline from "../public/places/chicago/chicagoSkyline.jpg"
 import auroville from "../public/places/india/auroville.jpg"
 import gangtokStadium from "../public/places/india/gangtokStadium.jpg"
 import pelling from "../public/structures/pelling.jpg"
-import monteserrat from "../public/structures/monteserrat.jpg"
 import outsideSagradaFamilia from "../public/structures/sagradaFamiliaOutside.jpg"
 import oldTrafford from "../public/places/england/oldTrafford1.jpg"
 import madeiraFutbol from "../public/structures/madeiraFutbol.jpg"
@@ -158,21 +152,13 @@ const favoriteImages = [
       title: '<span class="text-2xl font-bold text-white">Megan & Andrew</span>',
       description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the mountainous surroundings.</p>',
     },
-    {
-      image: munnarSunrise,
-      title: '<span class="text-2xl font-bold text-white">Sunrise in Munnar</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>'
-    },
+    
     {
       image: highlandCow,
       title: '<span class="text-2xl font-bold text-white">Edinburgh, Scotland</span>',
       description: '<p class="text-base text-gray-300 mt-2">Highland cows munchin on grass.</p>',
     },
-    {
-      image: nathanBridge,
-      title: '<span class="text-2xl font-bold text-white">Nathan</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Taking in the view of the Rocky Mountains National Park.</p>',
-    },
+   
     
     {
       image: auroville,
@@ -203,11 +189,7 @@ const favoriteImages = [
     },
     
     
-    {
-      image: sinhagad,
-      title: '<span class="text-2xl font-bold text-white">View from Sinhigad Fort.</span>',
-      description: '<p class="text-base text-gray-300 mt-2">Golden hour hits different from the top of Pune.</p>',
-    },
+    
     {
       image: theNarrows,
       title: '<span class="text-2xl font-bold text-white">Zion National Park: <i>The Narrows</i></span>',
@@ -263,11 +245,7 @@ const favoriteImages = [
       description: '<p class="text-base text-gray-300 mt-2">The view of Sagrada Familia from a far.</p>'
     },
  
-    {
-      image: monteserrat,
-      title: '<span class="text-2xl font-bold text-white">Monteserrat</span>',
-      description: '<p class="text-base text-gray-300 mt-2">You can find this gem 1.5 hours from Barcelona</p>'
-    },
+   
   
     {
       image: napaliCoast,
@@ -301,11 +279,7 @@ const favoriteImages = [
     },
     
     
-    {
-      image: bangalorePark1,
-      title: '<span class="text-2xl font-bold text-white">Park in Bangalore</span>',
-      description: '<p class="text-base text-gray-300 mt-2"></p>'
-    },
+    
     
     {
       image: elephant,

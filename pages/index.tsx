@@ -232,25 +232,11 @@ export default function MainPage() {
             Projects
           </Link>
 
-          {/* TRAVEL DROPDOWN */}
-          <div className="relative">
-            <button
-              onClick={() => setTravelOpen(!travelOpen)}
-              className="hover:text-white transition"
-            >
-              Travel
-            </button>
+          <Link href="/stories" className="hover:text-white transition">
+            Stories
+          </Link>
 
-            {travelOpen && (
-              <div className="absolute mt-2 bg-stone-900 border border-stone-700 rounded shadow-lg py-2 w-40">
-                <Link href="/places/hawaii" className="block px-4 py-2 hover:bg-stone-800">Hawaii</Link>
-                <Link href="/places/india" className="block px-4 py-2 hover:bg-stone-800">India</Link>
-                <Link href="/places/chicago" className="block px-4 py-2 hover:bg-stone-800">Chicago</Link>
-                <Link href="/places/dolomites" className="block px-4 py-2 hover:bg-stone-800">Dolomites</Link>
-              </div>
-            )}
-          </div>
-
+          
           <Link href="/aboutme" className="hover:text-white transition">
             About
           </Link>

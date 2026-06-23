@@ -2,12 +2,6 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 
-// ---- Imported Photos ----
-
-
-
-
-
 export default function MadisonGallery() {
   return (
     <main className="pt-[110px] pb-20 w-full bg-stone-950 text-stone-200">
