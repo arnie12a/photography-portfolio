@@ -89,47 +89,45 @@ export default function MainPage() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4">
+<main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4">
 
-        {/* ONE COLUMN GRID */}
-        <div className="flex flex-col space-y-10">
+{/* ONE COLUMN GRID */}
+<div className="flex flex-col space-y-10">
 
-        {IMAGES.map((img, index) => {
-          const isPortrait = img.height > img.width
+  {IMAGES.map((img, index) => (
+    <div
+      key={img.src}
+      className="relative w-full h-screen flex justify-center items-center overflow-hidden"
+    >
+      <Image
+        src={img}
+        alt="Photo"
+        className="h-full w-auto object-contain rounded-sm cursor-pointer hover:opacity-80 transition"
+        placeholder="blur"
+        onClick={() => lightboxRef.current?.openGallery(index)}
+      />
+    </div>
+  ))}
 
-          return (
-            <div key={img.src} className="relative w-full flex justify-center">
-              <Image
-                src={img}
-                alt="Photo"
-                className={`rounded-sm cursor-pointer hover:opacity-80 transition 
-                  ${isPortrait ? "max-h-[600px] w-auto" : ""}`}
-                placeholder="blur"
-                onClick={() => lightboxRef.current?.openGallery(index)}
-              />
-            </div>
-          )
-        })}
+</div>
 
+{/* LIGHTBOX */}
+<LightGalleryComponent
+  onInit={(ref) => {
+    if (ref) lightboxRef.current = ref.instance
+  }}
+  download={false}
+  speed={500}
+  plugins={[lgThumbnail, lgZoom]}
+  dynamic
+  dynamicEl={IMAGES.map((img) => ({
+    src: img.src,
+    thumb: img.src,
+    subHtml: "",
+  }))}
+/>
+</main>
 
-        </div>
-
-        {/* LIGHTBOX */}
-        <LightGalleryComponent
-          onInit={(ref) => {
-            if (ref) lightboxRef.current = ref.instance
-          }}
-          download={false}
-          speed={500}
-          plugins={[lgThumbnail, lgZoom]}
-          dynamic
-          dynamicEl={IMAGES.map((img) => ({
-            src: img.src,
-            thumb: img.src,
-            subHtml: "",
-          }))}
-        />
-      </main>
 
       {/* FOOTER */}
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
