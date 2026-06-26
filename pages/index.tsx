@@ -17,28 +17,22 @@ import lgZoom from "lightgallery/plugins/zoom"
 // Import your images
 import hanaleiBay from "../public/places/hawaii/hanaleiBay.jpg"
 import kalalauLookout from "../public/places/hawaii/kalalauLookout.jpg"
-import khanchenjunga from "../public/places/india/khanchenjunga.jpg"
-import raigad from "../public/places/india/raigad.jpg"
 import seceda from "../public/places/dolomites/seceda.jpg"
 import dotter from "../public/places/srilanka/dotter.jpg"
 import hilton from "../public/places/india/hilton.jpg"
-import munnarFlower from "../public/places/india/munnarFlower.jpg"
 import napaliCoast from "../public/places/hawaii/napaliCoast.jpg"
 import munnarHike from "../public/places/india/munnarHike.jpg"
-import kauaiOcean from "../public/places/hawaii/kauaiOcean.jpg"
+import ugoPrecious from "../public/places/chicago/ugoPrecious.jpg"
 
 const IMAGES = [
   hanaleiBay,
   kalalauLookout,
-  khanchenjunga,
-  raigad,
   seceda,
   dotter,
   hilton,
-  munnarFlower,
   napaliCoast,
   munnarHike,
-  kauaiOcean,
+  ugoPrecious
 ]
 
 export default function MainPage() {
