@@ -40,86 +40,83 @@ export default function Contact() {
           />
           <div className="absolute inset-0 bg-black/50" />
 
-          {/* Form Container */}
-        <div className="absolute inset-0 flex justify-center items-center">
-        <div className="bg-transparent backdrop-blur-md p-10 rounded-lg w-[90%] max-w-2xl shadow-xl">
+          {/* Split Contact Section */}
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="bg-transparent backdrop-blur-md p-10 rounded-lg w-[90%] max-w-4xl shadow-xl">
 
-            <h2 className="text-3xl font-bold text-center mb-6">Contact Me</h2>
+              <h2 className="text-3xl font-bold text-center mb-10">Contact Me</h2>
 
-            <form
-            action="https://formsubmit.co/arnav.n.karnik@gmail.com"
-            method="POST"
-            className="space-y-4"
-            >
-            {/* First + Last Name */}
-            <div className="flex space-x-4">
-                <input
-                type="text"
-                name="firstName"
-                placeholder="First Name"
-                required
-                className="w-1/2 px-4 py-2 rounded bg-stone-800/40 text-stone-200 border border-stone-700/50 focus:outline-none focus:border-white"
-                />
-                <input
-                type="text"
-                name="lastName"
-                placeholder="Last Name"
-                required
-                className="w-1/2 px-4 py-2 rounded bg-stone-800/40 text-stone-200 border border-stone-700/50 focus:outline-none focus:border-white"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                {/* LEFT SIDE — CONTACT INFO */}
+                <div className="space-y-6 text-stone-300">
+                  <h3 className="text-2xl font-light tracking-tight">Reach Out</h3>
+
+                  <p className="text-lg">
+                    <span className="font-semibold text-white">Phone:</span><br />
+                    847‑558‑0060
+                  </p>
+
+                  <p className="text-lg">
+                    <span className="font-semibold text-white">Email:</span><br />
+                    arnav.n.karnik@gmail.com
+                  </p>
+                </div>
+
+                {/* RIGHT SIDE — FORM */}
+                <form
+                  action="https://formsubmit.co/arnav.n.karnik@gmail.com"
+                  method="POST"
+                  className="space-y-6"
+                >
+                  {/* Name */}
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    className="w-full px-4 py-3 rounded bg-stone-800/40 text-stone-200 
+                               border border-stone-700/50 focus:outline-none focus:border-white"
+                  />
+
+                  {/* Email */}
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    className="w-full px-4 py-3 rounded bg-stone-800/40 text-stone-200 
+                               border border-stone-700/50 focus:outline-none focus:border-white"
+                  />
+
+                  {/* Message */}
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows={5}
+                    required
+                    className="w-full px-4 py-3 rounded bg-stone-800/40 text-stone-200 
+                               border border-stone-700/50 focus:outline-none focus:border-white"
+                  />
+
+                  {/* Submit */}
+                  <button
+                    type="submit"
+                    className="w-full bg-white text-stone-900 font-semibold py-3 rounded 
+                               hover:bg-opacity-90 transition"
+                  >
+                    Send Message
+                  </button>
+
+                  {/* FormSubmit hidden fields */}
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou" />
+                </form>
+
+              </div>
+
             </div>
-
-            {/* Phone */}
-            <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                className="w-full px-4 py-2 rounded bg-stone-800/40 text-stone-200 border border-stone-700/50 focus:outline-none focus:border-white"
-            />
-
-            {/* Email */}
-            <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                className="w-full px-4 py-2 rounded bg-stone-800/40 text-stone-200 border border-stone-700/50 focus:outline-none focus:border-white"
-            />
-
-            {/* Subject */}
-            <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-                className="w-full px-4 py-2 rounded bg-stone-800/40 text-stone-200 border border-stone-700/50 focus:outline-none focus:border-white"
-            />
-
-            {/* Message */}
-            <textarea
-                name="message"
-                placeholder="Your Message"
-                required
-                rows={5}
-                className="w-full px-4 py-2 rounded bg-stone-800/40 text-stone-200 border border-stone-700/50 focus:outline-none focus:border-white"
-            />
-
-            {/* Submit */}
-            <button
-                type="submit"
-                className="w-full bg-white text-stone-900 font-semibold py-2 rounded hover:bg-opacity-90 transition"
-            >
-                Send Message
-            </button>
-
-            {/* FormSubmit hidden fields */}
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou" />
-            </form>
-
-        </div>
-        </div>
-
+          </div>
 
         </div>
       </main>

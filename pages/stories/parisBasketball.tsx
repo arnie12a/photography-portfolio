@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-import parisBasketball from "../../public/stories/parisHoops/parisHoops.jpg"
+import parisBasketball from "../../public/places/france/parisHoops.jpg"
 import MailerLiteForm from "../../pages/components/MailerLiteForm"
 
 export default function ParisBasketball() {

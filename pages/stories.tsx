@@ -4,7 +4,7 @@ import Link from "next/link"
 import { StaticImageData } from "next/image"
 
 // Existing story cover
-import parisBasketball from "../public/stories/parisHoops/parisHoops.jpg"
+import parisBasketball from "../public/places/france/parisHoops.jpg"
 
 // Import your MailerLite component
 import MailerLiteForm from "../pages/components/MailerLiteForm"
@@ -20,11 +20,10 @@ export default function Stories() {
   const stories: Story[] = [
     {
       title: "Paris Basketball",
-      subtitle: "Street courts, culture, and the rhythm of a city in motion.",
+      subtitle: "It was an absolute dream hooping with the locals with the Eiffel Tower in the background.",
       img: parisBasketball,
       link: "/stories/parisBasketball",
     },
-
   ]
 
   return (
@@ -33,7 +32,7 @@ export default function Stories() {
         <title>Stories — Arnav Karnik Photography</title>
       </Head>
 
-      {/* Minimal Header */}
+      {/* Header */}
       <header className="fixed top-0 left-0 w-full z-20 h-[90px] px-10 
         bg-stone-950/80 backdrop-blur border-b border-stone-800 
         flex items-center justify-between">
@@ -54,54 +53,48 @@ export default function Stories() {
 
       <main className="pt-[140px] pb-32 px-6 md:px-12 max-w-6xl mx-auto">
 
-        {/* Magazine Hero */}
-        <section className="mb-24 text-center">
+        {/* Page Title */}
+        <section className="mb-16 text-center">
           <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6">
             Stories
           </h1>
 
           <p className="text-stone-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Check out my favorite adventures I have captured through my lens. 
+            Check out my favorite adventures I have captured through my lens.
           </p>
 
           <div className="mt-10 h-[2px] w-24 bg-stone-700 mx-auto"></div>
         </section>
 
-        {/* Magazine Grid */}
+        {/* STORIES GRID — same layout as Projects */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
           {stories.map((story, index) => (
             <Link
               key={index}
               href={story.link}
-              className="group block"
+              className="group block rounded-lg overflow-hidden border border-stone-800 hover:border-stone-600 transition-all"
             >
-              <div className="relative h-[320px] w-full overflow-hidden rounded-lg shadow-lg">
-
-                {/* Coming Soon Badge */}
-                {story.subtitle.includes("Coming Soon") && (
-                  <div className="absolute top-3 left-3 bg-stone-900/70 text-xs px-2 py-1 rounded-md border border-stone-700">
-                    Coming Soon
-                  </div>
-                )}
-
+              <div className="relative w-full h-64 overflow-hidden">
                 <Image
                   src={story.img}
                   alt={story.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
 
-              <h2 className="text-2xl font-semibold mt-6 mb-2 group-hover:text-stone-300 transition">
-                {story.title}
-              </h2>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold tracking-wide mb-2 group-hover:text-white transition">
+                  {story.title}
+                </h2>
 
-              <p className="text-stone-400 text-sm leading-relaxed">
-                {story.subtitle}
-              </p>
+                <p className="text-stone-400 text-sm leading-relaxed">
+                  {story.subtitle}
+                </p>
 
-              <div className="mt-4 text-stone-500 text-xs tracking-widest uppercase group-hover:text-stone-300 transition">
-                Read Story →
+                <div className="mt-4 text-stone-500 text-xs tracking-widest uppercase group-hover:text-stone-300 transition">
+                  Read Story →
+                </div>
               </div>
             </Link>
           ))}
