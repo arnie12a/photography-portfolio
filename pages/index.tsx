@@ -1,8 +1,7 @@
-
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
-import { useState, useRef } from "react"
+import { useRef, useState } from "react"
 
 import type { LightGallery } from "lightgallery/lightgallery"
 import LightGalleryComponent from "lightgallery/react"
@@ -36,8 +35,8 @@ const IMAGES = [
 ]
 
 export default function MainPage() {
-  const [travelOpen, setTravelOpen] = useState(false)
   const lightboxRef = useRef<LightGallery | null>(null)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-stone-950 text-stone-200">
@@ -48,80 +47,85 @@ export default function MainPage() {
       </Head>
 
       {/* HEADER */}
-      <header className="fixed top-0 w-full z-20 h-[90px] px-10 
-        bg-stone-950/80 backdrop-blur border-b border-stone-800 
-        flex items-center justify-between">
+      <header className="fixed top-0 w-full z-20 px-4 md:px-10 
+        bg-stone-950/80 backdrop-blur border-b border-stone-800">
 
-        <span className="uppercase text-xl md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
-          Arnav Karnik Photography
-        </span>
+        <div className="h-[90px] flex items-center justify-between">
 
-        {/* NAVIGATION TABS */}
-        <nav className="hidden md:flex items-center space-x-10 text-stone-300 text-base">
+          {/* TITLE */}
+          <span className="uppercase text-lg md:text-2xl font-semibold tracking-[0.35em] text-stone-300">
+            Arnav Karnik Photography
+          </span>
 
-          <Link href="/portfolio" className="hover:text-white transition">
-            Portfolio
-          </Link>
+          {/* MOBILE MENU BUTTON */}
+          <button
+            className="md:hidden text-stone-300 text-xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
 
-          <Link href="/projects" className="hover:text-white transition">
-            Projects
-          </Link>
+          {/* DESKTOP NAV */}
+          <nav className="hidden md:flex items-center space-x-10 text-stone-300 text-base">
+            <Link href="/portfolio" className="hover:text-white transition">Portfolio</Link>
+            <Link href="/projects" className="hover:text-white transition">Projects</Link>
+            <Link href="/stories" className="hover:text-white transition">Stories</Link>
+            <Link href="/aboutme" className="hover:text-white transition">About</Link>
+            <Link href="/contact" className="hover:text-white transition">Contact</Link>
+          </nav>
+        </div>
 
-          <Link href="/stories" className="hover:text-white transition">
-            Stories
-          </Link>
-
-          
-          <Link href="/aboutme" className="hover:text-white transition">
-            About
-          </Link>
-
-          <Link href="/contact" className="hover:text-white transition">
-            Contact
-          </Link>
-        </nav>
+        {/* MOBILE DROPDOWN */}
+        {menuOpen && (
+          <div className="md:hidden flex flex-col space-y-4 pb-4 text-stone-300 text-base">
+            <Link href="/portfolio" className="hover:text-white transition">Portfolio</Link>
+            <Link href="/projects" className="hover:text-white transition">Projects</Link>
+            <Link href="/stories" className="hover:text-white transition">Stories</Link>
+            <Link href="/aboutme" className="hover:text-white transition">About</Link>
+            <Link href="/contact" className="hover:text-white transition">Contact</Link>
+          </div>
+        )}
       </header>
 
       {/* MAIN CONTENT */}
-<main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4">
+      <main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4">
 
-{/* ONE COLUMN GRID */}
-<div className="flex flex-col space-y-10">
+        {/* ONE COLUMN GRID */}
+        <div className="flex flex-col space-y-10">
 
-  {IMAGES.map((img, index) => (
-    <div
-      key={img.src}
-      className="relative w-full h-screen flex justify-center items-center overflow-hidden"
-    >
-      <Image
-        src={img}
-        alt="Photo"
-        className="h-full w-auto object-contain rounded-sm cursor-pointer hover:opacity-80 transition"
-        placeholder="blur"
-        onClick={() => lightboxRef.current?.openGallery(index)}
-      />
-    </div>
-  ))}
+          {IMAGES.map((img, index) => (
+            <div
+              key={img.src}
+              className="relative w-full h-screen flex justify-center items-center overflow-hidden"
+            >
+              <Image
+                src={img}
+                alt="Photo"
+                className="w-full h-auto object-contain max-h-screen rounded-sm cursor-pointer hover:opacity-80 transition"
+                placeholder="blur"
+                onClick={() => lightboxRef.current?.openGallery(index)}
+              />
+            </div>
+          ))}
 
-</div>
+        </div>
 
-{/* LIGHTBOX */}
-<LightGalleryComponent
-  onInit={(ref) => {
-    if (ref) lightboxRef.current = ref.instance
-  }}
-  download={false}
-  speed={500}
-  plugins={[lgThumbnail, lgZoom]}
-  dynamic
-  dynamicEl={IMAGES.map((img) => ({
-    src: img.src,
-    thumb: img.src,
-    subHtml: "",
-  }))}
-/>
-</main>
-
+        {/* LIGHTBOX */}
+        <LightGalleryComponent
+          onInit={(ref) => {
+            if (ref) lightboxRef.current = ref.instance
+          }}
+          download={false}
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          dynamic
+          dynamicEl={IMAGES.map((img) => ({
+            src: img.src,
+            thumb: img.src,
+            subHtml: "",
+          }))}
+        />
+      </main>
 
       {/* FOOTER */}
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">

@@ -68,7 +68,7 @@ import washingtonMonument from "../public/other/washingtonMonument.jpg"
 import galliFortCricketMatch from "../public/places/srilanka/galliFortCricketMatch.jpg"
 
 // Blog Post Cover Images
-import parisBasketball from "../public/stories/parisHoops/parisHoops2.jpg"
+import parisBasketball from "../public/places/france/parisHoops.jpg"
 
 
 
