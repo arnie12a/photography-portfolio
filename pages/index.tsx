@@ -91,80 +91,79 @@ export default function MainPage() {
           </button>
 
           {/* DESKTOP NAV */}
-<nav className="hidden md:flex items-center space-x-10 text-stone-300 text-base">
+          <nav className="hidden md:flex items-center space-x-10 text-stone-300 text-base">
 
-<Link href="/projects" className="hover:text-white transition">Projects</Link>
-<Link href="/stories" className="hover:text-white transition">Stories</Link>
-<Link href="/aboutme" className="hover:text-white transition">About</Link>
-<Link href="/contact" className="hover:text-white transition">Contact</Link>
+            <Link href="/projects" className="hover:text-white transition">Projects</Link>
+            <Link href="/stories" className="hover:text-white transition">Stories</Link>
+            <Link href="/aboutme" className="hover:text-white transition">About</Link>
+            <Link href="/contact" className="hover:text-white transition">Contact</Link>
 
-{/* ICONS */}
-<div className="flex items-center space-x-6">
+            {/* ICONS */}
+            <div className="flex items-center space-x-6">
 
-  {/* MAIL ICON */}
-  <a
-    href="mailto:arnav.n.karnik@gmail.com"
-    className="hover:text-white transition"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className="w-6 h-6"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.5a2.25 2.25 0 01-2.36 0l-7.5-4.5A2.25 2.25 0 012.25 6.993V6.75"
-      />
-    </svg>
-  </a>
+              {/* MAIL ICON */}
+              <a
+                href="mailto:arnav.n.karnik@gmail.com"
+                className="hover:text-white transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.5a2.25 2.25 0 01-2.36 0l-7.5-4.5A2.25 2.25 0 012.25 6.993V6.75"
+                  />
+                </svg>
+              </a>
 
-  {/* INSTAGRAM ICON */}
-  <a
-    href="https://www.instagram.com/arnavkarnikphotos"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      className="w-6 h-6"
-    >
-      <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-3a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
-    </svg>
-  </a>
+              {/* INSTAGRAM ICON */}
+              <a
+                href="https://www.instagram.com/arnavkarnikphotos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                >
+                  <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-3a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+                </svg>
+              </a>
 
-  {/* LINKEDIN ICON */}
-  <a
-    href="https://www.linkedin.com/in/arnavkarnik/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
-      viewBox="0 0 24 24"
-      className="w-6 h-6"
-    >
-      <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.7-2.2 3.7-2.2 4 0 4.7 2.6 4.7 6V24h-4v-7.7c0-1.8-.1-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4V24h-4V8z"/>
-    </svg>
-  </a>
+              {/* LINKEDIN ICON */}
+              <a
+                href="https://www.linkedin.com/in/arnavkarnik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6"
+                >
+                  <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.7-2.2 3.7-2.2 4 0 4.7 2.6 4.7 6V24h-4v-7.7c0-1.8-.1-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4V24h-4V8z"/>
+                </svg>
+              </a>
 
-</div>
-</nav>
+            </div>
+          </nav>
 
         </div>
 
         {/* MOBILE DROPDOWN */}
         {menuOpen && (
           <div className="md:hidden flex flex-col space-y-4 pb-4 text-stone-300 text-base">
-            {/* <Link href="/portfolio" className="hover:text-white transition">Portfolio</Link> */}
             <Link href="/projects" className="hover:text-white transition">Projects</Link>
             <Link href="/stories" className="hover:text-white transition">Stories</Link>
             <Link href="/aboutme" className="hover:text-white transition">About</Link>
@@ -174,10 +173,10 @@ export default function MainPage() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4">
+      <main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4 md:px-4">
 
         {/* ONE COLUMN GRID */}
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col space-y-2 md:space-y-10">
 
           {IMAGES.map((img, index) => (
             <div
