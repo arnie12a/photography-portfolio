@@ -176,12 +176,12 @@ export default function MainPage() {
       <main className="pt-[110px] pb-20 w-full max-w-4xl mx-auto px-4 md:px-4">
 
         {/* ONE COLUMN GRID */}
-        <div className="flex flex-col space-y-2 md:space-y-10">
+        <div className="flex flex-col space-y-10">
 
           {IMAGES.map((img, index) => (
             <div
               key={img.src}
-              className="relative w-full h-screen flex justify-center items-center overflow-hidden"
+              className="relative w-full h-auto md:h-screen flex justify-center items-center overflow-hidden"
             >
               <Image
                 src={img}
