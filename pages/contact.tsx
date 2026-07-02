@@ -20,9 +20,11 @@ export default function Contact() {
 
         <Link
           href="/"
-          className="rounded-3xl bg-white text-stone-900 px-4 py-2 text-sm font-medium hover:bg-opacity-90 transition"
+          className="text-stone-300 hover:text-white text-sm tracking-wide 
+            border border-stone-700 px-4 py-1 rounded-lg 
+            hover:bg-stone-800 transition-all"
         >
-          Back to Portfolio
+          ← Back
         </Link>
       </header>
 
