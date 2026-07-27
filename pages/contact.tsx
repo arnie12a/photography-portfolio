@@ -54,10 +54,7 @@ export default function Contact() {
                 <div className="space-y-6 text-stone-300">
                   <h3 className="text-2xl font-light tracking-tight">Reach Out</h3>
 
-                  <p className="text-lg">
-                    <span className="font-semibold text-white">Phone:</span><br />
-                    847‑558‑0060
-                  </p>
+                 
 
                   <p className="text-lg">
                     <span className="font-semibold text-white">Email:</span><br />

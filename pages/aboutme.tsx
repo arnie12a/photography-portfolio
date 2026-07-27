@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
+import { FaInstagram } from "react-icons/fa"
 
 import arnieOldTrafford from "../public/other/arnieOldTrafford.jpg"
 import arniePhoto from "../public/other/arniePhoto.jpg"
@@ -56,36 +57,52 @@ export default function AboutMe() {
           </div>
 
           {/* Text */}
-          <div className="flex flex-col justify-center text-stone-300 leading-relaxed text-lg space-y-6">
+<div className="flex flex-col justify-center text-stone-300 leading-relaxed text-lg space-y-6">
 
-            <p>
-              Hey, I’m Arnav. I’m a photographer who loves capturing people in the environments
-              that make them who they are. I’m especially drawn to sports and nature all over the world.
-            </p>
+<p>
+  Hey, I’m Arnav. I’m a photographer who loves capturing people in the environments
+  that make them who they are. I’m especially drawn to sports and nature all over the world.
+</p>
 
-            <p>
-              I think there’s something really beautiful about how people interact with the world
-              around them. Every place has its own energy, and every person responds to it differently.
-              I want to spend my life capturing how people connect with their surroundings, especially
-              when it comes to sports and nature.
-            </p>
+<p>
+  I think there’s something really beautiful about how people interact with the world
+  around them. Every place has its own energy, and every person responds to it differently.
+  I want to spend my life capturing how people connect with their surroundings, especially
+  when it comes to sports and nature.
+</p>
 
-            <p>
-              I’m originally from the suburbs of Chicago, but I’m based in Boulder, Colorado now.
-              If you’re in need of a photoshoot or want to connect, feel free to reach out.
-            </p>
+<p>
+  I’m originally from the suburbs of Chicago, but I’m based in Boulder, Colorado now.
+  If you’re in need of a photoshoot or want to connect, feel free to reach out.
+</p>
 
-            {/* Contact Button */}
-            <Link
-              href="/contact"
-              className="inline-block mt-4 px-6 py-3 rounded-lg border border-stone-700 
-                text-stone-300 hover:text-white hover:bg-stone-800 transition-all 
-                tracking-wide text-sm"
-            >
-              Contact Me →
-            </Link>
+{/* Buttons */}
+<div className="flex flex-col sm:flex-row gap-4 pt-2">
 
-          </div>
+  <Link
+    href="/contact"
+    className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-stone-700
+      text-stone-300 hover:text-white hover:bg-stone-800 transition-all
+      tracking-wide text-sm"
+  >
+    Contact Me →
+  </Link>
+
+  <a
+    href="https://www.instagram.com/arnavkarnikphotos/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg
+      border border-stone-700 text-stone-300 hover:text-white hover:bg-stone-800
+      transition-all tracking-wide text-sm"
+  >
+    <FaInstagram className="text-lg" />
+    @arnavkarnikphotos
+  </a>
+
+</div>
+
+</div>
         </section>
 
         {/* OLD TRAFFORD PHOTO BELOW */}
