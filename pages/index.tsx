@@ -35,9 +35,10 @@ import elephants from "../public/places/srilanka/elephant.jpg"
 import goat from "../public/stories/nationalParks/goat.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import smokeyMountainsSunset from "../public/stories/nationalParks/smokeyMountainsSunset.jpg"
+import parisVertical from "../public/places/france/hoopsInParis.jpg"
 
 const IMAGES = [
-  parisHoops,
+  parisVertical,
   oldTrafford,
   kalalauLookout,
   dolomites,

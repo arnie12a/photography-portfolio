@@ -5,6 +5,7 @@ import { StaticImageData } from "next/image"
 
 // Project cover images
 import portraitsCover from "../public/places/chicago/keitlin.jpg" // pick any portrait as cover
+import indiaCover from "../public/places/india/gatewayOfIndia.jpg" // pick any India photo as cover
 
 // Import your MailerLite component
 import MailerLiteForm from "../pages/components/MailerLiteForm"
@@ -24,6 +25,12 @@ export default function Projects() {
       img: portraitsCover,
       link: "/projects/portraits",
     },
+    {
+        title: "India",
+        subtitle: "A collection of my favorite photos from India.",
+        img: indiaCover, // Replace with an actual image for the India project
+        link: "/projects/india",
+    }
     
   ]
 
