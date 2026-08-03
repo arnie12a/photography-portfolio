@@ -91,7 +91,7 @@ export default function MainPage() {
 
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center space-x-10 text-stone-300 text-base">
-
+            <Link href="/projects" className="hover:text-white transition">Projects</Link>
             <Link href="/stories" className="hover:text-white transition">Stories</Link>
             <Link href="/aboutme" className="hover:text-white transition">About</Link>
             <Link href="/contact" className="hover:text-white transition">Contact</Link>
@@ -162,6 +162,7 @@ export default function MainPage() {
         {/* MOBILE DROPDOWN */}
         {menuOpen && (
           <div className="md:hidden flex flex-col space-y-4 pb-4 text-stone-300 text-base">
+            <Link href="/projects" className="hover:text-white transition">Projects</Link>
             <Link href="/stories" className="hover:text-white transition">Stories</Link>
             <Link href="/aboutme" className="hover:text-white transition">About</Link>
             <Link href="/contact" className="hover:text-white transition">Contact</Link>
