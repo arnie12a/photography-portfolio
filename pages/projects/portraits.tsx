@@ -12,6 +12,7 @@ import tantalusLookout from "../../public/places/hawaii/tantalusLookout.jpg"
 import ashwini from "../../public/places/mexico/ashwini.jpg"
 import davidNotebooks from "../../public/places/mexico/davidNotebooks.jpg"
 import lifonso from "../../public/places/portugal/lifonso.jpg"
+import lucasJac from "../../public/places/chicago/lucasJac.jpg"
 
 const portraits = [
   {
@@ -77,6 +78,13 @@ const portraits = [
     description:
       "If you every visit Lisbon, Portugal, you let Lifonso take you around the city. ",
   },  
+  {
+    src: lucasJac,
+    alt: "Lucas & Jac",
+    title: "Lucas + Jac",
+    description:
+      "Here are my buddies from college",
+  }, 
 ]
 
 export default function Portraits() {
