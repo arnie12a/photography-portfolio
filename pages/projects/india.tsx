@@ -95,23 +95,25 @@ export default function India() {
       </header>
 
       {/* Gallery */}
-      <main className="pt-[120px] pb-32 max-w-6xl mx-auto px-4">
+      <main className="pt-[120px] pb-32 max-w-7xl mx-auto px-4">
         <h1 className="text-center text-5xl md:text-6xl font-light tracking-tight mb-12">
           India
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* Masonry Grid */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
           {images.map((src, i) => (
-            <div key={i} className="group relative w-full overflow-hidden rounded-xl">
+            <div key={i} className="mb-6 break-inside-avoid overflow-hidden rounded-xl group">
               <Image
                 src={src}
                 alt={`India photo ${i + 1}`}
-                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
           ))}
         </div>
       </main>
+
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
         Arnav Karnik Photography

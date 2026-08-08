@@ -13,6 +13,9 @@ import ashwini from "../../public/places/mexico/ashwini.jpg"
 import davidNotebooks from "../../public/places/mexico/davidNotebooks.jpg"
 import lifonso from "../../public/places/portugal/lifonso.jpg"
 import lucasJac from "../../public/places/chicago/lucasJac.jpg"
+import kaylem from "../../public/places/peru/kaylemCat.jpg"
+import kaylemKeah from "../../public/places/peru/kaylemKeah.jpg"
+
 
 const portraits = [
   {
@@ -51,6 +54,13 @@ const portraits = [
       "His dream is pipeline.",
   },
   {
+    src: kaylem,
+    alt: "Kaylem",
+    title: "Kaylem",
+    description:
+      "Had to say Hi to a stray cat in Peru.",
+  },
+  {
     src: tantalusLookout,
     alt: "Tantalus Lookout Portrait",
     title: "Tantalus Lookout",
@@ -70,6 +80,13 @@ const portraits = [
     title: "David",
     description:
       "When in Mexico City you have to buy one of his notebooks. He makes them himself and they are beautiful.",
+  },
+  {
+    src: kaylemKeah,
+    alt: "Kaylem & Keah Portrait",
+    title: "Kaylem & Keah",
+    description:
+      "Taking on the Salkantay trek in Peru.",
   },
   {
     src: lifonso,
@@ -104,7 +121,7 @@ export default function Portraits() {
         </span>
 
         <Link
-          href="/stories"
+          href="/projects"
           className="text-stone-300 hover:text-white text-sm tracking-wide 
             border border-stone-700 px-4 py-1 rounded-lg 
             hover:bg-stone-800 transition-all"

@@ -6,6 +6,7 @@ import { StaticImageData } from "next/image"
 // Project cover images
 import portraitsCover from "../public/places/chicago/keitlin.jpg" // pick any portrait as cover
 import indiaCover from "../public/places/india/gatewayOfIndia.jpg" // pick any India photo as cover
+import nationalParksCover from "../public/stories/nationalParks/smokeyMountainsSunset.jpg" // pick any National Park photo as cover
 
 // Import your MailerLite component
 import MailerLiteForm from "../pages/components/MailerLiteForm"
@@ -30,8 +31,14 @@ export default function Projects() {
         subtitle: "A collection of my favorite photos from India.",
         img: indiaCover, // Replace with an actual image for the India project
         link: "/projects/india",
-    }
-    
+    },
+
+    {
+        title: "National Parks",
+        subtitle: "Check out my favorite National Parks I have visted with family and friends.",
+        img: nationalParksCover, // Replace with an actual image for the India project
+        link: "/projects/nationalParks",
+    },
   ]
 
   return (
