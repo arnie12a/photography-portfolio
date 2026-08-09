@@ -15,7 +15,7 @@ import lifonso from "../../public/places/portugal/lifonso.jpg"
 import lucasJac from "../../public/places/chicago/lucasJac.jpg"
 import kaylem from "../../public/places/peru/kaylemCat.jpg"
 import kaylemKeah from "../../public/places/peru/kaylemKeah.jpg"
-
+import meganAndrewRainier from "../../public/stories/nationalParks/meganAndrewRainier.jpg"
 
 const portraits = [
   {
@@ -59,6 +59,13 @@ const portraits = [
     title: "Kaylem",
     description:
       "Had to say Hi to a stray cat in Peru.",
+  },
+  {
+    src: meganAndrewRainier,
+    alt: "Megan & Andrew Portrait",
+    title: "Megan & Andrew",
+    description:
+      "Enjoying the mountains while hiking the skyline loop trail in Mount Rainier National Park, Washington.",
   },
   {
     src: tantalusLookout,

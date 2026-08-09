@@ -115,7 +115,7 @@ export default function Projects() {
           ))}
         </section>
 
-        {/* Newsletter Signup */}
+        {/* Newsletter Signup
         <section className="max-w-2xl mx-auto mt-32 px-8 py-20 text-center 
           bg-stone-900/40 rounded-xl border border-stone-800 shadow-xl">
 
@@ -124,7 +124,7 @@ export default function Projects() {
           </h2>
 
           <MailerLiteForm />
-        </section>
+        </section> */}
 
       </main>
 

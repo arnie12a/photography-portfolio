@@ -22,7 +22,6 @@ import hilton from "../public/places/india/hilton.jpg"
 
 import ugoPrecious from "../public/places/chicago/ugoPrecious.jpg"
 
-import parisHoops from "../public/places/france/parisHoops.jpg"
 import oldTrafford from "../public/places/england/oldTrafford1.jpg"
 import dolomites from "../public/places/dolomites/dolomites2.jpg"
 import gangtokStadium from "../public/places/india/gangtokStadium.jpg"
@@ -36,6 +35,9 @@ import goat from "../public/stories/nationalParks/goat.jpg"
 import meganAndrewRainier from "../public/stories/nationalParks/meganAndrewRainier.jpg"
 import smokeyMountainsSunset from "../public/stories/nationalParks/smokeyMountainsSunset.jpg"
 import parisVertical from "../public/places/france/hoopsInParis.jpg"
+import salkantay from "../public/places/peru/salkantay.jpg"
+import khanchenjunga from "../public/places/india/khanchenjunga.jpg"
+import chinatownHoops from "../public/places/nyc/chinatownHoops.jpg"
 
 const IMAGES = [
   parisVertical,
@@ -44,8 +46,10 @@ const IMAGES = [
   dolomites,
   hanaleiBay,
   gangtokStadium,
+  khanchenjunga,
   sikkimFirstSunrise,
   soccerPitch,
+  chinatownHoops,
   madeiraSoccerPitch,
   davidsNotebooks,
   highlandCow,
@@ -53,6 +57,7 @@ const IMAGES = [
   goat,
   meganAndrewRainier,
   seceda,
+  salkantay,
   dotter,
   hilton,
   smokeyMountainsSunset,
