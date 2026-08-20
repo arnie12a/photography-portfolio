@@ -26,19 +26,7 @@ export default function Projects() {
       img: portraitsCover,
       link: "/projects/portraits",
     },
-    {
-        title: "India",
-        subtitle: "A collection of my favorite photos from India.",
-        img: indiaCover, // Replace with an actual image for the India project
-        link: "/projects/india",
-    },
-
-    {
-        title: "National Parks",
-        subtitle: "Check out my favorite National Parks I have visted with family and friends.",
-        img: nationalParksCover, // Replace with an actual image for the India project
-        link: "/projects/nationalParks",
-    },
+    
   ]
 
   return (
