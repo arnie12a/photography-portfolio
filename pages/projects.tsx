@@ -5,8 +5,6 @@ import { StaticImageData } from "next/image"
 
 // Project cover images
 import portraitsCover from "../public/places/chicago/keitlin.jpg" // pick any portrait as cover
-import indiaCover from "../public/places/india/gatewayOfIndia.jpg" // pick any India photo as cover
-import nationalParksCover from "../public/stories/nationalParks/smokeyMountainsSunset.jpg" // pick any National Park photo as cover
 
 
 type Project = {
@@ -101,16 +99,7 @@ export default function Projects() {
           ))}
         </section>
 
-        {/* Newsletter Signup
-        <section className="max-w-2xl mx-auto mt-32 px-8 py-20 text-center 
-          bg-stone-900/40 rounded-xl border border-stone-800 shadow-xl">
-
-          <h2 className="text-4xl font-light mb-4 tracking-tight">
-            Stay Inspired
-          </h2>
-
-          <MailerLiteForm />
-        </section> */}
+        
 
       </main>
 
