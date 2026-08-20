@@ -8,8 +8,6 @@ import portraitsCover from "../public/places/chicago/keitlin.jpg" // pick any po
 import indiaCover from "../public/places/india/gatewayOfIndia.jpg" // pick any India photo as cover
 import nationalParksCover from "../public/stories/nationalParks/smokeyMountainsSunset.jpg" // pick any National Park photo as cover
 
-// Import your MailerLite component
-import MailerLiteForm from "../pages/components/MailerLiteForm"
 
 type Project = {
   title: string
