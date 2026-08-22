@@ -137,37 +137,53 @@ export default function Portraits() {
         </Link>
       </header>
 
-      {/* Gallery */}
-      <main className="pt-[120px] pb-32 max-w-6xl mx-auto px-6">
-        <h1 className="text-center text-5xl md:text-6xl font-light tracking-tight mb-16">
-          Portraits
-        </h1>
+      <main className="pt-[120px] pb-32 max-w-5xl mx-auto px-6">
+  <h1 className="text-center text-5xl md:text-6xl font-light tracking-tight mb-20">
+    Portraits
+  </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          {portraits.map((p, i) => (
-            <div key={i} className="group">
-              <div className="relative w-full overflow-hidden rounded-xl">
-                <Image
-                    src={p.src}
-                    alt={p.alt}
-                    className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-700"
-                />
-                </div>
+  <div className="space-y-32">
+    {portraits.map((p, i) => (
+      <section
+        key={i}
+        className={`
+          flex flex-col 
+          ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}
+          items-center gap-12
+        `}
+      >
+        {/* Image */}
+        <div className="w-full md:w-2/3">
+          <div className="relative overflow-hidden rounded-2xl shadow-xl">
+          <Image
+  src={p.src}
+  alt={p.alt}
+  className={
+    `object-cover w-full transition-transform duration-[1200ms] hover:scale-105 ` +
+    (p.src.width > p.src.height
+      ? "h-[450px] md:h-[550px]"   // horizontal photos
+      : "h-[650px] md:h-[800px]")  // vertical photos
+  }
+/>
 
-
-              <h2 className="text-2xl font-light mt-6 mb-2 tracking-tight">
-                {p.title}
-              </h2>
-
-              <p className="text-stone-400 leading-relaxed text-sm">
-                {p.description}
-              </p>
-
-              <div className="mt-4 h-[2px] w-16 bg-stone-700"></div>
-            </div>
-          ))}
+          </div>
         </div>
-      </main>
+
+        {/* Text */}
+        <div className="w-full md:w-1/3">
+          <h2 className="text-3xl font-light tracking-tight mb-4">
+            {p.title}
+          </h2>
+          <p className="text-stone-400 leading-relaxed text-sm mb-6">
+            {p.description}
+          </p>
+          <div className="h-[2px] w-20 bg-stone-700"></div>
+        </div>
+      </section>
+    ))}
+  </div>
+</main>
+
 
       <footer className="h-[90px] flex justify-center items-center uppercase text-xs tracking-[0.3em] text-stone-600 border-t border-stone-800">
         Arnav Karnik Photography
