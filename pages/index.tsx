@@ -38,13 +38,21 @@ import parisVertical from "../public/places/france/hoopsInParis.jpg"
 import salkantay from "../public/places/peru/salkantay.jpg"
 import khanchenjunga from "../public/places/india/khanchenjunga.jpg"
 import chinatownHoops from "../public/places/nyc/chinatownHoops.jpg"
+import kaylemCat from "../public/places/peru/kaylemCat.jpg"
+import lucasHo from "../public/places/chicago/lucasDinner1.jpg"
+
 
 const IMAGES = [
   parisVertical,
   oldTrafford,
+  hilton,
+
   kalalauLookout,
+  kaylemCat,
+
   dolomites,
   salkantay,
+  lucasHo,
   hanaleiBay,
   gangtokStadium,
   khanchenjunga,
@@ -59,7 +67,6 @@ const IMAGES = [
   meganAndrewRainier,
   seceda,
   dotter,
-  hilton,
   smokeyMountainsSunset,
   ugoPrecious
 ]
