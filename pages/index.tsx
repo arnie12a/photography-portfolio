@@ -46,10 +46,8 @@ const IMAGES = [
   parisVertical,
   oldTrafford,
   hilton,
-
   kalalauLookout,
   kaylemCat,
-
   dolomites,
   salkantay,
   lucasHo,
