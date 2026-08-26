@@ -44,11 +44,11 @@ import lucasHo from "../public/places/chicago/lucasDinner1.jpg"
 
 const IMAGES = [
   parisVertical,
+  dolomites,
   oldTrafford,
   hilton,
   kalalauLookout,
   kaylemCat,
-  dolomites,
   salkantay,
   lucasHo,
   hanaleiBay,
