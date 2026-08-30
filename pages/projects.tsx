@@ -5,7 +5,7 @@ import { StaticImageData } from "next/image"
 
 // Project cover images
 import portraitsCover from "../public/places/chicago/keitlin.jpg" // pick any portrait as cover
-
+import coloradoCover from "../public/stories/nationalParks/emeraldLake.png" // replace with actual cover image for Colorado
 
 type Project = {
   title: string
@@ -22,6 +22,12 @@ export default function Projects() {
       img: portraitsCover,
       link: "/projects/portraits",
     },
+    {
+      title: "Colorado",
+      subtitle: "Photos of my time in the mountains of Colorado.",
+      img: coloradoCover, // Replace with actual cover image for Colorado
+      link: "/projects/colorado",
+    }
     
   ]
 

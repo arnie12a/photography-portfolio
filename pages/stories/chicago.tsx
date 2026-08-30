@@ -1,28 +1,21 @@
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
 import MailerLiteForm from "../../pages/components/MailerLiteForm"
 
-// Import your three Chicago images
+// Images
 import chicagoSkyline from "../../public/places/chicago/chicagoSkyline.jpg"
-import chicagoRiverwalk from "../../public/places/chicago/brittanica.jpg"
-import chicagoPlanetarium from "../../public/places/chicago/planetariumSkyline.jpg"
-const SLIDES = [chicagoSkyline, chicagoRiverwalk, chicagoPlanetarium]
+import britannica from "../../public/places/chicago/brittanica.jpg"
+import planetariumSkyline from "../../public/places/chicago/planetariumSkyline.jpg"
 
 export default function ChicagoStory() {
-  const [index, setIndex] = useState(0)
-
-  const next = () => setIndex((prev) => (prev + 1) % SLIDES.length)
-  const prev = () => setIndex((prev) => (prev - 1 + SLIDES.length) % SLIDES.length)
-
   return (
     <div className="min-h-screen bg-stone-950 text-stone-200">
       <Head>
         <title>Chicago — Arnav Karnik Photography</title>
       </Head>
 
-      {/* Minimal Header */}
+      {/* Header */}
       <header className="fixed top-0 left-0 w-full z-20 h-[90px] px-10 
         bg-stone-950/80 backdrop-blur border-b border-stone-800 
         flex items-center justify-between">
@@ -43,60 +36,76 @@ export default function ChicagoStory() {
 
       <main className="pt-[120px] pb-32">
 
-        {/* Slider */}
-        <div className="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
-          <Image
-            src={SLIDES[index]}
-            alt="Chicago Story Image"
-            fill
-            className="object-cover rounded-lg"
-            priority
-          />
-          <button
-            onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 
-              bg-black/40 hover:bg-black/60 text-white p-3 rounded-full 
-              transition z-20"
-          >
-            ‹
-          </button>
-          <button
-            onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 
-              bg-black/40 hover:bg-black/60 text-white p-3 rounded-full 
-              transition z-20"
-          >
-            ›
-          </button>
-        </div>
-
-        {/* Title + Date */}
+        {/* Title */}
         <section className="max-w-3xl mx-auto px-6 md:px-0 mt-16 mb-10 text-center">
           <h1 className="text-5xl md:text-6xl font-light tracking-tight mb-4">
             Chicago
           </h1>
-
-
           <div className="mt-6 h-[2px] w-20 bg-stone-700 mx-auto"></div>
         </section>
 
-        {/* Story Content — your text preserved with spacing */}
+        {/* Intro Text — EXACTLY as you wrote it */}
         <article className="max-w-3xl mx-auto px-6 md:px-0 text-lg leading-relaxed text-stone-300 space-y-8">
           <p>
-            Chicago
-            As I step into this next chapter in my life I thought I would talk about Chicago. My parents immigrated to the United States in the late 1990s for their jobs and chose Chicago to be home. So in 2002, I was born in the suburbs of Chicago and my story began. 
+            As I step into this next chapter in my life I thought I would talk about Chicago. It all started when my parents immigrated to the United States from India in the late 1990s for their jobs. Of all the places they could go, they decided Chicago would be home. 
           </p>
 
           <p>
-            Anyways, I have basically been in the midwest my entire life. Spending the first 18 years in Schaumburg, the next four in Madison for my undergrad, and two more in Chicago working. So you can say I have spent plenty of time in the Windy City. 
+            Growing up in the Chicago suburbs, I spent all my time either playing soccer, basketball, or baseball. So in my youth I did not have much time to explore the city but when we did we would always check these three places out. As to say, these three places have a really warm place in my heart. 
           </p>
 
           <p>
-            Here are my three favorite places in the city that I grew up visiting. And over the past two years I would relax at these places because it reminds me of the times I would go into the city with my family when I was a baby boy. 
+            As I have started my next chapter of my life in Boulder Colorado, I look forward to returning to these places with my friends & family. 
           </p>
         </article>
 
-        {/* Newsletter Signup */}
+        {/* --- PHOTO SECTION 1 --- */}
+        <section className="max-w-3xl mx-auto px-6 md:px-0 mt-20 space-y-6">
+          <Image
+            src={chicagoSkyline}
+            alt="Chicago Skyline from Lakeshore path"
+            className="rounded-lg object-cover w-full h-[55vh]"
+            priority
+          />
+          <h2 className="text-3xl font-light tracking-tight">
+            Chicago Skyline from Lakeshore path
+          </h2>
+          <p className="text-lg leading-relaxed text-stone-300">
+            My favorite photo I have taken in Chicago because the seagull is literally looking at my camera and it just so happens to also be my favorite view as well. 
+          </p>
+        </section>
+
+        {/* --- PHOTO SECTION 2 --- */}
+        <section className="max-w-3xl mx-auto px-6 md:px-0 mt-20 space-y-6">
+          <Image
+            src={britannica}
+            alt="Britannica building"
+            className="rounded-lg object-cover w-full h-[55vh]"
+          />
+          <h2 className="text-3xl font-light tracking-tight">
+            Britannica building
+          </h2>
+          <p className="text-lg leading-relaxed text-stone-300">
+            In the summer time, Clark street gets closed off to cars and the restaurants open up their outdoor seating and it is just perfect. Sitting out with a drink and getting a bite to eat is such a vibe. But before heading to dinner here with my family, we would always sit across the Britannica building, watching people walk along the Chicago river and take their boats into Lake Michigan. Nights like this were my favorite in Chicago.   
+          </p>
+        </section>
+
+        {/* --- PHOTO SECTION 3 --- */}
+        <section className="max-w-3xl mx-auto px-6 md:px-0 mt-20 space-y-6">
+          <Image
+            src={planetariumSkyline}
+            alt="Chicago Skyline from Planetarium"
+            className="rounded-lg object-cover w-full h-[55vh]"
+          />
+          <h2 className="text-3xl font-light tracking-tight">
+            Chicago Skyline from Planetarium
+          </h2>
+          <p className="text-lg leading-relaxed text-stone-300">
+            I remember visiting the Adler Planetarium as a kid through summer camp and taking in this view. Ever since then I love to bike or run here and just relax watching the waves crash into the barriers.  
+          </p>
+        </section>
+
+        {/* Newsletter */}
         <section className="max-w-2xl mx-auto mt-32 px-8 py-20 text-center 
           bg-stone-900/40 rounded-xl border border-stone-800 shadow-xl">
 
