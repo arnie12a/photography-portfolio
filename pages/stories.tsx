@@ -6,6 +6,7 @@ import { StaticImageData } from "next/image"
 // Existing story cover
 import parisBasketball from "../public/places/france/parisHoops.jpg"
 import chicagoSkyline from "../public/places/chicago/chicagoSkyline.jpg"
+import salkantay from "../public/places/peru/salkantay.jpg"
 
 // Import your MailerLite component
 import MailerLiteForm from "../pages/components/MailerLiteForm"
@@ -30,7 +31,14 @@ export default function Stories() {
       subtitle: "My favorite places in the Windy City.",
       img: chicagoSkyline,
       link: "/stories/chicago",
+    },
+    {
+      title: "Salkantay Trek",
+      subtitle: "Favorite photos from the Salkantay trek coming soon...",
+      img: salkantay,
+      link: "/stories/salkantay",
     }
+
   ]
 
   return (
